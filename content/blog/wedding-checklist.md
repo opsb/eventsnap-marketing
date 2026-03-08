@@ -322,7 +322,7 @@ Plus, this approach keeps your budget in check—ensuring you're making payments
 - **12+ Months Before:** Book venue and essential vendors.
 - **9-12 Months Before:** Choose wedding attire, plan engagement photos, and finalize guest list.
 - **6-9 Months Before:** Send save-the-dates, start dress fittings, and book transportation.
-- **3-6 Months Before:** Order invitations, confirm vendors, and plan honeymoon.
+- **3-6 Months Before:** Order invitations, confirm vendors, and [plan honeymoon](/blog/top-honeymoon-destinations-2026/).
 - **Final Weeks:** Final dress fitting, seating chart, and last-minute details.
 
 <div class="action-steps-box">
