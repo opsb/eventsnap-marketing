@@ -266,7 +266,7 @@ When it comes to priority bookings, start with the venue, photographer, and ente
 
 ![DIY wedding projects](/images/blog-checklist-diy.webp)
 
-The choice between going full DIY or calling in the pros isn't just about budget—it's about time, stress levels, and whether you actually want to enjoy your engagement instead of drowning in craft supplies. Pinterest makes handmade everything look like a breeze, but let's be honest—hot glue burns and 2 AM crafting meltdowns are very real.
+The choice between [going full DIY](/blog/notion-wedding-templates/) or calling in the pros isn't just about budget—it's about time, stress levels, and whether you actually want to enjoy your engagement instead of drowning in craft supplies. Pinterest makes handmade everything look like a breeze, but let's be honest—hot glue burns and 2 AM crafting meltdowns are very real.
 
 That said, DIY can be a fabulous way to add personal touches to your wedding—if (and that's a big if) you have the skills, time, and a small army of willing helpers. Here are some fun, doable DIY projects that won't make you regret your life choices:
 
@@ -329,7 +329,7 @@ Plus, this approach keeps your budget in check—ensuring you're making payments
   <div class="action-steps-box__header">Action Steps</div>
   <div class="action-steps-box__body">
     <ul>
-      <li>Download our free Wedding Planning Checklist PDF.</li>
+      <li><a href="https://eventsnap.kit.com/18ab54cb21" target="_blank" rel="noopener">Download our free Wedding Planning Checklist PDF.</a></li>
       <li>Customize your checklist to fit your unique wedding needs.</li>
       <li>Set reminders for key milestones.</li>
       <li>Delegate tasks to your partner & wedding party.</li>

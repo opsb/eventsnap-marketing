@@ -52,7 +52,7 @@ Keep all your wedding details organized with this intuitive Notion wedding plann
 - Timeline
 - Budget & vendor tracking
 - Guests and seating
-- Honeymoon planning
+- [Honeymoon planning](/blog/top-honeymoon-destinations-2026/)
 
 ## 5. Modern Notion Wedding Planner
 
