@@ -7,7 +7,7 @@
       {{ range .Site.Menus.main }}
         <a href="{{ .URL }}" class="nav-link{{ if $.IsMenuCurrent "main" . }} active{{ end }}">{{ .Name }}</a>
       {{ end }}
-      <a href="{{ .Site.Params.appURL }}/signin" class="nav-link nav-login">Login</a>
+      <a href="/signin/" class="nav-link nav-login">Login</a>
     </nav>
     <a href="/pricing/" class="btn btn-outline header-cta">Get started</a>
     <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
@@ -21,7 +21,7 @@
       {{ range .Site.Menus.main }}
         <a href="{{ .URL }}" class="mobile-nav-link">{{ .Name }}</a>
       {{ end }}
-      <a href="{{ .Site.Params.appURL }}/signin" class="mobile-nav-link">Login</a>
+      <a href="/signin/" class="mobile-nav-link">Login</a>
       <a href="/pricing/" class="btn btn-outline mobile-cta">Get started</a>
     </nav>
   </div>

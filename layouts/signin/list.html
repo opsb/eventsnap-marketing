@@ -1,0 +1,17 @@
+{{ define "main" }}
+<article class="page-single">
+
+<section class="section bg-white" style="min-height: 50vh; display: flex; align-items: center;">
+  <div class="container text-center">
+    <h1 class="section-title reveal">Redirecting to Login&hellip;</h1>
+    <p class="reveal">You are being redirected to the EventSnap app.</p>
+    <p class="reveal"><a href="{{ .Site.Params.appURL }}/signin" class="btn btn-outline">Go to Login</a></p>
+  </div>
+</section>
+
+</article>
+
+<script>
+  window.location.href = "{{ .Site.Params.appURL }}/signin";
+</script>
+{{ end }}

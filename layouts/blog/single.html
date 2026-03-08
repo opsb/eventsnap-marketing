@@ -1,0 +1,26 @@
+{{ define "main" }}
+<article class="page-single blog-post">
+<section class="section bg-white">
+  <div class="container">
+    <div class="blog-post-header reveal">
+      <div class="blog-post-meta">
+        <span class="blog-card-author">{{ .Params.author }}</span>
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+      </div>
+      <h1 class="section-title">{{ .Title }}</h1>
+    </div>
+    {{ with .Params.image }}
+    <div class="blog-post-hero reveal">
+      <img src="{{ . }}" alt="{{ $.Title }}">
+    </div>
+    {{ end }}
+    <div class="blog-post-content prose">
+      {{ .Content }}
+    </div>
+    <div class="blog-post-back">
+      <a href="/blog/" class="btn btn-outline">Back to Blog</a>
+    </div>
+  </div>
+</section>
+</article>
+{{ end }}

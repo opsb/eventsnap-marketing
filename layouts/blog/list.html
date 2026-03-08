@@ -1,27 +1,45 @@
 {{ define "main" }}
 <article class="page-single">
-<section class="section bg-white">
-  <div class="container text-center">
-    <h1 class="section-title reveal">Blog</h1>
+<section class="section bg-white blog-listing">
+  <div class="container">
+    <h1 class="section-title text-center reveal">Blog</h1>
     {{ if .Pages }}
       <div class="blog-grid">
-        {{ range .Pages }}
+        {{ range .Pages.ByDate.Reverse }}
         <a href="{{ .Permalink }}" class="blog-card reveal">
           {{ with .Params.image }}
-          <div class="blog-card-image" style="background-image: url('{{ . }}')"></div>
+          <div class="blog-card-image">
+            <img src="{{ . }}" alt="{{ $.Title }}">
+          </div>
           {{ end }}
           <div class="blog-card-body">
-            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
             <h3>{{ .Title }}</h3>
-            <p>{{ .Summary }}</p>
+            <span class="blog-card-readmore">Read More</span>
           </div>
         </a>
         {{ end }}
       </div>
     {{ else }}
-      <p class="section-subtitle reveal">Stay tuned &mdash; new articles coming soon.</p>
+      <p class="section-subtitle text-center reveal">Stay tuned &mdash; new articles coming soon.</p>
     {{ end }}
   </div>
 </section>
+
+<!-- CTA -->
+<section class="section bg-pink">
+  <div class="container">
+    <div class="blog-cta reveal">
+      <div class="blog-cta-text">
+        <h2 class="section-title">Capture All Your Wedding Moments</h2>
+        <p>Easily collect, share, and relive every moment with your guests&mdash;no app, no hassle, just unforgettable memories!</p>
+        <a href="/pricing/" class="btn btn-outline">Start Your Story Today</a>
+      </div>
+      <div class="blog-cta-image">
+        <img src="/images/blog-cta-gallery.webp" alt="EventSnap gallery preview">
+      </div>
+    </div>
+  </div>
+</section>
+
 </article>
 {{ end }}

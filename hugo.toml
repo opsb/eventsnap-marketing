@@ -2,6 +2,11 @@ baseURL = 'https://eventsnap.it/'
 languageCode = 'en-us'
 title = 'EventSnap'
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [params]
   description = 'Capture Moments Today'
   appURL = 'https://app.eventsnap.it'
