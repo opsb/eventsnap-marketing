@@ -848,7 +848,7 @@ ul { list-style: none; }
 /* ── Pricing CTA ───────────────────────────────────── */
 
 .pricing-cta {
-  background: url('/images/pricing-cta-bg.webp') center / cover no-repeat;
+  background: url('../images/pricing-cta-bg.webp') center / cover no-repeat;
   position: relative;
 }
 
@@ -881,7 +881,7 @@ ul { list-style: none; }
 /* ── Contact CTA ───────────────────────────────────── */
 
 .contact-cta {
-  background: url('/images/contact-cta-bg.webp') center / cover no-repeat;
+  background: url('../images/contact-cta-bg.webp') center / cover no-repeat;
   position: relative;
   padding: 140px 0;
 }
@@ -915,7 +915,7 @@ ul { list-style: none; }
 /* ── Affiliate ─────────────────────────────────────── */
 
 .affiliate-hero {
-  background: url('/images/affiliate-hero-bg.webp') center / cover no-repeat;
+  background: url('../images/affiliate-hero-bg.webp') center / cover no-repeat;
 }
 
 .audience-photos {
