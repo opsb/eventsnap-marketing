@@ -7,7 +7,7 @@ image: "/images/blog-honeymoon-destinations.jpg"
 excerpt: "Your honeymoon is the perfect opportunity to celebrate your new chapter together with an unforgettable trip. From tropical islands and luxury resorts to cultural cities and breathtaking nature escapes, the world offers incredible destinations for every type of couple."
 ---
 
-Your honeymoon is the perfect opportunity to celebrate your new chapter together with an unforgettable trip. From tropical islands and luxury resorts to cultural cities and breathtaking nature escapes, the world offers incredible destinations for every type of couple.
+Your honeymoon is the perfect opportunity to celebrate your new chapter together with an unforgettable trip. From tropical islands and luxury resorts to cultural cities and breathtaking nature escapes, the world offers incredible destinations for every type of couple. Once you've ticked off everything on your [wedding planning checklist](/blog/wedding-checklist/), it's time to focus on the most exciting part — choosing where to go.
 
 In this guide, we highlight some of the best honeymoon destinations for 2026, each offering a unique mix of romance, adventure, and unforgettable experiences.
 
