@@ -1,0 +1,22 @@
+{{ define "main" }}
+<article class="page-single">
+  {{ if eq .Section "pricing" }}
+    {{ partial "page-pricing.html" . }}
+  {{ else if eq .File.ContentBaseName "_index" }}
+    {{/* Section pages use list.html, this handles regular singles */}}
+    <div class="container">
+      <h1>{{ .Title }}</h1>
+      <div class="content">
+        {{ .Content }}
+      </div>
+    </div>
+  {{ else }}
+    <div class="container">
+      <h1>{{ .Title }}</h1>
+      <div class="content">
+        {{ .Content }}
+      </div>
+    </div>
+  {{ end }}
+</article>
+{{ end }}

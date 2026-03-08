@@ -1,0 +1,27 @@
+{{ define "main" }}
+<article class="page-single">
+<section class="section bg-white">
+  <div class="container text-center">
+    <h1 class="section-title reveal">Blog</h1>
+    {{ if .Pages }}
+      <div class="blog-grid">
+        {{ range .Pages }}
+        <a href="{{ .Permalink }}" class="blog-card reveal">
+          {{ with .Params.image }}
+          <div class="blog-card-image" style="background-image: url('{{ . }}')"></div>
+          {{ end }}
+          <div class="blog-card-body">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+            <h3>{{ .Title }}</h3>
+            <p>{{ .Summary }}</p>
+          </div>
+        </a>
+        {{ end }}
+      </div>
+    {{ else }}
+      <p class="section-subtitle reveal">Stay tuned &mdash; new articles coming soon.</p>
+    {{ end }}
+  </div>
+</section>
+</article>
+{{ end }}
