@@ -2,6 +2,10 @@
 default:
     @just --list
 
+# Start dev server and open in browser
+start:
+    open http://localhost:1313/ & hugo server
+
 # Start local development server with live reload
 dev:
     hugo server
@@ -33,3 +37,11 @@ new-page path:
 # Build and serve the production build locally
 preview:
     hugo --gc --minify && cd public && python3 -m http.server 8080
+
+# Open the local dev server in the browser
+open:
+    open http://localhost:1313/
+
+# Deploy to GitHub Pages (push to main)
+deploy:
+    git push origin main

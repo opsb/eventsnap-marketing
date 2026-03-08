@@ -6,8 +6,6 @@ image: "/images/blog-andalusia-venues.webp"
 excerpt: "If you've been dreaming of a destination wedding filled with sunshine, culture, passion, and unforgettable scenery, Spain — especially Andalusia — should be at the top of your list."
 ---
 
-![Andalusia wedding](/images/venue-hero.webp)
-
 If you've been dreaming of a destination wedding filled with sunshine, culture, passion, and unforgettable scenery, Spain, especially Andalusia, should be at the top of your list.
 
 Andalusia is famous for its 320+ days of sun, warm hospitality, rich food culture, flamenco energy, whitewashed villages, olive groves stretching for miles, and some of Europe's most spectacular venues. From the glamorous shores of Marbella, to the dramatic mountains of Granada, to the timeless charm of Seville, this Spanish region truly has it all.
