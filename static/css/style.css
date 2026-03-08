@@ -432,7 +432,7 @@ ul { list-style: none; }
   background: var(--color-white);
   border-radius: var(--radius-lg);
   padding: 2.5rem 2rem;
-  text-align: center;
+  text-align: left;
   position: relative;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
   transition: transform var(--transition), box-shadow var(--transition);
@@ -851,6 +851,10 @@ ul { list-style: none; }
 
 /* ── Affiliate ─────────────────────────────────────── */
 
+.affiliate-hero {
+  background: url('/images/affiliate-hero-bg.webp') center / cover no-repeat;
+}
+
 .audience-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -895,6 +899,12 @@ ul { list-style: none; }
 
 .benefit-icon {
   margin-bottom: 1rem;
+}
+
+.benefit-icon img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
 }
 
 .benefit-card h3 {
