@@ -291,39 +291,76 @@ ul { list-style: none; }
   padding: 8px 20px;
 }
 
-/* Footer Language Switcher */
-.footer-lang {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 20px var(--gutter) 28px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+/* Footer Language Dropdown */
+.footer-lang-dropdown {
+  position: relative;
 }
 
-.footer-lang-option {
+.footer-lang-btn {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 6px 14px;
+  padding: 6px 12px;
   font-family: var(--font-body);
   font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--color-dark);
+  background: none;
+  border: 1px solid var(--color-border);
   border-radius: 50px;
+  cursor: pointer;
   transition: var(--transition);
 }
 
+.footer-lang-btn:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.footer-lang-chevron {
+  transition: transform 0.2s ease;
+}
+
+.footer-lang-dropdown.open .footer-lang-chevron {
+  transform: rotate(180deg);
+}
+
+.footer-lang-menu {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 8px);
+  right: 0;
+  min-width: 170px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  padding: 6px 0;
+  z-index: 100;
+}
+
+.footer-lang-dropdown.open .footer-lang-menu {
+  display: block;
+}
+
+.footer-lang-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--color-dark);
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+
 .footer-lang-option:hover {
-  color: var(--color-white);
-  border-color: rgba(255, 255, 255, 0.4);
+  background: var(--color-bg);
 }
 
 .footer-lang-option.active {
-  color: var(--color-white);
-  border-color: rgba(255, 255, 255, 0.4);
   font-weight: 600;
+  color: var(--color-accent);
 }
 
 .lang-flag {

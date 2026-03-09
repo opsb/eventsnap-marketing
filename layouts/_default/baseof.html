@@ -54,6 +54,21 @@
         });
       });
 
+      // Footer language dropdown
+      var langBtn = document.getElementById('footerLangBtn');
+      var langDropdown = langBtn ? langBtn.closest('.footer-lang-dropdown') : null;
+      if (langBtn && langDropdown) {
+        langBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          var isOpen = langDropdown.classList.toggle('open');
+          langBtn.setAttribute('aria-expanded', isOpen);
+        });
+        document.addEventListener('click', function() {
+          langDropdown.classList.remove('open');
+          langBtn.setAttribute('aria-expanded', 'false');
+        });
+      }
+
       // Scroll reveal
       const observer = new IntersectionObserver(function(entries) {
         entries.forEach(function(entry) {
