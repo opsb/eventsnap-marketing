@@ -27,6 +27,7 @@
             <option value="US">United States</option>
             <option value="GB">United Kingdom</option>
             <option value="DE">Germany</option>
+            <option value="AT">Austria</option>
             <option value="FR">France</option>
             <option value="ES">Spain</option>
             <option value="IT">Italy</option>
@@ -97,6 +98,15 @@
       {m:5,d:1,n:'Tag der Arbeit'},{m:5,d:29,n:'Christi Himmelfahrt',y:2025},{m:5,d:14,n:'Christi Himmelfahrt',y:2026},{m:5,d:6,n:'Christi Himmelfahrt',y:2027},
       {m:6,d:9,n:'Pfingstmontag',y:2025},{m:5,d:25,n:'Pfingstmontag',y:2026},{m:5,d:17,n:'Pfingstmontag',y:2027},
       {m:10,d:3,n:'Tag der Deutschen Einheit'},{m:12,d:25,n:'Weihnachten'},{m:12,d:26,n:'2. Weihnachtstag'}
+    ],
+    AT: [
+      {m:1,d:1,n:'Neujahr'},{m:1,d:6,n:'Heilige Drei K\u00f6nige'},
+      {m:4,d:21,n:'Ostermontag',y:2025},{m:4,d:6,n:'Ostermontag',y:2026},{m:3,d:29,n:'Ostermontag',y:2027},
+      {m:5,d:1,n:'Staatsfeiertag'},{m:5,d:29,n:'Christi Himmelfahrt',y:2025},{m:5,d:14,n:'Christi Himmelfahrt',y:2026},{m:5,d:6,n:'Christi Himmelfahrt',y:2027},
+      {m:6,d:9,n:'Pfingstmontag',y:2025},{m:5,d:25,n:'Pfingstmontag',y:2026},{m:5,d:17,n:'Pfingstmontag',y:2027},
+      {m:6,d:19,n:'Fronleichnam',y:2025},{m:6,d:4,n:'Fronleichnam',y:2026},{m:5,d:27,n:'Fronleichnam',y:2027},
+      {m:8,d:15,n:'Mari\u00e4 Himmelfahrt'},{m:10,d:26,n:'Nationalfeiertag'},{m:11,d:1,n:'Allerheiligen'},
+      {m:12,d:8,n:'Mari\u00e4 Empf\u00e4ngnis'},{m:12,d:25,n:'Weihnachten'},{m:12,d:26,n:'Stefanitag'}
     ],
     FR: [
       {m:1,d:1,n:'Jour de l\'An'},{m:4,d:21,n:'Lundi de Pâques',y:2025},{m:4,d:6,n:'Lundi de Pâques',y:2026},{m:3,d:29,n:'Lundi de Pâques',y:2027},
@@ -175,6 +185,7 @@
     US: {peak:[5,6,9,10],off:[1,2,3],label:'May-Jun & Sep-Oct'},
     GB: {peak:[5,6,7,8],off:[11,12,1,2],label:'May-Aug'},
     DE: {peak:[5,6,7,8,9],off:[11,12,1,2],label:'May-Sep'},
+    AT: {peak:[5,6,7,8,9],off:[11,12,1,2],label:'May-Sep'},
     FR: {peak:[5,6,7,8,9],off:[11,12,1,2],label:'May-Sep'},
     ES: {peak:[5,6,9,10],off:[7,8,12,1,2],label:'May-Jun & Sep-Oct'},
     IT: {peak:[5,6,9,10],off:[7,8,12,1,2],label:'May-Jun & Sep-Oct'},
@@ -192,6 +203,7 @@
     US: {1:'Cold in most regions, snow likely',2:'Cold, unpredictable',3:'Transition month, variable',4:'Mild but rainy',5:'Pleasant, great for weddings',6:'Warm, popular month',7:'Hot, peak summer',8:'Hot and humid in many areas',9:'Beautiful early autumn',10:'Gorgeous fall colours',11:'Cooling down, some rain',12:'Cold, holiday season'},
     GB: {1:'Cold and dark',2:'Cold, short days',3:'Cool, spring beginning',4:'Mild but showery',5:'Pleasant, longer days',6:'Warm, long daylight',7:'Warmest month',8:'Warm, can be rainy',9:'Mild, autumn starting',10:'Cool, shorter days',11:'Dark and damp',12:'Cold and dark'},
     DE: {1:'Cold, possible snow',2:'Cold, still winter',3:'Cool, spring arriving',4:'Mild, changeable',5:'Pleasant and green',6:'Warm, lovely weather',7:'Warmest month',8:'Warm, some thunderstorms',9:'Mild, beautiful autumn',10:'Cool, colourful foliage',11:'Grey and damp',12:'Cold, Christmas markets'},
+    AT: {1:'Cold, snow in Alps',2:'Cold, still winter',3:'Cool, spring arriving',4:'Mild, changeable',5:'Pleasant and green',6:'Warm, lovely weather',7:'Warmest month',8:'Warm, some thunderstorms',9:'Mild, beautiful autumn',10:'Cool, colourful foliage',11:'Grey and damp',12:'Cold, Christmas markets'},
     FR: {1:'Cold in north, mild in south',2:'Cold but brightening',3:'Spring arriving, mild',4:'Pleasant, some rain',5:'Beautiful across France',6:'Warm, long days',7:'Hot, especially south',8:'Hot, many French on holiday',9:'Warm and golden',10:'Mild, harvest season',11:'Cool and grey',12:'Cold, festive season'},
     ES: {1:'Mild in south, cold in north',2:'Mild, almond blossoms',3:'Spring arriving',4:'Pleasant temperatures',5:'Warm and beautiful',6:'Hot in south, warm in north',7:'Very hot (35-40\u00b0C+)',8:'Very hot, most locals on holiday',9:'Warm and pleasant',10:'Mild and beautiful',11:'Cool, some rain',12:'Cool but mild in south'},
     IT: {1:'Cold in north, mild in south',2:'Cool, carnival season',3:'Spring arriving',4:'Pleasant, some rain',5:'Beautiful weather',6:'Warm, long days',7:'Very hot',8:'Very hot, Ferragosto closures',9:'Warm and golden',10:'Mild, grape harvest',11:'Cool and rainy',12:'Cold, festive season'},
@@ -293,6 +305,10 @@
     DE: [
       {s:[6,25],e:[9,5],n:'Sommerferien'},{s:[12,23],e:[1,6],n:'Weihnachtsferien'},{s:[3,24],e:[4,5],n:'Osterferien'},
       {s:[10,13],e:[10,25],n:'Herbstferien'}
+    ],
+    AT: [
+      {s:[7,5],e:[9,5],n:'Sommerferien'},{s:[12,23],e:[1,6],n:'Weihnachtsferien'},{s:[3,22],e:[4,5],n:'Osterferien'},
+      {s:[2,1],e:[2,9],n:'Semesterferien'},{s:[10,27],e:[10,31],n:'Herbstferien'}
     ],
     FR: [
       {s:[7,5],e:[9,1],n:'Vacances d\'été'},{s:[12,20],e:[1,5],n:'Vacances de Noël'},{s:[2,8],e:[3,10],n:'Vacances d\'hiver'},
