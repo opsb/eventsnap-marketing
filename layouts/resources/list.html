@@ -5,7 +5,7 @@
 <section class="section bg-white">
   <div class="container">
     <div class="contact-header reveal">
-      <h1 class="section-title">Free Wedding Budget Calculator</h1>
+      <h1 class="section-title">Free Wedding Budget Estimator</h1>
       <p class="contact-intro">Enter your guest count and wedding location to get a realistic, personalised budget breakdown &mdash; adjusted for local costs and per-guest pricing.</p>
     </div>
   </div>
@@ -50,7 +50,7 @@
             <optgroup label="Other">
               <option value="ot-mx">Mexico</option>
               <option value="ot-au">Australia</option>
-              <option value="ot-in">India (Metro)</option>
+              <option value="ot-in">India</option>
             </optgroup>
           </select>
         </div>
@@ -104,25 +104,29 @@
 <script>
 (function() {
   // --- Location data: base cost (fixed) + per-guest cost, currency ---
+  // Fixed base = venue rental + photographer + music + attire + flowers + misc
+  // Per-guest = catering + drinks + stationery + favours
+  // Spain data sourced from real 2024-2025 vendor quotes (Alcázar, Antonio, Campuzano caterings; Bianca Weddings florist)
+  // Other locations scaled proportionally from industry reports
   var locations = {
-    'us-ny':  { base: 12000, perGuest: 280, currency: 'USD', symbol: '$', name: 'New York / New Jersey' },
-    'us-ca':  { base: 11000, perGuest: 260, currency: 'USD', symbol: '$', name: 'California' },
-    'us-fl':  { base: 8000,  perGuest: 190, currency: 'USD', symbol: '$', name: 'Florida' },
-    'us-tx':  { base: 7500,  perGuest: 175, currency: 'USD', symbol: '$', name: 'Texas' },
-    'us-il':  { base: 9000,  perGuest: 210, currency: 'USD', symbol: '$', name: 'Chicago / Illinois' },
-    'us-avg': { base: 8500,  perGuest: 200, currency: 'USD', symbol: '$', name: 'US Average' },
-    'eu-uk':  { base: 7500,  perGuest: 165, currency: 'GBP', symbol: '\u00a3', name: 'United Kingdom' },
-    'eu-fr':  { base: 7000,  perGuest: 155, currency: 'EUR', symbol: '\u20ac', name: 'France' },
-    'eu-it':  { base: 6500,  perGuest: 145, currency: 'EUR', symbol: '\u20ac', name: 'Italy' },
-    'eu-es':  { base: 5500,  perGuest: 120, currency: 'EUR', symbol: '\u20ac', name: 'Spain' },
-    'eu-de':  { base: 7000,  perGuest: 150, currency: 'EUR', symbol: '\u20ac', name: 'Germany' },
-    'eu-pt':  { base: 4500,  perGuest: 100, currency: 'EUR', symbol: '\u20ac', name: 'Portugal' },
-    'eu-gr':  { base: 4000,  perGuest: 95,  currency: 'EUR', symbol: '\u20ac', name: 'Greece' },
-    'eu-ro':  { base: 3000,  perGuest: 65,  currency: 'EUR', symbol: '\u20ac', name: 'Romania' },
-    'eu-hu':  { base: 3500,  perGuest: 70,  currency: 'EUR', symbol: '\u20ac', name: 'Hungary' },
-    'ot-mx':  { base: 4000,  perGuest: 85,  currency: 'USD', symbol: '$', name: 'Mexico' },
-    'ot-au':  { base: 9000,  perGuest: 210, currency: 'AUD', symbol: 'A$', name: 'Australia' },
-    'ot-in':  { base: 3500,  perGuest: 55,  currency: 'USD', symbol: '$', name: 'India (Metro)' }
+    'us-ny':  { base: 28000, perGuest: 180, currency: 'USD', symbol: '$', name: 'New York / New Jersey' },
+    'us-ca':  { base: 25000, perGuest: 165, currency: 'USD', symbol: '$', name: 'California' },
+    'us-fl':  { base: 18000, perGuest: 120, currency: 'USD', symbol: '$', name: 'Florida' },
+    'us-tx':  { base: 16000, perGuest: 110, currency: 'USD', symbol: '$', name: 'Texas' },
+    'us-il':  { base: 20000, perGuest: 140, currency: 'USD', symbol: '$', name: 'Chicago / Illinois' },
+    'us-avg': { base: 19000, perGuest: 130, currency: 'USD', symbol: '$', name: 'US Average' },
+    'eu-uk':  { base: 18000, perGuest: 110, currency: 'GBP', symbol: '\u00a3', name: 'United Kingdom' },
+    'eu-fr':  { base: 17000, perGuest: 105, currency: 'EUR', symbol: '\u20ac', name: 'France' },
+    'eu-it':  { base: 20000, perGuest: 170, currency: 'EUR', symbol: '\u20ac', name: 'Italy' },
+    'eu-es':  { base: 16000, perGuest: 90,  currency: 'EUR', symbol: '\u20ac', name: 'Spain' },
+    'eu-de':  { base: 17000, perGuest: 100, currency: 'EUR', symbol: '\u20ac', name: 'Germany' },
+    'eu-pt':  { base: 12000, perGuest: 75,  currency: 'EUR', symbol: '\u20ac', name: 'Portugal' },
+    'eu-gr':  { base: 11000, perGuest: 70,  currency: 'EUR', symbol: '\u20ac', name: 'Greece' },
+    'eu-ro':  { base: 7000,  perGuest: 45,  currency: 'EUR', symbol: '\u20ac', name: 'Romania' },
+    'eu-hu':  { base: 8000,  perGuest: 50,  currency: 'EUR', symbol: '\u20ac', name: 'Hungary' },
+    'ot-mx':  { base: 10000, perGuest: 65,  currency: 'USD', symbol: '$', name: 'Mexico' },
+    'ot-au':  { base: 20000, perGuest: 140, currency: 'AUD', symbol: 'A$', name: 'Australia' },
+    'ot-in':  { base: 8000,  perGuest: 40,  currency: 'USD', symbol: '$', name: 'India' }
   };
 
   // --- Budget categories: label, percentage, color ---
@@ -144,7 +148,7 @@
     'Choose in-season flowers from local growers to cut floral costs significantly.',
     'Consider a brunch or lunch reception \u2014 daytime catering is typically 30% cheaper.',
     'Ask vendors about weekday or winter discounts if your schedule is flexible.',
-    'Use EventSnap instead of disposable cameras to capture candid guest photos for free!',
+    'Use EventSnap instead of disposable cameras to capture candid guest photos \u2014 it\u2019s cheaper and you get every shot instantly!',
     'Opt for a smaller tiered cake plus a sheet cake for serving to save on dessert costs.',
     'DIY your stationery with free online templates \u2014 digital invites save postage too.',
     'Limit the open bar to beer, wine and a signature cocktail to keep drink costs down.'

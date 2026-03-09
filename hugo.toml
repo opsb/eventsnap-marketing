@@ -34,8 +34,24 @@ defaultContentLanguageInSubdir = false
       url = '/pricing/'
       weight = 2
     [[languages.en.menus.main]]
+      name = 'Resources'
+      identifier = 'resources'
+      url = '#'
+      weight = 3
+    [[languages.en.menus.main]]
       name = 'Blog'
       url = '/blog/'
+      parent = 'resources'
+      weight = 1
+    [[languages.en.menus.main]]
+      name = 'Wedding Budget Estimator'
+      url = '/resources/'
+      parent = 'resources'
+      weight = 2
+    [[languages.en.menus.main]]
+      name = 'Wedding Date Checker'
+      url = '/resources/wedding-date-checker/'
+      parent = 'resources'
       weight = 3
     [[languages.en.menus.main]]
       name = 'Affiliate program'
@@ -87,8 +103,24 @@ defaultContentLanguageInSubdir = false
       url = '/pricing/'
       weight = 2
     [[languages.de.menus.main]]
+      name = 'Ressourcen'
+      identifier = 'resources'
+      url = '#'
+      weight = 3
+    [[languages.de.menus.main]]
       name = 'Blog'
       url = '/blog/'
+      parent = 'resources'
+      weight = 1
+    [[languages.de.menus.main]]
+      name = 'Hochzeitsbudget-Rechner'
+      url = '/resources/'
+      parent = 'resources'
+      weight = 2
+    [[languages.de.menus.main]]
+      name = 'Hochzeitsdatum-Check'
+      url = '/resources/wedding-date-checker/'
+      parent = 'resources'
       weight = 3
     [[languages.de.menus.main]]
       name = 'Partnerprogramm'
@@ -140,8 +172,24 @@ defaultContentLanguageInSubdir = false
       url = '/pricing/'
       weight = 2
     [[languages.es.menus.main]]
+      name = 'Recursos'
+      identifier = 'resources'
+      url = '#'
+      weight = 3
+    [[languages.es.menus.main]]
       name = 'Blog'
       url = '/blog/'
+      parent = 'resources'
+      weight = 1
+    [[languages.es.menus.main]]
+      name = 'Estimador de presupuesto'
+      url = '/resources/'
+      parent = 'resources'
+      weight = 2
+    [[languages.es.menus.main]]
+      name = 'Verificador de fecha'
+      url = '/resources/wedding-date-checker/'
+      parent = 'resources'
       weight = 3
     [[languages.es.menus.main]]
       name = 'Programa de afiliados'
@@ -193,8 +241,24 @@ defaultContentLanguageInSubdir = false
       url = '/pricing/'
       weight = 2
     [[languages.ro.menus.main]]
+      name = 'Resurse'
+      identifier = 'resources'
+      url = '#'
+      weight = 3
+    [[languages.ro.menus.main]]
       name = 'Blog'
       url = '/blog/'
+      parent = 'resources'
+      weight = 1
+    [[languages.ro.menus.main]]
+      name = 'Estimator buget nuntă'
+      url = '/resources/'
+      parent = 'resources'
+      weight = 2
+    [[languages.ro.menus.main]]
+      name = 'Verificator dată nuntă'
+      url = '/resources/wedding-date-checker/'
+      parent = 'resources'
       weight = 3
     [[languages.ro.menus.main]]
       name = 'Program afiliat'
@@ -246,8 +310,24 @@ defaultContentLanguageInSubdir = false
       url = '/pricing/'
       weight = 2
     [[languages.it.menus.main]]
+      name = 'Risorse'
+      identifier = 'resources'
+      url = '#'
+      weight = 3
+    [[languages.it.menus.main]]
       name = 'Blog'
       url = '/blog/'
+      parent = 'resources'
+      weight = 1
+    [[languages.it.menus.main]]
+      name = 'Stima budget matrimonio'
+      url = '/resources/'
+      parent = 'resources'
+      weight = 2
+    [[languages.it.menus.main]]
+      name = 'Verifica data matrimonio'
+      url = '/resources/wedding-date-checker/'
+      parent = 'resources'
       weight = 3
     [[languages.it.menus.main]]
       name = 'Programma affiliati'
@@ -299,8 +379,24 @@ defaultContentLanguageInSubdir = false
       url = '/pricing/'
       weight = 2
     [[languages.hu.menus.main]]
+      name = 'Források'
+      identifier = 'resources'
+      url = '#'
+      weight = 3
+    [[languages.hu.menus.main]]
       name = 'Blog'
       url = '/blog/'
+      parent = 'resources'
+      weight = 1
+    [[languages.hu.menus.main]]
+      name = 'Esküvői költségbecslő'
+      url = '/resources/'
+      parent = 'resources'
+      weight = 2
+    [[languages.hu.menus.main]]
+      name = 'Esküvői dátum-ellenőrző'
+      url = '/resources/wedding-date-checker/'
+      parent = 'resources'
       weight = 3
     [[languages.hu.menus.main]]
       name = 'Affiliate program'

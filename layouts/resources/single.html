@@ -1,0 +1,492 @@
+{{ define "main" }}
+<article class="page-single">
+
+<!-- Hero -->
+<section class="section bg-white">
+  <div class="container">
+    <div class="contact-header reveal">
+      <h1 class="section-title">Wedding Date Checker</h1>
+      <p class="contact-intro">Is your date a public holiday? Peak season? Culturally significant? Check everything in one place &mdash; practical insights to help you pick the perfect day.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Checker -->
+<section class="section bg-pink">
+  <div class="container">
+    <div class="calc-wrapper reveal">
+
+      <div class="calc-inputs">
+        <div class="calc-field">
+          <label for="dateInput">Wedding Date</label>
+          <input type="date" id="dateInput" class="calc-select" />
+        </div>
+        <div class="calc-field">
+          <label for="countryInput">Country</label>
+          <select id="countryInput" class="calc-select">
+            <option value="US">United States</option>
+            <option value="GB">United Kingdom</option>
+            <option value="DE">Germany</option>
+            <option value="FR">France</option>
+            <option value="ES">Spain</option>
+            <option value="IT">Italy</option>
+            <option value="PT">Portugal</option>
+            <option value="GR">Greece</option>
+            <option value="RO">Romania</option>
+            <option value="HU">Hungary</option>
+            <option value="MX">Mexico</option>
+            <option value="AU">Australia</option>
+            <option value="IN">India</option>
+          </select>
+        </div>
+        <button id="checkBtn" class="btn btn-accent btn-full">Check My Date</button>
+      </div>
+
+      <!-- Results -->
+      <div class="dc-results" id="dcResults">
+
+        <!-- Summary verdict -->
+        <div class="dc-verdict" id="dcVerdict"></div>
+
+        <!-- Result cards grid -->
+        <div class="dc-grid" id="dcGrid"></div>
+
+        <div class="calc-disclaimer" style="margin-top:2rem">
+          <p><strong>Note:</strong> Cultural and religious dates are approximate for lunar-based calendars. Holiday data covers major national holidays. Always verify with local authorities for your specific venue and municipality.</p>
+        </div>
+
+        <div class="text-center" style="margin-top:2rem">
+          <a href="{{ "pricing/" | relLangURL }}" class="btn btn-accent">Capture Every Moment with EventSnap</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</article>
+
+<script>
+(function() {
+
+  // Set default date to 6 months from now
+  var defDate = new Date();
+  defDate.setMonth(defDate.getMonth() + 6);
+  document.getElementById('dateInput').value = defDate.toISOString().split('T')[0];
+
+  // ── Public holidays by country (2025-2027, fixed + computed) ──
+  var holidays = {
+    US: [
+      {m:1,d:1,n:'New Year\'s Day'},{m:1,d:20,n:'Martin Luther King Jr. Day',y:2025},{m:1,d:19,n:'Martin Luther King Jr. Day',y:2026},{m:1,d:18,n:'Martin Luther King Jr. Day',y:2027},
+      {m:2,d:17,n:'Presidents\' Day',y:2025},{m:2,d:16,n:'Presidents\' Day',y:2026},{m:2,d:15,n:'Presidents\' Day',y:2027},
+      {m:5,d:26,n:'Memorial Day',y:2025},{m:5,d:25,n:'Memorial Day',y:2026},{m:5,d:31,n:'Memorial Day',y:2027},
+      {m:7,d:4,n:'Independence Day'},{m:9,d:1,n:'Labor Day',y:2025},{m:9,d:7,n:'Labor Day',y:2026},{m:9,d:6,n:'Labor Day',y:2027},
+      {m:11,d:27,n:'Thanksgiving',y:2025},{m:11,d:26,n:'Thanksgiving',y:2026},{m:11,d:25,n:'Thanksgiving',y:2027},
+      {m:12,d:25,n:'Christmas Day'},{m:12,d:31,n:'New Year\'s Eve'}
+    ],
+    GB: [
+      {m:1,d:1,n:'New Year\'s Day'},{m:4,d:18,n:'Good Friday',y:2025},{m:4,d:3,n:'Good Friday',y:2026},{m:3,d:26,n:'Good Friday',y:2027},
+      {m:4,d:21,n:'Easter Monday',y:2025},{m:4,d:6,n:'Easter Monday',y:2026},{m:3,d:29,n:'Easter Monday',y:2027},
+      {m:5,d:5,n:'Early May Bank Holiday',y:2025},{m:5,d:4,n:'Early May Bank Holiday',y:2026},{m:5,d:3,n:'Early May Bank Holiday',y:2027},
+      {m:5,d:26,n:'Spring Bank Holiday',y:2025},{m:5,d:25,n:'Spring Bank Holiday',y:2026},{m:5,d:31,n:'Spring Bank Holiday',y:2027},
+      {m:8,d:25,n:'Summer Bank Holiday',y:2025},{m:8,d:31,n:'Summer Bank Holiday',y:2026},{m:8,d:30,n:'Summer Bank Holiday',y:2027},
+      {m:12,d:25,n:'Christmas Day'},{m:12,d:26,n:'Boxing Day'}
+    ],
+    DE: [
+      {m:1,d:1,n:'Neujahr'},{m:4,d:18,n:'Karfreitag',y:2025},{m:4,d:3,n:'Karfreitag',y:2026},{m:3,d:26,n:'Karfreitag',y:2027},
+      {m:4,d:21,n:'Ostermontag',y:2025},{m:4,d:6,n:'Ostermontag',y:2026},{m:3,d:29,n:'Ostermontag',y:2027},
+      {m:5,d:1,n:'Tag der Arbeit'},{m:5,d:29,n:'Christi Himmelfahrt',y:2025},{m:5,d:14,n:'Christi Himmelfahrt',y:2026},{m:5,d:6,n:'Christi Himmelfahrt',y:2027},
+      {m:6,d:9,n:'Pfingstmontag',y:2025},{m:5,d:25,n:'Pfingstmontag',y:2026},{m:5,d:17,n:'Pfingstmontag',y:2027},
+      {m:10,d:3,n:'Tag der Deutschen Einheit'},{m:12,d:25,n:'Weihnachten'},{m:12,d:26,n:'2. Weihnachtstag'}
+    ],
+    FR: [
+      {m:1,d:1,n:'Jour de l\'An'},{m:4,d:21,n:'Lundi de Pâques',y:2025},{m:4,d:6,n:'Lundi de Pâques',y:2026},{m:3,d:29,n:'Lundi de Pâques',y:2027},
+      {m:5,d:1,n:'Fête du Travail'},{m:5,d:8,n:'Victoire 1945'},{m:5,d:29,n:'Ascension',y:2025},{m:5,d:14,n:'Ascension',y:2026},{m:5,d:6,n:'Ascension',y:2027},
+      {m:7,d:14,n:'Fête Nationale'},{m:8,d:15,n:'Assomption'},{m:11,d:1,n:'Toussaint'},{m:11,d:11,n:'Armistice'},
+      {m:12,d:25,n:'Noël'}
+    ],
+    ES: [
+      {m:1,d:1,n:'Año Nuevo'},{m:1,d:6,n:'Epifanía'},{m:4,d:18,n:'Viernes Santo',y:2025},{m:4,d:3,n:'Viernes Santo',y:2026},{m:3,d:26,n:'Viernes Santo',y:2027},
+      {m:5,d:1,n:'Día del Trabajador'},{m:8,d:15,n:'Asunción de la Virgen'},{m:10,d:12,n:'Fiesta Nacional'},
+      {m:11,d:1,n:'Todos los Santos'},{m:12,d:6,n:'Día de la Constitución'},{m:12,d:8,n:'Inmaculada Concepción'},{m:12,d:25,n:'Navidad'}
+    ],
+    IT: [
+      {m:1,d:1,n:'Capodanno'},{m:1,d:6,n:'Epifania'},{m:4,d:21,n:'Lunedì dell\'Angelo',y:2025},{m:4,d:6,n:'Lunedì dell\'Angelo',y:2026},{m:3,d:29,n:'Lunedì dell\'Angelo',y:2027},
+      {m:4,d:25,n:'Festa della Liberazione'},{m:5,d:1,n:'Festa del Lavoro'},{m:6,d:2,n:'Festa della Repubblica'},
+      {m:8,d:15,n:'Ferragosto'},{m:11,d:1,n:'Tutti i Santi'},{m:12,d:8,n:'Immacolata Concezione'},{m:12,d:25,n:'Natale'},{m:12,d:26,n:'Santo Stefano'}
+    ],
+    PT: [
+      {m:1,d:1,n:'Ano Novo'},{m:4,d:18,n:'Sexta-feira Santa',y:2025},{m:4,d:3,n:'Sexta-feira Santa',y:2026},{m:3,d:26,n:'Sexta-feira Santa',y:2027},
+      {m:4,d:20,n:'Domingo de Páscoa',y:2025},{m:4,d:5,n:'Domingo de Páscoa',y:2026},{m:3,d:28,n:'Domingo de Páscoa',y:2027},
+      {m:4,d:25,n:'Dia da Liberdade'},{m:5,d:1,n:'Dia do Trabalhador'},{m:6,d:10,n:'Dia de Portugal'},
+      {m:6,d:19,n:'Corpo de Deus',y:2025},{m:6,d:4,n:'Corpo de Deus',y:2026},{m:5,d:27,n:'Corpo de Deus',y:2027},
+      {m:8,d:15,n:'Assunção de Nossa Senhora'},{m:10,d:5,n:'Implantação da República'},{m:11,d:1,n:'Todos os Santos'},
+      {m:12,d:1,n:'Restauração da Independência'},{m:12,d:8,n:'Imaculada Conceição'},{m:12,d:25,n:'Natal'}
+    ],
+    GR: [
+      {m:1,d:1,n:'New Year\'s Day'},{m:1,d:6,n:'Epiphany'},{m:3,d:3,n:'Clean Monday',y:2025},{m:2,d:23,n:'Clean Monday',y:2026},{m:3,d:15,n:'Clean Monday',y:2027},
+      {m:3,d:25,n:'Independence Day'},{m:4,d:18,n:'Orthodox Good Friday',y:2025},{m:4,d:10,n:'Orthodox Good Friday',y:2026},{m:4,d:30,n:'Orthodox Good Friday',y:2027},
+      {m:4,d:20,n:'Orthodox Easter',y:2025},{m:4,d:12,n:'Orthodox Easter',y:2026},{m:5,d:2,n:'Orthodox Easter',y:2027},
+      {m:4,d:21,n:'Easter Monday',y:2025},{m:4,d:13,n:'Easter Monday',y:2026},{m:5,d:3,n:'Easter Monday',y:2027},
+      {m:5,d:1,n:'Labour Day'},{m:6,d:9,n:'Whit Monday',y:2025},{m:6,d:1,n:'Whit Monday',y:2026},{m:6,d:21,n:'Whit Monday',y:2027},
+      {m:8,d:15,n:'Assumption'},{m:10,d:28,n:'Ochi Day'},{m:12,d:25,n:'Christmas'},{m:12,d:26,n:'Second Day of Christmas'}
+    ],
+    RO: [
+      {m:1,d:1,n:'Anul Nou'},{m:1,d:2,n:'Anul Nou (zi 2)'},{m:1,d:24,n:'Ziua Unirii'},
+      {m:4,d:18,n:'Vinerea Mare',y:2025},{m:4,d:10,n:'Vinerea Mare',y:2026},{m:4,d:30,n:'Vinerea Mare',y:2027},
+      {m:4,d:20,n:'Paștele',y:2025},{m:4,d:12,n:'Paștele',y:2026},{m:5,d:2,n:'Paștele',y:2027},
+      {m:4,d:21,n:'Paștele (zi 2)',y:2025},{m:4,d:13,n:'Paștele (zi 2)',y:2026},{m:5,d:3,n:'Paștele (zi 2)',y:2027},
+      {m:5,d:1,n:'Ziua Muncii'},{m:6,d:1,n:'Ziua Copilului'},
+      {m:6,d:8,n:'Rusalii',y:2025},{m:5,d:31,n:'Rusalii',y:2026},{m:6,d:20,n:'Rusalii',y:2027},
+      {m:6,d:9,n:'Rusalii (zi 2)',y:2025},{m:6,d:1,n:'Rusalii (zi 2)',y:2026},{m:6,d:21,n:'Rusalii (zi 2)',y:2027},
+      {m:8,d:15,n:'Adormirea Maicii Domnului'},{m:11,d:30,n:'Sfântul Andrei'},{m:12,d:1,n:'Ziua Națională'},
+      {m:12,d:25,n:'Crăciunul'},{m:12,d:26,n:'Crăciunul (zi 2)'}
+    ],
+    HU: [
+      {m:1,d:1,n:'Újév'},{m:3,d:15,n:'Nemzeti ünnep'},
+      {m:4,d:18,n:'Nagypéntek',y:2025},{m:4,d:3,n:'Nagypéntek',y:2026},{m:3,d:26,n:'Nagypéntek',y:2027},
+      {m:4,d:21,n:'Húsvéthétfő',y:2025},{m:4,d:6,n:'Húsvéthétfő',y:2026},{m:3,d:29,n:'Húsvéthétfő',y:2027},
+      {m:5,d:1,n:'A munka ünnepe'},
+      {m:6,d:9,n:'Pünkösdhétfő',y:2025},{m:5,d:25,n:'Pünkösdhétfő',y:2026},{m:5,d:17,n:'Pünkösdhétfő',y:2027},
+      {m:8,d:20,n:'Szent István'},{m:10,d:23,n:'Nemzeti ünnep'},{m:11,d:1,n:'Mindenszentek'},
+      {m:12,d:25,n:'Karácsony'},{m:12,d:26,n:'Karácsony (2. nap)'}
+    ],
+    MX: [
+      {m:1,d:1,n:'Año Nuevo'},{m:2,d:3,n:'Día de la Constitución',y:2025},{m:2,d:2,n:'Día de la Constitución',y:2026},
+      {m:3,d:17,n:'Natalicio de Benito Juárez',y:2025},{m:3,d:16,n:'Natalicio de Benito Juárez',y:2026},
+      {m:5,d:1,n:'Día del Trabajo'},{m:9,d:16,n:'Día de la Independencia'},{m:11,d:17,n:'Revolución Mexicana',y:2025},{m:11,d:16,n:'Revolución Mexicana',y:2026},
+      {m:12,d:25,n:'Navidad'}
+    ],
+    AU: [
+      {m:1,d:1,n:'New Year\'s Day'},{m:1,d:26,n:'Australia Day'},
+      {m:4,d:18,n:'Good Friday',y:2025},{m:4,d:3,n:'Good Friday',y:2026},{m:3,d:26,n:'Good Friday',y:2027},
+      {m:4,d:21,n:'Easter Monday',y:2025},{m:4,d:6,n:'Easter Monday',y:2026},{m:3,d:29,n:'Easter Monday',y:2027},
+      {m:4,d:25,n:'Anzac Day'},{m:12,d:25,n:'Christmas Day'},{m:12,d:26,n:'Boxing Day'}
+    ],
+    IN: [
+      {m:1,d:26,n:'Republic Day'},{m:3,d:14,n:'Holi',y:2025},{m:3,d:4,n:'Holi',y:2026},
+      {m:8,d:15,n:'Independence Day'},{m:10,d:2,n:'Gandhi Jayanti'},
+      {m:10,d:20,n:'Diwali',y:2025},{m:11,d:8,n:'Diwali',y:2026},{m:10,d:29,n:'Diwali',y:2027},
+      {m:12,d:25,n:'Christmas Day'}
+    ]
+  };
+
+  // ── Peak wedding season by country ──
+  var peakSeasons = {
+    US: {peak:[5,6,9,10],off:[1,2,3],label:'May-Jun & Sep-Oct'},
+    GB: {peak:[5,6,7,8],off:[11,12,1,2],label:'May-Aug'},
+    DE: {peak:[5,6,7,8,9],off:[11,12,1,2],label:'May-Sep'},
+    FR: {peak:[5,6,7,8,9],off:[11,12,1,2],label:'May-Sep'},
+    ES: {peak:[5,6,9,10],off:[7,8,12,1,2],label:'May-Jun & Sep-Oct'},
+    IT: {peak:[5,6,9,10],off:[7,8,12,1,2],label:'May-Jun & Sep-Oct'},
+    PT: {peak:[5,6,7,9],off:[11,12,1,2],label:'May-Jul & Sep'},
+    GR: {peak:[5,6,9,10],off:[11,12,1,2],label:'May-Jun & Sep-Oct'},
+    RO: {peak:[5,6,7,8,9],off:[11,12,1,2],label:'May-Sep'},
+    HU: {peak:[5,6,7,8,9],off:[11,12,1,2],label:'May-Sep'},
+    MX: {peak:[10,11,12],off:[6,7,8,9],label:'Oct-Dec (dry season)'},
+    AU: {peak:[10,11,12,1,2,3],off:[6,7,8],label:'Oct-Mar (southern summer)'},
+    IN: {peak:[11,12,1,2],off:[6,7,8,9],label:'Nov-Feb (winter)'}
+  };
+
+  // ── Weather by country/month (brief practical note) ──
+  var weather = {
+    US: {1:'Cold in most regions, snow likely',2:'Cold, unpredictable',3:'Transition month, variable',4:'Mild but rainy',5:'Pleasant, great for weddings',6:'Warm, popular month',7:'Hot, peak summer',8:'Hot and humid in many areas',9:'Beautiful early autumn',10:'Gorgeous fall colours',11:'Cooling down, some rain',12:'Cold, holiday season'},
+    GB: {1:'Cold and dark',2:'Cold, short days',3:'Cool, spring beginning',4:'Mild but showery',5:'Pleasant, longer days',6:'Warm, long daylight',7:'Warmest month',8:'Warm, can be rainy',9:'Mild, autumn starting',10:'Cool, shorter days',11:'Dark and damp',12:'Cold and dark'},
+    DE: {1:'Cold, possible snow',2:'Cold, still winter',3:'Cool, spring arriving',4:'Mild, changeable',5:'Pleasant and green',6:'Warm, lovely weather',7:'Warmest month',8:'Warm, some thunderstorms',9:'Mild, beautiful autumn',10:'Cool, colourful foliage',11:'Grey and damp',12:'Cold, Christmas markets'},
+    FR: {1:'Cold in north, mild in south',2:'Cold but brightening',3:'Spring arriving, mild',4:'Pleasant, some rain',5:'Beautiful across France',6:'Warm, long days',7:'Hot, especially south',8:'Hot, many French on holiday',9:'Warm and golden',10:'Mild, harvest season',11:'Cool and grey',12:'Cold, festive season'},
+    ES: {1:'Mild in south, cold in north',2:'Mild, almond blossoms',3:'Spring arriving',4:'Pleasant temperatures',5:'Warm and beautiful',6:'Hot in south, warm in north',7:'Very hot (35-40\u00b0C+)',8:'Very hot, most locals on holiday',9:'Warm and pleasant',10:'Mild and beautiful',11:'Cool, some rain',12:'Cool but mild in south'},
+    IT: {1:'Cold in north, mild in south',2:'Cool, carnival season',3:'Spring arriving',4:'Pleasant, some rain',5:'Beautiful weather',6:'Warm, long days',7:'Very hot',8:'Very hot, Ferragosto closures',9:'Warm and golden',10:'Mild, grape harvest',11:'Cool and rainy',12:'Cold, festive season'},
+    PT: {1:'Mild and rainy',2:'Mild, some rain',3:'Spring weather',4:'Pleasant and warming',5:'Warm and dry',6:'Hot and sunny',7:'Very hot and dry',8:'Hot, peak tourist season',9:'Warm, great weather',10:'Mild and pleasant',11:'Cool and rainy',12:'Mild and rainy'},
+    GR: {1:'Cool and rainy',2:'Cool, spring approaching',3:'Mild, wildflowers',4:'Pleasant and warm',5:'Beautiful, warm',6:'Hot, dry',7:'Very hot',8:'Very hot, peak tourism',9:'Warm, less crowded',10:'Mild and lovely',11:'Cool, some rain',12:'Cool and rainy'},
+    RO: {1:'Cold, possible snow',2:'Cold, still winter',3:'Cool, spring starting',4:'Mild and pleasant',5:'Warm, beautiful',6:'Warm to hot',7:'Hot, peak summer',8:'Hot, possible heatwaves',9:'Warm, lovely autumn',10:'Cool, colourful',11:'Cold, grey',12:'Cold, snow possible'},
+    HU: {1:'Cold, possible snow',2:'Cold, still winter',3:'Cool, spring arriving',4:'Mild, pleasant',5:'Warm and beautiful',6:'Warm to hot',7:'Hot, peak summer',8:'Hot, possible storms',9:'Warm, golden autumn',10:'Cool, wine season',11:'Cold, grey',12:'Cold, Christmas markets'},
+    MX: {1:'Dry, mild to warm',2:'Dry and warm',3:'Dry, warming up',4:'Hot, dry season ending',5:'Start of rainy season',6:'Rainy season',7:'Rainy season',8:'Rainy season',9:'Rainy, hurricane risk',10:'Rain easing',11:'Dry season begins',12:'Dry, pleasant'},
+    AU: {1:'Hot summer',2:'Hot summer',3:'Warm autumn starting',4:'Mild autumn',5:'Cool, autumn',6:'Cold winter',7:'Cold winter',8:'Cold winter',9:'Spring arriving',10:'Warm spring',11:'Warm, approaching summer',12:'Hot summer'},
+    IN: {1:'Cool, dry (best)',2:'Warming up, dry',3:'Getting hot',4:'Hot',5:'Very hot',6:'Monsoon begins',7:'Heavy monsoon',8:'Heavy monsoon',9:'Monsoon easing',10:'Post-monsoon, pleasant',11:'Cool, dry (wedding season)',12:'Cool, dry (wedding season)'}
+  };
+
+  // ── Cultural & religious dates 2025-2027 ──
+  var culturalDates = [
+    // Jewish (approximate - based on Hebrew calendar)
+    {start:'2025-09-22',end:'2025-09-24',n:'Rosh Hashanah',t:'jewish'},
+    {start:'2025-10-01',end:'2025-10-02',n:'Yom Kippur',t:'jewish'},
+    {start:'2025-10-06',end:'2025-10-13',n:'Sukkot',t:'jewish'},
+    {start:'2025-04-12',end:'2025-04-20',n:'Passover',t:'jewish'},
+    {start:'2026-09-11',end:'2026-09-13',n:'Rosh Hashanah',t:'jewish'},
+    {start:'2026-09-20',end:'2026-09-21',n:'Yom Kippur',t:'jewish'},
+    {start:'2026-09-25',end:'2026-10-02',n:'Sukkot',t:'jewish'},
+    {start:'2026-04-01',end:'2026-04-09',n:'Passover',t:'jewish'},
+    {start:'2027-10-02',end:'2027-10-04',n:'Rosh Hashanah',t:'jewish'},
+    {start:'2027-10-11',end:'2027-10-12',n:'Yom Kippur',t:'jewish'},
+    {start:'2027-10-16',end:'2027-10-23',n:'Sukkot',t:'jewish'},
+    {start:'2027-04-21',end:'2027-04-29',n:'Passover',t:'jewish'},
+
+    // Chinese
+    {start:'2025-01-29',end:'2025-02-12',n:'Chinese New Year (Snake)',t:'chinese'},
+    {start:'2026-02-17',end:'2026-03-03',n:'Chinese New Year (Horse)',t:'chinese'},
+    {start:'2027-02-06',end:'2027-02-20',n:'Chinese New Year (Goat)',t:'chinese'},
+    {start:'2025-08-10',end:'2025-09-06',n:'Ghost Month (avoid weddings)',t:'chinese'},
+    {start:'2026-07-31',end:'2026-08-27',n:'Ghost Month (avoid weddings)',t:'chinese'},
+    {start:'2027-08-19',end:'2027-09-16',n:'Ghost Month (avoid weddings)',t:'chinese'},
+
+    // Hindu
+    {start:'2025-10-20',end:'2025-10-24',n:'Diwali',t:'hindu'},
+    {start:'2026-11-08',end:'2026-11-12',n:'Diwali',t:'hindu'},
+    {start:'2027-10-29',end:'2027-11-02',n:'Diwali',t:'hindu'},
+    {start:'2025-07-16',end:'2025-08-12',n:'Shravan (auspicious for weddings)',t:'hindu'},
+    {start:'2026-07-06',end:'2026-08-02',n:'Shravan (auspicious for weddings)',t:'hindu'},
+    {start:'2025-04-06',end:'2025-04-14',n:'Chaitra Navratri',t:'hindu'},
+    {start:'2026-03-26',end:'2026-04-03',n:'Chaitra Navratri',t:'hindu'},
+
+    // Muslim (approximate - based on Islamic lunar calendar)
+    {start:'2025-02-28',end:'2025-03-30',n:'Ramadan',t:'muslim'},
+    {start:'2026-02-17',end:'2026-03-19',n:'Ramadan',t:'muslim'},
+    {start:'2027-02-07',end:'2027-03-08',n:'Ramadan',t:'muslim'},
+    {start:'2025-03-30',end:'2025-04-01',n:'Eid al-Fitr',t:'muslim'},
+    {start:'2026-03-19',end:'2026-03-21',n:'Eid al-Fitr',t:'muslim'},
+    {start:'2027-03-08',end:'2027-03-10',n:'Eid al-Fitr',t:'muslim'},
+    {start:'2025-06-06',end:'2025-06-08',n:'Eid al-Adha',t:'muslim'},
+    {start:'2026-05-26',end:'2026-05-28',n:'Eid al-Adha',t:'muslim'},
+    {start:'2027-05-16',end:'2027-05-18',n:'Eid al-Adha',t:'muslim'}
+  ];
+
+  // ── Helpers ──
+  function dayName(d){return ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][d.getDay()];}
+
+  function isLeapYear(y){return (y%4===0 && y%100!==0) || y%400===0;}
+
+  function isFriday13(d){return d.getDay()===5 && d.getDate()===13;}
+
+  function numerology(d){
+    var s=(d.getFullYear()+''+(d.getMonth()+1)+''+d.getDate()).split('').reduce(function(a,b){return a+parseInt(b);},0);
+    while(s>9&&s!==11&&s!==22)s=(''+s).split('').reduce(function(a,b){return a+parseInt(b);},0);
+    var meanings={1:'New beginnings, leadership, independence',2:'Partnership, balance, harmony \u2014 ideal for weddings',3:'Creativity, joy, celebration',4:'Stability, foundation, structure',5:'Change, adventure, freedom',6:'Love, family, responsibility \u2014 the "marriage number"',7:'Spirituality, introspection, depth',8:'Abundance, prosperity, success',9:'Completion, wisdom, generosity',11:'Master number: spiritual connection and intuition',22:'Master number: building dreams into reality'};
+    return {number:s,meaning:meanings[s]||''};
+  }
+
+  function getHoliday(date,country){
+    var list=holidays[country]||[];
+    var m=date.getMonth()+1,d=date.getDate(),y=date.getFullYear();
+    for(var i=0;i<list.length;i++){
+      if(list[i].m===m&&list[i].d===d&&(!list[i].y||list[i].y===y))return list[i].n;
+    }
+    return null;
+  }
+
+  function getCulturalDates(date){
+    var ds=date.toISOString().split('T')[0];
+    var matches=[];
+    for(var i=0;i<culturalDates.length;i++){
+      if(ds>=culturalDates[i].start&&ds<=culturalDates[i].end)matches.push(culturalDates[i]);
+    }
+    return matches;
+  }
+
+  // ── School holidays by country (approximate, varies by region) ──
+  var schoolHols = {
+    US: [
+      {s:[6,10],e:[8,25],n:'Summer break'},{s:[12,20],e:[1,3],n:'Winter break'},{s:[3,15],e:[3,25],n:'Spring break'}
+    ],
+    GB: [
+      {s:[7,20],e:[9,3],n:'Summer holidays'},{s:[12,20],e:[1,5],n:'Christmas holidays'},{s:[3,29],e:[4,13],n:'Easter holidays'},
+      {s:[2,17],e:[2,21],n:'February half-term'},{s:[5,26],e:[5,30],n:'May half-term'},{s:[10,27],e:[10,31],n:'October half-term'}
+    ],
+    DE: [
+      {s:[6,25],e:[9,5],n:'Sommerferien'},{s:[12,23],e:[1,6],n:'Weihnachtsferien'},{s:[3,24],e:[4,5],n:'Osterferien'},
+      {s:[10,13],e:[10,25],n:'Herbstferien'}
+    ],
+    FR: [
+      {s:[7,5],e:[9,1],n:'Vacances d\'été'},{s:[12,20],e:[1,5],n:'Vacances de Noël'},{s:[2,8],e:[3,10],n:'Vacances d\'hiver'},
+      {s:[4,5],e:[5,5],n:'Vacances de printemps'},{s:[10,18],e:[11,3],n:'Vacances de la Toussaint'}
+    ],
+    ES: [
+      {s:[6,20],e:[9,10],n:'Vacaciones de verano'},{s:[12,22],e:[1,7],n:'Vacaciones de Navidad'},
+      {s:[3,28],e:[4,7],n:'Semana Santa'}
+    ],
+    IT: [
+      {s:[6,10],e:[9,10],n:'Vacanze estive'},{s:[12,23],e:[1,6],n:'Vacanze di Natale'},
+      {s:[4,17],e:[4,22],n:'Vacanze di Pasqua'}
+    ],
+    PT: [
+      {s:[6,15],e:[9,12],n:'Férias de verão'},{s:[12,18],e:[1,3],n:'Férias de Natal'},
+      {s:[3,28],e:[4,7],n:'Férias da Páscoa'}
+    ],
+    GR: [
+      {s:[6,15],e:[9,10],n:'Summer holidays'},{s:[12,23],e:[1,7],n:'Christmas holidays'},
+      {s:[4,14],e:[4,28],n:'Easter holidays'}
+    ],
+    RO: [
+      {s:[6,14],e:[9,8],n:'Vacanța de vară'},{s:[12,20],e:[1,6],n:'Vacanța de iarnă'},
+      {s:[4,18],e:[4,27],n:'Vacanța de Paște'},{s:[10,25],e:[11,2],n:'Vacanța de toamnă'}
+    ],
+    HU: [
+      {s:[6,15],e:[8,31],n:'Nyári szünet'},{s:[12,22],e:[1,3],n:'Téli szünet'},
+      {s:[4,17],e:[4,22],n:'Tavaszi szünet'},{s:[10,27],e:[10,31],n:'Őszi szünet'}
+    ],
+    MX: [
+      {s:[7,1],e:[8,20],n:'Vacaciones de verano'},{s:[12,20],e:[1,7],n:'Vacaciones de invierno'},
+      {s:[3,28],e:[4,11],n:'Semana Santa'}
+    ],
+    AU: [
+      {s:[12,20],e:[1,28],n:'Summer holidays'},{s:[4,5],e:[4,21],n:'Autumn break'},
+      {s:[6,28],e:[7,13],n:'Winter break'},{s:[9,20],e:[10,6],n:'Spring break'}
+    ],
+    IN: [
+      {s:[5,1],e:[6,15],n:'Summer holidays'},{s:[10,10],e:[10,30],n:'Diwali/autumn break'},
+      {s:[12,25],e:[1,3],n:'Winter break'}
+    ]
+  };
+
+  function getSchoolHol(date,country){
+    var list=schoolHols[country]||[];
+    var m=date.getMonth()+1,d=date.getDate();
+    var matches=[];
+    for(var i=0;i<list.length;i++){
+      var h=list[i],sm=h.s[0],sd=h.s[1],em=h.e[0],ed=h.e[1];
+      // Handle cross-year holidays (e.g. Dec-Jan)
+      if(sm>em){
+        if((m>sm||(m===sm&&d>=sd))||(m<em||(m===em&&d<=ed)))matches.push(h.n);
+      }else{
+        if((m>sm||(m===sm&&d>=sd))&&(m<em||(m===em&&d<=ed)))matches.push(h.n);
+      }
+    }
+    return matches;
+  }
+
+  function isShabbat(d){return d.getDay()===6;}
+
+  // ── Build a result card ──
+  function card(icon,title,status,detail){
+    var cls=status==='green'?'dc-card-green':status==='yellow'?'dc-card-yellow':status==='red'?'dc-card-red':'dc-card-neutral';
+    return '<div class="dc-card '+cls+'"><div class="dc-card-icon">'+icon+'</div><div class="dc-card-body"><h4 class="dc-card-title">'+title+'</h4><p class="dc-card-detail">'+detail+'</p></div></div>';
+  }
+
+  // ── Main check ──
+  document.getElementById('checkBtn').addEventListener('click', function(){
+    var dateVal=document.getElementById('dateInput').value;
+    var country=document.getElementById('countryInput').value;
+    if(!dateVal)return;
+
+    var parts=dateVal.split('-');
+    var date=new Date(parseInt(parts[0]),parseInt(parts[1])-1,parseInt(parts[2]));
+    var m=date.getMonth()+1,y=date.getFullYear(),d=date.getDate();
+    var cards='';
+    var issues=0,warnings=0,goods=0;
+
+    // 1. Weather
+    var wx=weather[country]?weather[country][m]:'No weather data available for this country.';
+    var wxStatus='neutral';
+    if(wx.match(/very hot|monsoon|hurricane|snow|cold and dark/i))wxStatus='yellow';
+    else if(wx.match(/beautiful|pleasant|gorgeous|lovely|great|best/i))wxStatus='green';
+    cards+=card('\u{2600}\uFE0F','Weather Outlook',wxStatus,wx);
+    if(wxStatus==='yellow')warnings++;else if(wxStatus==='green')goods++;
+
+    // 2. Public holiday
+    var hol=getHoliday(date,country);
+    if(hol){
+      cards+=card('\u{1F6A8}','Public Holiday: '+hol,'red','Your date falls on a public holiday. Venues may be closed or charge premium rates. Guests may have travel plans. Municipality offices are often closed for civil ceremonies.');
+      issues++;
+    }else{
+      cards+=card('\u2705','No Public Holiday','green','Your date does not fall on a national public holiday in the selected country.');
+      goods++;
+    }
+
+    // School holidays
+    var schHols=getSchoolHol(date,country);
+    if(schHols.length){
+      cards+=card('\u{1F392}','School Holiday: '+schHols.join(', '),'yellow','Your date falls during school holidays. Venues and travel will be busier and pricier. On the plus side, guests with children can attend more easily.');
+      warnings++;
+    }else{
+      cards+=card('\u{1F4DA}','No School Holiday','green','Your date is outside school holiday periods. Venues and travel should be at normal rates, but guests with school-age children may need to arrange time off.');
+      goods++;
+    }
+
+    // 4. Peak season
+    var ps=peakSeasons[country];
+    var psStatus,psDetail;
+    if(ps.peak.indexOf(m)>=0){psStatus='yellow';psDetail='This is peak wedding season ('+ps.label+'). Venues book up early and pricing is at its highest. Book well in advance.';warnings++;}
+    else if(ps.off.indexOf(m)>=0){psStatus='green';psDetail='This is off-season for weddings. You\'ll likely find better deals and more availability, but check the weather.';goods++;}
+    else{psStatus='green';psDetail='This is shoulder season \u2014 a sweet spot with good weather and reasonable pricing.';goods++;}
+    cards+=card('\u{1F4C8}','Wedding Season',psStatus,psDetail);
+
+    // 5. Friday the 13th
+    if(isFriday13(date)){
+      cards+=card('\u{1F3F4}','Friday the 13th','red','Your wedding falls on Friday the 13th. Considered unlucky in Western culture. Some guests may be superstitious \u2014 but venues may offer discounts!');
+      issues++;
+    }
+
+    // 6. Leap year
+    if(isLeapYear(y)){
+      var lpDetail='Your wedding is in a leap year. In some traditions (Irish, Scottish), leap years are considered extra lucky for weddings.';
+      if(m===2&&d===29)lpDetail='February 29 \u2014 a rare and unique anniversary date! You\'ll only celebrate on the actual date every 4 years, making it extra special.';
+      cards+=card('\u{1F4AB}','Leap Year','green',lpDetail);
+      goods++;
+    }
+
+    // 7. Shabbat (always relevant for Jewish guests)
+    if(isShabbat(date)){
+      cards+=card('\u2721\uFE0F','Shabbat (Jewish Sabbath)','yellow','Saturday is Shabbat. Observant Jewish guests cannot attend events from Friday sundown to Saturday sundown. Consider an evening ceremony after sunset, or choose Sunday.');
+      warnings++;
+    }
+
+    // 8. Cultural/religious dates
+    var cult=getCulturalDates(date);
+    if(cult.length){
+      var typeLabels={jewish:'Jewish',chinese:'Chinese',hindu:'Hindu',muslim:'Muslim'};
+      cult.forEach(function(c){
+        var isAvoid=c.n.match(/ghost month|ramadan|yom kippur/i);
+        var isGood=c.n.match(/shravan|auspicious|diwali/i);
+        var st=isAvoid?'red':isGood?'green':'yellow';
+        var det='';
+        if(c.t==='jewish')det='This date overlaps with '+c.n+'. Observant Jewish guests or family members may not be able to attend.';
+        if(c.t==='chinese'){
+          if(c.n.match(/ghost/i))det='Chinese Ghost Month \u2014 traditionally considered very inauspicious for weddings in Chinese culture. Most Chinese families strongly avoid this period.';
+          else det='This date falls during '+c.n+'. Festive period \u2014 venues and travel may be heavily booked in areas with Chinese communities.';
+        }
+        if(c.t==='hindu'){
+          if(c.n.match(/shravan/i))det='Shravan month is considered highly auspicious for Hindu weddings. An excellent choice if Hindu traditions matter to you.';
+          else det='This date overlaps with '+c.n+'. A significant Hindu celebration \u2014 consider how this affects your plans and guests.';
+        }
+        if(c.t==='muslim'){
+          if(c.n.match(/ramadan/i))det='This date falls during Ramadan. Muslim guests will be fasting during daylight. Consider an evening reception or a date outside Ramadan.';
+          else det='This date overlaps with '+c.n+'. A major Islamic celebration \u2014 Muslim guests may have family commitments.';
+        }
+        cards+=card(c.t==='jewish'?'\u2721\uFE0F':c.t==='chinese'?'\u{1F9E7}':c.t==='hindu'?'\u{1F6D5}':'\u262A\uFE0F',typeLabels[c.t]+': '+c.n,st,det);
+        if(st==='red')issues++;else if(st==='yellow')warnings++;else goods++;
+      });
+    }
+
+    // 9. Numerology
+    var num=numerology(date);
+    var numStatus=(num.number===2||num.number===6)?'green':'neutral';
+    cards+=card('\u{1F522}','Numerology: '+num.number,numStatus,'<strong>'+num.meaning+'</strong><br><span style="font-size:.85rem;color:#999">Numerology calculates a single-digit "life path" number from your date by adding all digits together repeatedly until one digit remains (e.g. 2026-09-15 \u2192 2+0+2+6+0+9+1+5 = 25 \u2192 2+5 = 7). Numbers 2 (partnership) and 6 (love &amp; family) are traditionally considered ideal for weddings. Master numbers 11 and 22 are kept unreduced.</span>');
+    if(numStatus==='green')goods++;
+
+    // 11. Days until wedding
+    var today=new Date();today.setHours(0,0,0,0);date.setHours(0,0,0,0);
+    var diff=Math.ceil((date-today)/(1000*60*60*24));
+    if(diff>0){
+      var months=Math.floor(diff/30);
+      var planStatus=diff<90?'red':diff<180?'yellow':'green';
+      var planDetail='';
+      if(diff<90)planDetail=diff+' days away ('+months+' months). This is very tight for planning. Venue and vendor availability will be limited.';
+      else if(diff<180)planDetail=diff+' days away ('+months+' months). Reasonable timeline, but start booking key vendors now.';
+      else planDetail=diff+' days away ('+months+' months). Great planning runway \u2014 you have time to secure the best vendors and deals.';
+      cards+=card('\u{23F3}','Planning Timeline',planStatus,planDetail);
+      if(planStatus==='red')issues++;else if(planStatus==='yellow')warnings++;else goods++;
+    }
+
+    // Build verdict
+    var verdictHtml='';
+    if(issues>0)verdictHtml='<div class="dc-verdict-box dc-verdict-caution"><strong>Heads up!</strong> We found '+issues+' potential issue'+(issues>1?'s':'')+' and '+warnings+' thing'+(warnings!==1?'s':'')+' to consider for this date. Review the details below.</div>';
+    else if(warnings>0)verdictHtml='<div class="dc-verdict-box dc-verdict-ok"><strong>Mostly clear!</strong> No major issues, but '+warnings+' thing'+(warnings!==1?'s':'')+' to keep in mind. Overall a solid date choice.</div>';
+    else verdictHtml='<div class="dc-verdict-box dc-verdict-great"><strong>Looks great!</strong> No holidays, no cultural conflicts, and good conditions. This date checks out well.</div>';
+
+    document.getElementById('dcVerdict').innerHTML=verdictHtml;
+    document.getElementById('dcGrid').innerHTML=cards;
+    document.getElementById('dcResults').style.display='block';
+    document.getElementById('dcResults').scrollIntoView({behavior:'smooth',block:'start'});
+  });
+
+})();
+</script>
+{{ end }}

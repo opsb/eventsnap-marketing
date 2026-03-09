@@ -42,6 +42,31 @@
         });
       }
 
+      // Nav dropdowns (desktop)
+      document.querySelectorAll('.nav-dropdown-toggle').forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          var dd = this.closest('.nav-dropdown');
+          var isOpen = dd.classList.contains('open');
+          document.querySelectorAll('.nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
+          if (!isOpen) dd.classList.add('open');
+          this.setAttribute('aria-expanded', !isOpen);
+        });
+      });
+      document.addEventListener('click', function() {
+        document.querySelectorAll('.nav-dropdown').forEach(function(d) { d.classList.remove('open'); });
+      });
+
+      // Mobile nav dropdown toggles
+      document.querySelectorAll('.mobile-nav-toggle').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var group = this.closest('.mobile-nav-group');
+          var isOpen = group.classList.contains('open');
+          group.classList.toggle('open');
+          this.setAttribute('aria-expanded', !isOpen);
+        });
+      });
+
       // FAQ accordions
       document.querySelectorAll('.faq-question').forEach(function(btn) {
         btn.addEventListener('click', function() {

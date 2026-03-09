@@ -5,7 +5,18 @@
     </a>
     <nav class="main-nav" aria-label="Main navigation">
       {{ range .Site.Menus.main }}
-        <a href="{{ .URL | absLangURL }}" class="nav-link{{ if $.IsMenuCurrent "main" . }} active{{ end }}">{{ .Name }}</a>
+        {{ if .HasChildren }}
+          <div class="nav-dropdown">
+            <button class="nav-link nav-dropdown-toggle" aria-expanded="false">{{ .Name }} <svg class="nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg></button>
+            <div class="nav-dropdown-menu">
+              {{ range .Children }}
+                <a href="{{ .URL | absLangURL }}" class="nav-dropdown-item">{{ .Name }}</a>
+              {{ end }}
+            </div>
+          </div>
+        {{ else }}
+          <a href="{{ .URL | absLangURL }}" class="nav-link{{ if $.IsMenuCurrent "main" . }} active{{ end }}">{{ .Name }}</a>
+        {{ end }}
       {{ end }}
       <a href="{{ "signin/" | relLangURL }}" class="nav-link nav-login">{{ i18n "login" }}</a>
     </nav>
@@ -19,7 +30,18 @@
   <div class="mobile-nav" aria-hidden="true">
     <nav>
       {{ range .Site.Menus.main }}
-        <a href="{{ .URL | absLangURL }}" class="mobile-nav-link">{{ .Name }}</a>
+        {{ if .HasChildren }}
+          <div class="mobile-nav-group">
+            <button class="mobile-nav-link mobile-nav-toggle" aria-expanded="false">{{ .Name }} <svg class="nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg></button>
+            <div class="mobile-nav-children">
+              {{ range .Children }}
+                <a href="{{ .URL | absLangURL }}" class="mobile-nav-link mobile-nav-child">{{ .Name }}</a>
+              {{ end }}
+            </div>
+          </div>
+        {{ else }}
+          <a href="{{ .URL | absLangURL }}" class="mobile-nav-link">{{ .Name }}</a>
+        {{ end }}
       {{ end }}
       <a href="{{ "signin/" | relLangURL }}" class="mobile-nav-link">{{ i18n "login" }}</a>
       <a href="{{ "pricing/" | relLangURL }}" class="btn btn-outline mobile-cta">{{ i18n "get_started" }}</a>
