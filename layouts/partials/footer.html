@@ -17,4 +17,12 @@
       </a>
     </div>
   </div>
+  <div class="footer-lang">
+    {{ range .Site.Languages }}
+    <a href="/{{ if ne .Lang "en" }}{{ .Lang }}/{{ end }}" class="footer-lang-option{{ if eq $.Site.Language.Lang .Lang }} active{{ end }}">
+      <span class="lang-flag">{{ .Params.languageFlag }}</span>
+      <span>{{ .LanguageName }}</span>
+    </a>
+    {{ end }}
+  </div>
 </footer>

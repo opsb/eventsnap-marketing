@@ -68,23 +68,6 @@
         observer.observe(el);
       });
 
-      // Language switcher
-      var langBtn = document.querySelector('.lang-switcher-btn');
-      var langDrop = document.querySelector('.lang-dropdown');
-      if (langBtn && langDrop) {
-        langBtn.addEventListener('click', function(e) {
-          e.stopPropagation();
-          var isOpen = langDrop.classList.contains('open');
-          langDrop.classList.toggle('open');
-          langBtn.setAttribute('aria-expanded', !isOpen);
-          langDrop.setAttribute('aria-hidden', isOpen);
-        });
-        document.addEventListener('click', function() {
-          langDrop.classList.remove('open');
-          langBtn.setAttribute('aria-expanded', 'false');
-          langDrop.setAttribute('aria-hidden', 'true');
-        });
-      }
     });
   </script>
 
