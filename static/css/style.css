@@ -2423,3 +2423,191 @@ ul { list-style: none; }
     padding: 1.2rem 1.2rem;
   }
 }
+
+/* ===================================================
+   Custom Date Picker (Figma-style dropdown calendar)
+   =================================================== */
+
+.dp-wrap {
+  position: relative;
+}
+
+.dp-trigger {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  background: var(--color-white);
+  cursor: pointer;
+}
+
+.dp-trigger span {
+  flex: 1;
+}
+
+.dp-chevron {
+  transition: transform var(--transition);
+  opacity: .4;
+}
+
+.dp-wrap.open .dp-chevron {
+  transform: rotate(180deg);
+}
+
+.dp-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 12px 40px rgba(0,0,0,.14), 0 2px 8px rgba(0,0,0,.06);
+  padding: 20px;
+  z-index: 200;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: opacity var(--transition), visibility var(--transition), transform var(--transition);
+}
+
+.dp-wrap.open .dp-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dp-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.dp-month {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-dark);
+}
+
+.dp-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: var(--color-light-gray);
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--color-dark);
+  transition: background var(--transition);
+}
+
+.dp-nav:hover {
+  background: var(--color-border);
+}
+
+.dp-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.dp-weekdays span {
+  font-family: var(--font-body);
+  font-size: .75rem;
+  font-weight: 600;
+  color: var(--color-gray);
+  text-transform: uppercase;
+  letter-spacing: .03em;
+  padding: 4px 0;
+}
+
+.dp-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.dp-day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 1;
+  border: none;
+  background: none;
+  border-radius: 50%;
+  font-family: var(--font-body);
+  font-size: .9rem;
+  color: var(--color-dark);
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+}
+
+.dp-day:hover {
+  background: var(--color-blush);
+}
+
+.dp-day.dp-other {
+  color: var(--color-border);
+}
+
+.dp-day.dp-today {
+  font-weight: 700;
+  box-shadow: inset 0 0 0 2px var(--color-border);
+}
+
+.dp-day.dp-selected {
+  background: var(--color-accent);
+  color: #fff;
+  font-weight: 700;
+}
+
+.dp-day.dp-selected:hover {
+  background: var(--color-accent-hover);
+}
+
+.dp-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--color-border);
+}
+
+.dp-today-btn {
+  font-family: var(--font-body);
+  font-size: .85rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 12px;
+  border-radius: 6px;
+  transition: background var(--transition);
+}
+
+.dp-today-btn:hover {
+  background: var(--color-blush);
+}
+
+@media (max-width: 768px) {
+  .dp-dropdown {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    padding: 24px 20px;
+    transform: translateY(20px);
+  }
+  .dp-wrap.open .dp-dropdown {
+    transform: translateY(0);
+  }
+}
