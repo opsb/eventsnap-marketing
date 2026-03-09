@@ -7,6 +7,14 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    (function() {
+      var s = 'denied', a = 'denied';
+      try {
+        var d = JSON.parse(localStorage.getItem('cookie_consent'));
+        if (d) { s = d.analytics ? 'granted' : 'denied'; a = d.marketing ? 'granted' : 'denied'; }
+      } catch(e) {}
+      gtag('consent', 'default', { 'analytics_storage': s, 'ad_storage': a });
+    })();
     gtag('js', new Date());
     gtag('config', 'G-31H5E2KGDC');
   </script>
@@ -60,6 +68,154 @@
         observer.observe(el);
       });
     });
+  </script>
+
+  <!-- Cookie Consent Banner -->
+  <div class="cookie-popup" id="cookiePopup" role="dialog" aria-label="Cookie consent">
+    <h2 class="cookie-popup-title">We care about your privacy</h2>
+    <p class="cookie-popup-text">We use cookies for analytics and improved functionality to improve your website experience.</p>
+    <div class="cookie-popup-actions">
+      <button class="cookie-btn cookie-btn--dark" id="cookieAcceptAll">Accept All</button>
+      <button class="cookie-btn cookie-btn--dark" id="cookieDecline">Decline non-essential</button>
+      <button class="cookie-btn cookie-btn--outline" id="cookieSettingsBtn">Cookie Settings</button>
+    </div>
+  </div>
+
+  <!-- Cookie Settings Modal -->
+  <div class="cookie-settings-overlay" id="cookieSettingsOverlay"></div>
+  <div class="cookie-settings" id="cookieSettings" role="dialog" aria-label="Cookie settings">
+    <div class="cookie-settings-header">
+      <h2 class="cookie-settings-title">Cookie Settings</h2>
+      <button class="cookie-settings-close" id="cookieSettingsClose" aria-label="Close">&times;</button>
+    </div>
+    <div class="cookie-settings-body">
+      <div class="cookie-category">
+        <div class="cookie-category-header">
+          <div class="cookie-category-left">
+            <label class="cookie-toggle">
+              <input type="checkbox" checked disabled />
+              <span class="cookie-toggle-slider cookie-toggle-slider--always"></span>
+            </label>
+            <span class="cookie-category-name">Functional cookies</span>
+          </div>
+          <a href="https://eventsnap.it/privacy-policy/" class="cookie-details-link">Details</a>
+        </div>
+        <p class="cookie-category-desc">These cookies are needed for our website to function providing essential features and security. They are always on but do not contain personally identifiable information (PII).</p>
+      </div>
+      <div class="cookie-category">
+        <div class="cookie-category-header">
+          <div class="cookie-category-left">
+            <label class="cookie-toggle">
+              <input type="checkbox" id="toggleAnalytics" />
+              <span class="cookie-toggle-slider"></span>
+            </label>
+            <span class="cookie-category-name">Analytics cookies</span>
+          </div>
+          <a href="https://eventsnap.it/privacy-policy/" class="cookie-details-link">Details</a>
+        </div>
+        <p class="cookie-category-desc">Analytics cookies help us understand our audience and deliver better content to them.</p>
+      </div>
+      <div class="cookie-category">
+        <div class="cookie-category-header">
+          <div class="cookie-category-left">
+            <label class="cookie-toggle">
+              <input type="checkbox" id="toggleMarketing" />
+              <span class="cookie-toggle-slider"></span>
+            </label>
+            <span class="cookie-category-name">Marketing cookies</span>
+          </div>
+          <a href="https://eventsnap.it/privacy-policy/" class="cookie-details-link">Details</a>
+        </div>
+        <p class="cookie-category-desc">Marketing cookies help us target our ads better. We mainly use them to target ads to users who have visited EventSnap.</p>
+      </div>
+    </div>
+    <button class="cookie-btn cookie-btn--dark" id="cookieSaveSettings">Save settings</button>
+  </div>
+
+  <script>
+    (function() {
+      var popup = document.getElementById('cookiePopup');
+      var settings = document.getElementById('cookieSettings');
+      var settingsOverlay = document.getElementById('cookieSettingsOverlay');
+      var stored = localStorage.getItem('cookie_consent');
+
+      // Clear legacy string format (e.g. "accepted"/"rejected")
+      if (stored && stored.charAt(0) !== '{') {
+        localStorage.removeItem('cookie_consent');
+        stored = null;
+      }
+
+      function showPopup() {
+        popup.classList.add('visible');
+      }
+
+      function hidePopup() {
+        popup.classList.remove('visible');
+      }
+
+      function showSettings() {
+        hidePopup();
+        settings.classList.add('visible');
+        settingsOverlay.classList.add('visible');
+      }
+
+      function hideSettings() {
+        settings.classList.remove('visible');
+        settingsOverlay.classList.remove('visible');
+      }
+
+      function applyConsent(analytics, marketing) {
+        var data = { analytics: analytics, marketing: marketing };
+        localStorage.setItem('cookie_consent', JSON.stringify(data));
+        if (typeof gtag === 'function') {
+          gtag('consent', 'update', {
+            'analytics_storage': analytics ? 'granted' : 'denied',
+            'ad_storage': marketing ? 'granted' : 'denied'
+          });
+        }
+      }
+
+      // Show popup if no consent stored
+      if (!stored) {
+        setTimeout(showPopup, 800);
+      } else {
+        try {
+          var data = JSON.parse(stored);
+          applyConsent(data.analytics, data.marketing);
+        } catch(e) {
+          // Legacy format — re-show popup
+          localStorage.removeItem('cookie_consent');
+          setTimeout(showPopup, 800);
+        }
+      }
+
+      // Accept All
+      document.getElementById('cookieAcceptAll').addEventListener('click', function() {
+        applyConsent(true, true);
+        hidePopup();
+      });
+
+      // Decline non-essential
+      document.getElementById('cookieDecline').addEventListener('click', function() {
+        applyConsent(false, false);
+        hidePopup();
+      });
+
+      // Cookie Settings button
+      document.getElementById('cookieSettingsBtn').addEventListener('click', showSettings);
+
+      // Close settings
+      document.getElementById('cookieSettingsClose').addEventListener('click', hideSettings);
+      settingsOverlay.addEventListener('click', hideSettings);
+
+      // Save settings
+      document.getElementById('cookieSaveSettings').addEventListener('click', function() {
+        var analytics = document.getElementById('toggleAnalytics').checked;
+        var marketing = document.getElementById('toggleMarketing').checked;
+        applyConsent(analytics, marketing);
+        hideSettings();
+      });
+    })();
   </script>
 </body>
 </html>
