@@ -2459,11 +2459,11 @@ ul { list-style: none; }
   position: absolute;
   top: calc(100% + 8px);
   left: 0;
-  right: 0;
+  width: 280px;
   background: var(--color-white);
   border-radius: var(--radius-lg);
   box-shadow: 0 12px 40px rgba(0,0,0,.14), 0 2px 8px rgba(0,0,0,.06);
-  padding: 20px;
+  padding: 16px;
   z-index: 200;
   opacity: 0;
   visibility: hidden;
@@ -2481,13 +2481,13 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .dp-month {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 1rem;
+  font-size: .85rem;
   color: var(--color-dark);
 }
 
@@ -2495,8 +2495,8 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   border: none;
   background: var(--color-light-gray);
   border-radius: 8px;
@@ -2518,7 +2518,7 @@ ul { list-style: none; }
 
 .dp-weekdays span {
   font-family: var(--font-body);
-  font-size: .75rem;
+  font-size: .7rem;
   font-weight: 600;
   color: var(--color-gray);
   text-transform: uppercase;
@@ -2529,7 +2529,7 @@ ul { list-style: none; }
 .dp-days {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 4px;
+  gap: 2px;
 }
 
 .dp-day {
@@ -2542,7 +2542,7 @@ ul { list-style: none; }
   background: none;
   border-radius: 50%;
   font-family: var(--font-body);
-  font-size: .9rem;
+  font-size: .8rem;
   color: var(--color-dark);
   cursor: pointer;
   transition: background var(--transition), color var(--transition);
@@ -2574,8 +2574,8 @@ ul { list-style: none; }
 .dp-footer {
   display: flex;
   justify-content: center;
-  margin-top: 12px;
-  padding-top: 12px;
+  margin-top: 8px;
+  padding-top: 8px;
   border-top: 1px solid var(--color-border);
 }
 
