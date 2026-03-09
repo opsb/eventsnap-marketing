@@ -1,0 +1,247 @@
+{{ define "main" }}
+<article class="page-single">
+
+<!-- Hero -->
+<section class="section bg-white">
+  <div class="container">
+    <div class="contact-header reveal">
+      <h1 class="section-title">Free Wedding Budget Calculator</h1>
+      <p class="contact-intro">Enter your guest count and wedding location to get a realistic, personalised budget breakdown &mdash; adjusted for local costs and per-guest pricing.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Calculator -->
+<section class="section bg-pink">
+  <div class="container">
+    <div class="calc-wrapper reveal">
+
+      <!-- Inputs -->
+      <div class="calc-inputs">
+        <div class="calc-field">
+          <label for="calcGuests">Number of Guests</label>
+          <div class="calc-range-row">
+            <input type="range" id="calcGuestsRange" min="10" max="500" value="100" step="5" />
+            <input type="number" id="calcGuests" min="10" max="500" value="100" class="calc-number" />
+          </div>
+        </div>
+        <div class="calc-field">
+          <label for="calcLocation">Wedding Location</label>
+          <select id="calcLocation" class="calc-select">
+            <optgroup label="United States">
+              <option value="us-ny">New York / New Jersey</option>
+              <option value="us-ca">California (LA / SF)</option>
+              <option value="us-fl">Florida</option>
+              <option value="us-tx">Texas</option>
+              <option value="us-il">Chicago / Illinois</option>
+              <option value="us-avg" selected>US &mdash; National Average</option>
+            </optgroup>
+            <optgroup label="Europe">
+              <option value="eu-uk">United Kingdom</option>
+              <option value="eu-fr">France</option>
+              <option value="eu-it">Italy</option>
+              <option value="eu-es">Spain</option>
+              <option value="eu-de">Germany</option>
+              <option value="eu-pt">Portugal</option>
+              <option value="eu-gr">Greece</option>
+              <option value="eu-ro">Romania</option>
+              <option value="eu-hu">Hungary</option>
+            </optgroup>
+            <optgroup label="Other">
+              <option value="ot-mx">Mexico</option>
+              <option value="ot-au">Australia</option>
+              <option value="ot-in">India (Metro)</option>
+            </optgroup>
+          </select>
+        </div>
+        <button id="calcBtn" class="btn btn-accent btn-full">Calculate My Budget</button>
+      </div>
+
+      <!-- Results (hidden by default) -->
+      <div class="calc-results" id="calcResults">
+
+        <div class="calc-total-card">
+          <span class="calc-total-label">Estimated Total Budget</span>
+          <span class="calc-total-amount" id="calcTotal">$0</span>
+          <span class="calc-total-sub" id="calcPerGuest">$0 per guest</span>
+        </div>
+
+        <!-- Chart -->
+        <div class="calc-chart-wrap">
+          <canvas id="calcChart" width="320" height="320"></canvas>
+        </div>
+
+        <!-- Breakdown table -->
+        <div class="calc-breakdown">
+          <h3>Budget Breakdown</h3>
+          <table class="calc-table">
+            <thead>
+              <tr><th>Category</th><th>%</th><th>Estimated Cost</th></tr>
+            </thead>
+            <tbody id="calcBody"></tbody>
+          </table>
+        </div>
+
+        <div class="calc-tips">
+          <h3>Money-Saving Tips</h3>
+          <ul id="calcTips"></ul>
+        </div>
+
+        <div class="calc-disclaimer">
+          <p><strong>Disclaimer:</strong> These estimates are based on average market data for your selected region and guest count. Actual costs vary based on specific vendors, season, day of the week, and personal preferences. Use this as a starting point for your planning.</p>
+        </div>
+
+        <div class="text-center" style="margin-top:2rem">
+          <a href="{{ "pricing/" | relLangURL }}" class="btn btn-accent">Capture Every Moment with EventSnap</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</article>
+
+<script>
+(function() {
+  // --- Location data: base cost (fixed) + per-guest cost, currency ---
+  var locations = {
+    'us-ny':  { base: 12000, perGuest: 280, currency: 'USD', symbol: '$', name: 'New York / New Jersey' },
+    'us-ca':  { base: 11000, perGuest: 260, currency: 'USD', symbol: '$', name: 'California' },
+    'us-fl':  { base: 8000,  perGuest: 190, currency: 'USD', symbol: '$', name: 'Florida' },
+    'us-tx':  { base: 7500,  perGuest: 175, currency: 'USD', symbol: '$', name: 'Texas' },
+    'us-il':  { base: 9000,  perGuest: 210, currency: 'USD', symbol: '$', name: 'Chicago / Illinois' },
+    'us-avg': { base: 8500,  perGuest: 200, currency: 'USD', symbol: '$', name: 'US Average' },
+    'eu-uk':  { base: 7500,  perGuest: 165, currency: 'GBP', symbol: '\u00a3', name: 'United Kingdom' },
+    'eu-fr':  { base: 7000,  perGuest: 155, currency: 'EUR', symbol: '\u20ac', name: 'France' },
+    'eu-it':  { base: 6500,  perGuest: 145, currency: 'EUR', symbol: '\u20ac', name: 'Italy' },
+    'eu-es':  { base: 5500,  perGuest: 120, currency: 'EUR', symbol: '\u20ac', name: 'Spain' },
+    'eu-de':  { base: 7000,  perGuest: 150, currency: 'EUR', symbol: '\u20ac', name: 'Germany' },
+    'eu-pt':  { base: 4500,  perGuest: 100, currency: 'EUR', symbol: '\u20ac', name: 'Portugal' },
+    'eu-gr':  { base: 4000,  perGuest: 95,  currency: 'EUR', symbol: '\u20ac', name: 'Greece' },
+    'eu-ro':  { base: 3000,  perGuest: 65,  currency: 'EUR', symbol: '\u20ac', name: 'Romania' },
+    'eu-hu':  { base: 3500,  perGuest: 70,  currency: 'EUR', symbol: '\u20ac', name: 'Hungary' },
+    'ot-mx':  { base: 4000,  perGuest: 85,  currency: 'USD', symbol: '$', name: 'Mexico' },
+    'ot-au':  { base: 9000,  perGuest: 210, currency: 'AUD', symbol: 'A$', name: 'Australia' },
+    'ot-in':  { base: 3500,  perGuest: 55,  currency: 'USD', symbol: '$', name: 'India (Metro)' }
+  };
+
+  // --- Budget categories: label, percentage, color ---
+  var categories = [
+    { label: 'Venue & Catering',        pct: 0.43, color: '#de2046' },
+    { label: 'Photography & Video',      pct: 0.12, color: '#f06292' },
+    { label: 'Music & Entertainment',    pct: 0.08, color: '#ff8a65' },
+    { label: 'Flowers & Decorations',    pct: 0.08, color: '#ffb74d' },
+    { label: 'Wedding Attire & Beauty',  pct: 0.07, color: '#aed581' },
+    { label: 'Stationery & Invitations', pct: 0.03, color: '#4fc3f7' },
+    { label: 'Transport & Accommodation',pct: 0.04, color: '#7986cb' },
+    { label: 'Wedding Cake & Desserts',  pct: 0.03, color: '#ce93d8' },
+    { label: 'Rings & Gifts',            pct: 0.04, color: '#80cbc4' },
+    { label: 'Miscellaneous / Buffer',   pct: 0.08, color: '#bcaaa4' }
+  ];
+
+  var tips = [
+    'Book your venue for an off-peak day (Friday or Sunday) to save 20-40% on venue hire.',
+    'Choose in-season flowers from local growers to cut floral costs significantly.',
+    'Consider a brunch or lunch reception \u2014 daytime catering is typically 30% cheaper.',
+    'Ask vendors about weekday or winter discounts if your schedule is flexible.',
+    'Use EventSnap instead of disposable cameras to capture candid guest photos for free!',
+    'Opt for a smaller tiered cake plus a sheet cake for serving to save on dessert costs.',
+    'DIY your stationery with free online templates \u2014 digital invites save postage too.',
+    'Limit the open bar to beer, wine and a signature cocktail to keep drink costs down.'
+  ];
+
+  // --- Sync slider and number input ---
+  var rangeInput = document.getElementById('calcGuestsRange');
+  var numberInput = document.getElementById('calcGuests');
+  rangeInput.addEventListener('input', function() { numberInput.value = this.value; });
+  numberInput.addEventListener('input', function() {
+    var v = Math.max(10, Math.min(500, parseInt(this.value) || 10));
+    this.value = v;
+    rangeInput.value = v;
+  });
+
+  // --- Format currency ---
+  function fmt(symbol, amount) {
+    return symbol + amount.toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+  }
+
+  // --- Draw doughnut chart (pure canvas, no library) ---
+  function drawChart(canvas, data, total, symbol) {
+    var ctx = canvas.getContext('2d');
+    var dpr = window.devicePixelRatio || 1;
+    var size = 320;
+    canvas.width = size * dpr;
+    canvas.height = size * dpr;
+    canvas.style.width = size + 'px';
+    canvas.style.height = size + 'px';
+    ctx.scale(dpr, dpr);
+
+    var cx = size / 2, cy = size / 2, r = 130, inner = 80;
+    var startAngle = -Math.PI / 2;
+
+    data.forEach(function(d) {
+      var sliceAngle = 2 * Math.PI * d.pct;
+      ctx.beginPath();
+      ctx.moveTo(cx + inner * Math.cos(startAngle), cy + inner * Math.sin(startAngle));
+      ctx.arc(cx, cy, r, startAngle, startAngle + sliceAngle);
+      ctx.arc(cx, cy, inner, startAngle + sliceAngle, startAngle, true);
+      ctx.closePath();
+      ctx.fillStyle = d.color;
+      ctx.fill();
+      startAngle += sliceAngle;
+    });
+
+    // Center text
+    ctx.fillStyle = '#202020';
+    ctx.font = '700 22px Comfortaa, cursive';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(fmt(symbol, total), cx, cy - 8);
+    ctx.font = '400 13px Afacad, sans-serif';
+    ctx.fillStyle = '#666';
+    ctx.fillText('estimated total', cx, cy + 16);
+  }
+
+  // --- Calculate ---
+  document.getElementById('calcBtn').addEventListener('click', function() {
+    var guests = parseInt(numberInput.value) || 100;
+    var loc = locations[document.getElementById('calcLocation').value];
+    var total = loc.base + (loc.perGuest * guests);
+    var perGuest = Math.round(total / guests);
+
+    // Show results
+    var results = document.getElementById('calcResults');
+    results.style.display = 'block';
+
+    document.getElementById('calcTotal').textContent = fmt(loc.symbol, total);
+    document.getElementById('calcPerGuest').textContent = fmt(loc.symbol, perGuest) + ' per guest \u00b7 ' + loc.name;
+
+    // Table
+    var tbody = document.getElementById('calcBody');
+    tbody.innerHTML = '';
+    categories.forEach(function(cat) {
+      var amount = Math.round(total * cat.pct);
+      var tr = document.createElement('tr');
+      tr.innerHTML = '<td><span class="calc-color-dot" style="background:' + cat.color + '"></span>' + cat.label + '</td><td>' + Math.round(cat.pct * 100) + '%</td><td>' + fmt(loc.symbol, amount) + '</td>';
+      tbody.appendChild(tr);
+    });
+
+    // Chart
+    drawChart(document.getElementById('calcChart'), categories, total, loc.symbol);
+
+    // Tips (show 4 random)
+    var tipsEl = document.getElementById('calcTips');
+    tipsEl.innerHTML = '';
+    var shuffled = tips.slice().sort(function() { return 0.5 - Math.random(); });
+    shuffled.slice(0, 4).forEach(function(t) {
+      var li = document.createElement('li');
+      li.textContent = t;
+      tipsEl.appendChild(li);
+    });
+
+    // Scroll to results
+    results.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+})();
+</script>
+{{ end }}
