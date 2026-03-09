@@ -5,8 +5,8 @@
 <section class="section bg-white">
   <div class="container">
     <div class="contact-header reveal">
-      <h1 class="section-title">Get in Touch</h1>
-      <p class="contact-intro">Whether you have a question about EventSnap, need help with your account, or want to explore a partnership, we'd love to hear from you. Check out our <a href="{{ "pricing/#faq" | relURL }}">FAQs</a> first — your answer might already be there!</p>
+      <h1 class="section-title">{{ i18n "contact_title" }}</h1>
+      <p class="contact-intro">{{ i18n "contact_intro" }} {{ printf (i18n "contact_faq_hint") ("pricing/#faq" | relLangURL) | safeHTML }}</p>
     </div>
     <div class="contact-methods reveal">
       <div class="contact-method">
@@ -37,8 +37,8 @@
 <!-- CTA -->
 <section class="section contact-cta">
   <div class="container text-center">
-    <h2 class="section-title reveal">Capture Every Moment, Relive Every Memory</h2>
-    <a href="{{ "pricing/" | relURL }}" class="btn btn-outline reveal">Sign up</a>
+    <h2 class="section-title reveal">{{ i18n "contact_cta_title" }}</h2>
+    <a href="{{ "pricing/" | relLangURL }}" class="btn btn-outline reveal">{{ i18n "sign_up" }}</a>
   </div>
 </section>
 

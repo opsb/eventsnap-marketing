@@ -1,6 +1,7 @@
 baseURL = 'https://eventsnap.it/'
-languageCode = 'en-us'
 title = 'EventSnap'
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = false
 
 [markup]
   [markup.goldmark]
@@ -13,49 +14,324 @@ title = 'EventSnap'
   instagramURL = 'https://www.instagram.com/eventsnap.it'
   tiktokURL = 'https://www.tiktok.com/@thebrideclub1'
 
-[menus]
-  [[menus.main]]
-    name = 'Home'
-    url = '/'
-    weight = 1
-  [[menus.main]]
-    name = 'Pricing'
-    url = '/pricing/'
-    weight = 2
-  [[menus.main]]
-    name = 'Blog'
-    url = '/blog/'
-    weight = 3
-  [[menus.main]]
-    name = 'Affiliate program'
-    url = '/affiliate-program/'
-    weight = 4
-  [[menus.main]]
-    name = 'Contact'
-    url = '/contact/'
-    weight = 5
+# ─── Languages ───────────────────────────────────────────
 
-  [[menus.footer]]
-    name = 'Home'
-    url = '/'
+[languages]
+
+  [languages.en]
+    languageCode = 'en-us'
+    languageName = 'English'
     weight = 1
-  [[menus.footer]]
-    name = 'Get Started'
-    url = '/pricing/'
+    [languages.en.params]
+      languageFlag = '🇬🇧'
+
+    [[languages.en.menus.main]]
+      name = 'Home'
+      url = '/'
+      weight = 1
+    [[languages.en.menus.main]]
+      name = 'Pricing'
+      url = '/pricing/'
+      weight = 2
+    [[languages.en.menus.main]]
+      name = 'Blog'
+      url = '/blog/'
+      weight = 3
+    [[languages.en.menus.main]]
+      name = 'Affiliate program'
+      url = '/affiliate-program/'
+      weight = 4
+    [[languages.en.menus.main]]
+      name = 'Contact'
+      url = '/contact/'
+      weight = 5
+
+    [[languages.en.menus.footer]]
+      name = 'Home'
+      url = '/'
+      weight = 1
+    [[languages.en.menus.footer]]
+      name = 'Get Started'
+      url = '/pricing/'
+      weight = 2
+    [[languages.en.menus.footer]]
+      name = 'Affiliate program'
+      url = '/affiliate-program/'
+      weight = 3
+    [[languages.en.menus.footer]]
+      name = 'Blog'
+      url = '/blog/'
+      weight = 4
+    [[languages.en.menus.footer]]
+      name = 'Contact'
+      url = '/contact/'
+      weight = 5
+    [[languages.en.menus.footer]]
+      name = 'Privacy policy'
+      url = '/privacy-policy/'
+      weight = 6
+
+  [languages.de]
+    languageCode = 'de'
+    languageName = 'Deutsch'
     weight = 2
-  [[menus.footer]]
-    name = 'Affiliate program'
-    url = '/affiliate-program/'
+    [languages.de.params]
+      languageFlag = '🇩🇪'
+
+    [[languages.de.menus.main]]
+      name = 'Startseite'
+      url = '/'
+      weight = 1
+    [[languages.de.menus.main]]
+      name = 'Preise'
+      url = '/pricing/'
+      weight = 2
+    [[languages.de.menus.main]]
+      name = 'Blog'
+      url = '/blog/'
+      weight = 3
+    [[languages.de.menus.main]]
+      name = 'Partnerprogramm'
+      url = '/affiliate-program/'
+      weight = 4
+    [[languages.de.menus.main]]
+      name = 'Kontakt'
+      url = '/contact/'
+      weight = 5
+
+    [[languages.de.menus.footer]]
+      name = 'Startseite'
+      url = '/'
+      weight = 1
+    [[languages.de.menus.footer]]
+      name = 'Jetzt starten'
+      url = '/pricing/'
+      weight = 2
+    [[languages.de.menus.footer]]
+      name = 'Partnerprogramm'
+      url = '/affiliate-program/'
+      weight = 3
+    [[languages.de.menus.footer]]
+      name = 'Blog'
+      url = '/blog/'
+      weight = 4
+    [[languages.de.menus.footer]]
+      name = 'Kontakt'
+      url = '/contact/'
+      weight = 5
+    [[languages.de.menus.footer]]
+      name = 'Datenschutz'
+      url = '/privacy-policy/'
+      weight = 6
+
+  [languages.es]
+    languageCode = 'es'
+    languageName = 'Español'
     weight = 3
-  [[menus.footer]]
-    name = 'Blog'
-    url = '/blog/'
+    [languages.es.params]
+      languageFlag = '🇪🇸'
+
+    [[languages.es.menus.main]]
+      name = 'Inicio'
+      url = '/'
+      weight = 1
+    [[languages.es.menus.main]]
+      name = 'Precios'
+      url = '/pricing/'
+      weight = 2
+    [[languages.es.menus.main]]
+      name = 'Blog'
+      url = '/blog/'
+      weight = 3
+    [[languages.es.menus.main]]
+      name = 'Programa de afiliados'
+      url = '/affiliate-program/'
+      weight = 4
+    [[languages.es.menus.main]]
+      name = 'Contacto'
+      url = '/contact/'
+      weight = 5
+
+    [[languages.es.menus.footer]]
+      name = 'Inicio'
+      url = '/'
+      weight = 1
+    [[languages.es.menus.footer]]
+      name = 'Comenzar'
+      url = '/pricing/'
+      weight = 2
+    [[languages.es.menus.footer]]
+      name = 'Programa de afiliados'
+      url = '/affiliate-program/'
+      weight = 3
+    [[languages.es.menus.footer]]
+      name = 'Blog'
+      url = '/blog/'
+      weight = 4
+    [[languages.es.menus.footer]]
+      name = 'Contacto'
+      url = '/contact/'
+      weight = 5
+    [[languages.es.menus.footer]]
+      name = 'Política de privacidad'
+      url = '/privacy-policy/'
+      weight = 6
+
+  [languages.ro]
+    languageCode = 'ro'
+    languageName = 'Română'
     weight = 4
-  [[menus.footer]]
-    name = 'Contact'
-    url = '/contact/'
+    [languages.ro.params]
+      languageFlag = '🇷🇴'
+
+    [[languages.ro.menus.main]]
+      name = 'Acasă'
+      url = '/'
+      weight = 1
+    [[languages.ro.menus.main]]
+      name = 'Prețuri'
+      url = '/pricing/'
+      weight = 2
+    [[languages.ro.menus.main]]
+      name = 'Blog'
+      url = '/blog/'
+      weight = 3
+    [[languages.ro.menus.main]]
+      name = 'Program afiliat'
+      url = '/affiliate-program/'
+      weight = 4
+    [[languages.ro.menus.main]]
+      name = 'Contact'
+      url = '/contact/'
+      weight = 5
+
+    [[languages.ro.menus.footer]]
+      name = 'Acasă'
+      url = '/'
+      weight = 1
+    [[languages.ro.menus.footer]]
+      name = 'Începe acum'
+      url = '/pricing/'
+      weight = 2
+    [[languages.ro.menus.footer]]
+      name = 'Program afiliat'
+      url = '/affiliate-program/'
+      weight = 3
+    [[languages.ro.menus.footer]]
+      name = 'Blog'
+      url = '/blog/'
+      weight = 4
+    [[languages.ro.menus.footer]]
+      name = 'Contact'
+      url = '/contact/'
+      weight = 5
+    [[languages.ro.menus.footer]]
+      name = 'Politica de confidențialitate'
+      url = '/privacy-policy/'
+      weight = 6
+
+  [languages.it]
+    languageCode = 'it'
+    languageName = 'Italiano'
     weight = 5
-  [[menus.footer]]
-    name = 'Privacy policy'
-    url = '/privacy-policy/'
+    [languages.it.params]
+      languageFlag = '🇮🇹'
+
+    [[languages.it.menus.main]]
+      name = 'Home'
+      url = '/'
+      weight = 1
+    [[languages.it.menus.main]]
+      name = 'Prezzi'
+      url = '/pricing/'
+      weight = 2
+    [[languages.it.menus.main]]
+      name = 'Blog'
+      url = '/blog/'
+      weight = 3
+    [[languages.it.menus.main]]
+      name = 'Programma affiliati'
+      url = '/affiliate-program/'
+      weight = 4
+    [[languages.it.menus.main]]
+      name = 'Contatti'
+      url = '/contact/'
+      weight = 5
+
+    [[languages.it.menus.footer]]
+      name = 'Home'
+      url = '/'
+      weight = 1
+    [[languages.it.menus.footer]]
+      name = 'Inizia ora'
+      url = '/pricing/'
+      weight = 2
+    [[languages.it.menus.footer]]
+      name = 'Programma affiliati'
+      url = '/affiliate-program/'
+      weight = 3
+    [[languages.it.menus.footer]]
+      name = 'Blog'
+      url = '/blog/'
+      weight = 4
+    [[languages.it.menus.footer]]
+      name = 'Contatti'
+      url = '/contact/'
+      weight = 5
+    [[languages.it.menus.footer]]
+      name = 'Privacy policy'
+      url = '/privacy-policy/'
+      weight = 6
+
+  [languages.hu]
+    languageCode = 'hu'
+    languageName = 'Magyar'
     weight = 6
+    [languages.hu.params]
+      languageFlag = '🇭🇺'
+
+    [[languages.hu.menus.main]]
+      name = 'Kezdőlap'
+      url = '/'
+      weight = 1
+    [[languages.hu.menus.main]]
+      name = 'Árak'
+      url = '/pricing/'
+      weight = 2
+    [[languages.hu.menus.main]]
+      name = 'Blog'
+      url = '/blog/'
+      weight = 3
+    [[languages.hu.menus.main]]
+      name = 'Affiliate program'
+      url = '/affiliate-program/'
+      weight = 4
+    [[languages.hu.menus.main]]
+      name = 'Kapcsolat'
+      url = '/contact/'
+      weight = 5
+
+    [[languages.hu.menus.footer]]
+      name = 'Kezdőlap'
+      url = '/'
+      weight = 1
+    [[languages.hu.menus.footer]]
+      name = 'Kezdés'
+      url = '/pricing/'
+      weight = 2
+    [[languages.hu.menus.footer]]
+      name = 'Affiliate program'
+      url = '/affiliate-program/'
+      weight = 3
+    [[languages.hu.menus.footer]]
+      name = 'Blog'
+      url = '/blog/'
+      weight = 4
+    [[languages.hu.menus.footer]]
+      name = 'Kapcsolat'
+      url = '/contact/'
+      weight = 5
+    [[languages.hu.menus.footer]]
+      name = 'Adatvédelmi irányelvek'
+      url = '/privacy-policy/'
+      weight = 6

@@ -4,9 +4,9 @@
 <section class="hero">
   <div class="container hero-grid">
     <div class="hero-content reveal">
-      <h1>Get Every Guest Photo From Your Wedding &mdash; Automatically</h1>
-      <p class="hero-subtitle">Your guests scan. They upload. You get every moment in one private album.</p>
-      <a href="{{ "pricing/" | relURL }}" class="btn btn-outline">Get started</a>
+      <h1>{{ i18n "hero_title" }}</h1>
+      <p class="hero-subtitle">{{ i18n "hero_subtitle" }}</p>
+      <a href="{{ "pricing/" | relLangURL }}" class="btn btn-outline">{{ i18n "hero_cta" }}</a>
     </div>
     <div class="hero-visual reveal">
       <img src="{{ "images/hero-dashboard.webp" | relURL }}" alt="EventSnap dashboard showing photo uploads and gallery" class="hero-image">
@@ -17,35 +17,35 @@
 <!-- 3 Steps -->
 <section class="section bg-pink">
   <div class="container">
-    <h2 class="section-title reveal">3 Simple Steps to Collect Every Memory</h2>
+    <h2 class="section-title reveal">{{ i18n "steps_title" }}</h2>
     <div class="steps-grid">
       <div class="step-card reveal">
         <div class="step-number">1</div>
         <div class="step-image">
           <img src="{{ "images/step-dashboard.webp" | relURL }}" alt="EventSnap dashboard showing photo uploads and top contributors">
         </div>
-        <h3>Create Your Wedding Hub</h3>
-        <p>Set your wedding date, names, and a welcome message. Your private gallery is ready in seconds.</p>
+        <h3>{{ i18n "step1_title" }}</h3>
+        <p>{{ i18n "step1_desc" }}</p>
       </div>
       <div class="step-card reveal">
         <div class="step-number">2</div>
         <div class="step-image">
           <img src="{{ "images/step-countdown.webp" | relURL }}" alt="Wedding announcement page with countdown timer">
         </div>
-        <h3>Share Your QR Code</h3>
-        <p>Display it at your venue or send your private link. Guests scan and upload instantly &mdash; no app required.</p>
+        <h3>{{ i18n "step2_title" }}</h3>
+        <p>{{ i18n "step2_desc" }}</p>
       </div>
       <div class="step-card reveal">
         <div class="step-number">3</div>
         <div class="step-image">
           <img src="{{ "images/step-gallery.webp" | relURL }}" alt="EventSnap wedding photo gallery">
         </div>
-        <h3>Watch the Memories Roll In</h3>
-        <p>Photos and videos appear in real time. Download everything in full resolution anytime.</p>
+        <h3>{{ i18n "step3_title" }}</h3>
+        <p>{{ i18n "step3_desc" }}</p>
       </div>
     </div>
     <div class="section-cta reveal">
-      <a href="{{ "pricing/" | relURL }}" class="btn btn-outline">Start collecting photos</a>
+      <a href="{{ "pricing/" | relLangURL }}" class="btn btn-outline">{{ i18n "steps_cta" }}</a>
     </div>
   </div>
 </section>
@@ -54,8 +54,8 @@
 <section class="section bg-white">
   <div class="container">
     <div class="text-center">
-      <h2 class="section-title reveal">No More Lost Moments</h2>
-      <p class="section-subtitle reveal" style="margin-left:auto;margin-right:auto;">Brings everything &mdash; and everyone &mdash; together.</p>
+      <h2 class="section-title reveal">{{ i18n "features_title" }}</h2>
+      <p class="section-subtitle reveal" style="margin-left:auto;margin-right:auto;">{{ i18n "features_subtitle" }}</p>
     </div>
 
     <div class="feature-row reveal">
@@ -63,15 +63,15 @@
         <img src="{{ "images/feature-badge.webp" | relURL }}" alt="Pop-up notification with gold medal congratulating user">
       </div>
       <div class="feature-row-text">
-        <h3>No App to Install</h3>
-        <p>Guests simply scan your QR code and start uploading instantly.</p>
+        <h3>{{ i18n "feature1_title" }}</h3>
+        <p>{{ i18n "feature1_desc" }}</p>
         <ul class="feature-list">
-          <li>Works on any phone</li>
-          <li>No account required</li>
-          <li>No downloads</li>
-          <li>No tech skills needed</li>
+          <li>{{ i18n "feature1_li1" }}</li>
+          <li>{{ i18n "feature1_li2" }}</li>
+          <li>{{ i18n "feature1_li3" }}</li>
+          <li>{{ i18n "feature1_li4" }}</li>
         </ul>
-        <p class="feature-tagline">So easy, even your granny can join in.</p>
+        <p class="feature-tagline">{{ i18n "feature1_tagline" }}</p>
       </div>
     </div>
 
@@ -80,15 +80,15 @@
         <img src="{{ "images/step-dashboard.webp" | relURL }}" alt="EventSnap photo gallery with contributor stats">
       </div>
       <div class="feature-row-text">
-        <h3>Your Wedding Memory Hub</h3>
-        <p>Everything organized in one beautiful place.</p>
+        <h3>{{ i18n "feature2_title" }}</h3>
+        <p>{{ i18n "feature2_desc" }}</p>
         <ul class="feature-list">
-          <li>Real-time gallery feed</li>
-          <li>Top contributors highlighted</li>
-          <li>Best moments automatically surfaced</li>
-          <li>Download all photos &amp; videos in high resolution</li>
+          <li>{{ i18n "feature2_li1" }}</li>
+          <li>{{ i18n "feature2_li2" }}</li>
+          <li>{{ i18n "feature2_li3" }}</li>
+          <li>{{ i18n "feature2_li4" }}</li>
         </ul>
-        <p class="feature-tagline">Your wedding. Fully captured.</p>
+        <p class="feature-tagline">{{ i18n "feature2_tagline" }}</p>
       </div>
     </div>
 
@@ -97,15 +97,15 @@
         <img src="{{ "images/step-gallery.webp" | relURL }}" alt="EventSnap wedding photo sharing gallery">
       </div>
       <div class="feature-row-text">
-        <h3>Your Wedding Hub</h3>
-        <p>After most weddings:</p>
+        <h3>{{ i18n "feature3_title" }}</h3>
+        <p>{{ i18n "feature3_desc" }}</p>
         <ul class="feature-list">
-          <li>Photos stay in group chats</li>
-          <li>Guests forget to send them</li>
-          <li>You spend weeks chasing people</li>
-          <li>Some memories disappear forever</li>
+          <li>{{ i18n "feature3_li1" }}</li>
+          <li>{{ i18n "feature3_li2" }}</li>
+          <li>{{ i18n "feature3_li3" }}</li>
+          <li>{{ i18n "feature3_li4" }}</li>
         </ul>
-        <p class="feature-tagline">EventSnap makes sure that never happens.</p>
+        <p class="feature-tagline">{{ i18n "feature3_tagline" }}</p>
       </div>
     </div>
   </div>
@@ -114,28 +114,28 @@
 <!-- Testimonials -->
 <section class="section bg-pink">
   <div class="container">
-    <p class="section-label reveal">Easy to Use by Anyone</p>
+    <p class="section-label reveal">{{ i18n "testimonials_label" }}</p>
     <div class="testimonials-grid">
       <div class="testimonial-card reveal">
         <div class="testimonial-quote">
           <svg class="quote-mark" width="32" height="24" viewBox="0 0 32 24" fill="#de2046" opacity="0.2"><path d="M0 24V12C0 5.4 4.4 1.2 13.2 0l1.2 3.6C9 5.2 7 8.4 6.8 12H12v12H0zm18 0V12c0-6.6 4.4-10.8 13.2-12L32.4 3.6C27 5.2 25 8.4 24.8 12H30v12H18z"/></svg>
-          <p>EventSnap is perfect for non-techie people! We were able to gather all the photos from our wedding with zero stress, and everyone loved how simple it was to upload their memories.</p>
+          <p>{{ i18n "testimonial1_text" }}</p>
         </div>
-        <p class="testimonial-author">Mia &amp; Alex</p>
+        <p class="testimonial-author">{{ i18n "testimonial1_author" }}</p>
       </div>
       <div class="testimonial-card reveal">
         <div class="testimonial-quote">
           <svg class="quote-mark" width="32" height="24" viewBox="0 0 32 24" fill="#de2046" opacity="0.2"><path d="M0 24V12C0 5.4 4.4 1.2 13.2 0l1.2 3.6C9 5.2 7 8.4 6.8 12H12v12H0zm18 0V12c0-6.6 4.4-10.8 13.2-12L32.4 3.6C27 5.2 25 8.4 24.8 12H30v12H18z"/></svg>
-          <p>So happy that I came across this app! I got so many cool photos from my wedding!</p>
+          <p>{{ i18n "testimonial2_text" }}</p>
         </div>
-        <p class="testimonial-author">Florina and Oliver</p>
+        <p class="testimonial-author">{{ i18n "testimonial2_author" }}</p>
       </div>
       <div class="testimonial-card reveal">
         <div class="testimonial-quote">
           <svg class="quote-mark" width="32" height="24" viewBox="0 0 32 24" fill="#de2046" opacity="0.2"><path d="M0 24V12C0 5.4 4.4 1.2 13.2 0l1.2 3.6C9 5.2 7 8.4 6.8 12H12v12H0zm18 0V12c0-6.6 4.4-10.8 13.2-12L32.4 3.6C27 5.2 25 8.4 24.8 12H30v12H18z"/></svg>
-          <p>We wanted an easy way to collect photos from our wedding, and EventSnap delivered! No complicated steps&mdash;our guests loved it and the final gallery was amazing!</p>
+          <p>{{ i18n "testimonial3_text" }}</p>
         </div>
-        <p class="testimonial-author">Arianna &amp; Ben</p>
+        <p class="testimonial-author">{{ i18n "testimonial3_author" }}</p>
       </div>
     </div>
   </div>
@@ -144,11 +144,11 @@
 <!-- Capture Every Moment -->
 <section class="section bg-white">
   <div class="container text-center">
-    <h2 class="section-title reveal">Capture Every Moment</h2>
+    <h2 class="section-title reveal">{{ i18n "capture_title" }}</h2>
     <div class="capture-text reveal">
-      <p>Your photographer captures the big moments. Your guests capture everything else: the dance floor chaos, behind-the-scenes laughter, sweet candid reactions, and late-night selfies.</p>
-      <p><strong>EventSnap brings it all together.</strong></p>
-      <p class="feature-tagline">Because the best memories aren't always planned.</p>
+      <p>{{ i18n "capture_text1" }}</p>
+      <p><strong>{{ i18n "capture_text2" }}</strong></p>
+      <p class="feature-tagline">{{ i18n "capture_tagline" }}</p>
     </div>
   </div>
 </section>
@@ -185,7 +185,7 @@
   <div class="container">
     <div class="faq-layout">
       <div class="faq-header reveal">
-        <h2 class="section-title">Frequently Asked Questions</h2>
+        <h2 class="section-title">{{ i18n "faq_title" }}</h2>
         <div class="faq-decoration"></div>
       </div>
       <div class="faq-content reveal">
@@ -198,13 +198,13 @@
 <!-- Final CTA -->
 <section class="section cta-section">
   <div class="container text-center">
-    <h2 class="section-title reveal">Don't Let Your Wedding Photos Disappear</h2>
+    <h2 class="section-title reveal">{{ i18n "cta_title" }}</h2>
     <div class="cta-text reveal">
-      <p>You only get one wedding day.</p>
-      <p>Make sure you keep every moment.</p>
-      <p>No chasing. No stress. No missing memories.</p>
+      <p>{{ i18n "cta_text1" }}</p>
+      <p>{{ i18n "cta_text2" }}</p>
+      <p>{{ i18n "cta_text3" }}</p>
     </div>
-    <a href="{{ "pricing/" | relURL }}" class="btn btn-filled reveal">Create My Wedding Hub</a>
+    <a href="{{ "pricing/" | relLangURL }}" class="btn btn-filled reveal">{{ i18n "cta_button" }}</a>
   </div>
 </section>
 

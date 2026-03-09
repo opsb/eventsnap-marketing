@@ -1,15 +1,33 @@
 <header class="site-header">
   <div class="header-inner">
-    <a href="{{ "" | relURL }}" class="logo" aria-label="EventSnap home">
+    <a href="{{ "" | relLangURL }}" class="logo" aria-label="EventSnap home">
       <img src="{{ "images/logo.webp" | relURL }}" alt="EventSnap" class="logo-img">
     </a>
     <nav class="main-nav" aria-label="Main navigation">
       {{ range .Site.Menus.main }}
-        <a href="{{ .URL }}" class="nav-link{{ if $.IsMenuCurrent "main" . }} active{{ end }}">{{ .Name }}</a>
+        <a href="{{ .URL | absLangURL }}" class="nav-link{{ if $.IsMenuCurrent "main" . }} active{{ end }}">{{ .Name }}</a>
       {{ end }}
-      <a href="{{ "signin/" | relURL }}" class="nav-link nav-login">Login</a>
+      <a href="{{ "signin/" | relLangURL }}" class="nav-link nav-login">{{ i18n "login" }}</a>
     </nav>
-    <a href="{{ "pricing/" | relURL }}" class="btn btn-outline header-cta">Get started</a>
+    <div class="header-actions">
+      <!-- Language Switcher -->
+      <div class="lang-switcher">
+        <button class="lang-switcher-btn" aria-expanded="false" aria-label="{{ i18n "language" }}">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span>{{ .Site.Language.LanguageName }}</span>
+          <svg class="lang-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="lang-dropdown" aria-hidden="true">
+          {{ range .Site.Languages }}
+          <a href="/{{ if ne .Lang "en" }}{{ .Lang }}/{{ end }}" class="lang-option{{ if eq $.Site.Language.Lang .Lang }} active{{ end }}" {{ if eq $.Site.Language.Lang .Lang }}aria-current="true"{{ end }}>
+            <span class="lang-flag">{{ .Params.languageFlag }}</span>
+            <span>{{ .LanguageName }}</span>
+          </a>
+          {{ end }}
+        </div>
+      </div>
+      <a href="{{ "pricing/" | relLangURL }}" class="btn btn-outline header-cta">{{ i18n "get_started" }}</a>
+    </div>
     <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
@@ -19,10 +37,19 @@
   <div class="mobile-nav" aria-hidden="true">
     <nav>
       {{ range .Site.Menus.main }}
-        <a href="{{ .URL }}" class="mobile-nav-link">{{ .Name }}</a>
+        <a href="{{ .URL | absLangURL }}" class="mobile-nav-link">{{ .Name }}</a>
       {{ end }}
-      <a href="{{ "signin/" | relURL }}" class="mobile-nav-link">Login</a>
-      <a href="{{ "pricing/" | relURL }}" class="btn btn-outline mobile-cta">Get started</a>
+      <a href="{{ "signin/" | relLangURL }}" class="mobile-nav-link">{{ i18n "login" }}</a>
+      <!-- Mobile Language Switcher -->
+      <div class="mobile-lang-switcher">
+        {{ range .Site.Languages }}
+        <a href="/{{ if ne .Lang "en" }}{{ .Lang }}/{{ end }}" class="mobile-lang-option{{ if eq $.Site.Language.Lang .Lang }} active{{ end }}">
+          <span class="lang-flag">{{ .Params.languageFlag }}</span>
+          <span>{{ .LanguageName }}</span>
+        </a>
+        {{ end }}
+      </div>
+      <a href="{{ "pricing/" | relLangURL }}" class="btn btn-outline mobile-cta">{{ i18n "get_started" }}</a>
     </nav>
   </div>
 </header>

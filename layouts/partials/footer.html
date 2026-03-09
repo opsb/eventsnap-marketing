@@ -1,11 +1,11 @@
 <footer class="site-footer">
   <div class="footer-inner">
-    <a href="{{ "" | relURL }}" class="footer-logo" aria-label="EventSnap home">
+    <a href="{{ "" | relLangURL }}" class="footer-logo" aria-label="EventSnap home">
       <img src="{{ "images/logo.webp" | relURL }}" alt="EventSnap" class="logo-img">
     </a>
     <div class="footer-links">
       {{ range .Site.Menus.footer }}
-        <a href="{{ .URL }}">{{ .Name }}</a>
+        <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
       {{ end }}
     </div>
     <div class="footer-social">

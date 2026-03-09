@@ -1,0 +1,319 @@
+# ─── Common UI ───────────────────────────────────────────
+[login]
+other = "Anmelden"
+[get_started]
+other = "Jetzt starten"
+[see_more_articles]
+other = "Weitere Artikel ansehen"
+[read_more]
+other = "Weiterlesen"
+[sign_up]
+other = "Registrieren"
+[contact_us]
+other = "Kontakt"
+
+# ─── Cookie Banner ───────────────────────────────────────
+[cookie_title]
+other = "Ihre Privatsphäre ist uns wichtig"
+[cookie_text]
+other = "Wir verwenden Cookies für Analysen und verbesserte Funktionalität, um Ihr Website-Erlebnis zu optimieren."
+[cookie_accept_all]
+other = "Alle akzeptieren"
+[cookie_decline]
+other = "Nicht-essenzielle ablehnen"
+[cookie_settings]
+other = "Cookie-Einstellungen"
+[cookie_functional_title]
+other = "Funktionale Cookies"
+[cookie_functional_desc]
+other = "Diese Cookies sind für die Funktion unserer Website erforderlich und stellen wesentliche Funktionen und Sicherheit bereit. Sie sind immer aktiviert, enthalten jedoch keine personenbezogenen Daten (PII)."
+[cookie_analytics_title]
+other = "Analyse-Cookies"
+[cookie_analytics_desc]
+other = "Analyse-Cookies helfen uns, unsere Zielgruppe zu verstehen und bessere Inhalte bereitzustellen."
+[cookie_marketing_title]
+other = "Marketing-Cookies"
+[cookie_marketing_desc]
+other = "Marketing-Cookies helfen uns, unsere Werbung gezielter auszuspielen. Wir verwenden sie hauptsächlich, um Nutzer anzusprechen, die EventSnap bereits besucht haben."
+[cookie_details]
+other = "Details"
+[cookie_save]
+other = "Einstellungen speichern"
+
+# ─── Home Page ───────────────────────────────────────────
+[hero_title]
+other = "Erhalte automatisch jedes Gästefoto von deiner Hochzeit"
+[hero_subtitle]
+other = "Deine Gäste scannen. Sie laden hoch. Du bekommst jeden Moment in einem privaten Album."
+[hero_cta]
+other = "Jetzt starten"
+[steps_title]
+other = "3 einfache Schritte, um jede Erinnerung zu sammeln"
+[step1_title]
+other = "Erstelle deinen Hochzeits-Hub"
+[step1_desc]
+other = "Lege Hochzeitsdatum, Namen und eine Willkommensnachricht fest. Deine private Galerie ist in Sekunden bereit."
+[step2_title]
+other = "Teile deinen QR-Code"
+[step2_desc]
+other = "Zeige ihn an deiner Location oder versende deinen privaten Link. Gäste scannen und laden sofort hoch — keine App nötig."
+[step3_title]
+other = "Sieh zu, wie die Erinnerungen eintreffen"
+[step3_desc]
+other = "Fotos und Videos erscheinen in Echtzeit. Lade alles jederzeit in voller Auflösung herunter."
+[steps_cta]
+other = "Fotos sammeln starten"
+[features_title]
+other = "Keine verlorenen Momente mehr"
+[features_subtitle]
+other = "Bringt alles — und alle — zusammen."
+[feature1_title]
+other = "Keine App nötig"
+[feature1_desc]
+other = "Gäste scannen einfach deinen QR-Code und laden sofort hoch."
+[feature1_li1]
+other = "Funktioniert auf jedem Handy"
+[feature1_li2]
+other = "Kein Konto erforderlich"
+[feature1_li3]
+other = "Kein Download nötig"
+[feature1_li4]
+other = "Keine technischen Kenntnisse nötig"
+[feature1_tagline]
+other = "So einfach, dass sogar Oma mitmachen kann."
+[feature2_title]
+other = "Dein Hochzeits-Erinnerungshub"
+[feature2_desc]
+other = "Alles übersichtlich an einem schönen Ort."
+[feature2_li1]
+other = "Galerie-Feed in Echtzeit"
+[feature2_li2]
+other = "Top-Beitragende hervorgehoben"
+[feature2_li3]
+other = "Beste Momente automatisch angezeigt"
+[feature2_li4]
+other = "Alle Fotos & Videos in hoher Auflösung herunterladen"
+[feature2_tagline]
+other = "Deine Hochzeit. Vollständig festgehalten."
+[feature3_title]
+other = "Dein Hochzeits-Hub"
+[feature3_desc]
+other = "Nach den meisten Hochzeiten:"
+[feature3_li1]
+other = "Fotos bleiben in Gruppenchats"
+[feature3_li2]
+other = "Gäste vergessen, sie zu senden"
+[feature3_li3]
+other = "Du verbringst Wochen damit, Leuten hinterherzulaufen"
+[feature3_li4]
+other = "Manche Erinnerungen verschwinden für immer"
+[feature3_tagline]
+other = "EventSnap sorgt dafür, dass das nie passiert."
+[testimonials_label]
+other = "Einfach zu bedienen für jeden"
+[testimonial1_text]
+other = "EventSnap ist perfekt für Menschen, die nicht technikaffin sind! Wir konnten alle Fotos unserer Hochzeit ganz ohne Stress sammeln, und alle fanden es super einfach, ihre Erinnerungen hochzuladen."
+[testimonial1_author]
+other = "Mia & Alex"
+[testimonial2_text]
+other = "So froh, dass ich diese App gefunden habe! Ich habe so viele tolle Fotos von meiner Hochzeit bekommen!"
+[testimonial2_author]
+other = "Florina und Oliver"
+[testimonial3_text]
+other = "Wir wollten eine einfache Möglichkeit, Fotos von unserer Hochzeit zu sammeln, und EventSnap hat geliefert! Keine komplizierten Schritte — unsere Gäste waren begeistert und die fertige Galerie war großartig!"
+[testimonial3_author]
+other = "Arianna & Ben"
+[capture_title]
+other = "Halte jeden Moment fest"
+[capture_text1]
+other = "Dein Fotograf fängt die großen Momente ein. Deine Gäste fangen alles andere ein: das Chaos auf der Tanzfläche, das Lachen hinter den Kulissen, süße spontane Reaktionen und die Selfies spät in der Nacht."
+[capture_text2]
+other = "EventSnap bringt alles zusammen."
+[capture_tagline]
+other = "Denn die besten Erinnerungen sind nicht immer geplant."
+[faq_title]
+other = "Häufig gestellte Fragen"
+[cta_title]
+other = "Lass deine Hochzeitsfotos nicht verschwinden"
+[cta_text1]
+other = "Du hast nur einen Hochzeitstag."
+[cta_text2]
+other = "Stelle sicher, dass du jeden Moment bewahrst."
+[cta_text3]
+other = "Kein Hinterherlaufen. Kein Stress. Keine fehlenden Erinnerungen."
+[cta_button]
+other = "Meinen Hochzeits-Hub erstellen"
+
+# ─── FAQ ─────────────────────────────────────────────────
+[faq1_q]
+other = "Wie starte ich mit EventSnap?"
+[faq1_a]
+other = "Registriere dich einfach, erstelle dein Event und teile deinen einzigartigen QR-Code oder privaten Link mit deinen Gästen. Sie können sofort Fotos, Videos und Nachrichten hochladen!"
+[faq2_q]
+other = "Können Gäste während der Veranstaltung Fotos und Videos hochladen?"
+[faq2_a]
+other = "Ja! Gäste können Fotos und Videos in Echtzeit von ihren Handys hochladen, damit du keinen Moment verpasst."
+[faq3_q]
+other = "Können Gäste andere einladen, Fotos und Videos beizusteuern?"
+[faq3_a]
+other = "Auf jeden Fall! Deine Gäste können andere Hochzeitsgäste einladen, zur Galerie beizutragen. So entsteht ein gemeinsames Erlebnis und es wird sichergestellt, dass alle tollen Momente festgehalten werden."
+[faq4_q]
+other = "Wie lange habe ich Zugriff auf die Fotos und Videos?"
+[faq4_a]
+other = "Du hast 12 Monate Zugriff, um deine Fotos und Videos herunterzuladen und immer wieder anzuschauen. Du kannst sie jederzeit in diesem Zeitraum herunterladen."
+[faq5_q]
+other = "Kann ich die Hochzeitsfotos und -videos in hoher Auflösung herunterladen?"
+[faq5_a]
+other = "Ja! Du kannst alle Fotos, Videos und Gästebuch-Nachrichten in voller Auflösung mit nur einem Klick herunterladen und deine Erinnerungen für immer bewahren."
+[faq6_q]
+other = "Ist meine Event-Galerie privat?"
+[faq6_a]
+other = "Ja, deine Galerie ist privat und nur über den QR-Code oder den privaten Link zugänglich, den du mit deinen Gästen teilst. Du hast die volle Kontrolle darüber, wer die Galerie sehen und teilen kann."
+[faq7_q]
+other = "Kann ich EventSnap auch für andere Events als Hochzeiten nutzen?"
+[faq7_a]
+other = "Ja! EventSnap ist perfekt für jede Art von Veranstaltung, einschließlich Geburtstage, Firmenevents, Feiertage, Wiedersehen und mehr. Es ist dafür konzipiert, Erinnerungen für jeden Anlass zu sammeln und zu organisieren."
+[faq8_q]
+other = "Kann ich meine Hochzeitsgalerie mit Personen teilen, die nicht dabei sein konnten?"
+[faq8_a]
+other = "Ja! Du kannst den Link oder QR-Code ganz einfach mit jedem teilen, sodass auch diejenigen, die nicht beim Event dabei sein konnten, die Erinnerungen genießen können."
+
+# ─── Pricing ─────────────────────────────────────────────
+[pricing_title]
+other = "Einfache, transparente Preise"
+[pricing_subtitle]
+other = "Wähle den perfekten Plan für eure Feier."
+[pricing_badge]
+other = "Am beliebtesten"
+[plan1_name]
+other = "Tiny Toasts"
+[plan1_desc]
+other = "Perfekt für kleine und intime Hochzeiten"
+[plan1_guests]
+other = "Bis zu <strong>50 Gäste</strong> können Inhalte beitragen und ansehen"
+[plan2_name]
+other = "Champagne Towers"
+[plan2_desc]
+other = "Perfekt für mittelgroße Feiern"
+[plan2_guests]
+other = "Bis zu <strong>150 Gäste</strong> können Inhalte beitragen und ansehen"
+[plan3_name]
+other = "Happily Ever After"
+[plan3_desc]
+other = "Perfekt für das ultimative Rundum-Hochzeitserlebnis"
+[plan3_guests]
+other = "Für <strong>200+ Gäste</strong>, die Inhalte beitragen und ansehen können"
+[pricing_f1]
+other = "Unbegrenzt Fotos und Videos speichern"
+[pricing_f2]
+other = "Live-Foto- & Video-Galerie in Echtzeit"
+[pricing_f3]
+other = "Sicherer, personalisierter QR-Code & Link"
+[pricing_f4]
+other = "Downloads in hoher Auflösung für bis zu 12 Monate"
+[pricing_question]
+other = "Noch Fragen?"
+
+# ─── Affiliate ───────────────────────────────────────────
+[aff_hero_title]
+other = "EventSnap Partnerprogramm für Hochzeiten"
+[aff_hero_desc]
+other = "Verdiene 20 % für jedes Paar, das du empfiehlst, indem du am EventSnap Partnerprogramm teilnimmst. Hilf Paaren, jeden Moment ihrer Hochzeit festzuhalten."
+[aff_hero_cta]
+other = "Partner werden"
+[aff_how_title]
+other = "So funktioniert's"
+[aff_step1_title]
+other = "Kostenlos registrieren"
+[aff_step1_desc]
+other = "Melde dich für das EventSnap Partnerprogramm an; es dauert nur eine Minute."
+[aff_step1_link]
+other = "Hier registrieren."
+[aff_step2_title]
+other = "Teile deinen Affiliate-Link"
+[aff_step2_desc]
+other = "Schnapp dir deinen einzigartigen Affiliate-Link und beginne, EventSnap bei deiner Zielgruppe und deinen Kunden zu bewerben."
+[aff_step3_title]
+other = "Verdiene 20 % Provision"
+[aff_step3_desc]
+other = "Werde für jeden Verkauf bezahlt, den du vermittelst. Verfolge deine Einnahmen in Echtzeit!"
+[aff_audience_title]
+other = "Ein Partnerprogramm für Hochzeitsprofis"
+[aff_audience1]
+other = "Hochzeitsplaner & Koordinatoren"
+[aff_audience2]
+other = "Hochzeitsfotografen & Videografen"
+[aff_audience3]
+other = "Brautmodengeschäft-Inhaber & Stylisten"
+[aff_audience4]
+other = "Hochzeitsblogger, Influencer & Content Creator"
+[aff_audience5]
+other = "Anbieter von Hochzeitsdienstleistungen oder -produkten"
+[aff_audience6]
+other = "Verlage & hochzeitsfokussierte Medien"
+[aff_benefits_title]
+other = "Warum dem EventSnap Partnerprogramm beitreten"
+[aff_b1_title]
+other = "20 % Provision"
+[aff_b1_desc]
+other = "Werde mit 20 % an jedem Kauf belohnt — eine der großzügigsten Vergütungen in der Hochzeitsbranche!"
+[aff_b2_title]
+other = "Persönlicher Affiliate-Manager"
+[aff_b2_desc]
+other = "Wir sind da, um dir zum Erfolg zu verhelfen. Hast du Fragen oder brauchst Ideen für Aktionen? Unser Affiliate-Manager unterstützt dich."
+[aff_b3_title]
+other = "Weltweite Auszahlungen"
+[aff_b3_desc]
+other = "Sobald du die Auszahlungsgrenze von 50 $ erreichst, ist die Bezahlung ganz einfach. Wähle zwischen ACH, eCheck, SEPA, BACS, SWIFT oder PayPal."
+[aff_b4_title]
+other = "Einfach zu bewerben"
+[aff_b4_desc]
+other = "EventSnap lässt sich nahtlos in deine bestehenden Inhalte, Planungspakete oder Anbieterempfehlungen integrieren."
+[aff_b5_title]
+other = "30-Tage-Cookie"
+[aff_b5_desc]
+other = "Du erhältst die Provision für jeden Verkauf, der innerhalb von 30 Tagen nach dem Klick auf deinen Link erfolgt."
+[aff_b6_title]
+other = "Verfolge deine Leistung live"
+[aff_b6_desc]
+other = "Greife auf Echtzeit-Analysen, Klicks und Provisionen in deinem Affiliate-Dashboard zu und sieh, was funktioniert."
+[aff_cta_title]
+other = "Verdiene zusätzliches Geld mit EventSnap"
+
+# ─── Contact ─────────────────────────────────────────────
+[contact_title]
+other = "Kontakt aufnehmen"
+[contact_intro]
+other = "Ob du eine Frage zu EventSnap hast, Hilfe mit deinem Konto brauchst oder eine Partnerschaft erkunden möchtest — wir freuen uns, von dir zu hören."
+[contact_faq_hint]
+other = "Schau zuerst in unsere <a href=\"%s\">FAQ</a> — vielleicht findest du dort schon die Antwort!"
+[contact_cta_title]
+other = "Halte jeden Moment fest, erlebe jede Erinnerung neu"
+
+# ─── Blog ────────────────────────────────────────────────
+[blog_title]
+other = "Blog"
+[blog_empty]
+other = "Bleib dran — neue Artikel folgen bald."
+[blog_cta_title]
+other = "Halte alle Momente deiner Hochzeit fest"
+[blog_cta_desc]
+other = "Sammle, teile und erlebe jeden Moment mit deinen Gästen — keine App, kein Aufwand, einfach unvergessliche Erinnerungen!"
+[blog_cta_button]
+other = "Starte heute deine Geschichte"
+
+# ─── Signin ──────────────────────────────────────────────
+[signin_title]
+other = "Weiterleitung zur Anmeldung…"
+[signin_desc]
+other = "Du wirst zur EventSnap App weitergeleitet."
+[signin_button]
+other = "Zur Anmeldung"
+
+# ─── Privacy ─────────────────────────────────────────────
+[privacy_title]
+other = "Datenschutzerklärung"
+
+# ─── Language Switcher ───────────────────────────────────
+[language]
+other = "Sprache"

@@ -1,8 +1,8 @@
 <!-- Pricing Hero -->
 <section class="section bg-white pricing-hero">
   <div class="container text-center">
-    <h1 class="section-title reveal">Simple, Transparent Pricing</h1>
-    <p class="section-subtitle reveal">Choose the perfect plan for your celebration.</p>
+    <h1 class="section-title reveal">{{ i18n "pricing_title" }}</h1>
+    <p class="section-subtitle reveal">{{ i18n "pricing_subtitle" }}</p>
   </div>
 </section>
 
@@ -11,46 +11,46 @@
   <div class="container">
     <div class="pricing-grid">
       <div class="pricing-card reveal">
-        <div class="pricing-tier">Tiny Toasts</div>
+        <div class="pricing-tier">{{ i18n "plan1_name" }}</div>
         <div class="pricing-price"><span class="currency">$</span>29</div>
-        <p class="pricing-desc">Perfect for small and intimate weddings</p>
-        <p class="pricing-guests">Up to <strong>50 guests</strong> can contribute and view content</p>
+        <p class="pricing-desc">{{ i18n "plan1_desc" }}</p>
+        <p class="pricing-guests">{{ i18n "plan1_guests" | safeHTML }}</p>
         <ul class="pricing-features">
-          <li>Store unlimited photos and videos</li>
-          <li>Live-streamed photo &amp; video gallery</li>
-          <li>Secure, personalized QR code &amp; link</li>
-          <li>High resolution downloads for up to 12 months</li>
+          <li>{{ i18n "pricing_f1" }}</li>
+          <li>{{ i18n "pricing_f2" | safeHTML }}</li>
+          <li>{{ i18n "pricing_f3" | safeHTML }}</li>
+          <li>{{ i18n "pricing_f4" }}</li>
         </ul>
-        <a href="https://app.eventsnap.it/checkout?plan=tiny_toasts" class="btn btn-outline btn-full">Get started</a>
+        <a href="https://app.eventsnap.it/checkout?plan=tiny_toasts" class="btn btn-outline btn-full">{{ i18n "get_started" }}</a>
       </div>
 
       <div class="pricing-card pricing-card--featured reveal">
-        <div class="pricing-badge">Most Popular</div>
-        <div class="pricing-tier">Champagne Towers</div>
+        <div class="pricing-badge">{{ i18n "pricing_badge" }}</div>
+        <div class="pricing-tier">{{ i18n "plan2_name" }}</div>
         <div class="pricing-price"><span class="currency">$</span>59</div>
-        <p class="pricing-desc">Perfect for mid-sized celebrations</p>
-        <p class="pricing-guests">Up to <strong>150 guests</strong> can contribute and view content</p>
+        <p class="pricing-desc">{{ i18n "plan2_desc" }}</p>
+        <p class="pricing-guests">{{ i18n "plan2_guests" | safeHTML }}</p>
         <ul class="pricing-features">
-          <li>Store unlimited photos and videos</li>
-          <li>Live-streamed photo &amp; video gallery</li>
-          <li>Secure, personalized QR code &amp; link</li>
-          <li>High resolution downloads for up to 12 months</li>
+          <li>{{ i18n "pricing_f1" }}</li>
+          <li>{{ i18n "pricing_f2" | safeHTML }}</li>
+          <li>{{ i18n "pricing_f3" | safeHTML }}</li>
+          <li>{{ i18n "pricing_f4" }}</li>
         </ul>
-        <a href="https://app.eventsnap.it/checkout?plan=champagne_towers" class="btn btn-outline btn-full">Get started</a>
+        <a href="https://app.eventsnap.it/checkout?plan=champagne_towers" class="btn btn-outline btn-full">{{ i18n "get_started" }}</a>
       </div>
 
       <div class="pricing-card reveal">
-        <div class="pricing-tier">Happily Ever After</div>
+        <div class="pricing-tier">{{ i18n "plan3_name" }}</div>
         <div class="pricing-price"><span class="currency">$</span>99</div>
-        <p class="pricing-desc">Perfect for the ultimate, all-in wedding experience</p>
-        <p class="pricing-guests">For <strong>200+ guests</strong> can contribute and view content</p>
+        <p class="pricing-desc">{{ i18n "plan3_desc" }}</p>
+        <p class="pricing-guests">{{ i18n "plan3_guests" | safeHTML }}</p>
         <ul class="pricing-features">
-          <li>Store unlimited photos and videos</li>
-          <li>Live-streamed photo &amp; video gallery</li>
-          <li>Secure, personalized QR code &amp; link</li>
-          <li>High resolution downloads for up to 12 months</li>
+          <li>{{ i18n "pricing_f1" }}</li>
+          <li>{{ i18n "pricing_f2" | safeHTML }}</li>
+          <li>{{ i18n "pricing_f3" | safeHTML }}</li>
+          <li>{{ i18n "pricing_f4" }}</li>
         </ul>
-        <a href="https://app.eventsnap.it/checkout?plan=happily_ever_after" class="btn btn-outline btn-full">Get started</a>
+        <a href="https://app.eventsnap.it/checkout?plan=happily_ever_after" class="btn btn-outline btn-full">{{ i18n "get_started" }}</a>
       </div>
     </div>
   </div>
@@ -61,7 +61,7 @@
   <div class="container">
     <div class="faq-layout">
       <div class="faq-header reveal">
-        <h2 class="section-title">Frequently Asked Questions</h2>
+        <h2 class="section-title">{{ i18n "faq_title" }}</h2>
       </div>
       <div class="faq-content reveal">
         {{ partial "faq.html" . }}
@@ -73,7 +73,7 @@
 <!-- Contact CTA -->
 <section class="section pricing-cta">
   <div class="container text-center">
-    <h2 class="section-title reveal">Still have Questions?</h2>
-    <a href="{{ "contact/" | relURL }}" class="btn btn-outline reveal">Contact us</a>
+    <h2 class="section-title reveal">{{ i18n "pricing_question" }}</h2>
+    <a href="{{ "contact/" | relLangURL }}" class="btn btn-outline reveal">{{ i18n "contact_us" }}</a>
   </div>
 </section>

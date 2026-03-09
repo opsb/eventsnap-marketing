@@ -1,0 +1,319 @@
+# ─── Common UI ───────────────────────────────────────────
+[login]
+other = "Iniciar sesión"
+[get_started]
+other = "Comenzar"
+[see_more_articles]
+other = "Ver más artículos"
+[read_more]
+other = "Leer más"
+[sign_up]
+other = "Registrarse"
+[contact_us]
+other = "Contáctanos"
+
+# ─── Cookie Banner ───────────────────────────────────────
+[cookie_title]
+other = "Nos importa tu privacidad"
+[cookie_text]
+other = "Utilizamos cookies para análisis y funcionalidad mejorada con el fin de optimizar tu experiencia en el sitio web."
+[cookie_accept_all]
+other = "Aceptar todas"
+[cookie_decline]
+other = "Rechazar no esenciales"
+[cookie_settings]
+other = "Configuración de cookies"
+[cookie_functional_title]
+other = "Cookies funcionales"
+[cookie_functional_desc]
+other = "Estas cookies son necesarias para que nuestro sitio web funcione correctamente, proporcionando características esenciales y seguridad. Siempre están activas, pero no contienen información de identificación personal (PII)."
+[cookie_analytics_title]
+other = "Cookies de análisis"
+[cookie_analytics_desc]
+other = "Las cookies de análisis nos ayudan a comprender a nuestra audiencia y ofrecer mejor contenido."
+[cookie_marketing_title]
+other = "Cookies de marketing"
+[cookie_marketing_desc]
+other = "Las cookies de marketing nos ayudan a orientar mejor nuestra publicidad. Las utilizamos principalmente para mostrar anuncios a usuarios que han visitado EventSnap."
+[cookie_details]
+other = "Detalles"
+[cookie_save]
+other = "Guardar configuración"
+
+# ─── Home Page ───────────────────────────────────────────
+[hero_title]
+other = "Obtén todas las fotos de tus invitados de boda — Automáticamente"
+[hero_subtitle]
+other = "Tus invitados escanean. Suben sus fotos. Tú recibes cada momento en un álbum privado."
+[hero_cta]
+other = "Comenzar"
+[steps_title]
+other = "3 pasos sencillos para recopilar cada recuerdo"
+[step1_title]
+other = "Crea tu espacio de boda"
+[step1_desc]
+other = "Establece la fecha de tu boda, los nombres y un mensaje de bienvenida. Tu galería privada estará lista en segundos."
+[step2_title]
+other = "Comparte tu código QR"
+[step2_desc]
+other = "Colócalo en tu lugar de celebración o envía tu enlace privado. Los invitados escanean y suben fotos al instante — sin necesidad de app."
+[step3_title]
+other = "Mira cómo llegan los recuerdos"
+[step3_desc]
+other = "Las fotos y vídeos aparecen en tiempo real. Descarga todo en resolución completa cuando quieras."
+[steps_cta]
+other = "Empieza a recopilar fotos"
+[features_title]
+other = "No pierdas ni un momento"
+[features_subtitle]
+other = "Reúne todo — y a todos — en un solo lugar."
+[feature1_title]
+other = "Sin app que instalar"
+[feature1_desc]
+other = "Los invitados simplemente escanean tu código QR y empiezan a subir fotos al instante."
+[feature1_li1]
+other = "Funciona en cualquier teléfono"
+[feature1_li2]
+other = "No requiere cuenta"
+[feature1_li3]
+other = "Sin descargas"
+[feature1_li4]
+other = "No se necesitan conocimientos técnicos"
+[feature1_tagline]
+other = "Tan fácil que hasta la abuela puede participar."
+[feature2_title]
+other = "Tu centro de recuerdos de boda"
+[feature2_desc]
+other = "Todo organizado en un solo lugar."
+[feature2_li1]
+other = "Galería en tiempo real"
+[feature2_li2]
+other = "Los que más contribuyen, destacados"
+[feature2_li3]
+other = "Los mejores momentos aparecen automáticamente"
+[feature2_li4]
+other = "Descarga todas las fotos y vídeos en alta resolución"
+[feature2_tagline]
+other = "Tu boda. Completamente capturada."
+[feature3_title]
+other = "Tu espacio de boda"
+[feature3_desc]
+other = "Después de la mayoría de las bodas:"
+[feature3_li1]
+other = "Las fotos se quedan en chats grupales"
+[feature3_li2]
+other = "Los invitados se olvidan de enviarlas"
+[feature3_li3]
+other = "Pasas semanas persiguiendo a la gente"
+[feature3_li4]
+other = "Algunos recuerdos desaparecen para siempre"
+[feature3_tagline]
+other = "EventSnap se asegura de que eso nunca suceda."
+[testimonials_label]
+other = "Fácil de usar para cualquiera"
+[testimonial1_text]
+other = "¡EventSnap es perfecto para quienes no son expertos en tecnología! Pudimos recopilar todas las fotos de nuestra boda sin estrés, y a todos les encantó lo fácil que fue subir sus recuerdos."
+[testimonial1_author]
+other = "Mia y Alex"
+[testimonial2_text]
+other = "¡Qué alegría haber encontrado esta app! ¡Conseguí un montón de fotos increíbles de mi boda!"
+[testimonial2_author]
+other = "Florina y Oliver"
+[testimonial3_text]
+other = "¡Queríamos una forma fácil de recopilar fotos de nuestra boda y EventSnap cumplió! Sin pasos complicados: a nuestros invitados les encantó y la galería final fue espectacular."
+[testimonial3_author]
+other = "Arianna y Ben"
+[capture_title]
+other = "Captura cada momento"
+[capture_text1]
+other = "Tu fotógrafo captura los grandes momentos. Tus invitados capturan todo lo demás: el caos en la pista de baile, las risas entre bastidores, las reacciones espontáneas y los selfies de madrugada."
+[capture_text2]
+other = "EventSnap lo reúne todo."
+[capture_tagline]
+other = "Porque los mejores recuerdos no siempre se planifican."
+[faq_title]
+other = "Preguntas frecuentes"
+[cta_title]
+other = "No dejes que las fotos de tu boda desaparezcan"
+[cta_text1]
+other = "Solo tienes un día de boda."
+[cta_text2]
+other = "Asegúrate de conservar cada momento."
+[cta_text3]
+other = "Sin perseguir a nadie. Sin estrés. Sin recuerdos perdidos."
+[cta_button]
+other = "Crear mi espacio de boda"
+
+# ─── FAQ ─────────────────────────────────────────────────
+[faq1_q]
+other = "¿Cómo empiezo a usar EventSnap?"
+[faq1_a]
+other = "Simplemente regístrate, crea tu evento y comparte tu código QR único o enlace privado con tus invitados. ¡Podrán empezar a subir fotos, vídeos y mensajes de inmediato!"
+[faq2_q]
+other = "¿Pueden los invitados subir fotos y vídeos durante el evento?"
+[faq2_a]
+other = "¡Sí! Los invitados pueden subir fotos y vídeos desde sus teléfonos en tiempo real, para que no te pierdas ni un momento."
+[faq3_q]
+other = "¿Pueden los invitados invitar a otros a compartir fotos y vídeos?"
+[faq3_a]
+other = "¡Por supuesto! Tus invitados pueden invitar a otros asistentes a contribuir a la galería, creando una experiencia colaborativa y asegurando que se capturen todos los grandes momentos."
+[faq4_q]
+other = "¿Durante cuánto tiempo tengo acceso a las fotos y vídeos?"
+[faq4_a]
+other = "Tendrás 12 meses para acceder, descargar y revivir tus fotos y vídeos. También puedes descargarlos en cualquier momento durante este período."
+[faq5_q]
+other = "¿Puedo descargar las fotos y vídeos de la boda en alta resolución?"
+[faq5_a]
+other = "¡Sí! Puedes descargar todas las fotos, vídeos y mensajes del libro de firmas en resolución completa con un solo clic, asegurándote de conservar tus recuerdos para siempre."
+[faq6_q]
+other = "¿Mi galería del evento es privada?"
+[faq6_a]
+other = "Sí, tu galería es privada y solo se puede acceder a ella mediante el código QR o el enlace privado que compartas con tus invitados. Tienes control total sobre quién ve y comparte la galería."
+[faq7_q]
+other = "¿Puedo usar EventSnap para eventos que no sean bodas?"
+[faq7_a]
+other = "¡Sí! EventSnap es perfecto para cualquier tipo de evento, incluyendo cumpleaños, eventos corporativos, fiestas, reuniones y más. Está diseñado para capturar y organizar recuerdos de cualquier ocasión."
+[faq8_q]
+other = "¿Puedo compartir la galería de mi boda con personas que no pudieron asistir?"
+[faq8_a]
+other = "¡Sí! Puedes compartir fácilmente el enlace o el código QR con cualquier persona, para que incluso quienes no pudieron asistir al evento puedan disfrutar de los recuerdos."
+
+# ─── Pricing ─────────────────────────────────────────────
+[pricing_title]
+other = "Precios simples y transparentes"
+[pricing_subtitle]
+other = "Elige el plan perfecto para tu celebración."
+[pricing_badge]
+other = "Más popular"
+[plan1_name]
+other = "Brindis Íntimo"
+[plan1_desc]
+other = "Perfecto para bodas pequeñas e íntimas"
+[plan1_guests]
+other = "Hasta <strong>50 invitados</strong> pueden contribuir y ver el contenido"
+[plan2_name]
+other = "Torres de Champán"
+[plan2_desc]
+other = "Perfecto para celebraciones medianas"
+[plan2_guests]
+other = "Hasta <strong>150 invitados</strong> pueden contribuir y ver el contenido"
+[plan3_name]
+other = "Felices Para Siempre"
+[plan3_desc]
+other = "Perfecto para la experiencia de boda definitiva"
+[plan3_guests]
+other = "Para <strong>más de 200 invitados</strong> que pueden contribuir y ver el contenido"
+[pricing_f1]
+other = "Almacena fotos y vídeos ilimitados"
+[pricing_f2]
+other = "Galería de fotos y vídeos en directo"
+[pricing_f3]
+other = "Código QR y enlace personalizados y seguros"
+[pricing_f4]
+other = "Descargas en alta resolución durante 12 meses"
+[pricing_question]
+other = "¿Aún tienes preguntas?"
+
+# ─── Affiliate ───────────────────────────────────────────
+[aff_hero_title]
+other = "Programa de afiliados de EventSnap para bodas"
+[aff_hero_desc]
+other = "Gana un 20% por cada pareja que refieras uniéndote al programa de afiliados de EventSnap. Ayuda a las parejas a capturar cada momento de su boda."
+[aff_hero_cta]
+other = "Conviértete en afiliado"
+[aff_how_title]
+other = "Cómo funciona"
+[aff_step1_title]
+other = "Regístrate gratis"
+[aff_step1_desc]
+other = "Inscríbete en el programa de afiliados de EventSnap; solo toma un minuto."
+[aff_step1_link]
+other = "Regístrate aquí."
+[aff_step2_title]
+other = "Comparte tu enlace de afiliado"
+[aff_step2_desc]
+other = "Obtén tu enlace de afiliado único y empieza a promocionar EventSnap entre tu audiencia y clientes."
+[aff_step3_title]
+other = "Gana un 20% de comisión"
+[aff_step3_desc]
+other = "Recibe un pago por cada venta que refieras. ¡Sigue tus ganancias en tiempo real!"
+[aff_audience_title]
+other = "Un programa de afiliados para profesionales de bodas"
+[aff_audience1]
+other = "Wedding planners y coordinadores de bodas"
+[aff_audience2]
+other = "Fotógrafos y videógrafos de bodas"
+[aff_audience3]
+other = "Dueños de tiendas de novias y estilistas"
+[aff_audience4]
+other = "Bloggers, influencers y creadores de contenido de bodas"
+[aff_audience5]
+other = "Proveedores de servicios y productos para bodas"
+[aff_audience6]
+other = "Editores y medios especializados en bodas"
+[aff_benefits_title]
+other = "Por qué unirte al programa de afiliados de EventSnap"
+[aff_b1_title]
+other = "20% de comisión"
+[aff_b1_desc]
+other = "¡Recibe una recompensa del 20% por cada compra, uno de los pagos más generosos en la industria de las bodas!"
+[aff_b2_title]
+other = "Gestor de afiliados dedicado"
+[aff_b2_desc]
+other = "Estamos aquí para ayudarte a tener éxito. ¿Tienes preguntas o necesitas ideas para promocionar? Nuestro gestor de afiliados te respalda."
+[aff_b3_title]
+other = "Pagos globales"
+[aff_b3_desc]
+other = "Una vez que alcances el umbral de pago de $50, cobrar es fácil. Elige entre ACH, eCheck, SEPA, BACS, SWIFT o PayPal."
+[aff_b4_title]
+other = "Fácil de promocionar"
+[aff_b4_desc]
+other = "EventSnap se integra fácilmente en tu contenido existente, paquetes de planificación o recomendaciones a proveedores."
+[aff_b5_title]
+other = "Cookie de 30 días"
+[aff_b5_desc]
+other = "Recibirás crédito por cualquier venta realizada dentro de los 30 días posteriores a que alguien haga clic en tu enlace."
+[aff_b6_title]
+other = "Monitorea tu rendimiento en vivo"
+[aff_b6_desc]
+other = "Accede a análisis en tiempo real, clics y comisiones desde tu panel de afiliado y descubre qué está funcionando."
+[aff_cta_title]
+other = "Gana dinero extra con EventSnap"
+
+# ─── Contact ─────────────────────────────────────────────
+[contact_title]
+other = "Ponte en contacto"
+[contact_intro]
+other = "Ya sea que tengas una pregunta sobre EventSnap, necesites ayuda con tu cuenta o quieras explorar una colaboración, nos encantaría saber de ti."
+[contact_faq_hint]
+other = "Consulta primero nuestras <a href=\"%s\">preguntas frecuentes</a> — ¡puede que tu respuesta ya esté ahí!"
+[contact_cta_title]
+other = "Captura cada momento, revive cada recuerdo"
+
+# ─── Blog ────────────────────────────────────────────────
+[blog_title]
+other = "Blog"
+[blog_empty]
+other = "Mantente atento — nuevos artículos próximamente."
+[blog_cta_title]
+other = "Captura todos los momentos de tu boda"
+[blog_cta_desc]
+other = "Recopila, comparte y revive fácilmente cada momento con tus invitados — sin app, sin complicaciones, solo recuerdos inolvidables."
+[blog_cta_button]
+other = "Comienza tu historia hoy"
+
+# ─── Signin ──────────────────────────────────────────────
+[signin_title]
+other = "Redirigiendo al inicio de sesión…"
+[signin_desc]
+other = "Estás siendo redirigido a la aplicación EventSnap."
+[signin_button]
+other = "Ir al inicio de sesión"
+
+# ─── Privacy ─────────────────────────────────────────────
+[privacy_title]
+other = "Política de privacidad"
+
+# ─── Language Switcher ───────────────────────────────────
+[language]
+other = "Idioma"

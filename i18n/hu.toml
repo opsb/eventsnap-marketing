@@ -1,0 +1,319 @@
+# ─── Common UI ───────────────────────────────────────────
+[login]
+other = "Bejelentkezés"
+[get_started]
+other = "Kezdd el"
+[see_more_articles]
+other = "További cikkek"
+[read_more]
+other = "Tovább olvasom"
+[sign_up]
+other = "Regisztráció"
+[contact_us]
+other = "Kapcsolat"
+
+# ─── Cookie Banner ───────────────────────────────────────
+[cookie_title]
+other = "Fontos számunkra az adatvédelmed"
+[cookie_text]
+other = "Sütiket használunk elemzési és funkcionalitási célokra, hogy javítsuk a weboldalélményed."
+[cookie_accept_all]
+other = "Összes elfogadása"
+[cookie_decline]
+other = "Nem lényeges sütik elutasítása"
+[cookie_settings]
+other = "Süti beállítások"
+[cookie_functional_title]
+other = "Funkcionális sütik"
+[cookie_functional_desc]
+other = "Ezek a sütik a weboldalunk működéséhez szükségesek, alapvető funkciókat és biztonságot nyújtanak. Mindig aktívak, de nem tartalmaznak személyazonosításra alkalmas adatokat."
+[cookie_analytics_title]
+other = "Analitikai sütik"
+[cookie_analytics_desc]
+other = "Az analitikai sütik segítenek megérteni a közönségünket, és jobb tartalmakat kínálni számukra."
+[cookie_marketing_title]
+other = "Marketing sütik"
+[cookie_marketing_desc]
+other = "A marketing sütik segítenek célzottabb hirdetéseket megjeleníteni. Elsősorban azoknak a felhasználóknak célzunk hirdetéseket, akik már meglátogatták az EventSnap-et."
+[cookie_details]
+other = "Részletek"
+[cookie_save]
+other = "Beállítások mentése"
+
+# ─── Home Page ───────────────────────────────────────────
+[hero_title]
+other = "Kapd meg az összes vendégfotót az esküvődről — automatikusan"
+[hero_subtitle]
+other = "A vendégeid beolvassák a kódot. Feltöltenek. Te pedig megkapod az összes pillanatot egy privát albumban."
+[hero_cta]
+other = "Kezdd el"
+[steps_title]
+other = "3 egyszerű lépés minden emlék összegyűjtéséhez"
+[step1_title]
+other = "Hozd létre az esküvői oldaladat"
+[step1_desc]
+other = "Add meg az esküvő dátumát, a neveiteket és egy üdvözlő üzenetet. A privát galériád másodpercek alatt elkészül."
+[step2_title]
+other = "Oszd meg a QR-kódodat"
+[step2_desc]
+other = "Helyezd ki a helyszínen, vagy küldd el a privát linkedet. A vendégek beolvassák és azonnal feltöltenek — alkalmazás telepítése nélkül."
+[step3_title]
+other = "Nézd, ahogy érkeznek az emlékek"
+[step3_desc]
+other = "A fotók és videók valós időben jelennek meg. Bármikor letöltheted mindet teljes felbontásban."
+[steps_cta]
+other = "Kezdd el a fotók gyűjtését"
+[features_title]
+other = "Többé nem vesznek el a pillanatok"
+[features_subtitle]
+other = "Mindent — és mindenkit — összekötünk."
+[feature1_title]
+other = "Nem kell alkalmazást telepíteni"
+[feature1_desc]
+other = "A vendégek egyszerűen beolvassák a QR-kódot, és azonnal feltölthetnek."
+[feature1_li1]
+other = "Bármely telefonon működik"
+[feature1_li2]
+other = "Nem kell fiók"
+[feature1_li3]
+other = "Nincs letöltés"
+[feature1_li4]
+other = "Nem igényel technikai tudást"
+[feature1_tagline]
+other = "Olyan egyszerű, hogy még a nagymamád is részt vehet benne."
+[feature2_title]
+other = "Az esküvői emlékeid központja"
+[feature2_desc]
+other = "Minden rendezetten, egy gyönyörű helyen."
+[feature2_li1]
+other = "Valós idejű galéria"
+[feature2_li2]
+other = "Kiemelt legtöbbet feltöltő vendégek"
+[feature2_li3]
+other = "A legjobb pillanatok automatikusan kiemelve"
+[feature2_li4]
+other = "Minden fotó és videó letöltése nagy felbontásban"
+[feature2_tagline]
+other = "Az esküvőd. Teljes egészében megörökítve."
+[feature3_title]
+other = "Az esküvői központod"
+[feature3_desc]
+other = "A legtöbb esküvő után:"
+[feature3_li1]
+other = "A fotók a csoportos csevegésekben maradnak"
+[feature3_li2]
+other = "A vendégek elfelejtik elküldeni őket"
+[feature3_li3]
+other = "Heteket töltesz az emberek utáni futással"
+[feature3_li4]
+other = "Néhány emlék örökre elvész"
+[feature3_tagline]
+other = "Az EventSnap garantálja, hogy ez soha ne forduljon elő."
+[testimonials_label]
+other = "Bárki számára könnyen használható"
+[testimonial1_text]
+other = "Az EventSnap tökéletes azok számára, akik nem értenek a technikához! Stressz nélkül gyűjtöttük össze az összes esküvői fotót, és mindenki imádta, milyen egyszerű volt feltölteni az emlékeiket."
+[testimonial1_author]
+other = "Mia és Alex"
+[testimonial2_text]
+other = "Nagyon boldog vagyok, hogy rátaláltam erre az alkalmazásra! Rengeteg fantasztikus fotót kaptam az esküvőmről!"
+[testimonial2_author]
+other = "Florina és Oliver"
+[testimonial3_text]
+other = "Egy egyszerű módszert kerestünk az esküvői fotók összegyűjtésére, és az EventSnap tökéletesen működött! Semmi bonyolult lépés — a vendégeink imádták, és a végleges galéria csodálatos lett!"
+[testimonial3_author]
+other = "Arianna és Ben"
+[capture_title]
+other = "Örökíts meg minden pillanatot"
+[capture_text1]
+other = "A fotós a nagy pillanatokat kapja el. A vendégeid pedig minden mást: a táncparkett káoszát, a kulisszák mögötti nevetéseket, az édes, spontán reakciókat és a késő esti szelfiket."
+[capture_text2]
+other = "Az EventSnap mindezt összehozza."
+[capture_tagline]
+other = "Mert a legjobb emlékek nem mindig tervezettek."
+[faq_title]
+other = "Gyakran ismételt kérdések"
+[cta_title]
+other = "Ne hagyd, hogy az esküvői fotóid eltűnjenek"
+[cta_text1]
+other = "Csak egy esküvői napod van."
+[cta_text2]
+other = "Gondoskodj róla, hogy minden pillanatot megőrizz."
+[cta_text3]
+other = "Nincs utánafutás. Nincs stressz. Nincsenek hiányzó emlékek."
+[cta_button]
+other = "Esküvői központom létrehozása"
+
+# ─── FAQ ─────────────────────────────────────────────────
+[faq1_q]
+other = "Hogyan kezdhetek el az EventSnap-pel?"
+[faq1_a]
+other = "Egyszerűen regisztrálj, hozd létre az eseményedet, és oszd meg az egyedi QR-kódodat vagy privát linkedet a vendégeiddel. Azonnal elkezdhetik feltölteni a fotóikat, videóikat és üzeneteiket!"
+[faq2_q]
+other = "Feltölthetnek a vendégek fotókat és videókat az esemény alatt?"
+[faq2_a]
+other = "Igen! A vendégek valós időben tölthetnek fel fotókat és videókat a telefonjukról, így egyetlen pillanat sem marad ki."
+[faq3_q]
+other = "Meghívhatnak a vendégek másokat is fotók és videók feltöltésére?"
+[faq3_a]
+other = "Természetesen! A vendégeid meghívhatnak más esküvői résztvevőket is a galériába, így közösen gyűjtik az emlékeket, és biztosan nem marad ki egyetlen nagyszerű pillanat sem."
+[faq4_q]
+other = "Mennyi ideig férhetek hozzá a fotókhoz és videókhoz?"
+[faq4_a]
+other = "12 hónapig férhetsz hozzá a fotóidhoz és videóidhoz, nézheted és töltheted le őket. Ezen időszak alatt bármikor letöltheted az anyagokat."
+[faq5_q]
+other = "Letölthetem az esküvői fotókat és videókat nagy felbontásban?"
+[faq5_a]
+other = "Igen! Egyetlen kattintással letöltheted az összes fotót, videót és vendégkönyvi üzenetet teljes felbontásban, így örökre megőrizheted az emlékeidet."
+[faq6_q]
+other = "Privát az esemény galériám?"
+[faq6_a]
+other = "Igen, a galériád privát, és csak a vendégeiddel megosztott QR-kódon vagy privát linken keresztül érhető el. Teljes mértékben te irányítod, ki láthatja és oszthatja meg a galériát."
+[faq7_q]
+other = "Használhatom az EventSnap-et esküvőn kívül más eseményekre is?"
+[faq7_a]
+other = "Igen! Az EventSnap tökéletes bármilyen típusú eseményhez, beleértve a születésnapokat, céges rendezvényeket, ünnepségeket, találkozókat és még sok mást. Bármely alkalom emlékeinek megörökítésére és rendszerezésére terveztük."
+[faq8_q]
+other = "Megoszthatom az esküvői galériát azokkal, akik nem tudtak részt venni?"
+[faq8_a]
+other = "Igen! Egyszerűen megoszthatod a linket vagy QR-kódot bárkivel, így azok is élvezhetik az emlékeket, akik nem tudtak jelen lenni az eseményen."
+
+# ─── Pricing ─────────────────────────────────────────────
+[pricing_title]
+other = "Egyszerű, átlátható árak"
+[pricing_subtitle]
+other = "Válaszd ki a tökéletes csomagot az ünnepségedhez."
+[pricing_badge]
+other = "Legnépszerűbb"
+[plan1_name]
+other = "Tiny Toasts"
+[plan1_desc]
+other = "Tökéletes kis, meghitt esküvőkre"
+[plan1_guests]
+other = "Legfeljebb <strong>50 vendég</strong> tölthet fel és nézhet tartalmakat"
+[plan2_name]
+other = "Champagne Towers"
+[plan2_desc]
+other = "Tökéletes közepes méretű ünnepségekre"
+[plan2_guests]
+other = "Legfeljebb <strong>150 vendég</strong> tölthet fel és nézhet tartalmakat"
+[plan3_name]
+other = "Happily Ever After"
+[plan3_desc]
+other = "Tökéletes a teljeskörű, mindent beleadó esküvői élményhez"
+[plan3_guests]
+other = "<strong>200+ vendég</strong> tölthet fel és nézhet tartalmakat"
+[pricing_f1]
+other = "Korlátlan fotó- és videótárhely"
+[pricing_f2]
+other = "Élő fotó- és videógaléria"
+[pricing_f3]
+other = "Biztonságos, személyre szabott QR-kód és link"
+[pricing_f4]
+other = "Nagy felbontású letöltések akár 12 hónapig"
+[pricing_question]
+other = "Még vannak kérdéseid?"
+
+# ─── Affiliate ───────────────────────────────────────────
+[aff_hero_title]
+other = "EventSnap affiliate program esküvőkre"
+[aff_hero_desc]
+other = "Keress 20%-ot minden általad ajánlott pár után az EventSnap affiliate programmal. Segíts a pároknak megörökíteni esküvőjük minden pillanatát."
+[aff_hero_cta]
+other = "Csatlakozz az affiliate programhoz"
+[aff_how_title]
+other = "Hogyan működik"
+[aff_step1_title]
+other = "Regisztrálj ingyenesen"
+[aff_step1_desc]
+other = "Regisztrálj az EventSnap affiliate programba; mindössze egy percet vesz igénybe."
+[aff_step1_link]
+other = "Regisztrálj itt."
+[aff_step2_title]
+other = "Oszd meg az affiliate linkedet"
+[aff_step2_desc]
+other = "Használd egyedi affiliate linkedet, és kezdd el népszerűsíteni az EventSnap-et a közönséged és ügyfeleid körében."
+[aff_step3_title]
+other = "Keress 20% jutalékot"
+[aff_step3_desc]
+other = "Kapj fizetést minden általad közvetített eladás után. Kövesd a bevételeidet valós időben!"
+[aff_audience_title]
+other = "Affiliate program esküvői szakembereknek"
+[aff_audience1]
+other = "Esküvőszervezők és koordinátorok"
+[aff_audience2]
+other = "Esküvői fotósok és videósok"
+[aff_audience3]
+other = "Menyasszonyi szalon tulajdonosok és stylistok"
+[aff_audience4]
+other = "Esküvői bloggerek, influencerek és tartalomkészítők"
+[aff_audience5]
+other = "Esküvői szolgáltatásokat vagy termékeket kínáló beszállítók"
+[aff_audience6]
+other = "Kiadók és esküvőkre specializálódott média"
+[aff_benefits_title]
+other = "Miért csatlakozz az EventSnap affiliate programhoz"
+[aff_b1_title]
+other = "20% jutalék"
+[aff_b1_desc]
+other = "Minden vásárlás után 20% jutalékot kapsz — az esküvői iparág egyik legmagasabb kifizetése!"
+[aff_b2_title]
+other = "Dedikált affiliate menedzser"
+[aff_b2_desc]
+other = "Segítünk neked sikeressé válni. Kérdésed van, vagy promóciós ötletekre van szükséged? Az affiliate menedzserünk áll rendelkezésedre."
+[aff_b3_title]
+other = "Globális kifizetések"
+[aff_b3_desc]
+other = "Amint eléred az 50 dolláros kifizetési küszöböt, egyszerűen kaphatod meg a jutalékod. Válassz az ACH, eCheck, SEPA, BACS, SWIFT vagy PayPal közül."
+[aff_b4_title]
+other = "Könnyű népszerűsíteni"
+[aff_b4_desc]
+other = "Az EventSnap könnyedén beépíthető a meglévő tartalmaidba, szervezési csomagjaidba vagy szállítói ajánlásaidba."
+[aff_b5_title]
+other = "30 napos süti"
+[aff_b5_desc]
+other = "Jutalékot kapsz minden olyan eladás után, amely a linkedre kattintást követő 30 napon belül történik."
+[aff_b6_title]
+other = "Kövesd a teljesítményed élőben"
+[aff_b6_desc]
+other = "Valós idejű elemzések, kattintások és jutalékok az affiliate vezérlőpultodon — láthatod, mi működik."
+[aff_cta_title]
+other = "Keress extra pénzt az EventSnap-pel"
+
+# ─── Contact ─────────────────────────────────────────────
+[contact_title]
+other = "Lépj kapcsolatba velünk"
+[contact_intro]
+other = "Legyen szó kérdésről az EventSnap-ről, segítségkérésről a fiókodhoz, vagy partnerségi lehetőségről, szívesen hallanánk felőled."
+[contact_faq_hint]
+other = "Nézd meg a <a href=\"%s\">GYIK</a> oldalt — lehet, hogy a válaszod már ott van!"
+[contact_cta_title]
+other = "Örökíts meg minden pillanatot, éld újra minden emléked"
+
+# ─── Blog ────────────────────────────────────────────────
+[blog_title]
+other = "Blog"
+[blog_empty]
+other = "Maradj velünk — hamarosan új cikkek érkeznek."
+[blog_cta_title]
+other = "Örökítsd meg az esküvőd minden pillanatát"
+[blog_cta_desc]
+other = "Könnyedén gyűjtsd, oszd meg és éld újra minden pillanatot a vendégeiddel — alkalmazás nélkül, gond nélkül, csak felejthetetlen emlékek!"
+[blog_cta_button]
+other = "Kezdd el a történeted ma"
+
+# ─── Signin ──────────────────────────────────────────────
+[signin_title]
+other = "Átirányítás a bejelentkezéshez…"
+[signin_desc]
+other = "Átirányítunk az EventSnap alkalmazásba."
+[signin_button]
+other = "Bejelentkezés"
+
+# ─── Privacy ─────────────────────────────────────────────
+[privacy_title]
+other = "Adatvédelmi szabályzat"
+
+# ─── Language Switcher ───────────────────────────────────
+[language]
+other = "Nyelv"

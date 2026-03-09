@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+<html lang="{{ .Site.Language.Lang }}">
 <head>
   {{ partial "head.html" . }}
   <!-- Google tag (gtag.js) -->
@@ -67,25 +67,43 @@
       document.querySelectorAll('.reveal').forEach(function(el) {
         observer.observe(el);
       });
+
+      // Language switcher
+      var langBtn = document.querySelector('.lang-switcher-btn');
+      var langDrop = document.querySelector('.lang-dropdown');
+      if (langBtn && langDrop) {
+        langBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          var isOpen = langDrop.classList.contains('open');
+          langDrop.classList.toggle('open');
+          langBtn.setAttribute('aria-expanded', !isOpen);
+          langDrop.setAttribute('aria-hidden', isOpen);
+        });
+        document.addEventListener('click', function() {
+          langDrop.classList.remove('open');
+          langBtn.setAttribute('aria-expanded', 'false');
+          langDrop.setAttribute('aria-hidden', 'true');
+        });
+      }
     });
   </script>
 
   <!-- Cookie Consent Banner -->
   <div class="cookie-popup" id="cookiePopup" role="dialog" aria-label="Cookie consent">
-    <h2 class="cookie-popup-title">We care about your privacy</h2>
-    <p class="cookie-popup-text">We use cookies for analytics and improved functionality to improve your website experience.</p>
+    <h2 class="cookie-popup-title">{{ i18n "cookie_title" }}</h2>
+    <p class="cookie-popup-text">{{ i18n "cookie_text" }}</p>
     <div class="cookie-popup-actions">
-      <button class="cookie-btn cookie-btn--dark" id="cookieAcceptAll">Accept All</button>
-      <button class="cookie-btn cookie-btn--dark" id="cookieDecline">Decline non-essential</button>
-      <button class="cookie-btn cookie-btn--outline" id="cookieSettingsBtn">Cookie Settings</button>
+      <button class="cookie-btn cookie-btn--dark" id="cookieAcceptAll">{{ i18n "cookie_accept_all" }}</button>
+      <button class="cookie-btn cookie-btn--dark" id="cookieDecline">{{ i18n "cookie_decline" }}</button>
+      <button class="cookie-btn cookie-btn--outline" id="cookieSettingsBtn">{{ i18n "cookie_settings" }}</button>
     </div>
   </div>
 
   <!-- Cookie Settings Modal -->
   <div class="cookie-settings-overlay" id="cookieSettingsOverlay"></div>
-  <div class="cookie-settings" id="cookieSettings" role="dialog" aria-label="Cookie settings">
+  <div class="cookie-settings" id="cookieSettings" role="dialog" aria-label="{{ i18n "cookie_settings" }}">
     <div class="cookie-settings-header">
-      <h2 class="cookie-settings-title">Cookie Settings</h2>
+      <h2 class="cookie-settings-title">{{ i18n "cookie_settings" }}</h2>
       <button class="cookie-settings-close" id="cookieSettingsClose" aria-label="Close">&times;</button>
     </div>
     <div class="cookie-settings-body">
@@ -96,11 +114,11 @@
               <input type="checkbox" checked disabled />
               <span class="cookie-toggle-slider cookie-toggle-slider--always"></span>
             </label>
-            <span class="cookie-category-name">Functional cookies</span>
+            <span class="cookie-category-name">{{ i18n "cookie_functional_title" }}</span>
           </div>
-          <a href="https://eventsnap.it/privacy-policy/" class="cookie-details-link">Details</a>
+          <a href="https://eventsnap.it/privacy-policy/" class="cookie-details-link">{{ i18n "cookie_details" }}</a>
         </div>
-        <p class="cookie-category-desc">These cookies are needed for our website to function providing essential features and security. They are always on but do not contain personally identifiable information (PII).</p>
+        <p class="cookie-category-desc">{{ i18n "cookie_functional_desc" }}</p>
       </div>
       <div class="cookie-category">
         <div class="cookie-category-header">
@@ -109,11 +127,11 @@
               <input type="checkbox" id="toggleAnalytics" />
               <span class="cookie-toggle-slider"></span>
             </label>
-            <span class="cookie-category-name">Analytics cookies</span>
+            <span class="cookie-category-name">{{ i18n "cookie_analytics_title" }}</span>
           </div>
-          <a href="https://eventsnap.it/privacy-policy/" class="cookie-details-link">Details</a>
+          <a href="https://eventsnap.it/privacy-policy/" class="cookie-details-link">{{ i18n "cookie_details" }}</a>
         </div>
-        <p class="cookie-category-desc">Analytics cookies help us understand our audience and deliver better content to them.</p>
+        <p class="cookie-category-desc">{{ i18n "cookie_analytics_desc" }}</p>
       </div>
       <div class="cookie-category">
         <div class="cookie-category-header">
@@ -122,14 +140,14 @@
               <input type="checkbox" id="toggleMarketing" />
               <span class="cookie-toggle-slider"></span>
             </label>
-            <span class="cookie-category-name">Marketing cookies</span>
+            <span class="cookie-category-name">{{ i18n "cookie_marketing_title" }}</span>
           </div>
-          <a href="https://eventsnap.it/privacy-policy/" class="cookie-details-link">Details</a>
+          <a href="https://eventsnap.it/privacy-policy/" class="cookie-details-link">{{ i18n "cookie_details" }}</a>
         </div>
-        <p class="cookie-category-desc">Marketing cookies help us target our ads better. We mainly use them to target ads to users who have visited EventSnap.</p>
+        <p class="cookie-category-desc">{{ i18n "cookie_marketing_desc" }}</p>
       </div>
     </div>
-    <button class="cookie-btn cookie-btn--dark" id="cookieSaveSettings">Save settings</button>
+    <button class="cookie-btn cookie-btn--dark" id="cookieSaveSettings">{{ i18n "cookie_save" }}</button>
   </div>
 
   <script>
