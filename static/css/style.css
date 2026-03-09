@@ -506,12 +506,14 @@ ul { list-style: none; }
   left: 0;
   right: 0;
   bottom: 0;
-  background: var(--color-white);
-  z-index: 999;
+  background: #ffffff;
+  z-index: 1001;
   padding: 2rem var(--gutter);
   opacity: 0;
   pointer-events: none;
   transition: opacity var(--transition);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .mobile-nav.open {
