@@ -363,8 +363,13 @@ Hiring a magician is one of the most unexpected and exciting things you can add 
 
 ## 13. Kids Activity Corner
 
-<img src="" alt="Kids activity corner at a wedding with coloring books" />
-<small>Photo by (add photo credit)</small>
+<div class="blog-photo-grid">
+<a href="https://es.pinterest.com/pin/451697037641620108/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-kids-1.webp" alt="Kids activity corner at a wedding" /></a>
+<a href="https://es.pinterest.com/pin/451697037641620147/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-kids-2.webp" alt="Children's wedding activity table" /></a>
+<a href="https://es.pinterest.com/pin/40954677857961312/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-kids-3.webp" alt="Wedding coloring books for kids" /></a>
+<a href="https://es.pinterest.com/pin/151644712456375049/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-kids-4.webp" alt="Kids entertainment area at a wedding reception" /></a>
+</div>
+<small>Photos via <a href="https://pinterest.com" target="_blank" rel="noopener">Pinterest</a></small>
 
 If children are attending your wedding, a small kids area is one of the most thoughtful wedding ideas you can plan. Happy kids mean relaxed parents, and that means everyone enjoys the celebration more.
 
@@ -384,10 +389,15 @@ If children are attending your wedding, a small kids area is one of the most tho
 
 ---
 
-## 14. Food Bar Instead of Traditional Catering
+## 14. Opt for a Food Buffet
 
-<img src="" alt="Interactive food station at a wedding" />
-<small>Photo by (add photo credit)</small>
+<div class="blog-photo-grid">
+<a href="https://es.pinterest.com/pin/331788697570191166/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-buffet-1.webp" alt="Wedding food buffet station" /></a>
+<a href="https://es.pinterest.com/pin/914862421902324/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-buffet-2.webp" alt="Interactive food bar at a wedding" /></a>
+<a href="https://es.pinterest.com/pin/32721534793403763/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-buffet-3.webp" alt="Wedding pasta or pizza food station" /></a>
+<a href="https://es.pinterest.com/pin/2040762329202817/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-buffet-4.webp" alt="Casual food buffet at a wedding reception" /></a>
+</div>
+<small>Photos via <a href="https://pinterest.com" target="_blank" rel="noopener">Pinterest</a></small>
 
 Food stations are one of the trendiest wedding planning ideas today. They create a relaxed, social atmosphere where guests can choose what they want and interact with each other while they eat.
 
@@ -410,8 +420,13 @@ Food stations are one of the trendiest wedding planning ideas today. They create
 
 ## 15. Venue with a Pool for the After-Party
 
-<img src="" alt="Wedding after-party by a swimming pool at night" />
-<small>Photo by (add photo credit)</small>
+<div class="blog-photo-grid">
+<a href="https://es.pinterest.com/pin/351912466026837/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-pool-1.webp" alt="Wedding after-party by the pool at night" /></a>
+<a href="https://es.pinterest.com/pin/3377768467617584/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-pool-2.webp" alt="Pool venue decorated for a wedding" /></a>
+<a href="https://es.pinterest.com/pin/7388786884193865/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-pool-3.webp" alt="Elegant poolside wedding reception" /></a>
+<a href="https://es.pinterest.com/pin/30399366229997994/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-pool-4.webp" alt="Late-night pool party at a wedding" /></a>
+</div>
+<small>Photos via <a href="https://pinterest.com" target="_blank" rel="noopener">Pinterest</a></small>
 
 If your venue has a pool, it can become the ultimate after-party location. There's something unforgettable about ending the night with your closest friends in and around the water under the stars.
 
@@ -433,8 +448,13 @@ If your venue has a pool, it can become the ultimate after-party location. There
 
 ## 16. Wedding Pinata
 
-<img src="" alt="Couple breaking a wedding pinata together" />
-<small>Photo by (add photo credit)</small>
+<div class="blog-photo-grid">
+<a href="https://es.pinterest.com/pin/35184440834503323/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-pinata-1.webp" alt="Wedding pinata being broken by the couple" /></a>
+<a href="https://es.pinterest.com/pin/5348093301993829/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-pinata-2.webp" alt="Elegant wedding pinata decoration" /></a>
+<a href="https://es.pinterest.com/pin/451697037649894105/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-pinata-3.webp" alt="Fun wedding pinata moment with guests" /></a>
+<a href="https://es.pinterest.com/pin/303289356174050388/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-pinata-4.webp" alt="Couple enjoying a wedding pinata" /></a>
+</div>
+<small>Photos via <a href="https://pinterest.com" target="_blank" rel="noopener">Pinterest</a></small>
 
 A wedding pinata is one of the most playful and fun wedding ideas you can add to your reception. It's unexpected, it's joyful, and it gets everyone laughing and cheering.
 
