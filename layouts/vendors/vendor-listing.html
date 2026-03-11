@@ -1,0 +1,519 @@
+{{ define "main" }}
+<section class="vendor-hero">
+  <div class="container">
+    <h1 class="vendor-hero-title">{{ .Title }}</h1>
+    <p class="vendor-hero-desc">{{ .Description }}</p>
+  </div>
+</section>
+
+<section class="vendor-listing">
+  <div class="container">
+    <div class="vendor-filters">
+      <!-- Location mega-dropdown -->
+      <div class="vendor-filter-group vloc-wrap">
+        <button class="vloc-toggle" id="vlocToggle" aria-expanded="false">
+          <span class="vloc-toggle-label">{{ i18n "vendor_location" | default "Location" }}</span>
+          <span class="vloc-toggle-value" id="vlocValue">{{ i18n "vendor_all_locations" | default "All Locations" }}</span>
+          <svg class="vloc-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l5 5 5-5"/></svg>
+        </button>
+        <div class="vloc-panel" id="vlocPanel">
+          <div class="vloc-tabs" id="vlocTabs">
+            <!-- Populated by JS -->
+          </div>
+          <div class="vloc-cities" id="vlocCities">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Vendor type -->
+      <div class="vendor-filter-group">
+        <label class="vendor-filter-label" for="vendorType">{{ i18n "vendor_type" | default "Vendor Type" }}</label>
+        <div class="vendor-filter-select-wrap">
+          <select id="vendorType" class="vendor-filter-select">
+            <option value="">{{ i18n "vendor_all_types" | default "All Types" }}</option>
+            <option value="photographers" {{ if eq (.Params.vendor_type) "photographers" }}selected{{ end }}>{{ i18n "vendor_photographers" | default "Photographers" }}</option>
+            <option value="videographers" {{ if eq (.Params.vendor_type) "videographers" }}selected{{ end }}>{{ i18n "vendor_videographers" | default "Videographers" }}</option>
+            <option value="venues" {{ if eq (.Params.vendor_type) "venues" }}selected{{ end }}>{{ i18n "vendor_venues" | default "Venues" }}</option>
+            <option value="wedding-planners" {{ if eq (.Params.vendor_type) "wedding-planners" }}selected{{ end }}>{{ i18n "vendor_wedding_planners" | default "Wedding Planners" }}</option>
+            <option value="djs" {{ if eq (.Params.vendor_type) "djs" }}selected{{ end }}>{{ i18n "vendor_djs" | default "DJs & Music" }}</option>
+            <option value="florists" {{ if eq (.Params.vendor_type) "florists" }}selected{{ end }}>{{ i18n "vendor_florists" | default "Florists" }}</option>
+            <option value="caterers" {{ if eq (.Params.vendor_type) "caterers" }}selected{{ end }}>{{ i18n "vendor_caterers" | default "Caterers" }}</option>
+            <option value="hair-makeup" {{ if eq (.Params.vendor_type) "hair-makeup" }}selected{{ end }}>{{ i18n "vendor_hair_makeup" | default "Hair & Makeup" }}</option>
+            <option value="photo-booths" {{ if eq (.Params.vendor_type) "photo-booths" }}selected{{ end }}>{{ i18n "vendor_photo_booths" | default "Photo Booths" }}</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Search -->
+      <div class="vendor-filter-group vendor-filter-search">
+        <label class="vendor-filter-label" for="vendorSearch">{{ i18n "vendor_search" | default "Search" }}</label>
+        <input type="text" id="vendorSearch" class="vendor-filter-input" placeholder="{{ i18n "vendor_search_placeholder" | default "Search vendors..." }}">
+      </div>
+    </div>
+
+    <p class="vendor-results-count"><span id="vendorCount">0</span> {{ i18n "vendor_results" | default "vendors found" }}</p>
+
+    <div class="vendor-grid" id="vendorGrid"></div>
+
+    <div class="vendor-empty" id="vendorEmpty" style="display:none;">
+      <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--color-gray)" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <p>{{ i18n "vendor_no_results" | default "No vendors found matching your filters." }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="vendor-cta section bg-pink">
+  <div class="container text-center">
+    <h2>{{ i18n "vendor_cta_title" | default "Are you a wedding vendor?" }}</h2>
+    <p class="vendor-cta-text">{{ i18n "vendor_cta_text" | default "Join EventSnap and connect with couples planning their perfect day." }}</p>
+    <a href="{{ "contact/" | relLangURL }}" class="btn btn-primary">{{ i18n "vendor_cta_button" | default "Get Listed" }}</a>
+  </div>
+</section>
+
+<script>
+(function() {
+  // Region > Country > City data
+  var locationData = {
+    'USA': {
+      flag: '\ud83c\uddfa\ud83c\uddf8',
+      countries: {
+        'Most Popular': ['New York City', 'Los Angeles', 'Chicago', 'Houston', 'San Francisco', 'Miami'],
+        'California': ['Los Angeles', 'San Francisco', 'San Diego', 'Napa', 'Malibu', 'Monterey', 'Santa Barbara'],
+        'New York': ['New York City', 'Brooklyn', 'Long Island', 'Hudson Valley', 'The Hamptons'],
+        'Florida': ['Miami', 'Orlando', 'Jacksonville', 'Tampa', 'Palm Beach', 'Naples', 'Key West'],
+        'Texas': ['Houston', 'Austin', 'Dallas', 'San Antonio', 'Fort Worth'],
+        'Illinois': ['Chicago', 'Naperville', 'Springfield'],
+        'Colorado': ['Denver', 'Aspen', 'Boulder', 'Colorado Springs'],
+        'Hawaii': ['Honolulu', 'Maui', 'Kauai']
+      }
+    },
+    'Canada': {
+      flag: '\ud83c\udde8\ud83c\udde6',
+      countries: {
+        'Most Popular': ['Toronto', 'Vancouver', 'Montreal', 'Calgary', 'Ottawa'],
+        'Ontario': ['Toronto', 'Ottawa', 'Niagara Falls', 'Hamilton', 'Muskoka'],
+        'British Columbia': ['Vancouver', 'Victoria', 'Whistler', 'Kelowna'],
+        'Quebec': ['Montreal', 'Quebec City', 'Mont-Tremblant'],
+        'Alberta': ['Calgary', 'Edmonton', 'Banff', 'Jasper']
+      }
+    },
+    'Europe': {
+      flag: '\ud83c\uddea\ud83c\uddfa',
+      countries: {
+        'France': ['Paris', 'Lyon', 'Nice', 'Marseille', 'Bordeaux', 'Provence', 'Strasbourg'],
+        'Germany': ['Berlin', 'Munich', 'Hamburg', 'Frankfurt', 'Cologne', 'Dresden', 'Heidelberg'],
+        'Spain': ['Madrid', 'Barcelona', 'Seville', 'Valencia', 'Malaga', 'Mallorca', 'Ibiza'],
+        'Portugal': ['Lisbon', 'Porto', 'Algarve', 'Sintra', 'Madeira'],
+        'Greece': ['Athens', 'Santorini', 'Mykonos', 'Crete', 'Rhodes', 'Thessaloniki'],
+        'Austria': ['Vienna', 'Salzburg', 'Graz', 'Innsbruck'],
+        'Switzerland': ['Zurich', 'Geneva', 'Lucerne', 'Interlaken'],
+        'Netherlands': ['Amsterdam', 'Rotterdam', 'The Hague', 'Utrecht']
+      }
+    },
+    'Italy': {
+      flag: '\ud83c\uddee\ud83c\uddf9',
+      countries: {
+        'Most Popular': ['Rome', 'Milan', 'Florence', 'Venice', 'Naples', 'Lake Como', 'Amalfi Coast'],
+        'Lazio': ['Rome', 'Tivoli', 'Viterbo'],
+        'Lombardy': ['Milan', 'Lake Como', 'Bergamo', 'Brescia'],
+        'Tuscany': ['Florence', 'Siena', 'Pisa', 'Lucca', 'Chianti', 'Val d\'Orcia'],
+        'Veneto': ['Venice', 'Verona', 'Padua', 'Lake Garda'],
+        'Campania': ['Naples', 'Amalfi Coast', 'Sorrento', 'Capri', 'Ravello'],
+        'Sicily': ['Palermo', 'Catania', 'Taormina', 'Syracuse'],
+        'Piedmont': ['Turin', 'Lake Maggiore', 'Langhe'],
+        'Puglia': ['Bari', 'Lecce', 'Ostuni', 'Alberobello'],
+        'Sardinia': ['Cagliari', 'Olbia', 'Costa Smeralda']
+      }
+    },
+    'UK': {
+      flag: '\ud83c\uddec\ud83c\udde7',
+      countries: {
+        'Most Popular': ['London', 'Edinburgh', 'Manchester', 'Bath', 'Oxford'],
+        'England': ['London', 'Manchester', 'Birmingham', 'Bristol', 'Bath', 'Oxford', 'Cambridge', 'Liverpool', 'Brighton', 'York'],
+        'Scotland': ['Edinburgh', 'Glasgow', 'Highlands', 'St Andrews'],
+        'Wales': ['Cardiff', 'Swansea', 'Snowdonia'],
+        'Northern Ireland': ['Belfast', 'Derry']
+      }
+    },
+    'Mexico': {
+      flag: '\ud83c\uddf2\ud83c\uddfd',
+      countries: {
+        'Most Popular': ['Mexico City', 'Cancun', 'Tulum', 'Cabo San Lucas', 'Puerto Vallarta'],
+        'Quintana Roo': ['Cancun', 'Tulum', 'Playa del Carmen', 'Riviera Maya'],
+        'Baja California Sur': ['Cabo San Lucas', 'San Jose del Cabo', 'La Paz'],
+        'Jalisco': ['Puerto Vallarta', 'Guadalajara', 'Sayulita'],
+        'Mexico City': ['Mexico City', 'Coyoacan', 'San Angel']
+      }
+    },
+    'Caribbean': {
+      flag: '\ud83c\udf34',
+      countries: {
+        'Most Popular': ['Punta Cana', 'Jamaica', 'Bahamas', 'Aruba', 'St. Lucia'],
+        'Dominican Republic': ['Punta Cana', 'Santo Domingo', 'La Romana'],
+        'Jamaica': ['Montego Bay', 'Ocho Rios', 'Negril', 'Kingston'],
+        'Bahamas': ['Nassau', 'Exuma', 'Harbour Island'],
+        'Puerto Rico': ['San Juan', 'Vieques', 'Rincon'],
+        'Barbados': ['Bridgetown', 'Holetown', 'Speightstown'],
+        'St. Lucia': ['Castries', 'Soufriere', 'Rodney Bay']
+      }
+    },
+    'Asia': {
+      flag: '\ud83c\udf0f',
+      countries: {
+        'Thailand': ['Bangkok', 'Phuket', 'Chiang Mai', 'Koh Samui'],
+        'Bali': ['Ubud', 'Seminyak', 'Canggu', 'Uluwatu', 'Nusa Dua'],
+        'Japan': ['Tokyo', 'Kyoto', 'Osaka', 'Okinawa'],
+        'India': ['Mumbai', 'Delhi', 'Udaipur', 'Jaipur', 'Goa', 'Kerala'],
+        'Philippines': ['Manila', 'Cebu', 'Boracay', 'Palawan'],
+        'Vietnam': ['Ho Chi Minh City', 'Hanoi', 'Da Nang', 'Hoi An']
+      }
+    },
+    'Africa': {
+      flag: '\ud83c\udf0d',
+      countries: {
+        'South Africa': ['Cape Town', 'Johannesburg', 'Durban', 'Stellenbosch', 'Franschhoek'],
+        'Morocco': ['Marrakech', 'Casablanca', 'Fez', 'Tangier'],
+        'Kenya': ['Nairobi', 'Mombasa', 'Masai Mara', 'Diani Beach'],
+        'Tanzania': ['Zanzibar', 'Dar es Salaam', 'Arusha'],
+        'Mauritius': ['Port Louis', 'Grand Baie', 'Flic en Flac']
+      }
+    },
+    'Australia': {
+      flag: '\ud83c\udde6\ud83c\uddfa',
+      countries: {
+        'Most Popular': ['Sydney', 'Melbourne', 'Brisbane', 'Perth', 'Gold Coast'],
+        'New South Wales': ['Sydney', 'Byron Bay', 'Hunter Valley', 'Blue Mountains'],
+        'Victoria': ['Melbourne', 'Yarra Valley', 'Mornington Peninsula', 'Great Ocean Road'],
+        'Queensland': ['Brisbane', 'Gold Coast', 'Cairns', 'Noosa', 'Whitsundays'],
+        'Western Australia': ['Perth', 'Margaret River', 'Broome'],
+        'South Australia': ['Adelaide', 'Barossa Valley', 'McLaren Vale'],
+        'New Zealand': ['Auckland', 'Queenstown', 'Wellington', 'Christchurch', 'Rotorua']
+      }
+    },
+    'Romania': {
+      flag: '\ud83c\uddf7\ud83c\uddf4',
+      countries: {
+        'Most Popular': ['Bucharest', 'Cluj-Napoca', 'Bra\u0219ov', 'Sibiu', 'Timi\u0219oara'],
+        'Muntenia': ['Bucharest', 'Ploie\u0219ti', 'Pite\u0219ti', 'Tg. Jiu'],
+        'Transilvania': ['Cluj-Napoca', 'Bra\u0219ov', 'Sibiu', 'T\u00e2rgu Mure\u0219', 'Alba Iulia', 'Sighisoara'],
+        'Banat': ['Timi\u0219oara', 'Arad', 'Re\u0219i\u021ba'],
+        'Moldova': ['Ia\u0219i', 'Suceava', 'Bac\u0103u', 'Piatra Neam\u021b'],
+        'Dobrogea': ['Constan\u021ba', 'Mamaia', 'Tulcea'],
+        'Cri\u0219ana': ['Oradea', 'Satu Mare', 'Baia Mare']
+      }
+    },
+    'Hungary': {
+      flag: '\ud83c\udded\ud83c\uddfa',
+      countries: {
+        'Most Popular': ['Budapest', 'Debrecen', 'Szeged', 'P\u00e9cs', 'Eger'],
+        'Central Hungary': ['Budapest', 'Szentendre', 'G\u00f6d\u00f6ll\u0151'],
+        'Western Hungary': ['Gy\u0151r', 'Sopron', 'Szombathely', 'Pannonhalma'],
+        'Eastern Hungary': ['Debrecen', 'Ny\u00edregyh\u00e1za', 'Eger', 'Tokaj'],
+        'Southern Hungary': ['Szeged', 'P\u00e9cs', 'Kecskem\u00e9t']
+      }
+    }
+  };
+
+  // Sample vendors with region + country/state + city
+  var vendors = [
+    // Italy
+    { name: "Elena & Marco Studio", type: "photographers", region: "Italy", country: "Lazio", city: "Rome", rating: 4.9, reviews: 127, image: "https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=400&h=500&fit=crop", price: "$$" },
+    { name: "Golden Hour Films", type: "videographers", region: "Italy", country: "Lazio", city: "Rome", rating: 4.8, reviews: 89, image: "https://images.unsplash.com/photo-1505932794465-147d1f1b2c97?w=400&h=500&fit=crop", price: "$$$" },
+    { name: "Villa Borghese Events", type: "venues", region: "Italy", country: "Lazio", city: "Rome", rating: 5.0, reviews: 203, image: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=400&h=500&fit=crop", price: "$$$" },
+    { name: "Lucia Wedding Planner", type: "wedding-planners", region: "Italy", country: "Lombardy", city: "Milan", rating: 4.9, reviews: 156, image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=400&h=500&fit=crop", price: "$$" },
+    { name: "DJ Matteo", type: "djs", region: "Italy", country: "Lombardy", city: "Milan", rating: 4.7, reviews: 94, image: "https://images.unsplash.com/photo-1571266028243-3716f02d2d1e?w=400&h=500&fit=crop", price: "$$" },
+    { name: "Fiori di Luna", type: "florists", region: "Italy", country: "Tuscany", city: "Florence", rating: 4.8, reviews: 112, image: "https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=400&h=500&fit=crop", price: "$$" },
+    { name: "Sapori Divini Catering", type: "caterers", region: "Italy", country: "Tuscany", city: "Florence", rating: 4.9, reviews: 178, image: "https://images.unsplash.com/photo-1555244162-803834f70033?w=400&h=500&fit=crop", price: "$$$" },
+    { name: "Bellezza Bridal Beauty", type: "hair-makeup", region: "Italy", country: "Campania", city: "Naples", rating: 4.6, reviews: 67, image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400&h=500&fit=crop", price: "$$" },
+    { name: "SnapBooth Italia", type: "photo-booths", region: "Italy", country: "Campania", city: "Naples", rating: 4.8, reviews: 145, image: "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=400&h=500&fit=crop", price: "$" },
+    { name: "Venezia Wedding Photos", type: "photographers", region: "Italy", country: "Veneto", city: "Venice", rating: 4.9, reviews: 184, image: "https://images.unsplash.com/photo-1519741497674-611481863552?w=400&h=500&fit=crop", price: "$$$" },
+    { name: "Como Lake Venues", type: "venues", region: "Italy", country: "Lombardy", city: "Lake Como", rating: 5.0, reviews: 267, image: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=400&h=500&fit=crop", price: "$$$" },
+    { name: "Amalfi Coast Planner", type: "wedding-planners", region: "Italy", country: "Campania", city: "Amalfi Coast", rating: 4.9, reviews: 198, image: "https://images.unsplash.com/photo-1478146059778-26028b07395a?w=400&h=500&fit=crop", price: "$$$" },
+    // Europe
+    { name: "Paris Lumiere Photos", type: "photographers", region: "Europe", country: "France", city: "Paris", rating: 4.9, reviews: 289, image: "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=400&h=500&fit=crop", price: "$$$" },
+    { name: "Provence Wedding Films", type: "videographers", region: "Europe", country: "France", city: "Provence", rating: 4.8, reviews: 134, image: "https://images.unsplash.com/photo-1505932794465-147d1f1b2c97?w=400&h=500&fit=crop", price: "$$$" },
+    { name: "Ch\u00e2teau Events Paris", type: "venues", region: "Europe", country: "France", city: "Paris", rating: 5.0, reviews: 456, image: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=400&h=500&fit=crop", price: "$$$" },
+    { name: "Artisan Lens Photography", type: "photographers", region: "Europe", country: "Germany", city: "Berlin", rating: 4.9, reviews: 201, image: "https://images.unsplash.com/photo-1544078751-58fee2d8a03b?w=400&h=500&fit=crop", price: "$$$" },
+    { name: "Hochzeitsfilm Berlin", type: "videographers", region: "Europe", country: "Germany", city: "Berlin", rating: 4.7, reviews: 76, image: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=400&h=500&fit=crop", price: "$$" },
+    { name: "Schloss Charlottenburg Events", type: "venues", region: "Europe", country: "Germany", city: "Berlin", rating: 4.9, reviews: 312, image: "https://images.unsplash.com/photo-1522413452208-996ff3f3e740?w=400&h=500&fit=crop", price: "$$$" },
+    { name: "Hochzeitsplanerin Sarah", type: "wedding-planners", region: "Europe", country: "Germany", city: "Munich", rating: 4.8, reviews: 134, image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=400&h=500&fit=crop", price: "$$" },
+    { name: "Barcelona Wedding Photos", type: "photographers", region: "Europe", country: "Spain", city: "Barcelona", rating: 4.8, reviews: 167, image: "https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=400&h=500&fit=crop", price: "$$" },
+    { name: "Madrid Bodas Films", type: "videographers", region: "Europe", country: "Spain", city: "Madrid", rating: 4.7, reviews: 83, image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=400&h=500&fit=crop", price: "$$" },
+    { name: "Palacio Real Events", type: "venues", region: "Europe", country: "Spain", city: "Madrid", rating: 5.0, reviews: 256, image: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=400&h=500&fit=crop", price: "$$$" },
+    { name: "Santorini Sunset Photos", type: "photographers", region: "Europe", country: "Greece", city: "Santorini", rating: 5.0, reviews: 312, image: "https://images.unsplash.com/photo-1519741497674-611481863552?w=400&h=500&fit=crop", price: "$$$" },
+    { name: "Mykonos Wedding Films", type: "videographers", region: "Europe", country: "Greece", city: "Mykonos", rating: 4.8, reviews: 167, image: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=400&h=500&fit=crop", price: "$$$" },
+    { name: "Blumen Zauber", type: "florists", region: "Europe", country: "Austria", city: "Vienna", rating: 4.9, reviews: 98, image: "https://images.unsplash.com/photo-1508610048659-a06b669e3321?w=400&h=500&fit=crop", price: "$$" },
+    { name: "Lisbon Light Studio", type: "photographers", region: "Europe", country: "Portugal", city: "Lisbon", rating: 4.8, reviews: 143, image: "https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=400&h=500&fit=crop", price: "$$" },
+    { name: "Amsterdam Canal Weddings", type: "venues", region: "Europe", country: "Netherlands", city: "Amsterdam", rating: 4.7, reviews: 134, image: "https://images.unsplash.com/photo-1522413452208-996ff3f3e740?w=400&h=500&fit=crop", price: "$$" },
+    // UK
+    { name: "London Wedding Collective", type: "photographers", region: "UK", country: "England", city: "London", rating: 4.9, reviews: 234, image: "https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=400&h=500&fit=crop", price: "$$$" },
+    { name: "Edinburgh Castle Events", type: "venues", region: "UK", country: "Scotland", city: "Edinburgh", rating: 4.9, reviews: 287, image: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=400&h=500&fit=crop", price: "$$$" },
+    { name: "Manchester Wedding Films", type: "videographers", region: "UK", country: "England", city: "Manchester", rating: 4.7, reviews: 98, image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=400&h=500&fit=crop", price: "$$" },
+    { name: "Bath Floral Studio", type: "florists", region: "UK", country: "England", city: "Bath", rating: 4.8, reviews: 76, image: "https://images.unsplash.com/photo-1508610048659-a06b669e3321?w=400&h=500&fit=crop", price: "$$" },
+    // USA
+    { name: "NYC Wedding Studio", type: "photographers", region: "USA", country: "New York", city: "New York City", rating: 4.9, reviews: 342, image: "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=400&h=500&fit=crop", price: "$$$" },
+    { name: "LA Golden Hour Films", type: "videographers", region: "USA", country: "California", city: "Los Angeles", rating: 4.8, reviews: 267, image: "https://images.unsplash.com/photo-1505932794465-147d1f1b2c97?w=400&h=500&fit=crop", price: "$$$" },
+    { name: "Napa Valley Estate", type: "venues", region: "USA", country: "California", city: "Napa", rating: 5.0, reviews: 189, image: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=400&h=500&fit=crop", price: "$$$" },
+    { name: "Chicago Lakeview Planner", type: "wedding-planners", region: "USA", country: "Illinois", city: "Chicago", rating: 4.8, reviews: 178, image: "https://images.unsplash.com/photo-1478146059778-26028b07395a?w=400&h=500&fit=crop", price: "$$" },
+    { name: "Miami Beach Events", type: "venues", region: "USA", country: "Florida", city: "Miami", rating: 4.9, reviews: 234, image: "https://images.unsplash.com/photo-1522413452208-996ff3f3e740?w=400&h=500&fit=crop", price: "$$$" },
+    { name: "Maui Paradise Photos", type: "photographers", region: "USA", country: "Hawaii", city: "Maui", rating: 5.0, reviews: 198, image: "https://images.unsplash.com/photo-1519741497674-611481863552?w=400&h=500&fit=crop", price: "$$$" },
+    { name: "Austin DJ Collective", type: "djs", region: "USA", country: "Texas", city: "Austin", rating: 4.7, reviews: 89, image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=500&fit=crop", price: "$$" },
+    // Canada
+    { name: "Toronto Luxe Photography", type: "photographers", region: "Canada", country: "Ontario", city: "Toronto", rating: 4.9, reviews: 198, image: "https://images.unsplash.com/photo-1544078751-58fee2d8a03b?w=400&h=500&fit=crop", price: "$$$" },
+    { name: "Vancouver Coastal Films", type: "videographers", region: "Canada", country: "British Columbia", city: "Vancouver", rating: 4.8, reviews: 145, image: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=400&h=500&fit=crop", price: "$$$" },
+    { name: "Banff Mountain Weddings", type: "venues", region: "Canada", country: "Alberta", city: "Banff", rating: 5.0, reviews: 267, image: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=400&h=500&fit=crop", price: "$$$" },
+    // Mexico
+    { name: "Tulum Beach Photos", type: "photographers", region: "Mexico", country: "Quintana Roo", city: "Tulum", rating: 4.9, reviews: 187, image: "https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=400&h=500&fit=crop", price: "$$" },
+    { name: "Cabo Sunset Events", type: "venues", region: "Mexico", country: "Baja California Sur", city: "Cabo San Lucas", rating: 4.8, reviews: 234, image: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=400&h=500&fit=crop", price: "$$$" },
+    { name: "Puerto Vallarta Films", type: "videographers", region: "Mexico", country: "Jalisco", city: "Puerto Vallarta", rating: 4.7, reviews: 112, image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=400&h=500&fit=crop", price: "$$" },
+    // Caribbean
+    { name: "Punta Cana Dream Photos", type: "photographers", region: "Caribbean", country: "Dominican Republic", city: "Punta Cana", rating: 4.8, reviews: 198, image: "https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=400&h=500&fit=crop", price: "$$" },
+    { name: "Jamaica Beach Weddings", type: "wedding-planners", region: "Caribbean", country: "Jamaica", city: "Montego Bay", rating: 4.9, reviews: 156, image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=400&h=500&fit=crop", price: "$$" },
+    { name: "Bahamas Island Events", type: "venues", region: "Caribbean", country: "Bahamas", city: "Nassau", rating: 5.0, reviews: 287, image: "https://images.unsplash.com/photo-1522413452208-996ff3f3e740?w=400&h=500&fit=crop", price: "$$$" },
+    // Asia
+    { name: "Bali Tropical Photos", type: "photographers", region: "Asia", country: "Bali", city: "Ubud", rating: 4.9, reviews: 234, image: "https://images.unsplash.com/photo-1519741497674-611481863552?w=400&h=500&fit=crop", price: "$$" },
+    { name: "Tokyo Wedding Films", type: "videographers", region: "Asia", country: "Japan", city: "Tokyo", rating: 4.8, reviews: 167, image: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=400&h=500&fit=crop", price: "$$$" },
+    { name: "Phuket Paradise Events", type: "venues", region: "Asia", country: "Thailand", city: "Phuket", rating: 4.8, reviews: 198, image: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=400&h=500&fit=crop", price: "$$" },
+    { name: "Udaipur Palace Weddings", type: "venues", region: "Asia", country: "India", city: "Udaipur", rating: 5.0, reviews: 312, image: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=400&h=500&fit=crop", price: "$$$" },
+    // Africa
+    { name: "Cape Town Sunset Studio", type: "photographers", region: "Africa", country: "South Africa", city: "Cape Town", rating: 4.9, reviews: 178, image: "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=400&h=500&fit=crop", price: "$$" },
+    { name: "Marrakech Riad Events", type: "venues", region: "Africa", country: "Morocco", city: "Marrakech", rating: 4.8, reviews: 145, image: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=400&h=500&fit=crop", price: "$$" },
+    { name: "Zanzibar Beach Weddings", type: "wedding-planners", region: "Africa", country: "Tanzania", city: "Zanzibar", rating: 4.7, reviews: 87, image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=400&h=500&fit=crop", price: "$$" },
+    // Australia
+    { name: "Sydney Harbour Photos", type: "photographers", region: "Australia", country: "New South Wales", city: "Sydney", rating: 4.9, reviews: 256, image: "https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=400&h=500&fit=crop", price: "$$$" },
+    { name: "Melbourne Urban Films", type: "videographers", region: "Australia", country: "Victoria", city: "Melbourne", rating: 4.8, reviews: 189, image: "https://images.unsplash.com/photo-1505932794465-147d1f1b2c97?w=400&h=500&fit=crop", price: "$$$" },
+    { name: "Queenstown NZ Weddings", type: "venues", region: "Australia", country: "New Zealand", city: "Queenstown", rating: 5.0, reviews: 198, image: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=400&h=500&fit=crop", price: "$$$" },
+    // Romania
+    { name: "Bucharest Wedding Studio", type: "photographers", region: "Romania", country: "Muntenia", city: "Bucharest", rating: 4.7, reviews: 92, image: "https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=400&h=500&fit=crop", price: "$" },
+    { name: "Nunta Films", type: "videographers", region: "Romania", country: "Muntenia", city: "Bucharest", rating: 4.6, reviews: 64, image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&h=500&fit=crop", price: "$" },
+    { name: "Palatul Mogosoaia", type: "venues", region: "Romania", country: "Muntenia", city: "Bucharest", rating: 4.8, reviews: 187, image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop", price: "$$" },
+    { name: "Cluj Photo Art", type: "photographers", region: "Romania", country: "Transilvania", city: "Cluj-Napoca", rating: 4.8, reviews: 78, image: "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=400&h=500&fit=crop", price: "$" },
+    { name: "Bra\u0219ov Events Hall", type: "venues", region: "Romania", country: "Transilvania", city: "Bra\u0219ov", rating: 4.7, reviews: 112, image: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=400&h=500&fit=crop", price: "$$" },
+    { name: "Sibiu Wedding Planner", type: "wedding-planners", region: "Romania", country: "Transilvania", city: "Sibiu", rating: 4.9, reviews: 56, image: "https://images.unsplash.com/photo-1478146059778-26028b07395a?w=400&h=500&fit=crop", price: "$" },
+    // Hungary
+    { name: "Budapest Foto Art", type: "photographers", region: "Hungary", country: "Central Hungary", city: "Budapest", rating: 4.8, reviews: 109, image: "https://images.unsplash.com/photo-1544078751-58fee2d8a03b?w=400&h=500&fit=crop", price: "$" },
+    { name: "Eskuvo Video", type: "videographers", region: "Hungary", country: "Central Hungary", city: "Budapest", rating: 4.7, reviews: 71, image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&h=500&fit=crop", price: "$" },
+    { name: "Gundel Catering", type: "caterers", region: "Hungary", country: "Central Hungary", city: "Budapest", rating: 4.9, reviews: 198, image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=500&fit=crop", price: "$$$" },
+    { name: "Debrecen Wedding Venue", type: "venues", region: "Hungary", country: "Eastern Hungary", city: "Debrecen", rating: 4.6, reviews: 87, image: "https://images.unsplash.com/photo-1522413452208-996ff3f3e740?w=400&h=500&fit=crop", price: "$" },
+    { name: "Eger Virag Florist", type: "florists", region: "Hungary", country: "Eastern Hungary", city: "Eger", rating: 4.8, reviews: 45, image: "https://images.unsplash.com/photo-1508610048659-a06b669e3321?w=400&h=500&fit=crop", price: "$" },
+  ];
+
+  var currentType = '{{ .Params.vendor_type }}';
+  var grid = document.getElementById('vendorGrid');
+  var countEl = document.getElementById('vendorCount');
+  var emptyEl = document.getElementById('vendorEmpty');
+  var typeSelect = document.getElementById('vendorType');
+  var searchInput = document.getElementById('vendorSearch');
+
+  // Location panel state
+  var vlocToggle = document.getElementById('vlocToggle');
+  var vlocPanel = document.getElementById('vlocPanel');
+  var vlocTabs = document.getElementById('vlocTabs');
+  var vlocCities = document.getElementById('vlocCities');
+  var vlocValue = document.getElementById('vlocValue');
+  var selectedRegion = '';
+  var selectedCountry = '';
+  var selectedCity = '';
+
+  // Build region tabs
+  function buildTabs() {
+    var allTab = document.createElement('button');
+    allTab.className = 'vloc-tab active';
+    allTab.dataset.region = '';
+    allTab.textContent = '{{ i18n "vendor_all_countries" | default "All" }}';
+    allTab.addEventListener('click', function() { selectTab(''); });
+    vlocTabs.appendChild(allTab);
+
+    Object.keys(locationData).forEach(function(region) {
+      var tab = document.createElement('button');
+      tab.className = 'vloc-tab';
+      tab.dataset.region = region;
+      tab.innerHTML = '<span class="vloc-tab-flag">' + locationData[region].flag + '</span> ' + region;
+      tab.addEventListener('click', function() { selectTab(region); });
+      vlocTabs.appendChild(tab);
+    });
+  }
+
+  function selectTab(region) {
+    selectedRegion = region;
+    selectedCountry = '';
+    selectedCity = '';
+
+    vlocTabs.querySelectorAll('.vloc-tab').forEach(function(t) {
+      t.classList.toggle('active', t.dataset.region === region);
+    });
+
+    buildCities(region);
+    updateLocationLabel();
+    renderVendors();
+  }
+
+  function buildCities(region) {
+    vlocCities.innerHTML = '';
+
+    if (!region) {
+      // Show all regions as headings with a few top cities
+      Object.keys(locationData).forEach(function(r) {
+        var col = document.createElement('div');
+        col.className = 'vloc-city-col';
+        var heading = document.createElement('h4');
+        heading.className = 'vloc-city-heading';
+        heading.textContent = r;
+        heading.style.cursor = 'pointer';
+        heading.addEventListener('click', function() { selectTab(r); });
+        col.appendChild(heading);
+
+        var allBtn = document.createElement('button');
+        allBtn.className = 'vloc-city-btn vloc-city-btn--all';
+        allBtn.textContent = '{{ i18n "vendor_all_cities" | default "All cities" }}';
+        allBtn.addEventListener('click', function() {
+          selectedRegion = r; selectedCountry = ''; selectedCity = '';
+          updateLocationLabel(); renderVendors(); closePanel();
+        });
+        col.appendChild(allBtn);
+
+        // Show first country's cities as preview
+        var countries = locationData[r].countries;
+        var firstKey = Object.keys(countries)[0];
+        var preview = countries[firstKey].slice(0, 4);
+        preview.forEach(function(city) {
+          var btn = document.createElement('button');
+          btn.className = 'vloc-city-btn';
+          btn.textContent = city;
+          btn.addEventListener('click', function() {
+            selectedRegion = r; selectedCity = city; selectedCountry = '';
+            updateLocationLabel(); renderVendors(); closePanel();
+          });
+          col.appendChild(btn);
+        });
+
+        vlocCities.appendChild(col);
+      });
+    } else {
+      // Show countries within this region, each with their cities
+      var countries = locationData[region].countries;
+      Object.keys(countries).forEach(function(country) {
+        var col = document.createElement('div');
+        col.className = 'vloc-city-col';
+
+        var heading = document.createElement('h4');
+        heading.className = 'vloc-city-heading';
+        heading.textContent = country;
+        col.appendChild(heading);
+
+        // "All cities" for this country
+        if (country !== 'Most Popular') {
+          var allBtn = document.createElement('button');
+          allBtn.className = 'vloc-city-btn vloc-city-btn--all';
+          allBtn.textContent = '{{ i18n "vendor_all_cities" | default "All cities" }}';
+          allBtn.addEventListener('click', function() {
+            selectedCountry = country; selectedCity = '';
+            updateLocationLabel(); renderVendors(); closePanel();
+          });
+          col.appendChild(allBtn);
+        }
+
+        countries[country].forEach(function(city) {
+          var btn = document.createElement('button');
+          btn.className = 'vloc-city-btn';
+          btn.textContent = city;
+          btn.addEventListener('click', function() {
+            selectedCountry = country; selectedCity = city;
+            updateLocationLabel(); renderVendors(); closePanel();
+          });
+          col.appendChild(btn);
+        });
+
+        vlocCities.appendChild(col);
+      });
+    }
+  }
+
+  function updateLocationLabel() {
+    if (selectedCity && selectedCountry) {
+      vlocValue.textContent = selectedCity + ', ' + selectedCountry;
+    } else if (selectedCity && selectedRegion) {
+      vlocValue.textContent = selectedCity + ', ' + selectedRegion;
+    } else if (selectedCountry) {
+      vlocValue.textContent = selectedCountry + ', ' + selectedRegion;
+    } else if (selectedRegion) {
+      vlocValue.textContent = selectedRegion;
+    } else {
+      vlocValue.textContent = '{{ i18n "vendor_all_locations" | default "All Locations" }}';
+    }
+  }
+
+  function closePanel() {
+    vlocPanel.classList.remove('open');
+    vlocToggle.setAttribute('aria-expanded', 'false');
+  }
+
+  vlocToggle.addEventListener('click', function(e) {
+    e.stopPropagation();
+    var isOpen = vlocPanel.classList.contains('open');
+    vlocPanel.classList.toggle('open');
+    this.setAttribute('aria-expanded', !isOpen);
+  });
+
+  document.addEventListener('click', function(e) {
+    if (!vlocPanel.contains(e.target) && !vlocToggle.contains(e.target)) {
+      closePanel();
+    }
+  });
+
+  function renderVendors() {
+    var type = typeSelect.value;
+    var search = searchInput.value.toLowerCase();
+
+    var filtered = vendors.filter(function(v) {
+      if (selectedRegion && v.region !== selectedRegion) return false;
+      if (selectedCountry && v.country !== selectedCountry) return false;
+      if (selectedCity && v.city !== selectedCity) return false;
+      if (type && v.type !== type) return false;
+      if (search && v.name.toLowerCase().indexOf(search) === -1) return false;
+      return true;
+    });
+
+    countEl.textContent = filtered.length;
+    grid.innerHTML = '';
+    emptyEl.style.display = filtered.length === 0 ? 'flex' : 'none';
+
+    filtered.forEach(function(v) {
+      var card = document.createElement('a');
+      card.href = '#';
+      card.className = 'vendor-card';
+      card.innerHTML =
+        '<div class="vendor-card-img">' +
+          '<img src="' + v.image + '" alt="' + v.name + '" loading="lazy">' +
+        '</div>' +
+        '<div class="vendor-card-body">' +
+          '<h3 class="vendor-card-name">' + v.name + '</h3>' +
+          '<p class="vendor-card-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> ' + v.city + ', ' + v.region + '</p>' +
+          '<div class="vendor-card-meta">' +
+            '<span class="vendor-card-rating"><svg width="14" height="14" viewBox="0 0 24 24" fill="var(--color-accent)" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> ' + v.rating + ' <span class="vendor-card-reviews">(' + v.reviews + ')</span></span>' +
+            '<span class="vendor-card-price">' + v.price + '</span>' +
+          '</div>' +
+        '</div>';
+      grid.appendChild(card);
+    });
+  }
+
+  typeSelect.addEventListener('change', renderVendors);
+  searchInput.addEventListener('input', renderVendors);
+
+  typeSelect.addEventListener('change', function() {
+    var val = this.value;
+    if (val) {
+      var lang = '{{ .Site.Language.Lang }}';
+      var prefix = lang === 'en' ? '' : '/' + lang;
+      window.location.href = prefix + '/vendors/' + val + '/';
+    }
+  });
+
+  buildTabs();
+  buildCities('');
+  renderVendors();
+})();
+</script>
+{{ end }}

@@ -1,0 +1,30 @@
+{{ define "main" }}
+<section class="vendor-hero">
+  <div class="container">
+    <h1 class="vendor-hero-title">{{ .Title }}</h1>
+    <p class="vendor-hero-desc">{{ .Description }}</p>
+  </div>
+</section>
+
+<section class="vendor-categories section">
+  <div class="container">
+    <div class="vendor-cat-grid">
+      {{ range .Sections }}
+      <a href="{{ .Permalink }}" class="vendor-cat-card">
+        <h3 class="vendor-cat-name">{{ .Title }}</h3>
+        <p class="vendor-cat-desc">{{ .Description }}</p>
+        <span class="vendor-cat-arrow">&rarr;</span>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="vendor-cta section bg-pink">
+  <div class="container text-center">
+    <h2>{{ i18n "vendor_cta_title" | default "Are you a wedding vendor?" }}</h2>
+    <p class="vendor-cta-text">{{ i18n "vendor_cta_text" | default "Join EventSnap and connect with couples planning their perfect day." }}</p>
+    <a href="{{ "contact/" | relLangURL }}" class="btn btn-primary">{{ i18n "vendor_cta_button" | default "Get Listed" }}</a>
+  </div>
+</section>
+{{ end }}

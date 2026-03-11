@@ -34,10 +34,60 @@ defaultContentLanguageInSubdir = false
       url = '/pricing/'
       weight = 2
     [[languages.en.menus.main]]
+      name = 'Vendors'
+      identifier = 'vendors'
+      url = '#'
+      weight = 3
+    [[languages.en.menus.main]]
+      name = 'Photographers'
+      url = '/vendors/photographers/'
+      parent = 'vendors'
+      weight = 1
+    [[languages.en.menus.main]]
+      name = 'Videographers'
+      url = '/vendors/videographers/'
+      parent = 'vendors'
+      weight = 2
+    [[languages.en.menus.main]]
+      name = 'Venues'
+      url = '/vendors/venues/'
+      parent = 'vendors'
+      weight = 3
+    [[languages.en.menus.main]]
+      name = 'Wedding Planners'
+      url = '/vendors/wedding-planners/'
+      parent = 'vendors'
+      weight = 4
+    [[languages.en.menus.main]]
+      name = 'DJs & Music'
+      url = '/vendors/djs/'
+      parent = 'vendors'
+      weight = 5
+    [[languages.en.menus.main]]
+      name = 'Florists'
+      url = '/vendors/florists/'
+      parent = 'vendors'
+      weight = 6
+    [[languages.en.menus.main]]
+      name = 'Caterers'
+      url = '/vendors/caterers/'
+      parent = 'vendors'
+      weight = 7
+    [[languages.en.menus.main]]
+      name = 'Hair & Makeup'
+      url = '/vendors/hair-makeup/'
+      parent = 'vendors'
+      weight = 8
+    [[languages.en.menus.main]]
+      name = 'Photo Booths'
+      url = '/vendors/photo-booths/'
+      parent = 'vendors'
+      weight = 9
+    [[languages.en.menus.main]]
       name = 'Resources'
       identifier = 'resources'
       url = '#'
-      weight = 3
+      weight = 4
     [[languages.en.menus.main]]
       name = 'Blog'
       url = '/blog/'
@@ -56,11 +106,11 @@ defaultContentLanguageInSubdir = false
     [[languages.en.menus.main]]
       name = 'Affiliate program'
       url = '/affiliate-program/'
-      weight = 4
+      weight = 5
     [[languages.en.menus.main]]
       name = 'Contact'
       url = '/contact/'
-      weight = 5
+      weight = 6
 
     [[languages.en.menus.footer]]
       name = 'Home'
@@ -103,10 +153,78 @@ defaultContentLanguageInSubdir = false
       url = '/pricing/'
       weight = 2
     [[languages.de.menus.main]]
+      name = 'Anbieter'
+      identifier = 'vendors'
+      url = '#'
+      weight = 3
+    [[languages.de.menus.main]]
+      name = 'Fotografen'
+      url = '/vendors/photographers/'
+      parent = 'vendors'
+      weight = 1
+      [languages.de.menus.main.params]
+        icon = '📸'
+    [[languages.de.menus.main]]
+      name = 'Videografen'
+      url = '/vendors/videographers/'
+      parent = 'vendors'
+      weight = 2
+      [languages.de.menus.main.params]
+        icon = '🎬'
+    [[languages.de.menus.main]]
+      name = 'Locations'
+      url = '/vendors/venues/'
+      parent = 'vendors'
+      weight = 3
+      [languages.de.menus.main.params]
+        icon = '🏛️'
+    [[languages.de.menus.main]]
+      name = 'Hochzeitsplaner'
+      url = '/vendors/wedding-planners/'
+      parent = 'vendors'
+      weight = 4
+      [languages.de.menus.main.params]
+        icon = '📋'
+    [[languages.de.menus.main]]
+      name = 'DJs & Musik'
+      url = '/vendors/djs/'
+      parent = 'vendors'
+      weight = 5
+      [languages.de.menus.main.params]
+        icon = '🎵'
+    [[languages.de.menus.main]]
+      name = 'Floristen'
+      url = '/vendors/florists/'
+      parent = 'vendors'
+      weight = 6
+      [languages.de.menus.main.params]
+        icon = '💐'
+    [[languages.de.menus.main]]
+      name = 'Catering'
+      url = '/vendors/caterers/'
+      parent = 'vendors'
+      weight = 7
+      [languages.de.menus.main.params]
+        icon = '🍽️'
+    [[languages.de.menus.main]]
+      name = 'Friseur & Makeup'
+      url = '/vendors/hair-makeup/'
+      parent = 'vendors'
+      weight = 8
+      [languages.de.menus.main.params]
+        icon = '💄'
+    [[languages.de.menus.main]]
+      name = 'Fotoboxen'
+      url = '/vendors/photo-booths/'
+      parent = 'vendors'
+      weight = 9
+      [languages.de.menus.main.params]
+        icon = '🎪'
+    [[languages.de.menus.main]]
       name = 'Ressourcen'
       identifier = 'resources'
       url = '#'
-      weight = 3
+      weight = 4
     [[languages.de.menus.main]]
       name = 'Blog'
       url = '/blog/'
@@ -125,11 +243,11 @@ defaultContentLanguageInSubdir = false
     [[languages.de.menus.main]]
       name = 'Partnerprogramm'
       url = '/affiliate-program/'
-      weight = 4
+      weight = 5
     [[languages.de.menus.main]]
       name = 'Kontakt'
       url = '/contact/'
-      weight = 5
+      weight = 6
 
     [[languages.de.menus.footer]]
       name = 'Startseite'
@@ -172,10 +290,78 @@ defaultContentLanguageInSubdir = false
       url = '/pricing/'
       weight = 2
     [[languages.es.menus.main]]
+      name = 'Proveedores'
+      identifier = 'vendors'
+      url = '#'
+      weight = 3
+    [[languages.es.menus.main]]
+      name = 'Fotógrafos'
+      url = '/vendors/photographers/'
+      parent = 'vendors'
+      weight = 1
+      [languages.es.menus.main.params]
+        icon = '📸'
+    [[languages.es.menus.main]]
+      name = 'Videógrafos'
+      url = '/vendors/videographers/'
+      parent = 'vendors'
+      weight = 2
+      [languages.es.menus.main.params]
+        icon = '🎬'
+    [[languages.es.menus.main]]
+      name = 'Lugares'
+      url = '/vendors/venues/'
+      parent = 'vendors'
+      weight = 3
+      [languages.es.menus.main.params]
+        icon = '🏛️'
+    [[languages.es.menus.main]]
+      name = 'Organizadores'
+      url = '/vendors/wedding-planners/'
+      parent = 'vendors'
+      weight = 4
+      [languages.es.menus.main.params]
+        icon = '📋'
+    [[languages.es.menus.main]]
+      name = 'DJs y Música'
+      url = '/vendors/djs/'
+      parent = 'vendors'
+      weight = 5
+      [languages.es.menus.main.params]
+        icon = '🎵'
+    [[languages.es.menus.main]]
+      name = 'Floristas'
+      url = '/vendors/florists/'
+      parent = 'vendors'
+      weight = 6
+      [languages.es.menus.main.params]
+        icon = '💐'
+    [[languages.es.menus.main]]
+      name = 'Catering'
+      url = '/vendors/caterers/'
+      parent = 'vendors'
+      weight = 7
+      [languages.es.menus.main.params]
+        icon = '🍽️'
+    [[languages.es.menus.main]]
+      name = 'Peinado y Maquillaje'
+      url = '/vendors/hair-makeup/'
+      parent = 'vendors'
+      weight = 8
+      [languages.es.menus.main.params]
+        icon = '💄'
+    [[languages.es.menus.main]]
+      name = 'Fotomatón'
+      url = '/vendors/photo-booths/'
+      parent = 'vendors'
+      weight = 9
+      [languages.es.menus.main.params]
+        icon = '🎪'
+    [[languages.es.menus.main]]
       name = 'Recursos'
       identifier = 'resources'
       url = '#'
-      weight = 3
+      weight = 4
     [[languages.es.menus.main]]
       name = 'Blog'
       url = '/blog/'
@@ -194,11 +380,11 @@ defaultContentLanguageInSubdir = false
     [[languages.es.menus.main]]
       name = 'Programa de afiliados'
       url = '/affiliate-program/'
-      weight = 4
+      weight = 5
     [[languages.es.menus.main]]
       name = 'Contacto'
       url = '/contact/'
-      weight = 5
+      weight = 6
 
     [[languages.es.menus.footer]]
       name = 'Inicio'
@@ -241,10 +427,78 @@ defaultContentLanguageInSubdir = false
       url = '/pricing/'
       weight = 2
     [[languages.ro.menus.main]]
+      name = 'Furnizori'
+      identifier = 'vendors'
+      url = '#'
+      weight = 3
+    [[languages.ro.menus.main]]
+      name = 'Fotografi'
+      url = '/vendors/photographers/'
+      parent = 'vendors'
+      weight = 1
+      [languages.ro.menus.main.params]
+        icon = '📸'
+    [[languages.ro.menus.main]]
+      name = 'Videografi'
+      url = '/vendors/videographers/'
+      parent = 'vendors'
+      weight = 2
+      [languages.ro.menus.main.params]
+        icon = '🎬'
+    [[languages.ro.menus.main]]
+      name = 'Locații'
+      url = '/vendors/venues/'
+      parent = 'vendors'
+      weight = 3
+      [languages.ro.menus.main.params]
+        icon = '🏛️'
+    [[languages.ro.menus.main]]
+      name = 'Organizatori nuntă'
+      url = '/vendors/wedding-planners/'
+      parent = 'vendors'
+      weight = 4
+      [languages.ro.menus.main.params]
+        icon = '📋'
+    [[languages.ro.menus.main]]
+      name = 'DJs și Muzică'
+      url = '/vendors/djs/'
+      parent = 'vendors'
+      weight = 5
+      [languages.ro.menus.main.params]
+        icon = '🎵'
+    [[languages.ro.menus.main]]
+      name = 'Floriști'
+      url = '/vendors/florists/'
+      parent = 'vendors'
+      weight = 6
+      [languages.ro.menus.main.params]
+        icon = '💐'
+    [[languages.ro.menus.main]]
+      name = 'Catering'
+      url = '/vendors/caterers/'
+      parent = 'vendors'
+      weight = 7
+      [languages.ro.menus.main.params]
+        icon = '🍽️'
+    [[languages.ro.menus.main]]
+      name = 'Coafură și Machiaj'
+      url = '/vendors/hair-makeup/'
+      parent = 'vendors'
+      weight = 8
+      [languages.ro.menus.main.params]
+        icon = '💄'
+    [[languages.ro.menus.main]]
+      name = 'Cabine foto'
+      url = '/vendors/photo-booths/'
+      parent = 'vendors'
+      weight = 9
+      [languages.ro.menus.main.params]
+        icon = '🎪'
+    [[languages.ro.menus.main]]
       name = 'Resurse'
       identifier = 'resources'
       url = '#'
-      weight = 3
+      weight = 4
     [[languages.ro.menus.main]]
       name = 'Blog'
       url = '/blog/'
@@ -263,11 +517,11 @@ defaultContentLanguageInSubdir = false
     [[languages.ro.menus.main]]
       name = 'Program afiliat'
       url = '/affiliate-program/'
-      weight = 4
+      weight = 5
     [[languages.ro.menus.main]]
       name = 'Contact'
       url = '/contact/'
-      weight = 5
+      weight = 6
 
     [[languages.ro.menus.footer]]
       name = 'Acasă'
@@ -310,10 +564,78 @@ defaultContentLanguageInSubdir = false
       url = '/pricing/'
       weight = 2
     [[languages.it.menus.main]]
+      name = 'Fornitori'
+      identifier = 'vendors'
+      url = '#'
+      weight = 3
+    [[languages.it.menus.main]]
+      name = 'Fotografi'
+      url = '/vendors/photographers/'
+      parent = 'vendors'
+      weight = 1
+      [languages.it.menus.main.params]
+        icon = '📸'
+    [[languages.it.menus.main]]
+      name = 'Videografi'
+      url = '/vendors/videographers/'
+      parent = 'vendors'
+      weight = 2
+      [languages.it.menus.main.params]
+        icon = '🎬'
+    [[languages.it.menus.main]]
+      name = 'Location'
+      url = '/vendors/venues/'
+      parent = 'vendors'
+      weight = 3
+      [languages.it.menus.main.params]
+        icon = '🏛️'
+    [[languages.it.menus.main]]
+      name = 'Wedding Planner'
+      url = '/vendors/wedding-planners/'
+      parent = 'vendors'
+      weight = 4
+      [languages.it.menus.main.params]
+        icon = '📋'
+    [[languages.it.menus.main]]
+      name = 'DJ e Musica'
+      url = '/vendors/djs/'
+      parent = 'vendors'
+      weight = 5
+      [languages.it.menus.main.params]
+        icon = '🎵'
+    [[languages.it.menus.main]]
+      name = 'Fioristi'
+      url = '/vendors/florists/'
+      parent = 'vendors'
+      weight = 6
+      [languages.it.menus.main.params]
+        icon = '💐'
+    [[languages.it.menus.main]]
+      name = 'Catering'
+      url = '/vendors/caterers/'
+      parent = 'vendors'
+      weight = 7
+      [languages.it.menus.main.params]
+        icon = '🍽️'
+    [[languages.it.menus.main]]
+      name = 'Acconciatura e Trucco'
+      url = '/vendors/hair-makeup/'
+      parent = 'vendors'
+      weight = 8
+      [languages.it.menus.main.params]
+        icon = '💄'
+    [[languages.it.menus.main]]
+      name = 'Photo Booth'
+      url = '/vendors/photo-booths/'
+      parent = 'vendors'
+      weight = 9
+      [languages.it.menus.main.params]
+        icon = '🎪'
+    [[languages.it.menus.main]]
       name = 'Risorse'
       identifier = 'resources'
       url = '#'
-      weight = 3
+      weight = 4
     [[languages.it.menus.main]]
       name = 'Blog'
       url = '/blog/'
@@ -332,11 +654,11 @@ defaultContentLanguageInSubdir = false
     [[languages.it.menus.main]]
       name = 'Programma affiliati'
       url = '/affiliate-program/'
-      weight = 4
+      weight = 5
     [[languages.it.menus.main]]
       name = 'Contatti'
       url = '/contact/'
-      weight = 5
+      weight = 6
 
     [[languages.it.menus.footer]]
       name = 'Home'
@@ -379,10 +701,78 @@ defaultContentLanguageInSubdir = false
       url = '/pricing/'
       weight = 2
     [[languages.hu.menus.main]]
+      name = 'Szolgáltatók'
+      identifier = 'vendors'
+      url = '#'
+      weight = 3
+    [[languages.hu.menus.main]]
+      name = 'Fotósok'
+      url = '/vendors/photographers/'
+      parent = 'vendors'
+      weight = 1
+      [languages.hu.menus.main.params]
+        icon = '📸'
+    [[languages.hu.menus.main]]
+      name = 'Videósok'
+      url = '/vendors/videographers/'
+      parent = 'vendors'
+      weight = 2
+      [languages.hu.menus.main.params]
+        icon = '🎬'
+    [[languages.hu.menus.main]]
+      name = 'Helyszínek'
+      url = '/vendors/venues/'
+      parent = 'vendors'
+      weight = 3
+      [languages.hu.menus.main.params]
+        icon = '🏛️'
+    [[languages.hu.menus.main]]
+      name = 'Esküvőszervezők'
+      url = '/vendors/wedding-planners/'
+      parent = 'vendors'
+      weight = 4
+      [languages.hu.menus.main.params]
+        icon = '📋'
+    [[languages.hu.menus.main]]
+      name = 'DJ-k és Zene'
+      url = '/vendors/djs/'
+      parent = 'vendors'
+      weight = 5
+      [languages.hu.menus.main.params]
+        icon = '🎵'
+    [[languages.hu.menus.main]]
+      name = 'Virágkötők'
+      url = '/vendors/florists/'
+      parent = 'vendors'
+      weight = 6
+      [languages.hu.menus.main.params]
+        icon = '💐'
+    [[languages.hu.menus.main]]
+      name = 'Catering'
+      url = '/vendors/caterers/'
+      parent = 'vendors'
+      weight = 7
+      [languages.hu.menus.main.params]
+        icon = '🍽️'
+    [[languages.hu.menus.main]]
+      name = 'Fodrász és Smink'
+      url = '/vendors/hair-makeup/'
+      parent = 'vendors'
+      weight = 8
+      [languages.hu.menus.main.params]
+        icon = '💄'
+    [[languages.hu.menus.main]]
+      name = 'Fotófülke'
+      url = '/vendors/photo-booths/'
+      parent = 'vendors'
+      weight = 9
+      [languages.hu.menus.main.params]
+        icon = '🎪'
+    [[languages.hu.menus.main]]
       name = 'Források'
       identifier = 'resources'
       url = '#'
-      weight = 3
+      weight = 4
     [[languages.hu.menus.main]]
       name = 'Blog'
       url = '/blog/'
@@ -401,11 +791,11 @@ defaultContentLanguageInSubdir = false
     [[languages.hu.menus.main]]
       name = 'Affiliate program'
       url = '/affiliate-program/'
-      weight = 4
+      weight = 5
     [[languages.hu.menus.main]]
       name = 'Kapcsolat'
       url = '/contact/'
-      weight = 5
+      weight = 6
 
     [[languages.hu.menus.footer]]
       name = 'Kezdőlap'
