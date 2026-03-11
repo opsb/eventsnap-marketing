@@ -1529,6 +1529,45 @@ ul { list-style: none; }
 }
 
 
+/* Blog Photo Grid */
+.blog-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin: 1.5rem 0 0.5rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.blog-photo-grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.blog-photo-grid a {
+  display: block;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.blog-photo-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.blog-photo-grid a:hover img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .blog-photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+}
+
 .hotel-card {
   display: flex;
   gap: 1.25rem;

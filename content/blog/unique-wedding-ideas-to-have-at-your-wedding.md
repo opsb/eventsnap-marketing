@@ -11,10 +11,17 @@ Your wedding day should feel like *you*. While the classic traditions are beauti
 
 ## 1. Late-Night Snack Stations
 
-<img src="" alt="Late-night snack station at a wedding reception" />
-<small>Photo by (add photo credit)</small>
+<div class="blog-photo-grid">
+<a href="https://es.pinterest.com/pin/2181499815574295/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-snack-1.webp" alt="Late-night pizza station at a wedding" /></a>
+<a href="https://es.pinterest.com/pin/3448137210290952/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-snack-2.webp" alt="Wedding burger sliders station" /></a>
+<a href="https://es.pinterest.com/pin/59391288833698555/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-snack-3.webp" alt="Elegant late-night snack display" /></a>
+<a href="https://es.pinterest.com/pin/324540716920512247/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-snack-4.webp" alt="Couple enjoying late-night wedding snacks" /></a>
+</div>
+<small>Photos via <a href="https://pinterest.com" target="_blank" rel="noopener">Pinterest</a></small>
 
 After hours of dancing, your guests will definitely get hungry. One of the most popular wedding reception ideas is to surprise everyone with a late-night snack station. It keeps the energy going and guests absolutely love unexpected food appearing late at night, right when they need it most.
+
+Late-night snacks also make for adorable photo opportunities. Picture you and your partner sharing a slice of pizza in your wedding outfits, or your guests gathered around a fries station laughing together. These candid, fun moments are often the ones you'll look back on and smile at the most.
 
 <table>
 <tr><th>What to serve</th></tr>
@@ -35,8 +42,13 @@ After hours of dancing, your guests will definitely get hungry. One of the most 
 
 ## 2. Signature Cocktails
 
-<img src="" alt="Signature wedding cocktails on a decorated bar" />
-<small>Photo by (add photo credit)</small>
+<div class="blog-photo-grid">
+<a href="https://es.pinterest.com/pin/5981412002128952/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-cocktail-1.webp" alt="Signature wedding cocktail with elegant garnish" /></a>
+<a href="https://es.pinterest.com/pin/55591376646746618/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-cocktail-2.webp" alt="Bride and groom signature drinks display" /></a>
+<a href="https://es.pinterest.com/pin/1477812374359208/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-cocktail-3.webp" alt="Stylish wedding cocktail bar setup" /></a>
+<a href="https://es.pinterest.com/pin/2111131073505706/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-cocktail-4.webp" alt="Creative signature cocktails at a wedding" /></a>
+</div>
+<small>Photos via <a href="https://pinterest.com" target="_blank" rel="noopener">Pinterest</a></small>
 
 Signature drinks are a stylish and simple wedding idea that adds personality to your bar. Couples often choose one cocktail for the bride and one for the groom, giving guests a taste of who they are as a couple.
 
@@ -59,8 +71,13 @@ Signature drinks are a stylish and simple wedding idea that adds personality to 
 
 ## 3. Sweet Snack Corner
 
-<img src="" alt="Elegant dessert corner with macarons and cake pops" />
-<small>Photo by (add photo credit)</small>
+<div class="blog-photo-grid">
+<a href="https://es.pinterest.com/pin/1125968651889260/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-sweets-1.webp" alt="Elegant wedding dessert table with mini treats" /></a>
+<a href="https://es.pinterest.com/pin/5066618330609533/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-sweets-2.webp" alt="Wedding cake pops and macarons display" /></a>
+<a href="https://es.pinterest.com/pin/715931672057514328/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-sweets-3.webp" alt="Sweet snack corner at a wedding reception" /></a>
+<a href="https://es.pinterest.com/pin/222365300346710967/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-sweets-4.webp" alt="Mini cakes and chocolate treats for wedding guests" /></a>
+</div>
+<small>Photos via <a href="https://pinterest.com" target="_blank" rel="noopener">Pinterest</a></small>
 
 A dessert corner filled with mini treats is one of those cute wedding ideas that guests always gravitate toward. It looks beautiful, tastes amazing, and gives everyone a reason to keep coming back throughout the evening.
 
@@ -84,8 +101,13 @@ A dessert corner filled with mini treats is one of those cute wedding ideas that
 
 ## 4. Live Wedding Painting
 
-<img src="" alt="Live painter creating artwork at a wedding ceremony" />
-<small>Photo by (add photo credit)</small>
+<div class="blog-photo-grid">
+<a href="https://es.pinterest.com/pin/91479436176800890/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-painting-1.webp" alt="Live painter at a wedding ceremony" /></a>
+<a href="https://es.pinterest.com/pin/253538654019852485/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-painting-2.webp" alt="Artist painting a wedding scene live" /></a>
+<a href="https://es.pinterest.com/pin/351912466771311/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-painting-3.webp" alt="Live wedding painting in progress" /></a>
+<a href="https://es.pinterest.com/pin/AZDLxEIxuyBqbxpPVrc0XE7Zs5Ya_Gu2-_7Jz-yQOnFrO0b1nO2rFHxKyPEsadE8InjfAn4zDqx1v3EEw04qnSc/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-painting-4.webp" alt="Finished live wedding painting artwork" /></a>
+</div>
+<small>Photos via <a href="https://pinterest.com" target="_blank" rel="noopener">Pinterest</a></small>
 
 A live painter capturing your ceremony or reception is one of the most memorable unique wedding ideas. There's something magical about watching a piece of art come together in real time while you celebrate, and the finished painting becomes a stunning keepsake you'll treasure forever.
 
@@ -107,8 +129,13 @@ A live painter capturing your ceremony or reception is one of the most memorable
 
 ## 5. A Photo-Sharing App for Guests
 
-<img src="" alt="Guests using a photo-sharing app at a wedding" />
-<small>Photo by (add photo credit)</small>
+<div class="blog-photo-grid">
+<a href="https://es.pinterest.com/pin/4574037118287105/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-app-1.webp" alt="Wedding guests scanning QR code to share photos" /></a>
+<a href="https://es.pinterest.com/pin/202450945750879366/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-app-2.webp" alt="Photo-sharing app display at wedding reception" /></a>
+<a href="https://es.pinterest.com/pin/367747125845200744/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-app-3.webp" alt="Guests uploading photos at a wedding" /></a>
+<a href="https://es.pinterest.com/pin/451697037641942370/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-app-4.webp" alt="Wedding photo-sharing QR code sign" /></a>
+</div>
+<small>Photos via <a href="https://pinterest.com" target="_blank" rel="noopener">Pinterest</a></small>
 
 One of the smartest modern wedding planning ideas is using a dedicated photo-sharing app so guests can upload pictures instantly. Instead of relying only on your photographer, you'll capture every candid moment from every angle.
 
@@ -132,8 +159,13 @@ One of the smartest modern wedding planning ideas is using a dedicated photo-sha
 
 ## 6. Live Music + DJ Combination
 
-<img src="" alt="Live musician performing at a wedding reception" />
-<small>Photo by (add photo credit)</small>
+<div class="blog-photo-grid">
+<a href="https://es.pinterest.com/pin/1337074890101453/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-music-1.webp" alt="Live band performing at a wedding reception" /></a>
+<a href="https://es.pinterest.com/pin/1970393583788554/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-music-2.webp" alt="Saxophonist playing at a wedding party" /></a>
+<a href="https://es.pinterest.com/pin/563018698685926/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-music-3.webp" alt="DJ and live musician at a wedding" /></a>
+<a href="https://es.pinterest.com/pin/6262886976699564/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-music-4.webp" alt="Live music during wedding cocktail hour" /></a>
+</div>
+<small>Photos via <a href="https://pinterest.com" target="_blank" rel="noopener">Pinterest</a></small>
 
 Music is one of the most important wedding activities, and mixing live music with a DJ creates the perfect flow throughout your entire day. Each moment gets its own vibe, from elegant ceremony to high-energy dance floor.
 
@@ -155,8 +187,13 @@ Music is one of the most important wedding activities, and mixing live music wit
 
 ## 7. Meaningful Table Names Instead of Numbers
 
-<img src="" alt="Wedding table signs with city names instead of numbers" />
-<small>Photo by (add photo credit)</small>
+<div class="blog-photo-grid">
+<a href="https://es.pinterest.com/pin/14918242512086753/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-tables-1.webp" alt="Wedding table name sign with city name" /></a>
+<a href="https://es.pinterest.com/pin/451697037647037055/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-tables-2.webp" alt="Creative table names at a wedding reception" /></a>
+<a href="https://es.pinterest.com/pin/1477812370684141/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-tables-3.webp" alt="Meaningful location table signs" /></a>
+<a href="https://es.pinterest.com/pin/10414642881201960/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-tables-4.webp" alt="Personalized wedding table number with city" /></a>
+</div>
+<small>Photos via <a href="https://pinterest.com" target="_blank" rel="noopener">Pinterest</a></small>
 
 Instead of traditional table numbers, choose meaningful locations as part of your unique wedding decor. This small detail turns your seating plan into a personal story that guests love discovering.
 
@@ -181,8 +218,13 @@ Instead of traditional table numbers, choose meaningful locations as part of you
 
 ## 8. The One-Layer Italian Wedding Cake
 
-<img src="" alt="Elegant single-layer Italian wedding cake" />
-<small>Photo by (add photo credit)</small>
+<div class="blog-photo-grid">
+<a href="https://es.pinterest.com/pin/8233211829207903/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-cake-1.webp" alt="Elegant single-layer Italian wedding cake" /></a>
+<a href="https://es.pinterest.com/pin/58757970137397440/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-cake-2.webp" alt="Minimalist one-layer wedding cake with flowers" /></a>
+<a href="https://es.pinterest.com/pin/2322237303098285/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-cake-3.webp" alt="Chic single-tier wedding cake" /></a>
+<a href="https://es.pinterest.com/pin/58757970137397440/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-cake-4.webp" alt="Stylish Italian-style wedding cake" /></a>
+</div>
+<small>Photos via <a href="https://pinterest.com" target="_blank" rel="noopener">Pinterest</a></small>
 
 A chic alternative to traditional tiered cakes is the Italian-style single-layer cake. It's simple, elegant, and very trendy right now. Sometimes less really is more, and a beautifully decorated single layer makes a stunning statement.
 
@@ -205,8 +247,13 @@ A chic alternative to traditional tiered cakes is the Italian-style single-layer
 
 ## 9. Wedding Timeline Handbooks
 
-<img src="" alt="Printed wedding timeline handbook for guests" />
-<small>Photo by (add photo credit)</small>
+<div class="blog-photo-grid">
+<a href="https://es.pinterest.com/pin/1337074888455962/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-handbook-1.webp" alt="Printed wedding timeline handbook" /></a>
+<a href="https://es.pinterest.com/pin/281543696350929/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-handbook-2.webp" alt="Wedding day schedule card for guests" /></a>
+<a href="https://es.pinterest.com/pin/49469295901543396/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-handbook-3.webp" alt="Elegant wedding program booklet" /></a>
+<a href="https://es.pinterest.com/pin/1135681231062478090/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-handbook-4.webp" alt="Wedding timeline card with order of events" /></a>
+</div>
+<small>Photos via <a href="https://pinterest.com" target="_blank" rel="noopener">Pinterest</a></small>
 
 Many guests attend weddings without knowing what will happen next. A small printed handbook explaining the timeline is a thoughtful wedding planning idea that makes everyone feel welcomed and relaxed.
 
@@ -230,8 +277,13 @@ Many guests attend weddings without knowing what will happen next. A small print
 
 ## 10. Go Boujee with Oysters or Caviar
 
-<img src="" alt="Oyster bar at a luxury wedding cocktail hour" />
-<small>Photo by (add photo credit)</small>
+<div class="blog-photo-grid">
+<a href="https://es.pinterest.com/pin/17451517303323715/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-oysters-1.webp" alt="Oyster bar at a luxury wedding" /></a>
+<a href="https://es.pinterest.com/pin/240168592622798872/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-oysters-2.webp" alt="Elegant oyster display at wedding cocktail hour" /></a>
+<a href="https://es.pinterest.com/pin/14003448838136750/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-oysters-3.webp" alt="Caviar tasting station at a wedding" /></a>
+<a href="https://es.pinterest.com/pin/171981279522521049/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-oysters-4.webp" alt="Luxury seafood station at a wedding reception" /></a>
+</div>
+<small>Photos via <a href="https://pinterest.com" target="_blank" rel="noopener">Pinterest</a></small>
 
 For couples who love luxury, adding oysters or caviar is a glamorous and sophisticated wedding idea that immediately elevates the dining experience. It doesn't need to be a huge station; even a small, beautifully styled corner makes a big impression.
 
@@ -252,16 +304,21 @@ For couples who love luxury, adding oysters or caviar is a glamorous and sophist
 
 ## 11. Cheese Corner
 
-<img src="" alt="Gourmet cheese corner at a wedding reception" />
-<small>Photo by (add photo credit)</small>
+<div class="blog-photo-grid blog-photo-grid--3">
+<a href="https://es.pinterest.com/pin/114419646778826482/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-cheese-1.webp" alt="Gourmet cheese corner at a wedding" /></a>
+<a href="https://es.pinterest.com/pin/4714774605304935/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-cheese-2.webp" alt="Wedding charcuterie and cheese board" /></a>
+<a href="https://es.pinterest.com/pin/3025924746426093/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-cheese-3.webp" alt="Elegant cheese and charcuterie display" /></a>
+</div>
+<small>Photos via <a href="https://pinterest.com" target="_blank" rel="noopener">Pinterest</a></small>
 
-A gourmet cheese corner is a stylish alternative to sweets and one of the more refined wedding reception ideas. It's perfect for couples who want a more sophisticated food offering that guests can enjoy throughout the evening.
+A gourmet cheese corner is a stylish alternative to sweets and one of the more refined wedding reception ideas. It's perfect for couples who want a more sophisticated food offering that guests can enjoy throughout the evening. For an even more impressive spread, combine it with a charcuterie board featuring cured meats, olives, and dips to create a full grazing station that guests will gather around all night long.
 
 <table>
 <tr><th>What to include</th></tr>
 <tr><td>Artisan cheeses from local producers</td></tr>
+<tr><td>Charcuterie with cured meats and salami</td></tr>
 <tr><td>Crackers and breads</td></tr>
-<tr><td>Honey and seasonal fruits</td></tr>
+<tr><td>Honey, seasonal fruits, and olives</td></tr>
 </table>
 
 <table>
@@ -273,29 +330,34 @@ A gourmet cheese corner is a stylish alternative to sweets and one of the more r
 
 ---
 
-## 12. Interactive Entertainment
+## 12. Add Some Magic
 
-<img src="" alt="Magician performing for guests at a wedding" />
-<small>Photo by (add photo credit)</small>
+<div class="blog-photo-grid">
+<a href="https://es.pinterest.com/pin/11892386513833767/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-magic-1.webp" alt="Magician performing close-up magic at a wedding" /></a>
+<a href="https://es.pinterest.com/pin/448319337928644223/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-magic-2.webp" alt="Wedding guests amazed by table magic" /></a>
+<a href="https://es.pinterest.com/pin/4151824630021523/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-magic-3.webp" alt="Close-up magician entertaining at a wedding" /></a>
+<a href="https://es.pinterest.com/pin/487796203411630897/" target="_blank" rel="noopener"><img src="/images/blog-wedding-ideas-magic-4.webp" alt="Magician wowing guests at a wedding reception" /></a>
+</div>
+<small>Photos via <a href="https://pinterest.com" target="_blank" rel="noopener">Pinterest</a></small>
 
-Entertainment beyond dancing can truly elevate your wedding experience and keep guests talking. One well-chosen interactive element creates magical moments during the slower parts of the evening.
+Hiring a magician is one of the most unexpected and exciting things you can add to your wedding day. A close-up magician strolling between tables during cocktail hour or dinner keeps guests completely captivated and creates moments of genuine wonder that people will be talking about long after the wedding.
 
 <table>
-<tr><th>Fun options</th></tr>
-<tr><td>Magician strolling during cocktail hour</td></tr>
-<tr><td>Saxophonist performing with the DJ</td></tr>
-<tr><td>Caricature artist drawing guest portraits</td></tr>
-<tr><td>Photo booth with fun props</td></tr>
+<tr><th>How to include a magician</th></tr>
+<tr><td>Close-up table magic during cocktail hour</td></tr>
+<tr><td>Strolling magic between tables during dinner</td></tr>
+<tr><td>A short stage performance before the party starts</td></tr>
+<tr><td>Card tricks and illusions personalized for the couple</td></tr>
 </table>
 
 <table>
 <tr><th>What we love most</th></tr>
-<tr><td>Keeps guests entertained between key moments</td></tr>
-<tr><td>Creates memorable and shareable moments</td></tr>
-<tr><td>Adds an unexpected wow factor to the celebration</td></tr>
+<tr><td>Guests are completely mesmerized and entertained</td></tr>
+<tr><td>Perfect for filling the gaps between ceremony and dinner</td></tr>
+<tr><td>Creates incredible reactions that make for great candid photos</td></tr>
 </table>
 
-**Tip:** Choose only one interactive element so it truly stands out and feels special rather than overwhelming.
+**Tip:** Book a close-up magician rather than a stage performer so they can interact personally with your guests at their tables.
 
 ---
 
