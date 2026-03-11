@@ -1561,6 +1561,13 @@ ul { list-style: none; }
   transform: scale(1.05);
 }
 
+.blog-photo-grid + small {
+  display: block;
+  color: #999;
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
 @media (max-width: 480px) {
   .blog-photo-grid {
     grid-template-columns: 1fr !important;

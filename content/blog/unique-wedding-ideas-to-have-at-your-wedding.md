@@ -369,7 +369,7 @@ Hiring a magician is one of the most unexpected and exciting things you can add 
 
 <div class="blog-photo-grid">
 <a href="https://es.pinterest.com/pin/451697037641620108/" target="_blank" rel="noopener"><img src="https://i.pinimg.com/564x/a9/24/43/a92443456429578c16a7cfff3938e021.jpg" alt="Kids activity corner at a wedding" /></a>
-<a href="https://es.pinterest.com/pin/451697037641620147/" target="_blank" rel="noopener"><img src="https://i.pinimg.com/564x/c6/85/1d/c6851db7404241d4c6bc77becc67cebf.jpg" alt="Children's wedding activity table" /></a>
+<a href="https://es.pinterest.com/pin/3377768467283633/" target="_blank" rel="noopener"><img src="https://i.pinimg.com/564x/92/d2/c8/92d2c8442ea6e74e3e70dd402bd20f9d.jpg" alt="Children's wedding activity table" /></a>
 <a href="https://es.pinterest.com/pin/40954677857961312/" target="_blank" rel="noopener"><img src="https://i.pinimg.com/564x/d1/f1/de/d1f1de6c0ef15fd4ef594b725b1e8e37.jpg" alt="Wedding coloring books for kids" /></a>
 <a href="https://es.pinterest.com/pin/151644712456375049/" target="_blank" rel="noopener"><img src="https://i.pinimg.com/564x/a3/07/97/a30797fac3634e7c5d77cf980978c8c6.jpg" alt="Kids entertainment area at a wedding reception" /></a>
 </div>
