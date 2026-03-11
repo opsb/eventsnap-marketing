@@ -1,7 +1,7 @@
 ---
 title: "19 Creative and Unique Wedding Ideas to Personalize Your Special Day"
 date: 2026-03-11
-draft: true
+draft: false
 author: "Florina Vanani"
 image: "/images/blog-unique-wedding-ideas-featured.jpg"
 excerpt: "Looking for ways to make your wedding truly unforgettable? From late-night snack stations and signature cocktails to live wedding painting and photo-sharing apps, here are 19 creative wedding ideas that will wow your guests and make your celebration uniquely yours."
