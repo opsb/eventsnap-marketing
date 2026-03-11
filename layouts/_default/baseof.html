@@ -3,8 +3,7 @@
 <head>
   {{ partial "head.html" . }}
   <meta name="p:domain_verify" content="c0fea566cfb00b33f607c3f2698856fa"/>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-31H5E2KGDC"></script>
+  <!-- Google tag (gtag.js) — deferred until user interaction or 3.5s -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -16,8 +15,21 @@
       } catch(e) {}
       gtag('consent', 'default', { 'analytics_storage': s, 'ad_storage': a });
     })();
-    gtag('js', new Date());
-    gtag('config', 'G-31H5E2KGDC');
+    var _gtagLoaded = false;
+    function _loadGtag() {
+      if (_gtagLoaded) return;
+      _gtagLoaded = true;
+      var s = document.createElement('script');
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-31H5E2KGDC';
+      s.async = true;
+      document.head.appendChild(s);
+      gtag('js', new Date());
+      gtag('config', 'G-31H5E2KGDC');
+    }
+    setTimeout(_loadGtag, 3500);
+    ['scroll','click','keydown','touchstart'].forEach(function(e) {
+      document.addEventListener(e, _loadGtag, { once: true, passive: true });
+    });
   </script>
   <script async src="https://assets.endorsely.com/endorsely.js" data-endorsely="e23cf210-2049-4287-a0f6-b50be34d0a68"></script>
   <script async defer src="https://widget.getyourguide.com/dist/pa.umd.production.min.js" data-gyg-partner-id="GN29MP9"></script>
