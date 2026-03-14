@@ -1,0 +1,297 @@
+{{ define "main" }}
+<article class="page-single">
+
+<!-- Hero -->
+<section class="section bg-white">
+  <div class="container">
+    <div class="contact-header reveal">
+      <h1 class="section-title">Free Wedding Hashtag Generator</h1>
+      <p class="contact-intro">Create a unique, memorable hashtag for your wedding day. Enter your names and we'll generate creative hashtag ideas your guests can use to share photos and memories on social media.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Generator -->
+<section class="section bg-pink">
+  <div class="container">
+    <div class="calc-wrapper reveal">
+
+      <!-- Inputs -->
+      <div class="calc-inputs">
+        <div class="calc-field">
+          <label for="partner1First">Partner 1 — First Name</label>
+          <input type="text" id="partner1First" class="htg-input" placeholder="e.g. Sarah" autocomplete="off" />
+        </div>
+        <div class="calc-field">
+          <label for="partner1Last">Partner 1 — Last Name</label>
+          <input type="text" id="partner1Last" class="htg-input" placeholder="e.g. Johnson" autocomplete="off" />
+        </div>
+        <div class="calc-field">
+          <label for="partner2First">Partner 2 — First Name</label>
+          <input type="text" id="partner2First" class="htg-input" placeholder="e.g. James" autocomplete="off" />
+        </div>
+        <div class="calc-field">
+          <label for="partner2Last">Partner 2 — Last Name</label>
+          <input type="text" id="partner2Last" class="htg-input" placeholder="e.g. Smith" autocomplete="off" />
+        </div>
+        <div class="calc-field">
+          <label for="weddingDate">Wedding Date (optional)</label>
+          <input type="date" id="weddingDate" class="htg-input" />
+        </div>
+        <div class="calc-field">
+          <label for="hashtagStyle">Hashtag Style</label>
+          <select id="hashtagStyle" class="calc-select">
+            <option value="all">All Styles</option>
+            <option value="classic">Classic & Elegant</option>
+            <option value="fun">Fun & Playful</option>
+            <option value="romantic">Romantic</option>
+            <option value="punny">Punny & Wordplay</option>
+          </select>
+        </div>
+        <button id="generateBtn" class="btn btn-accent btn-full">Generate Hashtags</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Results -->
+<section class="section bg-white" id="htgResults" style="display:none">
+  <div class="container">
+    <div class="htg-results-inner">
+      <div class="htg-results-header">
+        <h2 class="htg-results-title">Your Wedding Hashtags</h2>
+        <p class="htg-results-sub">Click any hashtag to copy it to your clipboard</p>
+      </div>
+
+      <div class="htg-grid" id="htgGrid"></div>
+
+      <div class="htg-actions">
+        <button id="regenerateBtn" class="btn btn-outline">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+          Generate More
+        </button>
+      </div>
+
+      <!-- Tips -->
+      <div class="htg-tips">
+        <h3>Tips for Choosing the Perfect Wedding Hashtag</h3>
+          <div class="htg-tips-grid">
+            <div class="htg-tip-card">
+              <div class="htg-tip-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </div>
+              <h4>Check Uniqueness</h4>
+              <p>Search your hashtag on Instagram and TikTok before committing — make sure it's not already widely used by someone else.</p>
+            </div>
+            <div class="htg-tip-card">
+              <div class="htg-tip-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              </div>
+              <h4>Keep It Simple</h4>
+              <p>Choose a hashtag that's easy to spell and remember. Avoid numbers, underscores, or anything guests might misspell.</p>
+            </div>
+            <div class="htg-tip-card">
+              <div class="htg-tip-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <h4>Tell Your Guests</h4>
+              <p>Print your hashtag on table cards, menus, or a sign at the entrance. The more visible it is, the more photos you'll collect!</p>
+            </div>
+            <div class="htg-tip-card">
+              <div class="htg-tip-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              </div>
+              <h4>Pair with EventSnap</h4>
+              <p>Use your hashtag alongside an EventSnap QR code to collect every guest photo — social media and private gallery, all in one.</p>
+            </div>
+          </div>
+        </div>
+
+      <div class="text-center" style="margin-top:2rem">
+        <a href="{{ "pricing/" | relLangURL }}" class="btn btn-accent">Capture Every Moment with EventSnap</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</article>
+
+<script>
+(function() {
+  var p1f, p1l, p2f, p2l, dateEl, styleEl, grid, results;
+
+  function init() {
+    p1f = document.getElementById('partner1First');
+    p1l = document.getElementById('partner1Last');
+    p2f = document.getElementById('partner2First');
+    p2l = document.getElementById('partner2Last');
+    dateEl = document.getElementById('weddingDate');
+    styleEl = document.getElementById('hashtagStyle');
+    grid = document.getElementById('htgGrid');
+    results = document.getElementById('htgResults');
+
+    document.getElementById('generateBtn').addEventListener('click', generate);
+    document.getElementById('regenerateBtn').addEventListener('click', generate);
+
+    // Enter key support
+    [p1f, p1l, p2f, p2l].forEach(function(el) {
+      el.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') generate();
+      });
+    });
+  }
+
+  function cap(s) { return s.charAt(0).toUpperCase() + s.slice(1).toLowerCase(); }
+  function clean(s) { return s.replace(/[^a-zA-Z]/g, ''); }
+
+  function generate() {
+    var f1 = clean(p1f.value.trim());
+    var l1 = clean(p1l.value.trim());
+    var f2 = clean(p2f.value.trim());
+    var l2 = clean(p2l.value.trim());
+
+    if (!f1 || !f2) {
+      alert('Please enter at least both first names.');
+      return;
+    }
+
+    var F1 = cap(f1), L1 = l1 ? cap(l1) : '';
+    var F2 = cap(f2), L2 = l2 ? cap(l2) : '';
+
+    var dateStr = dateEl.value;
+    var year = '', shortYear = '', month = '', day = '';
+    if (dateStr) {
+      var d = new Date(dateStr);
+      year = '' + d.getFullYear();
+      shortYear = year.slice(2);
+      month = '' + (d.getMonth() + 1);
+      day = '' + d.getDate();
+    }
+
+    var style = styleEl.value;
+    var tags = [];
+
+    // --- Classic & Elegant ---
+    var classic = [
+      '#' + F1 + 'And' + F2,
+      '#The' + (L1 || F1) + 'Wedding',
+      '#' + F1 + F2 + 'Wedding',
+      '#' + (L1 || F1) + (L2 || F2) + 'Wedding',
+      '#Mr' + (L2 ? 'And' + 'Mrs' + L2 : 'And' + 'Mrs' + F2),
+      '#' + F1 + 'Weds' + F2,
+      '#' + F1 + 'Marries' + F2,
+      '#The' + (L2 || L1 || F2) + 's' + (year ? year : ''),
+      '#' + F1 + 'And' + F2 + 'SayIDo',
+      '#' + (L1 || F1) + 'Meets' + (L2 || F2),
+    ];
+    if (L1 && L2) {
+      classic.push('#' + L1 + L2 + 'Forever');
+      classic.push('#' + F1 + L1 + 'And' + F2 + L2);
+    }
+    if (year) {
+      classic.push('#' + F1 + 'And' + F2 + year);
+      classic.push('#The' + (L2 || L1 || F1) + 'Wedding' + shortYear);
+    }
+
+    // --- Fun & Playful ---
+    var fun = [
+      '#' + F2 + 'Put' + 'A' + 'Ring' + 'On' + F1,
+      '#' + F1 + 'Got' + (L2 ? 'Her' + L2 : 'Hitched'),
+      '#Final' + 'Ly' + (L1 || F1),
+      '#' + (L2 || L1 || F1) + 'Party' + 'Of' + 'Two',
+      '#' + F1 + 'Is' + 'Off' + 'The' + 'Market',
+      '#' + F1 + F2 + 'TieTheKnot',
+      '#Cheers' + 'To' + 'The' + (L2 || L1 || F1) + 's',
+      '#' + F1 + 'And' + F2 + 'BestDayEver',
+      '#About' + 'Time' + F1 + F2,
+      '#' + F1 + 'And' + F2 + 'DoTheThang',
+    ];
+    if (year) {
+      fun.push('#' + F1 + 'And' + F2 + 'Party' + shortYear);
+    }
+
+    // --- Romantic ---
+    var romantic = [
+      '#' + F1 + 'Loves' + F2,
+      '#Forever' + F1 + 'And' + F2,
+      '#' + F1 + 'And' + F2 + 'LoveStory',
+      '#' + F1 + 'And' + F2 + 'Forever',
+      '#Two' + 'Hearts' + 'One' + (L2 || L1 || 'Love'),
+      '#Meant' + 'To' + 'Be' + F1 + F2,
+      '#' + F1 + 'And' + F2 + 'HappilyEverAfter',
+      '#' + F1 + F2 + 'Amore',
+      '#' + F1 + 'Found' + F2,
+      '#To' + (L2 || L1 || F1) + 'And' + 'Beyond',
+    ];
+    if (year) {
+      romantic.push('#LoveStory' + shortYear);
+      romantic.push('#' + F1 + F2 + 'Forever' + shortYear);
+    }
+
+    // --- Punny & Wordplay ---
+    var punny = [
+      '#' + (L2 || L1 || F1) + 'Happily' + 'Ever' + 'After',
+      '#' + F1 + 'Said' + 'Yas',
+      '#Shes' + 'A' + (L2 || L1 || 'Keeper'),
+      '#To' + 'Have' + 'And' + 'To' + (L2 || L1 || 'Hold'),
+      '#' + F1 + 'AndThe' + (L2 || 'Groom'),
+      '#' + (L1 || F1) + 'OnCloud9',
+      '#' + F1 + F2 + 'Ido',
+      '#Just' + (L2 || L1 || F1) + 'Married',
+      '#' + 'Hitched' + (L2 || L1 || F1) + 'Style',
+      '#Pop' + 'The' + (L2 || L1 || 'Champagne'),
+    ];
+
+    // Combine based on style
+    if (style === 'classic') tags = classic;
+    else if (style === 'fun') tags = fun;
+    else if (style === 'romantic') tags = romantic;
+    else if (style === 'punny') tags = punny;
+    else tags = classic.concat(fun, romantic, punny);
+
+    // Shuffle and pick up to 12
+    tags = tags.sort(function() { return 0.5 - Math.random(); }).slice(0, 12);
+
+    // Remove duplicates
+    var seen = {};
+    tags = tags.filter(function(t) {
+      var lower = t.toLowerCase();
+      if (seen[lower]) return false;
+      seen[lower] = true;
+      return true;
+    });
+
+    // Render
+    grid.innerHTML = '';
+    tags.forEach(function(tag) {
+      var card = document.createElement('div');
+      card.className = 'htg-card';
+      card.innerHTML = '<span class="htg-hash">' + tag + '</span>' +
+        '<button class="htg-copy-btn" aria-label="Copy hashtag">' +
+          '<svg class="htg-copy-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>' +
+          '<svg class="htg-check-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>' +
+          '<span class="htg-copy-label">Copy</span>' +
+        '</button>';
+      card.querySelector('.htg-copy-btn').addEventListener('click', function(e) {
+        e.stopPropagation();
+        navigator.clipboard.writeText(tag).then(function() {
+          card.classList.add('htg-copied');
+          card.querySelector('.htg-copy-label').textContent = 'Copied!';
+          setTimeout(function() {
+            card.classList.remove('htg-copied');
+            card.querySelector('.htg-copy-label').textContent = 'Copy';
+          }, 2000);
+        });
+      });
+      grid.appendChild(card);
+    });
+
+    results.style.display = '';
+    results.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  init();
+})();
+</script>
+{{ end }}

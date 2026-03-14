@@ -4024,3 +4024,232 @@ ul { list-style: none; }
     font-size: 0.82rem;
   }
 }
+
+/* ===================================================
+   Wedding Hashtag Generator
+   =================================================== */
+
+.htg-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-family: var(--font-body);
+  color: var(--color-dark);
+  background: var(--color-white);
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.htg-input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(222, 32, 70, 0.1);
+}
+
+.htg-results-inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.htg-results-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.htg-results-title {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-bottom: 10px;
+}
+
+.htg-results-sub {
+  font-size: 0.95rem;
+  color: var(--color-gray);
+}
+
+.htg-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.htg-card {
+  background: #fff;
+  border: 1px solid #e8e0e0;
+  border-radius: 16px;
+  padding: 32px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+  min-height: 140px;
+}
+
+.htg-card:hover {
+  border-color: #de2046;
+  box-shadow: 0 8px 30px rgba(222, 32, 70, 0.12);
+  transform: translateY(-3px);
+}
+
+.htg-card.htg-copied {
+  border-color: #22c55e;
+  background: #f0fdf4;
+}
+
+.htg-hash {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #de2046;
+  word-break: break-all;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.htg-copy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 22px;
+  border: 1px solid #e0d8d8;
+  border-radius: 100px;
+  background: #faf7f7;
+  color: #999;
+  font-size: 0.82rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.htg-copy-btn:hover {
+  border-color: #de2046;
+  color: #de2046;
+  background: rgba(222, 32, 70, 0.04);
+}
+
+.htg-copy-btn .htg-check-icon {
+  display: none;
+}
+
+.htg-copied .htg-copy-btn {
+  border-color: #22c55e;
+  color: #22c55e;
+  background: #dcfce7;
+}
+
+.htg-copied .htg-copy-btn .htg-copy-icon {
+  display: none;
+}
+
+.htg-copied .htg-copy-btn .htg-check-icon {
+  display: block;
+}
+
+.htg-actions {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.htg-tips {
+  margin-top: 56px;
+  padding-top: 48px;
+  border-top: 1px solid var(--color-border);
+}
+
+.htg-tips h3 {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.htg-tips-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.htg-tip-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 24px 20px;
+  text-align: center;
+}
+
+.htg-tip-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 16px;
+  background: var(--color-blush);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+}
+
+.htg-tip-card h4 {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-bottom: 8px;
+}
+
+.htg-tip-card p {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--color-gray);
+}
+
+@media (max-width: 768px) {
+  .htg-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .htg-tips-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .htg-card {
+    padding: 24px 20px 20px;
+    min-height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .htg-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .htg-tips-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .htg-card {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 18px 20px;
+    gap: 12px;
+    min-height: auto;
+  }
+
+  .htg-hash {
+    text-align: left;
+    font-size: 1rem;
+  }
+}

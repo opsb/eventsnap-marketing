@@ -95,7 +95,7 @@ defaultContentLanguageInSubdir = false
       weight = 1
     [[languages.en.menus.main]]
       name = 'Wedding Budget Calculator'
-      url = '/calculate-budget/'
+      url = '/resources/calculate-wedding-budget/'
       parent = 'resources'
       weight = 2
     [[languages.en.menus.main]]
@@ -103,6 +103,11 @@ defaultContentLanguageInSubdir = false
       url = '/resources/wedding-date-checker/'
       parent = 'resources'
       weight = 3
+    [[languages.en.menus.main]]
+      name = 'Wedding Hashtag Generator'
+      url = '/resources/wedding-hashtag-generator/'
+      parent = 'resources'
+      weight = 4
     [[languages.en.menus.main]]
       name = 'Affiliate program'
       url = '/affiliate-program/'
@@ -232,7 +237,7 @@ defaultContentLanguageInSubdir = false
       weight = 1
     [[languages.de.menus.main]]
       name = 'Hochzeitsbudget-Rechner'
-      url = '/calculate-budget/'
+      url = '/resources/calculate-wedding-budget/'
       parent = 'resources'
       weight = 2
     [[languages.de.menus.main]]
@@ -240,6 +245,11 @@ defaultContentLanguageInSubdir = false
       url = '/resources/wedding-date-checker/'
       parent = 'resources'
       weight = 3
+    [[languages.de.menus.main]]
+      name = 'Hochzeits-Hashtag-Generator'
+      url = '/resources/wedding-hashtag-generator/'
+      parent = 'resources'
+      weight = 4
     [[languages.de.menus.main]]
       name = 'Partnerprogramm'
       url = '/affiliate-program/'
@@ -369,7 +379,7 @@ defaultContentLanguageInSubdir = false
       weight = 1
     [[languages.es.menus.main]]
       name = 'Estimador de presupuesto'
-      url = '/calculate-budget/'
+      url = '/resources/calculate-wedding-budget/'
       parent = 'resources'
       weight = 2
     [[languages.es.menus.main]]
@@ -377,6 +387,11 @@ defaultContentLanguageInSubdir = false
       url = '/resources/wedding-date-checker/'
       parent = 'resources'
       weight = 3
+    [[languages.es.menus.main]]
+      name = 'Generador de hashtags'
+      url = '/resources/wedding-hashtag-generator/'
+      parent = 'resources'
+      weight = 4
     [[languages.es.menus.main]]
       name = 'Programa de afiliados'
       url = '/affiliate-program/'
@@ -506,7 +521,7 @@ defaultContentLanguageInSubdir = false
       weight = 1
     [[languages.ro.menus.main]]
       name = 'Estimator buget nuntă'
-      url = '/calculate-budget/'
+      url = '/resources/calculate-wedding-budget/'
       parent = 'resources'
       weight = 2
     [[languages.ro.menus.main]]
@@ -514,6 +529,11 @@ defaultContentLanguageInSubdir = false
       url = '/resources/wedding-date-checker/'
       parent = 'resources'
       weight = 3
+    [[languages.ro.menus.main]]
+      name = 'Generator hashtag nuntă'
+      url = '/resources/wedding-hashtag-generator/'
+      parent = 'resources'
+      weight = 4
     [[languages.ro.menus.main]]
       name = 'Program afiliat'
       url = '/affiliate-program/'
@@ -643,7 +663,7 @@ defaultContentLanguageInSubdir = false
       weight = 1
     [[languages.it.menus.main]]
       name = 'Stima budget matrimonio'
-      url = '/calculate-budget/'
+      url = '/resources/calculate-wedding-budget/'
       parent = 'resources'
       weight = 2
     [[languages.it.menus.main]]
@@ -651,6 +671,11 @@ defaultContentLanguageInSubdir = false
       url = '/resources/wedding-date-checker/'
       parent = 'resources'
       weight = 3
+    [[languages.it.menus.main]]
+      name = 'Generatore hashtag'
+      url = '/resources/wedding-hashtag-generator/'
+      parent = 'resources'
+      weight = 4
     [[languages.it.menus.main]]
       name = 'Programma affiliati'
       url = '/affiliate-program/'
@@ -780,7 +805,7 @@ defaultContentLanguageInSubdir = false
       weight = 1
     [[languages.hu.menus.main]]
       name = 'Esküvői költségbecslő'
-      url = '/calculate-budget/'
+      url = '/resources/calculate-wedding-budget/'
       parent = 'resources'
       weight = 2
     [[languages.hu.menus.main]]
@@ -788,6 +813,11 @@ defaultContentLanguageInSubdir = false
       url = '/resources/wedding-date-checker/'
       parent = 'resources'
       weight = 3
+    [[languages.hu.menus.main]]
+      name = 'Esküvői hashtag generátor'
+      url = '/resources/wedding-hashtag-generator/'
+      parent = 'resources'
+      weight = 4
     [[languages.hu.menus.main]]
       name = 'Affiliate program'
       url = '/affiliate-program/'
