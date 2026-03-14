@@ -94,8 +94,8 @@ defaultContentLanguageInSubdir = false
       parent = 'resources'
       weight = 1
     [[languages.en.menus.main]]
-      name = 'Wedding Budget Estimator'
-      url = '/resources/'
+      name = 'Wedding Budget Calculator'
+      url = '/calculate-budget/'
       parent = 'resources'
       weight = 2
     [[languages.en.menus.main]]
@@ -232,7 +232,7 @@ defaultContentLanguageInSubdir = false
       weight = 1
     [[languages.de.menus.main]]
       name = 'Hochzeitsbudget-Rechner'
-      url = '/resources/'
+      url = '/calculate-budget/'
       parent = 'resources'
       weight = 2
     [[languages.de.menus.main]]
@@ -369,7 +369,7 @@ defaultContentLanguageInSubdir = false
       weight = 1
     [[languages.es.menus.main]]
       name = 'Estimador de presupuesto'
-      url = '/resources/'
+      url = '/calculate-budget/'
       parent = 'resources'
       weight = 2
     [[languages.es.menus.main]]
@@ -506,7 +506,7 @@ defaultContentLanguageInSubdir = false
       weight = 1
     [[languages.ro.menus.main]]
       name = 'Estimator buget nuntă'
-      url = '/resources/'
+      url = '/calculate-budget/'
       parent = 'resources'
       weight = 2
     [[languages.ro.menus.main]]
@@ -643,7 +643,7 @@ defaultContentLanguageInSubdir = false
       weight = 1
     [[languages.it.menus.main]]
       name = 'Stima budget matrimonio'
-      url = '/resources/'
+      url = '/calculate-budget/'
       parent = 'resources'
       weight = 2
     [[languages.it.menus.main]]
@@ -780,7 +780,7 @@ defaultContentLanguageInSubdir = false
       weight = 1
     [[languages.hu.menus.main]]
       name = 'Esküvői költségbecslő'
-      url = '/resources/'
+      url = '/calculate-budget/'
       parent = 'resources'
       weight = 2
     [[languages.hu.menus.main]]
