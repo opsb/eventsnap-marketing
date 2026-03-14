@@ -1,6 +1,6 @@
 ---
 title: "Politica de Confidențialitate"
-description: "Politica de Confidențialitate EventSnap"
+description: "Citește politica de confidențialitate EventSnap pentru a înțelege cum colectăm, folosim și protejăm datele tale personale și fotografiile de nuntă. Conform GDPR."
 ---
 
 ## 1. Introducere

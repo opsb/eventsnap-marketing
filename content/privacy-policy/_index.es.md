@@ -1,6 +1,6 @@
 ---
 title: "Política de Privacidad"
-description: "Política de Privacidad de EventSnap"
+description: "Lee la política de privacidad de EventSnap para entender cómo recopilamos, usamos y protegemos tus datos personales y fotos de boda. Cumplimiento GDPR."
 ---
 
 ## 1. Introducción

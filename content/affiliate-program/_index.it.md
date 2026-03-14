@@ -1,4 +1,4 @@
 ---
 title: "Programma di affiliazione"
-description: "Iscriviti e Inizia a Guadagnare Oggi"
+description: "Unisciti al programma di affiliazione EventSnap e guadagna commissioni segnalando coppie e professionisti del matrimonio. Condividi il tuo link e guadagna per ogni iscrizione."
 ---

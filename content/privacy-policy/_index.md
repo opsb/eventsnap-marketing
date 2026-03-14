@@ -1,6 +1,6 @@
 ---
 title: "Privacy Policy"
-description: "EventSnap Privacy Policy"
+description: "Read EventSnap's privacy policy to understand how we collect, use, and protect your personal data and wedding photos. GDPR compliant and committed to keeping your memories safe."
 ---
 
 ## 1. Introduction

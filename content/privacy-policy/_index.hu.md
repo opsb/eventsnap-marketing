@@ -1,6 +1,6 @@
 ---
 title: "Adatvédelmi irányelvek"
-description: "EventSnap adatvédelmi irányelvek"
+description: "Olvasd el az EventSnap adatvédelmi irányelveit, hogy megértsd, hogyan gyűjtjük, használjuk és védjük személyes adataidat és esküvői fotóidat. GDPR-kompatibilis."
 ---
 
 ## 1. Bevezetés

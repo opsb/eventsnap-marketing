@@ -1,6 +1,6 @@
 ---
 title: "Informativa sulla Privacy"
-description: "Informativa sulla Privacy di EventSnap"
+description: "Leggi l'informativa sulla privacy di EventSnap per capire come raccogliamo, utilizziamo e proteggiamo i tuoi dati personali e le foto del matrimonio. Conforme al GDPR."
 ---
 
 ## 1. Introduzione

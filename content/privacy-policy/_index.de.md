@@ -1,6 +1,6 @@
 ---
 title: "Datenschutzerklärung"
-description: "EventSnap Datenschutzerklärung"
+description: "Lies die Datenschutzerklärung von EventSnap, um zu erfahren, wie wir deine persönlichen Daten und Hochzeitsfotos erfassen, verwenden und schützen. DSGVO-konform."
 ---
 
 ## 1. Einleitung
