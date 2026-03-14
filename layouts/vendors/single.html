@@ -1,0 +1,135 @@
+{{ define "main" }}
+<!-- Breadcrumb -->
+<nav class="vp-breadcrumb" aria-label="Breadcrumb">
+  <div class="container">
+    <ol class="vp-breadcrumb-list">
+      <li><a href="{{ "vendors/" | relLangURL }}">{{ i18n "vendors" | default "Vendors" }}</a></li>
+      {{ with .Parent }}
+      <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+      {{ end }}
+      <li aria-current="page">{{ .Title }}</li>
+    </ol>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="vp-hero section">
+  <div class="container">
+    <div class="vp-hero-grid">
+      <div class="vp-hero-image-wrap">
+        {{ with .Params.image }}
+        <img class="vp-hero-image" src="{{ . }}" alt="{{ $.Title }}" loading="eager" />
+        {{ end }}
+      </div>
+      <div class="vp-hero-info">
+        <h1 class="vp-hero-name">{{ .Title }}</h1>
+
+        <p class="vp-hero-location">
+          {{ with .Params.city }}{{ . }}{{ end }}{{ with .Params.region }}, {{ . }}{{ end }}{{ with .Params.country }} &mdash; {{ . }}{{ end }}
+        </p>
+
+        {{ if or .Params.rating .Params.reviews }}
+        <div class="vp-hero-rating">
+          {{ with .Params.rating }}
+          <span class="vp-hero-stars" aria-label="{{ . }} out of 5 stars">
+            {{ $rating := . }}
+            {{ range seq 5 }}
+              {{ if le . (int $rating) }}&#9733;{{ else }}&#9734;{{ end }}
+            {{ end }}
+            <span class="vp-hero-rating-value">{{ . }}</span>
+          </span>
+          {{ end }}
+          {{ with .Params.reviews }}
+          <span class="vp-hero-reviews">({{ . }} {{ i18n "reviews" | default "reviews" }})</span>
+          {{ end }}
+        </div>
+        {{ end }}
+
+        {{ with .Params.price }}
+        <p class="vp-hero-price">{{ . }}</p>
+        {{ end }}
+
+        <div class="vp-hero-actions">
+          <a href="{{ "contact/" | relLangURL }}" class="btn btn-primary">{{ i18n "vendor_contact" | default "Contact Vendor" }}</a>
+          {{ with .Params.website }}
+          <a href="{{ . }}" class="btn btn-outline" target="_blank" rel="noopener noreferrer">{{ i18n "vendor_website" | default "Visit Website" }}</a>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+{{ if .Content }}
+<section class="vp-about section">
+  <div class="container">
+    <h2 class="vp-section-title">{{ i18n "vendor_about" | default "About" }}</h2>
+    <div class="vp-about-content">
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- Services -->
+{{ with .Params.services }}
+<section class="vp-services section">
+  <div class="container">
+    <h2 class="vp-section-title">{{ i18n "vendor_services" | default "Services" }}</h2>
+    <ul class="vp-services-grid">
+      {{ range . }}
+      <li class="vp-services-item">{{ . }}</li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+{{ end }}
+
+<!-- Gallery -->
+{{ with .Params.gallery }}
+<section class="vp-gallery section">
+  <div class="container">
+    <h2 class="vp-section-title">{{ i18n "vendor_gallery" | default "Gallery" }}</h2>
+    <div class="vp-gallery-grid">
+      {{ range . }}
+      <div class="vp-gallery-item">
+        <img class="vp-gallery-image" src="{{ . }}" alt="" loading="lazy" />
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- FAQ -->
+{{ with .Params.faq }}
+<section class="vp-faq section">
+  <div class="container">
+    <h2 class="vp-section-title">{{ i18n "vendor_faq" | default "Frequently Asked Questions" }}</h2>
+    <div class="faq-list">
+      {{ range . }}
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>{{ .question }}</span>
+          <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="10" x2="15" y2="10"/><line class="faq-icon-v" x1="10" y1="5" x2="10" y2="15"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>{{ .answer }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- Vendor CTA -->
+<section class="vendor-cta section bg-pink">
+  <div class="container text-center">
+    <h2>{{ i18n "vendor_cta_title" | default "Are you a wedding vendor?" }}</h2>
+    <p class="vendor-cta-text">{{ i18n "vendor_cta_text" | default "Join EventSnap and connect with couples planning their perfect day." }}</p>
+    <a href="{{ "contact/" | relLangURL }}" class="btn btn-primary">{{ i18n "vendor_cta_button" | default "Get Listed" }}</a>
+  </div>
+</section>
+{{ end }}

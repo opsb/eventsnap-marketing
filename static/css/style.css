@@ -3374,3 +3374,283 @@ ul { list-style: none; }
     grid-template-columns: 1fr;
   }
 }
+
+/* ===================================================
+   Vendor Profile Page
+   =================================================== */
+
+/* ── Breadcrumb ───────────────────────────────────── */
+
+.vp-breadcrumb {
+  padding: 16px 0;
+  font-size: 0.85rem;
+  color: var(--color-gray);
+}
+
+.vp-breadcrumb a {
+  color: var(--color-gray);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.vp-breadcrumb a:hover {
+  color: var(--color-accent);
+}
+
+.vp-breadcrumb span {
+  margin: 0 6px;
+  opacity: 0.5;
+}
+
+/* ── Hero ──────────────────────────────────────────── */
+
+.vp-hero {
+  background: var(--color-blush);
+  padding: 40px 0 var(--section-pad-sm);
+}
+
+.vp-hero-grid {
+  display: flex;
+  gap: 48px;
+  align-items: stretch;
+}
+
+.vp-hero-img {
+  flex: 0 0 40%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  max-height: 500px;
+}
+
+.vp-hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vp-hero-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+}
+
+.vp-hero-type {
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+}
+
+.vp-hero-name {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-dark);
+}
+
+.vp-hero-location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 1rem;
+  color: var(--color-gray);
+}
+
+.vp-hero-location svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.vp-hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  padding-top: 8px;
+}
+
+.vp-hero-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+.vp-hero-rating .star {
+  color: var(--color-accent);
+  font-size: 1.1rem;
+}
+
+.vp-hero-rating .count {
+  font-weight: 400;
+  color: var(--color-gray);
+  font-size: 0.9rem;
+}
+
+.vp-hero-price {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  background: rgba(222, 32, 70, 0.08);
+  padding: 6px 14px;
+  border-radius: var(--radius);
+}
+
+.vp-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 12px;
+}
+
+/* ── About Section ────────────────────────────────── */
+
+.vp-about {
+  padding: var(--section-pad) 0;
+}
+
+.vp-about h2 {
+  margin-bottom: 24px;
+}
+
+.vp-about-content {
+  max-width: 700px;
+  line-height: 1.8;
+  color: var(--color-dark);
+  font-size: 1.05rem;
+}
+
+.vp-about-content p + p {
+  margin-top: 1em;
+}
+
+/* ── Services Grid ────────────────────────────────── */
+
+.vp-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.vp-service-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 20px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-white);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-dark);
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.vp-service-item:hover {
+  border-color: var(--color-accent);
+  box-shadow: 0 2px 12px rgba(222, 32, 70, 0.08);
+}
+
+.vp-service-item svg {
+  width: 18px;
+  height: 18px;
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+/* ── Gallery Grid ─────────────────────────────────── */
+
+.vp-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.vp-gallery-item {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.vp-gallery-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.vp-gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 3 / 4;
+  transition: transform var(--transition-slow);
+}
+
+.vp-gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* ── Vendor Profile Responsive ────────────────────── */
+
+@media (max-width: 768px) {
+  .vp-hero-grid {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .vp-hero-img {
+    flex: none;
+    width: 100%;
+    max-height: 400px;
+    aspect-ratio: 16 / 10;
+  }
+
+  .vp-hero-name {
+    font-size: 1.8rem;
+  }
+
+  .vp-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .vp-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .vp-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vp-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vp-hero-name {
+    font-size: 1.5rem;
+  }
+
+  .vp-hero-actions {
+    flex-direction: column;
+  }
+
+  .vp-hero-actions .btn {
+    width: 100%;
+  }
+}
