@@ -96,7 +96,6 @@
       <button class="vp-tab" role="tab" aria-selected="false" data-tab="about">About</button>
       <button class="vp-tab" role="tab" aria-selected="false" data-tab="services">Services</button>
       <button class="vp-tab" role="tab" aria-selected="false" data-tab="reviews">Reviews</button>
-      <button class="vp-tab" role="tab" aria-selected="false" data-tab="faq">FAQ</button>
     </nav>
   </div>
 </div>
@@ -277,28 +276,6 @@
     </div>
   </div>
 </section>
-
-<!-- Tab: FAQ -->
-{{ with .Params.faq }}
-<section class="vp-tab-panel" id="tab-faq">
-  <div class="container">
-    <h2 class="vp-section-title">Frequently Asked Questions</h2>
-    <div class="faq-list">
-      {{ range . }}
-      <div class="faq-item">
-        <button class="faq-question">
-          <span>{{ .question }}</span>
-          <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="10" x2="15" y2="10"/><line class="faq-icon-v" x1="10" y1="5" x2="10" y2="15"/></svg>
-        </button>
-        <div class="faq-answer">
-          <p>{{ .answer }}</p>
-        </div>
-      </div>
-      {{ end }}
-    </div>
-  </div>
-</section>
-{{ end }}
 
 <!-- Vendor CTA -->
 <section class="vendor-cta section bg-pink">
