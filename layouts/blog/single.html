@@ -3,10 +3,6 @@
 <section class="section bg-white">
   <div class="container">
     <div class="blog-post-header reveal">
-      <div class="blog-post-meta">
-        <span class="blog-card-author">{{ .Params.author }}</span>
-        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
-      </div>
       <h1 class="section-title">{{ .Title }}</h1>
     </div>
     {{ with .Params.image }}
