@@ -70,6 +70,16 @@
   </div>
 </section>
 
+<script>
+(function() {
+  var ref = window.endorsely_referral;
+  if (!ref) return;
+  document.querySelectorAll('a[href*="app.eventsnap.it/checkout"]').forEach(function(a) {
+    a.href = a.href + '&endorsely_referral=' + encodeURIComponent(ref);
+  });
+})();
+</script>
+
 <!-- Contact CTA -->
 <section class="section pricing-cta">
   <div class="container text-center">
