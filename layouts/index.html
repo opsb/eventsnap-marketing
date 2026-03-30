@@ -17,29 +17,29 @@
 <!-- 3 Steps -->
 <section class="section bg-white">
   <div class="container">
-    <h2 class="section-title reveal">{{ i18n "steps_title" }}</h2>
+    <h2 class="section-title text-center reveal">{{ i18n "steps_title" }}</h2>
     <div class="steps-grid">
       <div class="step-card reveal">
-        <div class="step-number">1</div>
         <div class="step-image">
           <img src="{{ "images/step-dashboard.webp" | relURL }}" alt="Posy dashboard showing photo uploads and top contributors" loading="lazy">
         </div>
+        <span class="step-number">01</span>
         <h3>{{ i18n "step1_title" }}</h3>
         <p>{{ i18n "step1_desc" }}</p>
       </div>
       <div class="step-card reveal">
-        <div class="step-number">2</div>
         <div class="step-image">
           <img src="{{ "images/step-countdown.webp" | relURL }}" alt="Wedding announcement page with countdown timer" loading="lazy">
         </div>
+        <span class="step-number">02</span>
         <h3>{{ i18n "step2_title" }}</h3>
         <p>{{ i18n "step2_desc" }}</p>
       </div>
       <div class="step-card reveal">
-        <div class="step-number">3</div>
         <div class="step-image">
           <img src="{{ "images/step-gallery.webp" | relURL }}" alt="Posy wedding photo gallery" loading="lazy">
         </div>
+        <span class="step-number">03</span>
         <h3>{{ i18n "step3_title" }}</h3>
         <p>{{ i18n "step3_desc" }}</p>
       </div>
@@ -204,7 +204,7 @@
       <p>{{ i18n "cta_text2" }}</p>
       <p>{{ i18n "cta_text3" }}</p>
     </div>
-    <a href="{{ "pricing/" | relLangURL }}" class="btn btn-filled reveal">{{ i18n "cta_button" }}</a>
+    <a href="{{ "pricing/" | relLangURL }}" class="btn btn-hero reveal">{{ i18n "cta_button" }}</a>
   </div>
 </section>
 

@@ -123,7 +123,7 @@ defaultContentLanguageInSubdir = false
       url = '/'
       weight = 1
     [[languages.en.menus.footer]]
-      name = 'Get Started'
+      name = 'Pricing'
       url = '/pricing/'
       weight = 2
     [[languages.en.menus.footer]]
@@ -266,7 +266,7 @@ defaultContentLanguageInSubdir = false
       url = '/'
       weight = 1
     [[languages.de.menus.footer]]
-      name = 'Jetzt starten'
+      name = 'Preise'
       url = '/pricing/'
       weight = 2
     [[languages.de.menus.footer]]
@@ -409,7 +409,7 @@ defaultContentLanguageInSubdir = false
       url = '/'
       weight = 1
     [[languages.es.menus.footer]]
-      name = 'Comenzar'
+      name = 'Precios'
       url = '/pricing/'
       weight = 2
     [[languages.es.menus.footer]]
@@ -552,7 +552,7 @@ defaultContentLanguageInSubdir = false
       url = '/'
       weight = 1
     [[languages.ro.menus.footer]]
-      name = 'Începe acum'
+      name = 'Prețuri'
       url = '/pricing/'
       weight = 2
     [[languages.ro.menus.footer]]
@@ -695,7 +695,7 @@ defaultContentLanguageInSubdir = false
       url = '/'
       weight = 1
     [[languages.it.menus.footer]]
-      name = 'Inizia ora'
+      name = 'Prezzi'
       url = '/pricing/'
       weight = 2
     [[languages.it.menus.footer]]
@@ -838,7 +838,7 @@ defaultContentLanguageInSubdir = false
       url = '/'
       weight = 1
     [[languages.hu.menus.footer]]
-      name = 'Kezdés'
+      name = 'Árak'
       url = '/pricing/'
       weight = 2
     [[languages.hu.menus.footer]]
