@@ -2,7 +2,7 @@
 [login]
 other = "Bejelentkezés"
 [get_started]
-other = "Kezdd el"
+other = "Kezdd el az albumod"
 [see_more_articles]
 other = "További cikkek"
 [read_more]
@@ -34,7 +34,7 @@ other = "Az analitikai sütik segítenek megérteni a közönségünket, és job
 [cookie_marketing_title]
 other = "Marketing sütik"
 [cookie_marketing_desc]
-other = "A marketing sütik segítenek célzottabb hirdetéseket megjeleníteni. Elsősorban azoknak a felhasználóknak célzunk hirdetéseket, akik már meglátogatták az EventSnap-et."
+other = "A marketing sütik segítenek célzottabb hirdetéseket megjeleníteni. Elsősorban azoknak a felhasználóknak célzunk hirdetéseket, akik már meglátogatták a Posy-et."
 [cookie_details]
 other = "Részletek"
 [cookie_save]
@@ -46,7 +46,7 @@ other = "Kapd meg az összes vendégfotót az esküvődről — automatikusan"
 [hero_subtitle]
 other = "A vendégeid beolvassák a kódot. Feltöltenek. Te pedig megkapod az összes pillanatot egy privát albumban."
 [hero_cta]
-other = "Kezdd el"
+other = "Kezdd el az albumod"
 [steps_title]
 other = "3 egyszerű lépés minden emlék összegyűjtéséhez"
 [step1_title]
@@ -108,11 +108,11 @@ other = "Heteket töltesz az emberek utáni futással"
 [feature3_li4]
 other = "Néhány emlék örökre elvész"
 [feature3_tagline]
-other = "Az EventSnap garantálja, hogy ez soha ne forduljon elő."
+other = "A Posy garantálja, hogy ez soha ne forduljon elő."
 [testimonials_label]
 other = "Bárki számára könnyen használható"
 [testimonial1_text]
-other = "Az EventSnap tökéletes azok számára, akik nem értenek a technikához! Stressz nélkül gyűjtöttük össze az összes esküvői fotót, és mindenki imádta, milyen egyszerű volt feltölteni az emlékeiket."
+other = "A Posy mindent egyszerűvé tett. Az összes esküvői fotót összegyűjtöttük anélkül, hogy bárkit is hajkurásznunk kellett volna, és mindenki imádta, milyen könnyű volt megosztani az emlékeiket."
 [testimonial1_author]
 other = "Mia és Alex"
 [testimonial2_text]
@@ -120,7 +120,7 @@ other = "Nagyon boldog vagyok, hogy rátaláltam erre az alkalmazásra! Rengeteg
 [testimonial2_author]
 other = "Florina és Oliver"
 [testimonial3_text]
-other = "Egy egyszerű módszert kerestünk az esküvői fotók összegyűjtésére, és az EventSnap tökéletesen működött! Semmi bonyolult lépés — a vendégeink imádták, és a végleges galéria csodálatos lett!"
+other = "Egy egyszerű módszert kerestünk az esküvői fotók összegyűjtésére, és a Posy pont az volt, amire szükségünk volt. Semmi bonyolult lépés — a vendégeink imádták, és a végleges galéria csodálatos lett!"
 [testimonial3_author]
 other = "Arianna és Ben"
 [capture_title]
@@ -128,7 +128,7 @@ other = "Örökíts meg minden pillanatot"
 [capture_text1]
 other = "A fotós a nagy pillanatokat kapja el. A vendégeid pedig minden mást: a táncparkett káoszát, a kulisszák mögötti nevetéseket, az édes, spontán reakciókat és a késő esti szelfiket."
 [capture_text2]
-other = "Az EventSnap mindezt összehozza."
+other = "A Posy mindezt összehozza."
 [capture_tagline]
 other = "Mert a legjobb emlékek nem mindig tervezettek."
 [faq_title]
@@ -140,13 +140,13 @@ other = "Csak egy esküvői napod van."
 [cta_text2]
 other = "Gondoskodj róla, hogy minden pillanatot megőrizz."
 [cta_text3]
-other = "Nincs utánafutás. Nincs stressz. Nincsenek hiányzó emlékek."
+other = "Egy hely. Minden emlék. Együtt."
 [cta_button]
 other = "Esküvői központom létrehozása"
 
 # ─── FAQ ─────────────────────────────────────────────────
 [faq1_q]
-other = "Hogyan kezdhetek el az EventSnap-pel?"
+other = "Hogyan kezdhetek el a Posy-pel?"
 [faq1_a]
 other = "Egyszerűen regisztrálj, hozd létre az eseményedet, és oszd meg az egyedi QR-kódodat vagy privát linkedet a vendégeiddel. Azonnal elkezdhetik feltölteni a fotóikat, videóikat és üzeneteiket!"
 [faq2_q]
@@ -170,9 +170,9 @@ other = "Privát az esemény galériám?"
 [faq6_a]
 other = "Igen, a galériád privát, és csak a vendégeiddel megosztott QR-kódon vagy privát linken keresztül érhető el. Teljes mértékben te irányítod, ki láthatja és oszthatja meg a galériát."
 [faq7_q]
-other = "Használhatom az EventSnap-et esküvőn kívül más eseményekre is?"
+other = "Használhatom a Posy-et esküvőn kívül más eseményekre is?"
 [faq7_a]
-other = "Igen! Az EventSnap tökéletes bármilyen típusú eseményhez, beleértve a születésnapokat, céges rendezvényeket, ünnepségeket, találkozókat és még sok mást. Bármely alkalom emlékeinek megörökítésére és rendszerezésére terveztük."
+other = "Igen! A Posy csodálatosan működik születésnapokra, találkozókra, ünnepekre és minden olyan összejövetelre, amelyet érdemes megőrizni."
 [faq8_q]
 other = "Megoszthatom az esküvői galériát azokkal, akik nem tudtak részt venni?"
 [faq8_a]
@@ -182,25 +182,25 @@ other = "Igen! Egyszerűen megoszthatod a linket vagy QR-kódot bárkivel, így 
 [pricing_title]
 other = "Egyszerű, átlátható árak"
 [pricing_subtitle]
-other = "Válaszd ki a tökéletes csomagot az ünnepségedhez."
+other = "Válaszd ki a megfelelő csomagot az ünnepségedhez."
 [pricing_badge]
 other = "Legnépszerűbb"
 [plan1_name]
 other = "Tiny Toasts"
 [plan1_desc]
-other = "Tökéletes kis, meghitt esküvőkre"
+other = "Kis, meghitt esküvőkre"
 [plan1_guests]
 other = "Legfeljebb <strong>50 vendég</strong> tölthet fel és nézhet tartalmakat"
 [plan2_name]
 other = "Champagne Towers"
 [plan2_desc]
-other = "Tökéletes közepes méretű ünnepségekre"
+other = "Közepes méretű ünnepségekre"
 [plan2_guests]
 other = "Legfeljebb <strong>150 vendég</strong> tölthet fel és nézhet tartalmakat"
 [plan3_name]
 other = "Happily Ever After"
 [plan3_desc]
-other = "Tökéletes a teljeskörű, mindent beleadó esküvői élményhez"
+other = "A teljeskörű, mindent beleadó esküvői élményhez"
 [plan3_guests]
 other = "<strong>200+ vendég</strong> tölthet fel és nézhet tartalmakat"
 [pricing_f1]
@@ -216,9 +216,9 @@ other = "Még vannak kérdéseid?"
 
 # ─── Affiliate ───────────────────────────────────────────
 [aff_hero_title]
-other = "EventSnap affiliate program esküvőkre"
+other = "Posy affiliate program esküvőkre"
 [aff_hero_desc]
-other = "Keress 20%-ot minden általad ajánlott pár után az EventSnap affiliate programmal. Segíts a pároknak megörökíteni esküvőjük minden pillanatát."
+other = "Keress 20%-ot minden általad ajánlott pár után a Posy affiliate programmal. Segíts a pároknak megörökíteni esküvőjük minden pillanatát."
 [aff_hero_cta]
 other = "Csatlakozz az affiliate programhoz"
 [aff_how_title]
@@ -226,13 +226,13 @@ other = "Hogyan működik"
 [aff_step1_title]
 other = "Regisztrálj ingyenesen"
 [aff_step1_desc]
-other = "Regisztrálj az EventSnap affiliate programba; mindössze egy percet vesz igénybe."
+other = "Regisztrálj a Posy affiliate programba; mindössze egy percet vesz igénybe."
 [aff_step1_link]
 other = "Regisztrálj itt."
 [aff_step2_title]
 other = "Oszd meg az affiliate linkedet"
 [aff_step2_desc]
-other = "Használd egyedi affiliate linkedet, és kezdd el népszerűsíteni az EventSnap-et a közönséged és ügyfeleid körében."
+other = "Használd egyedi affiliate linkedet, és kezdd el népszerűsíteni a Posy-et a közönséged és ügyfeleid körében."
 [aff_step3_title]
 other = "Keress 20% jutalékot"
 [aff_step3_desc]
@@ -252,7 +252,7 @@ other = "Esküvői szolgáltatásokat vagy termékeket kínáló beszállítók"
 [aff_audience6]
 other = "Kiadók és esküvőkre specializálódott média"
 [aff_benefits_title]
-other = "Miért csatlakozz az EventSnap affiliate programhoz"
+other = "Miért csatlakozz a Posy affiliate programhoz"
 [aff_b1_title]
 other = "20% jutalék"
 [aff_b1_desc]
@@ -268,7 +268,7 @@ other = "Amint eléred az 50 dolláros kifizetési küszöböt, egyszerűen kaph
 [aff_b4_title]
 other = "Könnyű népszerűsíteni"
 [aff_b4_desc]
-other = "Az EventSnap könnyedén beépíthető a meglévő tartalmaidba, szervezési csomagjaidba vagy szállítói ajánlásaidba."
+other = "A Posy könnyedén beépíthető a meglévő tartalmaidba, szervezési csomagjaidba vagy szállítói ajánlásaidba."
 [aff_b5_title]
 other = "30 napos süti"
 [aff_b5_desc]
@@ -278,13 +278,13 @@ other = "Kövesd a teljesítményed élőben"
 [aff_b6_desc]
 other = "Valós idejű elemzések, kattintások és jutalékok az affiliate vezérlőpultodon — láthatod, mi működik."
 [aff_cta_title]
-other = "Keress extra pénzt az EventSnap-pel"
+other = "Keress extra pénzt a Posy-pel"
 
 # ─── Contact ─────────────────────────────────────────────
 [contact_title]
 other = "Lépj kapcsolatba velünk"
 [contact_intro]
-other = "Legyen szó kérdésről az EventSnap-ről, segítségkérésről a fiókodhoz, vagy partnerségi lehetőségről, szívesen hallanánk felőled."
+other = "Legyen szó kérdésről a Posy-ről, segítségkérésről a fiókodhoz, vagy partnerségi lehetőségről, szívesen hallanánk felőled."
 [contact_faq_hint]
 other = "Nézd meg a <a href=\"%s\">GYIK</a> oldalt — lehet, hogy a válaszod már ott van!"
 [contact_cta_title]
@@ -306,7 +306,7 @@ other = "Kezdd el a történeted ma"
 [signin_title]
 other = "Átirányítás a bejelentkezéshez…"
 [signin_desc]
-other = "Átirányítunk az EventSnap alkalmazásba."
+other = "Átirányítunk a Posy alkalmazásba."
 [signin_button]
 other = "Bejelentkezés"
 

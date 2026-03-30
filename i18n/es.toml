@@ -2,7 +2,7 @@
 [login]
 other = "Iniciar sesión"
 [get_started]
-other = "Comenzar"
+other = "Comienza tu álbum"
 [see_more_articles]
 other = "Ver más artículos"
 [read_more]
@@ -34,7 +34,7 @@ other = "Las cookies de análisis nos ayudan a comprender a nuestra audiencia y 
 [cookie_marketing_title]
 other = "Cookies de marketing"
 [cookie_marketing_desc]
-other = "Las cookies de marketing nos ayudan a orientar mejor nuestra publicidad. Las utilizamos principalmente para mostrar anuncios a usuarios que han visitado EventSnap."
+other = "Las cookies de marketing nos ayudan a orientar mejor nuestra publicidad. Las utilizamos principalmente para mostrar anuncios a usuarios que han visitado Posy."
 [cookie_details]
 other = "Detalles"
 [cookie_save]
@@ -46,7 +46,7 @@ other = "Obtén todas las fotos de tus invitados de boda — Automáticamente"
 [hero_subtitle]
 other = "Tus invitados escanean. Suben sus fotos. Tú recibes cada momento en un álbum privado."
 [hero_cta]
-other = "Comenzar"
+other = "Comienza tu álbum"
 [steps_title]
 other = "3 pasos sencillos para recopilar cada recuerdo"
 [step1_title]
@@ -108,11 +108,11 @@ other = "Pasas semanas persiguiendo a la gente"
 [feature3_li4]
 other = "Algunos recuerdos desaparecen para siempre"
 [feature3_tagline]
-other = "EventSnap se asegura de que eso nunca suceda."
+other = "Posy se asegura de que eso nunca suceda."
 [testimonials_label]
 other = "Fácil de usar para cualquiera"
 [testimonial1_text]
-other = "¡EventSnap es perfecto para quienes no son expertos en tecnología! Pudimos recopilar todas las fotos de nuestra boda sin estrés, y a todos les encantó lo fácil que fue subir sus recuerdos."
+other = "Con Posy fue muy sencillo. Recopilamos todas las fotos de nuestra boda sin perseguir a nadie, y a todos les encantó lo fácil que fue compartir sus recuerdos."
 [testimonial1_author]
 other = "Mia y Alex"
 [testimonial2_text]
@@ -120,7 +120,7 @@ other = "¡Qué alegría haber encontrado esta app! ¡Conseguí un montón de fo
 [testimonial2_author]
 other = "Florina y Oliver"
 [testimonial3_text]
-other = "¡Queríamos una forma fácil de recopilar fotos de nuestra boda y EventSnap cumplió! Sin pasos complicados: a nuestros invitados les encantó y la galería final fue espectacular."
+other = "¡Queríamos una forma fácil de recopilar fotos de nuestra boda y Posy cumplió! Sin pasos complicados: a nuestros invitados les encantó y la galería final fue espectacular."
 [testimonial3_author]
 other = "Arianna y Ben"
 [capture_title]
@@ -128,7 +128,7 @@ other = "Captura cada momento"
 [capture_text1]
 other = "Tu fotógrafo captura los grandes momentos. Tus invitados capturan todo lo demás: el caos en la pista de baile, las risas entre bastidores, las reacciones espontáneas y los selfies de madrugada."
 [capture_text2]
-other = "EventSnap lo reúne todo."
+other = "Posy lo reúne todo."
 [capture_tagline]
 other = "Porque los mejores recuerdos no siempre se planifican."
 [faq_title]
@@ -140,13 +140,13 @@ other = "Solo tienes un día de boda."
 [cta_text2]
 other = "Asegúrate de conservar cada momento."
 [cta_text3]
-other = "Sin perseguir a nadie. Sin estrés. Sin recuerdos perdidos."
+other = "Un solo lugar. Cada recuerdo. Juntos."
 [cta_button]
 other = "Crear mi espacio de boda"
 
 # ─── FAQ ─────────────────────────────────────────────────
 [faq1_q]
-other = "¿Cómo empiezo a usar EventSnap?"
+other = "¿Cómo empiezo a usar Posy?"
 [faq1_a]
 other = "Simplemente regístrate, crea tu evento y comparte tu código QR único o enlace privado con tus invitados. ¡Podrán empezar a subir fotos, vídeos y mensajes de inmediato!"
 [faq2_q]
@@ -170,9 +170,9 @@ other = "¿Mi galería del evento es privada?"
 [faq6_a]
 other = "Sí, tu galería es privada y solo se puede acceder a ella mediante el código QR o el enlace privado que compartas con tus invitados. Tienes control total sobre quién ve y comparte la galería."
 [faq7_q]
-other = "¿Puedo usar EventSnap para eventos que no sean bodas?"
+other = "¿Puedo usar Posy para eventos que no sean bodas?"
 [faq7_a]
-other = "¡Sí! EventSnap es perfecto para cualquier tipo de evento, incluyendo cumpleaños, eventos corporativos, fiestas, reuniones y más. Está diseñado para capturar y organizar recuerdos de cualquier ocasión."
+other = "¡Sí! Posy funciona maravillosamente para cumpleaños, reuniones, fiestas y cualquier celebración que merezca ser recordada."
 [faq8_q]
 other = "¿Puedo compartir la galería de mi boda con personas que no pudieron asistir?"
 [faq8_a]
@@ -182,25 +182,25 @@ other = "¡Sí! Puedes compartir fácilmente el enlace o el código QR con cualq
 [pricing_title]
 other = "Precios simples y transparentes"
 [pricing_subtitle]
-other = "Elige el plan perfecto para tu celebración."
+other = "Elige el plan adecuado para tu celebración."
 [pricing_badge]
 other = "Más popular"
 [plan1_name]
 other = "Brindis Íntimo"
 [plan1_desc]
-other = "Perfecto para bodas pequeñas e íntimas"
+other = "Para bodas pequeñas e íntimas"
 [plan1_guests]
 other = "Hasta <strong>50 invitados</strong> pueden contribuir y ver el contenido"
 [plan2_name]
 other = "Torres de Champán"
 [plan2_desc]
-other = "Perfecto para celebraciones medianas"
+other = "Para celebraciones medianas"
 [plan2_guests]
 other = "Hasta <strong>150 invitados</strong> pueden contribuir y ver el contenido"
 [plan3_name]
 other = "Felices Para Siempre"
 [plan3_desc]
-other = "Perfecto para la experiencia de boda definitiva"
+other = "Para la experiencia de boda definitiva"
 [plan3_guests]
 other = "Para <strong>más de 200 invitados</strong> que pueden contribuir y ver el contenido"
 [pricing_f1]
@@ -216,9 +216,9 @@ other = "¿Aún tienes preguntas?"
 
 # ─── Affiliate ───────────────────────────────────────────
 [aff_hero_title]
-other = "Programa de afiliados de EventSnap para bodas"
+other = "Programa de afiliados de Posy para bodas"
 [aff_hero_desc]
-other = "Gana un 20% por cada pareja que refieras uniéndote al programa de afiliados de EventSnap. Ayuda a las parejas a capturar cada momento de su boda."
+other = "Gana un 20% por cada pareja que refieras uniéndote al programa de afiliados de Posy. Ayuda a las parejas a capturar cada momento de su boda."
 [aff_hero_cta]
 other = "Conviértete en afiliado"
 [aff_how_title]
@@ -226,13 +226,13 @@ other = "Cómo funciona"
 [aff_step1_title]
 other = "Regístrate gratis"
 [aff_step1_desc]
-other = "Inscríbete en el programa de afiliados de EventSnap; solo toma un minuto."
+other = "Inscríbete en el programa de afiliados de Posy; solo toma un minuto."
 [aff_step1_link]
 other = "Regístrate aquí."
 [aff_step2_title]
 other = "Comparte tu enlace de afiliado"
 [aff_step2_desc]
-other = "Obtén tu enlace de afiliado único y empieza a promocionar EventSnap entre tu audiencia y clientes."
+other = "Obtén tu enlace de afiliado único y empieza a promocionar Posy entre tu audiencia y clientes."
 [aff_step3_title]
 other = "Gana un 20% de comisión"
 [aff_step3_desc]
@@ -252,7 +252,7 @@ other = "Proveedores de servicios y productos para bodas"
 [aff_audience6]
 other = "Editores y medios especializados en bodas"
 [aff_benefits_title]
-other = "Por qué unirte al programa de afiliados de EventSnap"
+other = "Por qué unirte al programa de afiliados de Posy"
 [aff_b1_title]
 other = "20% de comisión"
 [aff_b1_desc]
@@ -268,7 +268,7 @@ other = "Una vez que alcances el umbral de pago de $50, cobrar es fácil. Elige 
 [aff_b4_title]
 other = "Fácil de promocionar"
 [aff_b4_desc]
-other = "EventSnap se integra fácilmente en tu contenido existente, paquetes de planificación o recomendaciones a proveedores."
+other = "Posy se integra fácilmente en tu contenido existente, paquetes de planificación o recomendaciones a proveedores."
 [aff_b5_title]
 other = "Cookie de 30 días"
 [aff_b5_desc]
@@ -278,13 +278,13 @@ other = "Monitorea tu rendimiento en vivo"
 [aff_b6_desc]
 other = "Accede a análisis en tiempo real, clics y comisiones desde tu panel de afiliado y descubre qué está funcionando."
 [aff_cta_title]
-other = "Gana dinero extra con EventSnap"
+other = "Gana dinero extra con Posy"
 
 # ─── Contact ─────────────────────────────────────────────
 [contact_title]
 other = "Ponte en contacto"
 [contact_intro]
-other = "Ya sea que tengas una pregunta sobre EventSnap, necesites ayuda con tu cuenta o quieras explorar una colaboración, nos encantaría saber de ti."
+other = "Ya sea que tengas una pregunta sobre Posy, necesites ayuda con tu cuenta o quieras explorar una colaboración, nos encantaría saber de ti."
 [contact_faq_hint]
 other = "Consulta primero nuestras <a href=\"%s\">preguntas frecuentes</a> — ¡puede que tu respuesta ya esté ahí!"
 [contact_cta_title]
@@ -306,7 +306,7 @@ other = "Comienza tu historia hoy"
 [signin_title]
 other = "Redirigiendo al inicio de sesión…"
 [signin_desc]
-other = "Estás siendo redirigido a la aplicación EventSnap."
+other = "Estás siendo redirigido a la aplicación Posy."
 [signin_button]
 other = "Ir al inicio de sesión"
 

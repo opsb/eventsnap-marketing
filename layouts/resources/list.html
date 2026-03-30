@@ -93,7 +93,7 @@
         </div>
 
         <div class="text-center" style="margin-top:2rem">
-          <a href="{{ "pricing/" | relLangURL }}" class="btn btn-accent">Capture Every Moment with EventSnap</a>
+          <a href="{{ "pricing/" | relLangURL }}" class="btn btn-accent">Hold Every Moment with Posy</a>
         </div>
       </div>
     </div>
@@ -133,16 +133,16 @@
 
   // --- Budget categories: label, percentage, color ---
   var categories = [
-    { label: 'Venue & Catering',        pct: 0.43, color: '#de2046' },
-    { label: 'Photography & Video',      pct: 0.12, color: '#f06292' },
-    { label: 'Music & Entertainment',    pct: 0.08, color: '#ff8a65' },
-    { label: 'Flowers & Decorations',    pct: 0.08, color: '#ffb74d' },
-    { label: 'Wedding Attire & Beauty',  pct: 0.07, color: '#aed581' },
-    { label: 'Stationery & Invitations', pct: 0.03, color: '#4fc3f7' },
-    { label: 'Transport & Accommodation',pct: 0.04, color: '#7986cb' },
-    { label: 'Wedding Cake & Desserts',  pct: 0.03, color: '#ce93d8' },
-    { label: 'Rings & Gifts',            pct: 0.04, color: '#80cbc4' },
-    { label: 'Miscellaneous / Buffer',   pct: 0.08, color: '#bcaaa4' }
+    { label: 'Venue & Catering',        pct: 0.43, color: '#2C4A30' },
+    { label: 'Photography & Video',      pct: 0.12, color: '#7A9E7E' },
+    { label: 'Music & Entertainment',    pct: 0.08, color: '#C9A96E' },
+    { label: 'Flowers & Decorations',    pct: 0.08, color: '#F0DDD8' },
+    { label: 'Wedding Attire & Beauty',  pct: 0.07, color: '#a8c5ab' },
+    { label: 'Stationery & Invitations', pct: 0.03, color: '#d6cec8' },
+    { label: 'Transport & Accommodation',pct: 0.04, color: '#5a6e5c' },
+    { label: 'Wedding Cake & Desserts',  pct: 0.03, color: '#e0c89a' },
+    { label: 'Rings & Gifts',            pct: 0.04, color: '#b8d4ba' },
+    { label: 'Miscellaneous / Buffer',   pct: 0.08, color: '#c4b8ac' }
   ];
 
   var tips = [
@@ -150,7 +150,7 @@
     'Choose in-season flowers from local growers to cut floral costs significantly.',
     'Consider a brunch or lunch reception \u2014 daytime catering is typically 30% cheaper.',
     'Ask vendors about weekday or winter discounts if your schedule is flexible.',
-    'Use EventSnap instead of disposable cameras to capture candid guest photos \u2014 it\u2019s cheaper and you get every shot instantly!',
+    'Use Posy instead of disposable cameras to collect candid guest photos \u2014 it\u2019s simpler and you get every shot instantly!',
     'Opt for a smaller tiered cake plus a sheet cake for serving to save on dessert costs.',
     'DIY your stationery with free online templates \u2014 digital invites save postage too.',
     'Limit the open bar to beer, wine and a signature cocktail to keep drink costs down.'
@@ -198,13 +198,13 @@
     });
 
     // Center text
-    ctx.fillStyle = '#202020';
-    ctx.font = '700 22px Comfortaa, cursive';
+    ctx.fillStyle = '#2C4A30';
+    ctx.font = '400 22px Lora, serif';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     ctx.fillText(fmt(symbol, total), cx, cy - 8);
-    ctx.font = '400 13px Afacad, sans-serif';
-    ctx.fillStyle = '#666';
+    ctx.font = '300 13px Poppins, sans-serif';
+    ctx.fillStyle = '#5a6e5c';
     ctx.fillText('estimated total', cx, cy + 16);
   }
 

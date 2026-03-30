@@ -2,7 +2,7 @@
 [login]
 other = "Autentificare"
 [get_started]
-other = "Incepe acum"
+other = "Incepe-ti albumul"
 [see_more_articles]
 other = "Vezi mai multe articole"
 [read_more]
@@ -34,7 +34,7 @@ other = "Cookie-urile de analiza ne ajuta sa intelegem audienta si sa oferim con
 [cookie_marketing_title]
 other = "Cookie-uri de marketing"
 [cookie_marketing_desc]
-other = "Cookie-urile de marketing ne ajuta sa targetam mai bine reclamele. Le folosim in principal pentru a afisa reclame utilizatorilor care au vizitat EventSnap."
+other = "Cookie-urile de marketing ne ajuta sa targetam mai bine reclamele. Le folosim in principal pentru a afisa reclame utilizatorilor care au vizitat Posy."
 [cookie_details]
 other = "Detalii"
 [cookie_save]
@@ -46,7 +46,7 @@ other = "Primeste toate fotografiile de la nunta ta — automat"
 [hero_subtitle]
 other = "Invitatii scaneaza. Incarca fotografii. Tu primesti fiecare moment intr-un album privat."
 [hero_cta]
-other = "Incepe acum"
+other = "Incepe-ti albumul"
 [steps_title]
 other = "3 pasi simpli pentru a aduna fiecare amintire"
 [step1_title]
@@ -108,11 +108,11 @@ other = "Petreci saptamani alergand dupa oameni"
 [feature3_li4]
 other = "Unele amintiri dispar pentru totdeauna"
 [feature3_tagline]
-other = "EventSnap se asigura ca asta nu se intampla niciodata."
+other = "Posy se asigura ca asta nu se intampla niciodata."
 [testimonials_label]
 other = "Usor de folosit de oricine"
 [testimonial1_text]
-other = "EventSnap este perfect pentru persoanele care nu sunt tehnice! Am reusit sa strangem toate fotografiile de la nunta fara niciun stres, si tuturor le-a placut cat de simplu a fost sa-si incarce amintirile."
+other = "Cu Posy a fost atat de simplu. Am strans toate fotografiile de la nunta fara sa alergam dupa nimeni, si tuturor le-a placut cat de usor a fost sa-si impartaseasca amintirile."
 [testimonial1_author]
 other = "Mia si Alex"
 [testimonial2_text]
@@ -120,7 +120,7 @@ other = "Foarte fericita ca am descoperit aceasta aplicatie! Am primit atat de m
 [testimonial2_author]
 other = "Florina si Oliver"
 [testimonial3_text]
-other = "Ne-am dorit un mod simplu de a colecta fotografii de la nunta, iar EventSnap a livrat! Fara pasi complicati — invitatii nostri au adorat-o, iar galeria finala a fost uimitoare!"
+other = "Ne-am dorit un mod simplu de a colecta fotografii de la nunta, iar Posy a livrat! Fara pasi complicati — invitatii nostri au adorat-o, iar galeria finala a fost uimitoare!"
 [testimonial3_author]
 other = "Arianna si Ben"
 [capture_title]
@@ -128,7 +128,7 @@ other = "Surprinde fiecare moment"
 [capture_text1]
 other = "Fotograful tau surprinde momentele mari. Invitatii tai surprind tot restul: haosul de pe ringul de dans, rasul din culise, reactiile sincere si selfie-urile de noapte tarzie."
 [capture_text2]
-other = "EventSnap le aduce pe toate impreuna."
+other = "Posy le aduce pe toate impreuna."
 [capture_tagline]
 other = "Pentru ca cele mai frumoase amintiri nu sunt intotdeauna planificate."
 [faq_title]
@@ -140,13 +140,13 @@ other = "Ai o singura zi a nuntii."
 [cta_text2]
 other = "Asigura-te ca pastrezi fiecare moment."
 [cta_text3]
-other = "Fara alergatura. Fara stres. Fara amintiri pierdute."
+other = "Un singur loc. Fiecare amintire. Impreuna."
 [cta_button]
 other = "Creeaza hub-ul meu de nunta"
 
 # ─── FAQ ─────────────────────────────────────────────────
 [faq1_q]
-other = "Cum incep sa folosesc EventSnap?"
+other = "Cum incep sa folosesc Posy?"
 [faq1_a]
 other = "Pur si simplu creeaza-ti un cont, creeaza evenimentul si distribuie codul QR unic sau link-ul privat invitatilor tai. Ei pot incepe sa incarce fotografii, videoclipuri si mesaje imediat!"
 [faq2_q]
@@ -170,9 +170,9 @@ other = "Este galeria mea privata?"
 [faq6_a]
 other = "Da, galeria ta este privata si accesibila doar prin codul QR sau link-ul privat pe care il distribui invitatilor tai. Ai control total asupra cine vede si distribuie galeria."
 [faq7_q]
-other = "Pot folosi EventSnap si pentru alte evenimente, nu doar nunti?"
+other = "Pot folosi Posy si pentru alte evenimente, nu doar nunti?"
 [faq7_a]
-other = "Da! EventSnap este perfect pentru orice tip de eveniment, inclusiv aniversari, evenimente corporate, sarbatori, reuniuni si multe altele. Este conceput pentru a surprinde si organiza amintiri pentru orice ocazie."
+other = "Da! Posy functioneaza minunat pentru aniversari, reuniuni, sarbatori si orice celebrare care merita pastrata."
 [faq8_q]
 other = "Pot distribui galeria de nunta cu persoane care nu au putut participa?"
 [faq8_a]
@@ -182,25 +182,25 @@ other = "Da! Poti distribui usor link-ul sau codul QR oricui, asa ca si cei care
 [pricing_title]
 other = "Preturi simple si transparente"
 [pricing_subtitle]
-other = "Alege planul perfect pentru celebrarea ta."
+other = "Alege planul potrivit pentru celebrarea ta."
 [pricing_badge]
 other = "Cel mai popular"
 [plan1_name]
 other = "Tiny Toasts"
 [plan1_desc]
-other = "Perfect pentru nunti mici si intime"
+other = "Pentru nunti mici si intime"
 [plan1_guests]
 other = "Pana la <strong>50 de invitati</strong> pot contribui si vizualiza continutul"
 [plan2_name]
 other = "Champagne Towers"
 [plan2_desc]
-other = "Perfect pentru celebrari de dimensiuni medii"
+other = "Pentru celebrari de dimensiuni medii"
 [plan2_guests]
 other = "Pana la <strong>150 de invitati</strong> pot contribui si vizualiza continutul"
 [plan3_name]
 other = "Happily Ever After"
 [plan3_desc]
-other = "Perfect pentru experienta de nunta completa"
+other = "Pentru experienta de nunta completa"
 [plan3_guests]
 other = "Pentru <strong>peste 200 de invitati</strong> care pot contribui si vizualiza continutul"
 [pricing_f1]
@@ -216,9 +216,9 @@ other = "Mai ai intrebari?"
 
 # ─── Affiliate ───────────────────────────────────────────
 [aff_hero_title]
-other = "Programul de afiliere EventSnap pentru nunti"
+other = "Programul de afiliere Posy pentru nunti"
 [aff_hero_desc]
-other = "Castiga 20% pentru fiecare cuplu pe care il recomanzi alaturandu-te programului de afiliere EventSnap. Ajuta cuplurile sa surprinda fiecare moment de la nunta lor."
+other = "Castiga 20% pentru fiecare cuplu pe care il recomanzi alaturandu-te programului de afiliere Posy. Ajuta cuplurile sa surprinda fiecare moment de la nunta lor."
 [aff_hero_cta]
 other = "Devino afiliat"
 [aff_how_title]
@@ -226,13 +226,13 @@ other = "Cum functioneaza"
 [aff_step1_title]
 other = "Inregistreaza-te gratuit"
 [aff_step1_desc]
-other = "Inscrie-te in Programul de afiliere EventSnap; dureaza doar un minut."
+other = "Inscrie-te in Programul de afiliere Posy; dureaza doar un minut."
 [aff_step1_link]
 other = "Inscrie-te aici."
 [aff_step2_title]
 other = "Distribuie link-ul tau de afiliat"
 [aff_step2_desc]
-other = "Ia link-ul tau unic de afiliat si incepe sa promovezi EventSnap catre audienta si clientii tai."
+other = "Ia link-ul tau unic de afiliat si incepe sa promovezi Posy catre audienta si clientii tai."
 [aff_step3_title]
 other = "Castiga comision de 20%"
 [aff_step3_desc]
@@ -252,7 +252,7 @@ other = "Furnizori de servicii si produse pentru nunti"
 [aff_audience6]
 other = "Publicatii si media specializata in nunti"
 [aff_benefits_title]
-other = "De ce sa te alaturi Programului de afiliere EventSnap"
+other = "De ce sa te alaturi Programului de afiliere Posy"
 [aff_b1_title]
 other = "Comision de 20%"
 [aff_b1_desc]
@@ -268,7 +268,7 @@ other = "Odata ce atingi pragul de plata de 50$, incasarea este simpla. Alege di
 [aff_b4_title]
 other = "Usor de promovat"
 [aff_b4_desc]
-other = "EventSnap se integreaza usor in continutul tau existent, pachetele de planificare sau recomandarile de furnizori."
+other = "Posy se integreaza usor in continutul tau existent, pachetele de planificare sau recomandarile de furnizori."
 [aff_b5_title]
 other = "Cookie de 30 de zile"
 [aff_b5_desc]
@@ -278,13 +278,13 @@ other = "Urmareste-ti performanta in timp real"
 [aff_b6_desc]
 other = "Acceseaza analize in timp real, click-uri si comisioane din panoul tau de afiliat si vezi ce functioneaza."
 [aff_cta_title]
-other = "Castiga bani in plus cu EventSnap"
+other = "Castiga bani in plus cu Posy"
 
 # ─── Contact ─────────────────────────────────────────────
 [contact_title]
 other = "Contacteaza-ne"
 [contact_intro]
-other = "Fie ca ai o intrebare despre EventSnap, ai nevoie de ajutor cu contul tau sau vrei sa explorezi un parteneriat, ne-ar face placere sa auzim de la tine."
+other = "Fie ca ai o intrebare despre Posy, ai nevoie de ajutor cu contul tau sau vrei sa explorezi un parteneriat, ne-ar face placere sa auzim de la tine."
 [contact_faq_hint]
 other = "Consulta mai intai sectiunea <a href=\"%s\">Intrebari frecvente</a> — s-ar putea ca raspunsul tau sa fie deja acolo!"
 [contact_cta_title]
@@ -306,7 +306,7 @@ other = "Incepe-ti povestea astazi"
 [signin_title]
 other = "Redirectionare catre autentificare..."
 [signin_desc]
-other = "Esti redirectionat catre aplicatia EventSnap."
+other = "Esti redirectionat catre aplicatia Posy."
 [signin_button]
 other = "Mergi la autentificare"
 

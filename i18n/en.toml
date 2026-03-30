@@ -2,7 +2,7 @@
 [login]
 other = "Login"
 [get_started]
-other = "Get started"
+other = "Sign up"
 [see_more_articles]
 other = "See More Articles"
 [read_more]
@@ -34,7 +34,7 @@ other = "Analytics cookies help us understand our audience and deliver better co
 [cookie_marketing_title]
 other = "Marketing cookies"
 [cookie_marketing_desc]
-other = "Marketing cookies help us target our ads better. We mainly use them to target ads to users who have visited EventSnap."
+other = "Marketing cookies help us target our ads better. We mainly use them to target ads to users who have visited Posy."
 [cookie_details]
 other = "Details"
 [cookie_save]
@@ -42,11 +42,11 @@ other = "Save settings"
 
 # ─── Home Page ───────────────────────────────────────────
 [hero_title]
-other = "Get Every Guest Photo From Your Wedding — Automatically"
+other = "Hold everything close."
 [hero_subtitle]
-other = "Your guests scan. They upload. You get every moment in one private album."
+other = "Every photo, every guest, every moment from your wedding — together in one place."
 [hero_cta]
-other = "Get started"
+other = "Begin your album"
 [steps_title]
 other = "3 Simple Steps to Collect Every Memory"
 [step1_title]
@@ -108,19 +108,19 @@ other = "You spend weeks chasing people"
 [feature3_li4]
 other = "Some memories disappear forever"
 [feature3_tagline]
-other = "EventSnap makes sure that never happens."
+other = "Posy makes sure that never happens."
 [testimonials_label]
-other = "Easy to Use by Anyone"
+other = "Real Couples, Real Moments"
 [testimonial1_text]
-other = "EventSnap is perfect for non-techie people! We were able to gather all the photos from our wedding with zero stress, and everyone loved how simple it was to upload their memories."
+other = "Posy made it so simple. We gathered every photo from our wedding without chasing a single person, and our guests loved how easy it was to share their memories with us."
 [testimonial1_author]
 other = "Mia & Alex"
 [testimonial2_text]
-other = "So happy that I came across this app! I got so many cool photos from my wedding!"
+other = "So happy we found Posy! We got so many beautiful photos from our wedding — moments we would have missed otherwise."
 [testimonial2_author]
 other = "Florina and Oliver"
 [testimonial3_text]
-other = "We wanted an easy way to collect photos from our wedding, and EventSnap delivered! No complicated steps—our guests loved it and the final gallery was amazing!"
+other = "We wanted a gentle way to collect photos from our wedding, and Posy was exactly that. No complicated steps — our guests loved it and the final gallery was something we'll treasure."
 [testimonial3_author]
 other = "Arianna & Ben"
 [capture_title]
@@ -128,27 +128,27 @@ other = "Capture Every Moment"
 [capture_text1]
 other = "Your photographer captures the big moments. Your guests capture everything else: the dance floor chaos, behind-the-scenes laughter, sweet candid reactions, and late-night selfies."
 [capture_text2]
-other = "EventSnap brings it all together."
+other = "Posy brings it all together."
 [capture_tagline]
 other = "Because the best memories aren't always planned."
 [faq_title]
 other = "Frequently Asked Questions"
 [cta_title]
-other = "Don't Let Your Wedding Photos Disappear"
+other = "Your wedding happens once. Hold everything close."
 [cta_text1]
-other = "You only get one wedding day."
+other = "Every guest has a moment worth keeping."
 [cta_text2]
-other = "Make sure you keep every moment."
+other = "Posy makes sure you keep them all."
 [cta_text3]
-other = "No chasing. No stress. No missing memories."
+other = "One place. Every memory. Together."
 [cta_button]
-other = "Create My Wedding Hub"
+other = "Begin your album"
 
 # ─── FAQ ─────────────────────────────────────────────────
 [faq1_q]
-other = "How do I get started with EventSnap?"
+other = "How do I set up Posy for my wedding?"
 [faq1_a]
-other = "Simply sign up, create your event, and share your unique QR code or private link with your guests. They can start uploading their photos, videos, and messages immediately!"
+other = "Sign up, create your wedding album, and share your unique QR code or private link with your guests. They can start uploading their photos, videos, and messages right away."
 [faq2_q]
 other = "Can guests upload photos and videos during the event?"
 [faq2_a]
@@ -170,9 +170,9 @@ other = "Is my event gallery private?"
 [faq6_a]
 other = "Yes, your gallery is private and only accessible via the QR code or private link that you share with your guests. You have full control over who sees and shares the gallery."
 [faq7_q]
-other = "Can I use EventSnap for events other than weddings?"
+other = "Can I use Posy for events other than weddings?"
 [faq7_a]
-other = "Yes! EventSnap is perfect for any type of event, including birthdays, corporate events, holidays, reunions, and more. It's designed to capture and organize memories for any occasion."
+other = "Yes! Posy works beautifully for birthdays, reunions, holidays, and any gathering worth remembering. It's designed to hold every kind of celebration close."
 [faq8_q]
 other = "Can I share my wedding gallery with people who couldn't attend?"
 [faq8_a]
@@ -182,25 +182,25 @@ other = "Yes! You can easily share the link or QR code with anyone, so even thos
 [pricing_title]
 other = "Simple, Transparent Pricing"
 [pricing_subtitle]
-other = "Choose the perfect plan for your celebration."
+other = "Choose the right plan for your celebration."
 [pricing_badge]
 other = "Most Popular"
 [plan1_name]
 other = "Tiny Toasts"
 [plan1_desc]
-other = "Perfect for small and intimate weddings"
+other = "For small and intimate weddings"
 [plan1_guests]
 other = "Up to <strong>50 guests</strong> can contribute and view content"
 [plan2_name]
 other = "Champagne Towers"
 [plan2_desc]
-other = "Perfect for mid-sized celebrations"
+other = "For mid-sized celebrations"
 [plan2_guests]
 other = "Up to <strong>150 guests</strong> can contribute and view content"
 [plan3_name]
 other = "Happily Ever After"
 [plan3_desc]
-other = "Perfect for the ultimate, all-in wedding experience"
+other = "For the full, all-in wedding celebration"
 [plan3_guests]
 other = "For <strong>200+ guests</strong> can contribute and view content"
 [pricing_f1]
@@ -216,9 +216,9 @@ other = "Still have Questions?"
 
 # ─── Affiliate ───────────────────────────────────────────
 [aff_hero_title]
-other = "EventSnap Affiliate Program for Weddings"
+other = "Posy Affiliate Program for Weddings"
 [aff_hero_desc]
-other = "Earn 20% on every couple you refer by joining the EventSnap affiliate program. Help couples capture every moment from their wedding."
+other = "Earn 20% on every couple you refer by joining the Posy affiliate program. Help couples hold every moment from their wedding close."
 [aff_hero_cta]
 other = "Become an affiliate"
 [aff_how_title]
@@ -226,13 +226,13 @@ other = "How it Works"
 [aff_step1_title]
 other = "Register for Free"
 [aff_step1_desc]
-other = "Sign up for the EventSnap Affiliate Program; it only takes a minute."
+other = "Sign up for the Posy Affiliate Program — it only takes a minute."
 [aff_step1_link]
 other = "Sign up here."
 [aff_step2_title]
 other = "Share Your Affiliate Link"
 [aff_step2_desc]
-other = "Grab your unique affiliate link and start promoting EventSnap to your audience and clients."
+other = "Grab your unique affiliate link and start sharing Posy with your audience and clients."
 [aff_step3_title]
 other = "Earn 20% Commission"
 [aff_step3_desc]
@@ -252,7 +252,7 @@ other = "Vendors offering wedding services or products"
 [aff_audience6]
 other = "Publishers & wedding-focused media"
 [aff_benefits_title]
-other = "Why Join the EventSnap Affiliate Program"
+other = "Why Join the Posy Affiliate Program"
 [aff_b1_title]
 other = "20% Commission"
 [aff_b1_desc]
@@ -268,7 +268,7 @@ other = "Once you reach the $50 payout threshold, getting paid is easy. Choose f
 [aff_b4_title]
 other = "Easy to Promote"
 [aff_b4_desc]
-other = "EventSnap easily integrates into your existing content, planning packages, or vendor recommendations."
+other = "Posy fits naturally into your existing content, planning packages, or vendor recommendations."
 [aff_b5_title]
 other = "30-Day Cookie"
 [aff_b5_desc]
@@ -278,17 +278,17 @@ other = "Track Your Performance Live"
 [aff_b6_desc]
 other = "Access real-time analytics, clicks, and commissions from your affiliate dashboard and see what's working."
 [aff_cta_title]
-other = "Earn Extra Money with EventSnap"
+other = "Earn Extra Money with Posy"
 
 # ─── Contact ─────────────────────────────────────────────
 [contact_title]
 other = "Get in Touch"
 [contact_intro]
-other = "Whether you have a question about EventSnap, need help with your account, or want to explore a partnership, we'd love to hear from you."
+other = "Whether you have a question about Posy, need help with your account, or want to explore a partnership, we'd love to hear from you."
 [contact_faq_hint]
 other = "Check out our <a href=\"%s\">FAQs</a> first — your answer might already be there!"
 [contact_cta_title]
-other = "Capture Every Moment, Relive Every Memory"
+other = "Hold Every Moment, Together"
 
 # ─── Blog ────────────────────────────────────────────────
 [blog_title]
@@ -296,17 +296,17 @@ other = "Blog"
 [blog_empty]
 other = "Stay tuned — new articles coming soon."
 [blog_cta_title]
-other = "Capture All Your Wedding Moments"
+other = "Hold All Your Wedding Moments Close"
 [blog_cta_desc]
-other = "Easily collect, share, and relive every moment with your guests—no app, no hassle, just unforgettable memories!"
+other = "Collect, share, and relive every moment with your guests — no app needed, just the memories that matter."
 [blog_cta_button]
-other = "Start Your Story Today"
+other = "Begin your album"
 
 # ─── Signin ──────────────────────────────────────────────
 [signin_title]
 other = "Redirecting to Login…"
 [signin_desc]
-other = "You are being redirected to the EventSnap app."
+other = "You are being redirected to the Posy app."
 [signin_button]
 other = "Go to Login"
 
