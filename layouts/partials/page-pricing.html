@@ -73,56 +73,9 @@
 <script>
 (function() {
   var ref = window.endorsely_referral;
-  if (ref) {
-    document.querySelectorAll('a[href*="app.eventsnap.it/checkout"]').forEach(function(a) {
-      a.href = a.href + '&endorsely_referral=' + encodeURIComponent(ref);
-    });
-  }
-
-  // GA4 e-commerce event data
-  var plans = {
-    'tiny_toasts':        { name: 'Tiny Toasts',        price: 29 },
-    'champagne_towers':   { name: 'Champagne Towers',   price: 59 },
-    'happily_ever_after': { name: 'Happily Ever After',  price: 99 }
-  };
-
-  // Track view_item_list when pricing section enters viewport
-  var allItems = Object.keys(plans).map(function(id) {
-    return { item_id: id, item_name: plans[id].name, price: plans[id].price, quantity: 1 };
-  });
-  var pricingSection = document.querySelector('.pricing-grid');
-  if (pricingSection && typeof IntersectionObserver !== 'undefined') {
-    new IntersectionObserver(function(entries, obs) {
-      if (entries[0].isIntersecting && typeof gtag === 'function') {
-        gtag('event', 'view_item_list', {
-          item_list_id: 'pricing_plans',
-          item_list_name: 'Pricing Plans',
-          items: allItems
-        });
-        obs.disconnect();
-      }
-    }, { threshold: 0.5 }).observe(pricingSection);
-  }
-
-  // Track begin_checkout when user clicks a pricing plan
+  if (!ref) return;
   document.querySelectorAll('a[href*="app.eventsnap.it/checkout"]').forEach(function(a) {
-    a.addEventListener('click', function() {
-      var url = new URL(a.href);
-      var planId = url.searchParams.get('plan');
-      var plan = plans[planId];
-      if (!plan || typeof gtag !== 'function') return;
-
-      gtag('event', 'begin_checkout', {
-        currency: 'USD',
-        value: plan.price,
-        items: [{
-          item_id: planId,
-          item_name: plan.name,
-          price: plan.price,
-          quantity: 1
-        }]
-      });
-    });
+    a.href = a.href + '&endorsely_referral=' + encodeURIComponent(ref);
   });
 })();
 </script>
