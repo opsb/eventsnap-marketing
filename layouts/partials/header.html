@@ -1,7 +1,7 @@
 <header class="site-header">
   <div class="header-inner">
     <a href="{{ "" | relLangURL }}" class="logo" aria-label="EventSnap home">
-      <img src="{{ "images/logo.webp" | relURL }}" alt="EventSnap" class="logo-img">
+      <img src="{{ "images/logo.webp" | relURL }}" alt="EventSnap" class="logo-img" width="400" height="80" fetchpriority="high">
     </a>
     <nav class="main-nav" aria-label="Main navigation">
       {{ range .Site.Menus.main }}

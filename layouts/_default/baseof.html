@@ -3,7 +3,6 @@
 <head>
   {{ partial "head.html" . }}
   <meta name="p:domain_verify" content="c0fea566cfb00b33f607c3f2698856fa"/>
-  <script async src="https://assets.endorsely.com/endorsely.js" data-endorsely="2453a7af-a36c-4747-affc-2db25380091e"></script>
   <!-- Google tag (gtag.js) — deferred until user interaction or 3.5s -->
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -42,7 +41,8 @@
       _3pLoaded = true;
       var scripts = [
         { src: 'https://assets.endorsely.com/endorsely.js', attrs: { 'data-endorsely': 'e23cf210-2049-4287-a0f6-b50be34d0a68' } },
-        { src: 'https://widget.getyourguide.com/dist/pa.umd.production.min.js', attrs: { 'data-gyg-partner-id': 'GN29MP9' } }
+        { src: 'https://widget.getyourguide.com/dist/pa.umd.production.min.js', attrs: { 'data-gyg-partner-id': 'GN29MP9' } },
+        { src: '//js-eu1.hs-scripts.com/148194176.js', attrs: { id: 'hs-script-loader' } }
       ];
       scripts.forEach(function(cfg) {
         var s = document.createElement('script');
@@ -149,7 +149,7 @@
   </script>
 
   <!-- Cookie Consent Banner -->
-  <div class="cookie-popup" id="cookiePopup" role="dialog" aria-label="Cookie consent">
+  <div class="cookie-popup" id="cookiePopup" role="dialog" aria-label="Cookie consent" style="transform:translateY(100%)">
     <h2 class="cookie-popup-title">{{ i18n "cookie_title" }}</h2>
     <p class="cookie-popup-text">{{ i18n "cookie_text" }}</p>
     <div class="cookie-popup-actions">
@@ -295,8 +295,6 @@
       });
     })();
   </script>
-<!-- Start of HubSpot Embed Code -->
-<script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/148194176.js"></script>
-<!-- End of HubSpot Embed Code -->
+<!-- HubSpot — deferred until user interaction or 4s (loaded with other 3rd-party scripts) -->
 </body>
 </html>
