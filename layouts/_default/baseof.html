@@ -39,6 +39,12 @@
     function _load3p() {
       if (_3pLoaded) return;
       _3pLoaded = true;
+      // Microsoft Clarity
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "w74ui1ch2z");
       var scripts = [
         { src: 'https://assets.endorsely.com/endorsely.js', attrs: { 'data-endorsely': 'e23cf210-2049-4287-a0f6-b50be34d0a68' } },
         { src: 'https://widget.getyourguide.com/dist/pa.umd.production.min.js', attrs: { 'data-gyg-partner-id': 'GN29MP9' } },
