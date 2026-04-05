@@ -1,7 +1,7 @@
 ---
 title: "15 Best Shops to Buy Your Civil Ceremony Outfit in 2026"
 date: 2026-04-05
-draft: true
+draft: false
 author: "Florina Vanani"
 image: "/images/blog-civil-ceremony-featured.jpg"
 excerpt: "Planning a civil wedding and wondering what to wear? Whether you're looking for a chic courthouse wedding dress, an elegant civil wedding outfit, or a registry office wedding dress that feels special, we've rounded up 15 of the best shops to find your perfect civil ceremony dress in 2026."
