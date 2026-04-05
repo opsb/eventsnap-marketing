@@ -21,7 +21,7 @@ Whether you're searching for a civil ceremony dress 2026 that's modern and minim
 </div>
 <small>Photos via <a href="https://www.ladypipa.com" target="_blank" rel="noopener">Lady Pipa</a></small>
 
-Currently one of the most viral fashion brands in Spain, Lady Pipa is the perfect choice for brides who want a trendy, sustainable civil ceremony outfit. Designed in Barcelona and handmade in Madrid with over 50% sustainably sourced materials, their dresses combine eco-conscious fashion with seriously stylish designs. Known for their unique prints, flattering knot details, and midi silhouettes, Lady Pipa offers civil wedding dresses that feel young, fresh, and fashion-forward. At around **&euro;170**, they're one of the most accessible options on this list — proving that sustainable style doesn't have to break the bank.
+Currently one of the most viral fashion brands in Spain, Lady Pipa is the perfect choice for brides who want a trendy, sustainable civil ceremony outfit. Designed in Barcelona and handmade in Madrid with over 50% sustainably sourced materials, their dresses combine eco-conscious fashion with seriously stylish designs. Known for their unique prints, flattering knot details, and midi silhouettes, Lady Pipa offers civil wedding dresses that feel young, fresh, and fashion-forward. At around &euro;170, they're one of the most accessible options on this list — proving that sustainable style doesn't have to break the bank.
 
 <table>
 <tr><th>What we love most</th></tr>
@@ -38,7 +38,7 @@ Currently one of the most viral fashion brands in Spain, Lady Pipa is the perfec
 </div>
 <small>Photos via <a href="https://huongboutique.com" target="_blank" rel="noopener">Huong Boutique</a></small>
 
-Huong Boutique is a hidden gem for brides looking for refined, beautifully crafted civil ceremony outfits. This Vietnamese boutique specialises in elegant women's clothing with meticulous attention to detail, and their collections — including the stunning **HUONG ATELIER | UNVEILED** bridal line — feature pieces that are perfect for a modern civil wedding. From silk dresses to tulle and lace creations, every piece feels luxurious yet wearable. With prices ranging from **&dollar;99 to &dollar;360**, Huong Boutique offers exceptional value for beautifully made courthouse wedding dresses that feel truly special.
+Huong Boutique is a hidden gem for brides looking for refined, beautifully crafted civil ceremony outfits. This Vietnamese boutique specialises in elegant women's clothing with meticulous attention to detail, and their collections — including the stunning HUONG ATELIER | UNVEILED bridal line — feature pieces that are perfect for a modern civil wedding. From silk dresses to tulle and lace creations, every piece feels luxurious yet wearable. With prices ranging from &dollar;99 to &dollar;360, Huong Boutique offers exceptional value for beautifully made courthouse wedding dresses that feel truly special.
 
 <table>
 <tr><th>What we love most</th></tr>
@@ -55,7 +55,7 @@ Huong Boutique is a hidden gem for brides looking for refined, beautifully craft
 </div>
 <small>Photos via <a href="https://cardiemoda.com" target="_blank" rel="noopener">Cardi&eacute; Moda</a></small>
 
-If you love southern Spanish elegance with a contemporary twist, Cardi&eacute; Moda is one of the best places to shop for your civil ceremony outfit. Founded by designer Carmen in Seville, this brand is known for youthful, trend-forward designs that never lose their simplicity. Their civil wedding collection features sophisticated midi dresses, bold colours, and unique textures that look and feel like custom couture — without the couture price tag. With flagship stores in **Seville** and **Madrid's Salamanca district**, and dresses ranging from **&euro;149 to &euro;269**, Cardi&eacute; Moda is perfect for the bride who wants something elegant yet modern for her courthouse wedding.
+If you love southern Spanish elegance with a contemporary twist, Cardi&eacute; Moda is one of the best places to shop for your civil ceremony outfit. Founded by designer Carmen in Seville, this brand is known for youthful, trend-forward designs that never lose their simplicity. Their civil wedding collection features sophisticated midi dresses, bold colours, and unique textures that look and feel like custom couture — without the couture price tag. With flagship stores in Seville and Madrid's Salamanca district, and dresses ranging from &euro;149 to &euro;269, Cardi&eacute; Moda is perfect for the bride who wants something elegant yet modern for her courthouse wedding.
 
 <table>
 <tr><th>What we love most</th></tr>
@@ -72,7 +72,7 @@ If you love southern Spanish elegance with a contemporary twist, Cardi&eacute; M
 </div>
 <small>Photos via <a href="https://www.cherubina.com" target="_blank" rel="noopener">Cherubina</a></small>
 
-Often called *the undisputed queen of Seville's high-society style*, Cherubina is a Spanish fashion house that has been crafting exquisite occasion wear since 2003. Their designs are characterised by vintage-inspired couture, masterful draping, and impeccable tailoring that makes every piece feel like a work of art. While they're well known for their wedding guest dresses and iconic hats, Cherubina also offers a dedicated **bridal atelier** with bespoke appointments for brides looking for something truly unique. If you want your civil ceremony dress to have that elevated, couture feel, Cherubina delivers — with pieces ranging from **&euro;740 to &euro;1,300** and boutiques in Seville and Madrid.
+Often called *the undisputed queen of Seville's high-society style*, Cherubina is a Spanish fashion house that has been crafting exquisite occasion wear since 2003. Their designs are characterised by vintage-inspired couture, masterful draping, and impeccable tailoring that makes every piece feel like a work of art. While they're well known for their wedding guest dresses and iconic hats, Cherubina also offers a dedicated bridal atelier with bespoke appointments for brides looking for something truly unique. If you want your civil ceremony dress to have that elevated, couture feel, Cherubina delivers — with pieces ranging from &euro;740 to &euro;1,300 and boutiques in Seville and Madrid.
 
 <table>
 <tr><th>What we love most</th></tr>
@@ -89,7 +89,7 @@ Often called *the undisputed queen of Seville's high-society style*, Cherubina i
 </div>
 <small>Photos via <a href="https://www.eu.nadinemerabi.com" target="_blank" rel="noopener">Nadine Merabi</a></small>
 
-For the bride who's anything but ordinary, Nadine Merabi is the ultimate destination for a civil ceremony outfit that turns heads. This UK-based luxury brand celebrates modern romance with sleek lines, signature cuts, and unexpected details — and they even have a dedicated **civil ceremony wedding outfits** collection. From the stunning **Saffron White Dress** (&euro;575) to the chic **Bella White Jumpsuit** (&euro;455) for brides who want something different, every piece is designed to make you feel extraordinary on your big day. With prices from **&euro;280 to &euro;845**, Nadine Merabi offers courthouse wedding dresses and jumpsuits that are fashion-forward, luxurious, and completely unforgettable.
+For the bride who's anything but ordinary, Nadine Merabi is the ultimate destination for a civil ceremony outfit that turns heads. This UK-based luxury brand celebrates modern romance with sleek lines, signature cuts, and unexpected details — and they even have a dedicated civil ceremony wedding outfits collection. From the stunning Saffron White Dress (&euro;575) to the chic Bella White Jumpsuit (&euro;455) for brides who want something different, every piece is designed to make you feel extraordinary on your big day. With prices from &euro;280 to &euro;845, Nadine Merabi offers courthouse wedding dresses and jumpsuits that are fashion-forward, luxurious, and completely unforgettable.
 
 <table>
 <tr><th>What we love most</th></tr>
@@ -106,7 +106,7 @@ For the bride who's anything but ordinary, Nadine Merabi is the ultimate destina
 </div>
 <small>Photos via <a href="https://nanajacqueline.com" target="_blank" rel="noopener">Nana Jacqueline</a></small>
 
-For the bride who wants a truly luxurious little white dress for her civil wedding, Nana Jacqueline is a dream. This Los Angeles-based luxury brand specialises in elegant, feminine pieces that are designed to make you feel extraordinary. Their **Little White Dresses** collection is practically made for civil ceremonies — think romantic lace details, delicate puff sleeves, and timeless silhouettes that photograph beautifully. Standout pieces include the **Penelope Lace Dress** (&dollar;833) with its bridal-quality lace and the **Flora Dress** (&dollar;510) for understated elegance. If you're looking for a courthouse bride outfit that feels luxe and special, this is where to shop.
+For the bride who wants a truly luxurious little white dress for her civil wedding, Nana Jacqueline is a dream. This Los Angeles-based luxury brand specialises in elegant, feminine pieces that are designed to make you feel extraordinary. Their Little White Dresses collection is practically made for civil ceremonies — think romantic lace details, delicate puff sleeves, and timeless silhouettes that photograph beautifully. Standout pieces include the Penelope Lace Dress (&dollar;833) with its bridal-quality lace and the Flora Dress (&dollar;510) for understated elegance. If you're looking for a courthouse bride outfit that feels luxe and special, this is where to shop.
 
 <table>
 <tr><th>What we love most</th></tr>
@@ -123,7 +123,7 @@ For the bride who wants a truly luxurious little white dress for her civil weddi
 </div>
 <small>Photos via <a href="https://awarebarcelona.com" target="_blank" rel="noopener">Aware Barcelona</a></small>
 
-If Mediterranean chic is your aesthetic, Aware Barcelona captures it perfectly. This Barcelona-based brand is known for premium satins, backless designs, and fluid fabrics that feel effortlessly elegant — and their **bridal collection** is a stunning option for brides searching for a civil ceremony dress 2026 with that relaxed yet refined Mediterranean feel. From the **Camelia White Set** (&euro;240) — a gorgeous two-piece option for brides who want something different — to the elegant **Vera Dress** (&euro;245), every piece feels fresh and modern. With sizes from **XS to XXL** and prices from **&euro;70 to &euro;245**, Aware Barcelona is one of the most inclusive and accessible bridal options on this list.
+If Mediterranean chic is your aesthetic, Aware Barcelona captures it perfectly. This Barcelona-based brand is known for premium satins, backless designs, and fluid fabrics that feel effortlessly elegant — and their bridal collection is a stunning option for brides searching for a civil ceremony dress 2026 with that relaxed yet refined Mediterranean feel. From the Camelia White Set (&euro;240) — a gorgeous two-piece option for brides who want something different — to the elegant Vera Dress (&euro;245), every piece feels fresh and modern. With sizes from XS to XXL and prices from &euro;70 to &euro;245, Aware Barcelona is one of the most inclusive and accessible bridal options on this list.
 
 <table>
 <tr><th>What we love most</th></tr>
@@ -140,7 +140,7 @@ If Mediterranean chic is your aesthetic, Aware Barcelona captures it perfectly. 
 </div>
 <small>Photos via <a href="https://redondobrand.com" target="_blank" rel="noopener">Redondo Brand</a></small>
 
-Redondo Brand is a Spanish label that proves you don't have to sacrifice quality to find an affordable civil wedding outfit. Known for high-quality pieces at accessible prices, all produced in Spain, their bridal collection features timeless white silhouettes with elegant, minimalist design. The **Bianca** dress (&euro;579), the flowing **Greta** (&euro;459), and the refined **Isabel White** (&euro;509) are all stunning options for a courthouse wedding dress that feels special without breaking the bank. With pieces currently on sale at **40-45% off** original prices, now is an especially great time to shop their bridal line.
+Redondo Brand is a Spanish label that proves you don't have to sacrifice quality to find an affordable civil wedding outfit. Known for high-quality pieces at accessible prices, all produced in Spain, their bridal collection features timeless white silhouettes with elegant, minimalist design. The Bianca dress (&euro;579), the flowing Greta (&euro;459), and the refined Isabel White (&euro;509) are all stunning options for a courthouse wedding dress that feels special without breaking the bank. With pieces currently on sale at 40-45% off original prices, now is an especially great time to shop their bridal line.
 
 <table>
 <tr><th>What we love most</th></tr>
@@ -174,7 +174,7 @@ No civil ceremony outfit guide would be complete without Reformation. This susta
 </div>
 <small>Photos via <a href="https://www.mariquitatrasquila.com" target="_blank" rel="noopener">Mariquita Trasquil&aacute;</a></small>
 
-If you're looking for a stylish civil ceremony outfit on a budget, Mariquita Trasquil&aacute; is one of the best-kept secrets in Spanish fashion. This C&aacute;diz-based brand is loved for offering high-style occasion wear at low-cost prices, with one of the market's most **inclusive size ranges — up to size 50/XXL**. Their dresses feature sophisticated silhouettes with classical inspirations, and each piece comes with personalised fit recommendations based on your body measurements. Mariquita Trasquil&aacute; proves that finding an elegant civil wedding outfit shouldn't have to be expensive — making them a fantastic option for brides who want to look beautiful at their courthouse wedding without overspending.
+If you're looking for a stylish civil ceremony outfit on a budget, Mariquita Trasquil&aacute; is one of the best-kept secrets in Spanish fashion. This C&aacute;diz-based brand is loved for offering high-style occasion wear at low-cost prices, with one of the market's most inclusive size ranges — up to size 50/XXL. Their dresses feature sophisticated silhouettes with classical inspirations, and each piece comes with personalised fit recommendations based on your body measurements. Mariquita Trasquil&aacute; proves that finding an elegant civil wedding outfit shouldn't have to be expensive — making them a fantastic option for brides who want to look beautiful at their courthouse wedding without overspending.
 
 <table>
 <tr><th>What we love most</th></tr>
@@ -191,7 +191,7 @@ If you're looking for a stylish civil ceremony outfit on a budget, Mariquita Tra
 </div>
 <small>Photos via <a href="https://bimani.com" target="_blank" rel="noopener">Bimani</a></small>
 
-Bimani has built a loyal following among Spanish brides for one very good reason: their signature **no-wrinkle crepe fabric** that looks flawless from ceremony to celebration. This Spanish brand offers minimalist, versatile designs in an extensive colour range — making them ideal for brides who want a civil ceremony dress 2026 that's both practical and elegant. Their flowing satin midi dresses in warm tones are perfect for autumn civil weddings, while their clean-cut crepe pieces work beautifully for any season. With prices from **&euro;120 to &euro;210** and all pieces produced in Spain, Bimani is a smart choice for the practical yet stylish courthouse bride.
+Bimani has built a loyal following among Spanish brides for one very good reason: their signature no-wrinkle crepe fabric that looks flawless from ceremony to celebration. This Spanish brand offers minimalist, versatile designs in an extensive colour range — making them ideal for brides who want a civil ceremony dress 2026 that's both practical and elegant. Their flowing satin midi dresses in warm tones are perfect for autumn civil weddings, while their clean-cut crepe pieces work beautifully for any season. With prices from &euro;120 to &euro;210 and all pieces produced in Spain, Bimani is a smart choice for the practical yet stylish courthouse bride.
 
 <table>
 <tr><th>What we love most</th></tr>
@@ -208,7 +208,7 @@ Bimani has built a loyal following among Spanish brides for one very good reason
 </div>
 <small>Photos via <a href="https://shopsignificantother.com" target="_blank" rel="noopener">Significant Other</a></small>
 
-If you're after effortless, refined elegance for your civil wedding outfit, Australian brand Significant Other is a stunning choice. Founded in 2019, this contemporary label creates architectural silhouettes and sculptural draping that feel both modern and timeless. Their bridal collection features gorgeous ivory pieces like the **Devlyn Long Sleeve Gown** (AUD &dollar;495) — perfect for a cooler-weather courthouse wedding dress — and the **Devlyn Mini Dress** (AUD &dollar;330) for brides who want a chic, shorter civil ceremony look. Every piece is thoughtfully crafted with that effortless Australian cool that translates beautifully to a city hall wedding.
+If you're after effortless, refined elegance for your civil wedding outfit, Australian brand Significant Other is a stunning choice. Founded in 2019, this contemporary label creates architectural silhouettes and sculptural draping that feel both modern and timeless. Their bridal collection features gorgeous ivory pieces like the Devlyn Long Sleeve Gown (AUD &dollar;495) — perfect for a cooler-weather courthouse wedding dress — and the Devlyn Mini Dress (AUD &dollar;330) for brides who want a chic, shorter civil ceremony look. Every piece is thoughtfully crafted with that effortless Australian cool that translates beautifully to a city hall wedding.
 
 <table>
 <tr><th>What we love most</th></tr>
@@ -225,7 +225,7 @@ If you're after effortless, refined elegance for your civil wedding outfit, Aust
 </div>
 <small>Photos via <a href="https://www.altardstate.com" target="_blank" rel="noopener">Altar'd State</a></small>
 
-If you're searching for an affordable yet beautiful courthouse wedding dress, Altar'd State deserves a spot on your shopping list. This American brand offers a gorgeous selection of white and ivory dresses at accessible prices, including the popular **Alma Satin Mini Dress** — a chic little white dress that's ideal for a casual civil ceremony or city hall wedding. Their dress collection ranges from satin minis to elegant midi styles, and they're particularly great for brides who want that "little white dress civil wedding" look without a luxury price tag. With a wide range of sizes and styles, Altar'd State makes it easy to find a civil wedding outfit that's stylish, flattering, and budget-friendly.
+If you're searching for an affordable yet beautiful courthouse wedding dress, Altar'd State deserves a spot on your shopping list. This American brand offers a gorgeous selection of white and ivory dresses at accessible prices, including the popular Alma Satin Mini Dress — a chic little white dress that's ideal for a casual civil ceremony or city hall wedding. Their dress collection ranges from satin minis to elegant midi styles, and they're particularly great for brides who want that "little white dress civil wedding" look without a luxury price tag. With a wide range of sizes and styles, Altar'd State makes it easy to find a civil wedding outfit that's stylish, flattering, and budget-friendly.
 
 <table>
 <tr><th>What we love most</th></tr>
@@ -242,7 +242,7 @@ If you're searching for an affordable yet beautiful courthouse wedding dress, Al
 </div>
 <small>Photos via <a href="https://macheriebleue.com" target="_blank" rel="noopener">Ma Ch&eacute;rie Bleue</a></small>
 
-For brides in North America looking for a curated, boutique experience, Ma Ch&eacute;rie Bleue is a beautiful destination for your civil ceremony outfit. This Canadian bridal boutique based in Ros&eacute;m&egrave;re, Quebec specialises in wedding dresses and bridal separates from designers like **Catherine Deane** and **Lis Simon**, and they even have a dedicated **Elopement, Courthouse & Civil Wedding Bride** collection — specifically curated for intimate ceremonies. Whether you're looking for a romantic beaded topper to pair with a skirt, an elegant corset and gown combination, or a minimalist courthouse wedding dress, their by-appointment-only service ensures a personalised experience. Perfect for the bride who values expert guidance in finding her dream civil ceremony look.
+For brides in North America looking for a curated, boutique experience, Ma Ch&eacute;rie Bleue is a beautiful destination for your civil ceremony outfit. This Canadian bridal boutique based in Ros&eacute;m&egrave;re, Quebec specialises in wedding dresses and bridal separates from designers like Catherine Deane and Lis Simon, and they even have a dedicated Elopement, Courthouse & Civil Wedding Bride collection — specifically curated for intimate ceremonies. Whether you're looking for a romantic beaded topper to pair with a skirt, an elegant corset and gown combination, or a minimalist courthouse wedding dress, their by-appointment-only service ensures a personalised experience. Perfect for the bride who values expert guidance in finding her dream civil ceremony look.
 
 <table>
 <tr><th>What we love most</th></tr>
@@ -259,7 +259,7 @@ For brides in North America looking for a curated, boutique experience, Ma Ch&ea
 </div>
 <small>Photos via <a href="https://bgoandme.com" target="_blank" rel="noopener">Bgo & Me</a></small>
 
-If you want a civil ceremony outfit that feels truly unique, Bgo & Me is a Galician gem that's been handcrafting exclusive designs in their own workshops. This Spanish brand is known for their signature tunics, kaftans, and flowing dresses with exclusive prints — offering a bohemian-luxe aesthetic that's perfect for brides who want something different. Their bridal collection features stunning pieces like the **Aurora Kaftan** (&euro;1,490), the elegant **Nancy Midi Dress** (from &euro;590), and the beautiful **Orion Bride Tunic** (from &euro;490). What sets Bgo & Me apart is their incredible size range — **XS to 4XL** — and **made-to-measure options**, making them one of the most inclusive luxury bridal brands. With a 2-week lead time on most pieces, they're also a great option for brides on a tighter timeline.
+If you want a civil ceremony outfit that feels truly unique, Bgo & Me is a Galician gem that's been handcrafting exclusive designs in their own workshops. This Spanish brand is known for their signature tunics, kaftans, and flowing dresses with exclusive prints — offering a bohemian-luxe aesthetic that's perfect for brides who want something different. Their bridal collection features stunning pieces like the Aurora Kaftan (&euro;1,490), the elegant Nancy Midi Dress (from &euro;590), and the beautiful Orion Bride Tunic (from &euro;490). What sets Bgo & Me apart is their incredible size range — XS to 4XL — and made-to-measure options, making them one of the most inclusive luxury bridal brands. With a 2-week lead time on most pieces, they're also a great option for brides on a tighter timeline.
 
 <table>
 <tr><th>What we love most</th></tr>
