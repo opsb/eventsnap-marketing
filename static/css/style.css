@@ -1400,7 +1400,7 @@ ul { list-style: none; }
 
 .blog-post-hero {
   max-width: 680px;
-  margin: 0 auto 2.5rem;
+  margin: 0 auto 0.5rem;
   border-radius: var(--radius-lg);
   overflow: hidden;
 }
