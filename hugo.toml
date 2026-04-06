@@ -139,9 +139,13 @@ defaultContentLanguageInSubdir = false
       url = '/contact/'
       weight = 5
     [[languages.en.menus.footer]]
+      name = 'Suggest a Feature'
+      url = '/suggest-a-feature/'
+      weight = 6
+    [[languages.en.menus.footer]]
       name = 'Privacy policy'
       url = '/privacy-policy/'
-      weight = 6
+      weight = 7
 
   [languages.de]
     languageCode = 'de'
@@ -282,9 +286,13 @@ defaultContentLanguageInSubdir = false
       url = '/contact/'
       weight = 5
     [[languages.de.menus.footer]]
+      name = 'Feature vorschlagen'
+      url = '/suggest-a-feature/'
+      weight = 6
+    [[languages.de.menus.footer]]
       name = 'Datenschutz'
       url = '/privacy-policy/'
-      weight = 6
+      weight = 7
 
   [languages.es]
     languageCode = 'es'
@@ -425,9 +433,13 @@ defaultContentLanguageInSubdir = false
       url = '/contact/'
       weight = 5
     [[languages.es.menus.footer]]
+      name = 'Sugerir una funcionalidad'
+      url = '/suggest-a-feature/'
+      weight = 6
+    [[languages.es.menus.footer]]
       name = 'Política de privacidad'
       url = '/privacy-policy/'
-      weight = 6
+      weight = 7
 
   [languages.ro]
     languageCode = 'ro'
@@ -568,9 +580,13 @@ defaultContentLanguageInSubdir = false
       url = '/contact/'
       weight = 5
     [[languages.ro.menus.footer]]
+      name = 'Sugerează o funcție'
+      url = '/suggest-a-feature/'
+      weight = 6
+    [[languages.ro.menus.footer]]
       name = 'Politica de confidențialitate'
       url = '/privacy-policy/'
-      weight = 6
+      weight = 7
 
   [languages.it]
     languageCode = 'it'
@@ -711,9 +727,13 @@ defaultContentLanguageInSubdir = false
       url = '/contact/'
       weight = 5
     [[languages.it.menus.footer]]
+      name = 'Suggerisci una funzione'
+      url = '/suggest-a-feature/'
+      weight = 6
+    [[languages.it.menus.footer]]
       name = 'Privacy policy'
       url = '/privacy-policy/'
-      weight = 6
+      weight = 7
 
   [languages.hu]
     languageCode = 'hu'
@@ -854,6 +874,10 @@ defaultContentLanguageInSubdir = false
       url = '/contact/'
       weight = 5
     [[languages.hu.menus.footer]]
+      name = 'Funkció javaslása'
+      url = '/suggest-a-feature/'
+      weight = 6
+    [[languages.hu.menus.footer]]
       name = 'Adatvédelmi irányelvek'
       url = '/privacy-policy/'
-      weight = 6
+      weight = 7
