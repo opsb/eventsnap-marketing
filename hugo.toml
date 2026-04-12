@@ -146,6 +146,10 @@ defaultContentLanguageInSubdir = false
       name = 'Privacy policy'
       url = '/privacy-policy/'
       weight = 7
+    [[languages.en.menus.footer]]
+      name = 'Terms of Service'
+      url = '/terms-of-service/'
+      weight = 8
 
   [languages.de]
     languageCode = 'de'
@@ -293,6 +297,10 @@ defaultContentLanguageInSubdir = false
       name = 'Datenschutz'
       url = '/privacy-policy/'
       weight = 7
+    [[languages.de.menus.footer]]
+      name = 'Nutzungsbedingungen'
+      url = '/terms-of-service/'
+      weight = 8
 
   [languages.es]
     languageCode = 'es'
@@ -440,6 +448,10 @@ defaultContentLanguageInSubdir = false
       name = 'Política de privacidad'
       url = '/privacy-policy/'
       weight = 7
+    [[languages.es.menus.footer]]
+      name = 'Términos de servicio'
+      url = '/terms-of-service/'
+      weight = 8
 
   [languages.ro]
     languageCode = 'ro'
@@ -587,6 +599,10 @@ defaultContentLanguageInSubdir = false
       name = 'Politica de confidențialitate'
       url = '/privacy-policy/'
       weight = 7
+    [[languages.ro.menus.footer]]
+      name = 'Termeni și condiții'
+      url = '/terms-of-service/'
+      weight = 8
 
   [languages.it]
     languageCode = 'it'
@@ -734,6 +750,10 @@ defaultContentLanguageInSubdir = false
       name = 'Privacy policy'
       url = '/privacy-policy/'
       weight = 7
+    [[languages.it.menus.footer]]
+      name = 'Termini di servizio'
+      url = '/terms-of-service/'
+      weight = 8
 
   [languages.hu]
     languageCode = 'hu'
@@ -881,3 +901,7 @@ defaultContentLanguageInSubdir = false
       name = 'Adatvédelmi irányelvek'
       url = '/privacy-policy/'
       weight = 7
+    [[languages.hu.menus.footer]]
+      name = 'Felhasználási feltételek'
+      url = '/terms-of-service/'
+      weight = 8
