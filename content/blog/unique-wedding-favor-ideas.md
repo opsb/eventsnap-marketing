@@ -1,7 +1,7 @@
 ---
 title: "Unique Wedding Favor Ideas and Where to Get Them"
 date: 2026-04-05
-draft: true
+draft: false
 author: "Florina Vanani"
 image: "/images/blog-favors-featured.jpg"
 excerpt: "Looking for wedding favors your guests will actually love? From personalised coffee bags to handmade candles, here are the most unique wedding favor ideas — plus exactly where to find them."
