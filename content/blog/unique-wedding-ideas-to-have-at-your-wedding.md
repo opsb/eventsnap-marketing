@@ -129,7 +129,7 @@ A live painter capturing your ceremony or reception is one of the most memorable
 </div>
 <small>Photos via <a href="https://pinterest.com" target="_blank" rel="noopener">Pinterest</a></small>
 
-One of the smartest modern wedding planning ideas is using a dedicated photo-sharing app so guests can upload pictures instantly. Your wedding day goes by in a flash, and no matter how great your photographer is, there are always moments that only your guests see. That's where [EventSnap](https://app.eventsnap.it) comes in.
+One of the smartest modern wedding planning ideas is using a dedicated photo-sharing app so guests can upload pictures instantly. Your wedding day goes by in a flash, and no matter how great your photographer is, there are always moments that only your guests see. That's where [EventSnap](https://eventsnap.it) comes in.
 
 **How it works:** With EventSnap, your guests can instantly upload their photos and videos by scanning a simple QR code. No app downloads, no complicated setup. Every candid laugh, every dance floor moment, every behind-the-scenes memory is captured and collected in one beautiful gallery.
 
@@ -148,7 +148,7 @@ One of the smartest modern wedding planning ideas is using a dedicated photo-sha
 <tr><td>Every moment is captured, not just the posed ones</td></tr>
 </table>
 
-**[Try EventSnap for your wedding](https://app.eventsnap.it)** and make sure no moment goes missing.
+**[Try EventSnap for your wedding](https://eventsnap.it)** and make sure no moment goes missing.
 
 ## 6. Live Music + DJ Combination
 
