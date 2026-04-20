@@ -72,3 +72,14 @@
     </div>
   </div>
 </div>
+{{ $faqs := slice }}
+{{ range seq 1 8 }}
+  {{ $faqs = $faqs | append (dict
+    "@type" "Question"
+    "name" (i18n (printf "faq%d_q" .))
+    "acceptedAnswer" (dict "@type" "Answer" "text" (i18n (printf "faq%d_a" .)))
+  ) }}
+{{ end }}
+<script type="application/ld+json">
+{{- dict "@context" "https://schema.org" "@type" "FAQPage" "mainEntity" $faqs | jsonify (dict "indent" "  ") | safeJS -}}
+</script>
