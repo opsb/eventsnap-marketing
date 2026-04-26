@@ -1,4 +1,4 @@
 ---
-title: "EventSnap"
-description: "EventSnap collects every guest photo from your wedding automatically. No app downloads needed — guests simply scan a QR code to share their photos instantly to one beautiful shared gallery."
+title: "Posy"
+description: "Posy collects every guest photo from your wedding into one private gallery. No app to install, no accounts to make — just one QR code your guests scan."
 ---

@@ -1,160 +1,201 @@
 {{ define "main" }}
 
-<!-- Hero -->
-<section class="hero">
-  <div class="container hero-grid">
-    <div class="hero-content reveal">
-      <h1>{{ i18n "hero_title" }}</h1>
-      <p class="hero-subtitle">{{ i18n "hero_subtitle" }}</p>
-      <a href="{{ "pricing/" | relLangURL }}" class="btn btn-outline">{{ i18n "hero_cta" }}</a>
+<!-- ══════════════ COVER ══════════════ -->
+<section class="ed-cover">
+  <div class="ed-cover-grid">
+    <div class="ed-cover-inner reveal">
+      <span class="ed-eyebrow">Posy &middot; Wedding Photo Sharing</span>
+      <h1 class="ed-cover-headline">{{ i18n "hero_title" }}</h1>
+      <p class="ed-cover-sub">{{ i18n "hero_subtitle" }}</p>
+      <a href="{{ "pricing/" | relLangURL }}" class="btn btn-outline ed-cover-cta">{{ i18n "hero_cta" }}</a>
     </div>
-    <div class="hero-visual reveal">
-      <img src="{{ "images/hero-dashboard.webp" | relURL }}" alt="EventSnap dashboard showing photo uploads and gallery" class="hero-image" width="496" height="640">
+    <div class="ed-cover-visual reveal">
+      <div class="ed-cover-stage">
+        <!-- Phone -->
+        <img src="{{ "images/hero-dashboard.webp" | relURL }}" alt="Posy dashboard showing photo uploads and gallery" class="ed-cover-image" width="496" height="640">
+
+        <!-- Floating photo card — top right -->
+        <figure class="ed-float-card ed-float-card--top">
+          <img src="{{ "images/gallery-2.webp" | relURL }}" alt="" loading="lazy" width="500" height="625">
+          <figcaption><span class="ed-float-dot"></span>+1 from Sarah</figcaption>
+        </figure>
+
+        <!-- Floating photo card — bottom left -->
+        <figure class="ed-float-card ed-float-card--bottom">
+          <img src="{{ "images/hero-card-aisle.jpg" | relURL }}" alt="" loading="lazy" width="900" height="1200">
+          <figcaption><span class="ed-float-dot"></span>+3 new photos</figcaption>
+        </figure>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- 3 Steps -->
-<section class="section bg-pink">
-  <div class="container">
-    <h2 class="section-title reveal">{{ i18n "steps_title" }}</h2>
-    <div class="steps-grid">
-      <div class="step-card reveal">
-        <div class="step-number">1</div>
-        <div class="step-image">
-          <img src="{{ "images/step-dashboard.webp" | relURL }}" alt="EventSnap dashboard showing photo uploads and top contributors" loading="lazy" width="750" height="964">
-        </div>
-        <h3>{{ i18n "step1_title" }}</h3>
-        <p>{{ i18n "step1_desc" }}</p>
+<!-- ══════════════ VALUE STRIP ══════════════ -->
+<section class="ed-value">
+  <div class="ed-value-inner reveal">
+    <span class="ed-eyebrow">What you get</span>
+    <h2 class="ed-value-headline">Every photo, in one place.<br>Except the nerves.</h2>
+    <div class="ed-value-pillars">
+      <div class="ed-value-pillar">
+        <span class="ed-value-num">No app</span>
+        <p>Guests scan a QR code and start uploading in seconds. No downloads, no accounts, no friction.</p>
       </div>
-      <div class="step-card reveal">
-        <div class="step-number">2</div>
-        <div class="step-image">
-          <img src="{{ "images/step-countdown.webp" | relURL }}" alt="Wedding announcement page with countdown timer" loading="lazy" width="750" height="882">
-        </div>
-        <h3>{{ i18n "step2_title" }}</h3>
-        <p>{{ i18n "step2_desc" }}</p>
+      <div class="ed-value-pillar">
+        <span class="ed-value-num">Full quality</span>
+        <p>Every photo and video lands in full resolution. Download the whole gallery in one click, anytime.</p>
       </div>
-      <div class="step-card reveal">
-        <div class="step-number">3</div>
-        <div class="step-image">
-          <img src="{{ "images/step-gallery.webp" | relURL }}" alt="EventSnap wedding photo gallery" loading="lazy" width="750" height="917">
-        </div>
-        <h3>{{ i18n "step3_title" }}</h3>
-        <p>{{ i18n "step3_desc" }}</p>
+      <div class="ed-value-pillar">
+        <span class="ed-value-num">Yours, privately</span>
+        <p>Your gallery is private to your QR code. No public feed, no algorithms &mdash; just the people you invited.</p>
       </div>
     </div>
-    <div class="section-cta reveal">
+  </div>
+</section>
+
+<!-- ══════════════ HOW IT WORKS — EDITORIAL STEPS ══════════════ -->
+<section class="ed-section ed-bg-cream">
+  <div class="ed-container">
+    <header class="ed-section-head reveal">
+      <span class="ed-eyebrow">01 &mdash; How it works</span>
+      <h2 class="ed-section-title">{{ i18n "steps_title" }}</h2>
+    </header>
+
+    <article class="ed-step reveal">
+      <div class="ed-step-number" aria-hidden="true">01</div>
+      <div class="ed-step-body">
+        <h3 class="ed-step-title">{{ i18n "step1_title" }}</h3>
+        <p class="ed-step-desc">{{ i18n "step1_desc" }}</p>
+      </div>
+      <div class="ed-step-image">
+        <img src="{{ "images/step-dashboard.webp" | relURL }}" alt="Posy dashboard with photo uploads and top contributors" loading="lazy" width="750" height="964">
+      </div>
+    </article>
+
+    <hr class="ed-divider">
+
+    <article class="ed-step ed-step--reverse reveal">
+      <div class="ed-step-number" aria-hidden="true">02</div>
+      <div class="ed-step-body">
+        <h3 class="ed-step-title">{{ i18n "step2_title" }}</h3>
+        <p class="ed-step-desc">{{ i18n "step2_desc" }}</p>
+      </div>
+      <div class="ed-step-image">
+        <img src="{{ "images/step-countdown.webp" | relURL }}" alt="Wedding announcement page with countdown timer" loading="lazy" width="750" height="882">
+      </div>
+    </article>
+
+    <hr class="ed-divider">
+
+    <article class="ed-step reveal">
+      <div class="ed-step-number" aria-hidden="true">03</div>
+      <div class="ed-step-body">
+        <h3 class="ed-step-title">{{ i18n "step3_title" }}</h3>
+        <p class="ed-step-desc">{{ i18n "step3_desc" }}</p>
+      </div>
+      <div class="ed-step-image">
+        <img src="{{ "images/step-gallery.webp" | relURL }}" alt="Posy wedding photo gallery" loading="lazy" width="750" height="917">
+      </div>
+    </article>
+
+    <div class="ed-section-cta reveal">
       <a href="{{ "pricing/" | relLangURL }}" class="btn btn-outline">{{ i18n "steps_cta" }}</a>
     </div>
   </div>
 </section>
 
-<!-- Features / No More Lost Moments -->
-<section class="section bg-white">
-  <div class="container">
-    <div class="text-center">
-      <h2 class="section-title reveal">{{ i18n "features_title" }}</h2>
-      <p class="section-subtitle reveal" style="margin-left:auto;margin-right:auto;">{{ i18n "features_subtitle" }}</p>
-    </div>
+<!-- ══════════════ TILE GRID — FEATURES ══════════════ -->
+<section class="ed-section ed-bg-cream ed-section--top-tight">
+  <div class="ed-container">
+    <header class="ed-section-head reveal">
+      <span class="ed-eyebrow">02 &mdash; Why Posy</span>
+      <h2 class="ed-section-title">{{ i18n "features_title" }}</h2>
+      <p class="ed-section-lead">{{ i18n "features_subtitle" }}</p>
+    </header>
+  </div>
 
-    <div class="feature-row reveal">
-      <div class="feature-row-image">
-        <img src="{{ "images/feature-badge.webp" | relURL }}" alt="Pop-up notification with gold medal congratulating user" loading="lazy" width="750" height="563">
-      </div>
-      <div class="feature-row-text">
-        <h3>{{ i18n "feature1_title" }}</h3>
-        <p>{{ i18n "feature1_desc" }}</p>
-        <ul class="feature-list">
-          <li>{{ i18n "feature1_li1" }}</li>
-          <li>{{ i18n "feature1_li2" }}</li>
-          <li>{{ i18n "feature1_li3" }}</li>
-          <li>{{ i18n "feature1_li4" }}</li>
-        </ul>
-        <p class="feature-tagline">{{ i18n "feature1_tagline" }}</p>
-      </div>
-    </div>
+  <div class="ed-tile-grid">
+    <article class="ed-tile ed-tile--blush reveal">
+      <span class="ed-tile-tag">F.01</span>
+      <h3 class="ed-tile-title">{{ i18n "feature1_title" }}</h3>
+      <p class="ed-tile-desc">{{ i18n "feature1_desc" }}</p>
+      <ul class="ed-tile-list">
+        <li>{{ i18n "feature1_li1" }}</li>
+        <li>{{ i18n "feature1_li2" }}</li>
+        <li>{{ i18n "feature1_li3" }}</li>
+        <li>{{ i18n "feature1_li4" }}</li>
+      </ul>
+      <p class="ed-tile-aside">{{ i18n "feature1_tagline" }}</p>
+    </article>
 
-    <div class="feature-row feature-row--reverse reveal">
-      <div class="feature-row-image">
-        <img src="{{ "images/step-dashboard.webp" | relURL }}" alt="EventSnap photo gallery with contributor stats" loading="lazy" width="750" height="964">
-      </div>
-      <div class="feature-row-text">
-        <h3>{{ i18n "feature2_title" }}</h3>
-        <p>{{ i18n "feature2_desc" }}</p>
-        <ul class="feature-list">
-          <li>{{ i18n "feature2_li1" }}</li>
-          <li>{{ i18n "feature2_li2" }}</li>
-          <li>{{ i18n "feature2_li3" }}</li>
-          <li>{{ i18n "feature2_li4" }}</li>
-        </ul>
-        <p class="feature-tagline">{{ i18n "feature2_tagline" }}</p>
-      </div>
-    </div>
+    <article class="ed-tile ed-tile--petal reveal">
+      <span class="ed-tile-tag">F.02</span>
+      <h3 class="ed-tile-title">{{ i18n "feature2_title" }}</h3>
+      <p class="ed-tile-desc">{{ i18n "feature2_desc" }}</p>
+      <ul class="ed-tile-list">
+        <li>{{ i18n "feature2_li1" }}</li>
+        <li>{{ i18n "feature2_li2" }}</li>
+        <li>{{ i18n "feature2_li3" }}</li>
+        <li>{{ i18n "feature2_li4" }}</li>
+      </ul>
+      <p class="ed-tile-aside">{{ i18n "feature2_tagline" }}</p>
+    </article>
 
-    <div class="feature-row reveal">
-      <div class="feature-row-image">
-        <img src="{{ "images/step-gallery.webp" | relURL }}" alt="EventSnap wedding photo sharing gallery" loading="lazy" width="750" height="917">
-      </div>
-      <div class="feature-row-text">
-        <h3>{{ i18n "feature3_title" }}</h3>
-        <p>{{ i18n "feature3_desc" }}</p>
-        <ul class="feature-list">
-          <li>{{ i18n "feature3_li1" }}</li>
-          <li>{{ i18n "feature3_li2" }}</li>
-          <li>{{ i18n "feature3_li3" }}</li>
-          <li>{{ i18n "feature3_li4" }}</li>
-        </ul>
-        <p class="feature-tagline">{{ i18n "feature3_tagline" }}</p>
-      </div>
-    </div>
+    <article class="ed-tile ed-tile--garden reveal">
+      <span class="ed-tile-tag">F.03</span>
+      <h3 class="ed-tile-title">{{ i18n "feature3_title" }}</h3>
+      <p class="ed-tile-desc">{{ i18n "feature3_desc" }}</p>
+      <ul class="ed-tile-list">
+        <li>{{ i18n "feature3_li1" }}</li>
+        <li>{{ i18n "feature3_li2" }}</li>
+        <li>{{ i18n "feature3_li3" }}</li>
+        <li>{{ i18n "feature3_li4" }}</li>
+      </ul>
+      <p class="ed-tile-aside">{{ i18n "feature3_tagline" }}</p>
+    </article>
   </div>
 </section>
 
-<!-- Testimonials -->
-<section class="section bg-pink">
-  <div class="container">
-    <p class="section-label reveal">{{ i18n "testimonials_label" }}</p>
-    <div class="testimonials-grid">
-      <div class="testimonial-card reveal">
-        <div class="testimonial-quote">
-          <svg class="quote-mark" width="32" height="24" viewBox="0 0 32 24" fill="#de2046" opacity="0.2"><path d="M0 24V12C0 5.4 4.4 1.2 13.2 0l1.2 3.6C9 5.2 7 8.4 6.8 12H12v12H0zm18 0V12c0-6.6 4.4-10.8 13.2-12L32.4 3.6C27 5.2 25 8.4 24.8 12H30v12H18z"/></svg>
-          <p>{{ i18n "testimonial1_text" }}</p>
-        </div>
-        <p class="testimonial-author">{{ i18n "testimonial1_author" }}</p>
-      </div>
-      <div class="testimonial-card reveal">
-        <div class="testimonial-quote">
-          <svg class="quote-mark" width="32" height="24" viewBox="0 0 32 24" fill="#de2046" opacity="0.2"><path d="M0 24V12C0 5.4 4.4 1.2 13.2 0l1.2 3.6C9 5.2 7 8.4 6.8 12H12v12H0zm18 0V12c0-6.6 4.4-10.8 13.2-12L32.4 3.6C27 5.2 25 8.4 24.8 12H30v12H18z"/></svg>
-          <p>{{ i18n "testimonial2_text" }}</p>
-        </div>
-        <p class="testimonial-author">{{ i18n "testimonial2_author" }}</p>
-      </div>
-      <div class="testimonial-card reveal">
-        <div class="testimonial-quote">
-          <svg class="quote-mark" width="32" height="24" viewBox="0 0 32 24" fill="#de2046" opacity="0.2"><path d="M0 24V12C0 5.4 4.4 1.2 13.2 0l1.2 3.6C9 5.2 7 8.4 6.8 12H12v12H0zm18 0V12c0-6.6 4.4-10.8 13.2-12L32.4 3.6C27 5.2 25 8.4 24.8 12H30v12H18z"/></svg>
-          <p>{{ i18n "testimonial3_text" }}</p>
-        </div>
-        <p class="testimonial-author">{{ i18n "testimonial3_author" }}</p>
-      </div>
-    </div>
+<!-- ══════════════ EDITORIAL TESTIMONIAL — single rotating quote ══════════════ -->
+<section class="ed-section ed-bg-blush">
+  <div class="ed-container">
+    <header class="ed-section-head reveal">
+      <span class="ed-eyebrow">03 &mdash; In their words</span>
+    </header>
+
+    <figure class="ed-quote reveal">
+      <blockquote class="ed-quote-text">&ldquo;{{ i18n "testimonial1_text" }}&rdquo;</blockquote>
+      <figcaption class="ed-quote-author">&mdash; {{ i18n "testimonial1_author" }}</figcaption>
+    </figure>
+
+    <hr class="ed-divider ed-divider--soft">
+
+    <figure class="ed-quote reveal">
+      <blockquote class="ed-quote-text">&ldquo;{{ i18n "testimonial2_text" }}&rdquo;</blockquote>
+      <figcaption class="ed-quote-author">&mdash; {{ i18n "testimonial2_author" }}</figcaption>
+    </figure>
+
+    <hr class="ed-divider ed-divider--soft">
+
+    <figure class="ed-quote reveal">
+      <blockquote class="ed-quote-text">&ldquo;{{ i18n "testimonial3_text" }}&rdquo;</blockquote>
+      <figcaption class="ed-quote-author">&mdash; {{ i18n "testimonial3_author" }}</figcaption>
+    </figure>
   </div>
 </section>
 
-<!-- Capture Every Moment -->
-<section class="section bg-white">
-  <div class="container text-center">
-    <h2 class="section-title reveal">{{ i18n "capture_title" }}</h2>
-    <div class="capture-text reveal">
-      <p>{{ i18n "capture_text1" }}</p>
-      <p><strong>{{ i18n "capture_text2" }}</strong></p>
-      <p class="feature-tagline">{{ i18n "capture_tagline" }}</p>
-    </div>
+<!-- ══════════════ EDITORIAL CAPTURE STATEMENT ══════════════ -->
+<section class="ed-section ed-bg-cream">
+  <div class="ed-container ed-narrow text-center">
+    <span class="ed-eyebrow reveal">04 &mdash; Every angle</span>
+    <h2 class="ed-section-title reveal">{{ i18n "capture_title" }}</h2>
+    <p class="ed-lead reveal">{{ i18n "capture_text1" }}</p>
+    <p class="ed-statement reveal">&ldquo;{{ i18n "capture_text2" }}&rdquo;</p>
+    <p class="ed-aside reveal">{{ i18n "capture_tagline" }}</p>
   </div>
 </section>
 
-<!-- Photo Carousel -->
-<section class="section bg-pink carousel-section">
+<!-- ══════════════ PHOTO CAROUSEL ══════════════ -->
+<section class="ed-carousel-section">
   <div class="carousel reveal">
     <div class="carousel-track">
       <img src="{{ "images/gallery-1.webp" | relURL }}" alt="Wedding reception guests at decorated table" class="carousel-slide" loading="lazy" width="500" height="625">
@@ -166,7 +207,6 @@
       <img src="{{ "images/gallery-7.webp" | relURL }}" alt="Wedding reception table with floral centerpieces" class="carousel-slide" loading="lazy" width="500" height="625">
       <img src="{{ "images/gallery-8.webp" | relURL }}" alt="Bride and groom with bouquet by pool" class="carousel-slide" loading="lazy" width="500" height="625">
       <img src="{{ "images/gallery-9.webp" | relURL }}" alt="Bride and groom on steps with flower decorations" class="carousel-slide" loading="lazy" width="500" height="625">
-      <!-- Duplicate for seamless loop -->
       <img src="{{ "images/gallery-1.webp" | relURL }}" alt="Wedding reception guests at decorated table" class="carousel-slide" loading="lazy" width="500" height="625">
       <img src="{{ "images/gallery-2.webp" | relURL }}" alt="Bride and groom smiling with bouquet" class="carousel-slide" loading="lazy" width="500" height="625">
       <img src="{{ "images/gallery-3.webp" | relURL }}" alt="Bride and groom facing each other outdoors" class="carousel-slide" loading="lazy" width="500" height="625">
@@ -180,12 +220,13 @@
   </div>
 </section>
 
-<!-- FAQ -->
-<section class="section bg-white" id="faq">
-  <div class="container">
+<!-- ══════════════ FAQ ══════════════ -->
+<section class="ed-section ed-bg-cream" id="faq">
+  <div class="ed-container">
     <div class="faq-layout">
       <div class="faq-header reveal">
-        <h2 class="section-title">{{ i18n "faq_title" }}</h2>
+        <span class="ed-eyebrow">05 &mdash; Questions</span>
+        <h2 class="ed-section-title">{{ i18n "faq_title" }}</h2>
         <div class="faq-decoration"></div>
       </div>
       <div class="faq-content reveal">
@@ -195,12 +236,13 @@
   </div>
 </section>
 
-<!-- Final CTA -->
+<!-- ══════════════ FINAL CTA — PRIORITY BANNER ══════════════ -->
 <section class="section cta-section">
   <div class="container text-center">
+    <span class="cta-eyebrow reveal">{{ i18n "cta_eyebrow" }}</span>
     <h2 class="section-title reveal">{{ i18n "cta_title" }}</h2>
+    <p class="cta-statement reveal">{{ i18n "cta_text1" }}</p>
     <div class="cta-text reveal">
-      <p>{{ i18n "cta_text1" }}</p>
       <p>{{ i18n "cta_text2" }}</p>
       <p>{{ i18n "cta_text3" }}</p>
     </div>

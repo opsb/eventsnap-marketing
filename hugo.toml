@@ -1,5 +1,5 @@
 baseURL = 'https://eventsnap.it/'
-title = 'EventSnap'
+title = 'Posy'
 defaultContentLanguage = 'en'
 defaultContentLanguageInSubdir = false
 
@@ -9,7 +9,7 @@ defaultContentLanguageInSubdir = false
       unsafe = true
 
 [params]
-  description = 'Capture Moments Today'
+  description = 'Hold everything close.'
   appURL = 'https://app.eventsnap.it'
   instagramURL = 'https://www.instagram.com/eventsnap.it'
   tiktokURL = 'https://www.tiktok.com/@thebrideclub1'
