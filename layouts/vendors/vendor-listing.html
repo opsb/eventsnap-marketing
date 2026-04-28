@@ -58,7 +58,9 @@
     <div class="ed-vendor-grid" id="vendorGrid"></div>
 
     <div class="ed-vendor-empty" id="vendorEmpty" style="display:none;">
-      <p>{{ i18n "vendor_no_results" | default "No vendors match yet. Try widening the country or clearing the search." }}</p>
+      <p class="ed-vendor-empty-title">{{ i18n "vendor_no_results" | default "No vendors match yet." }}</p>
+      <p class="ed-vendor-empty-sub">Try widening the country or clearing the search.</p>
+      <p class="ed-vendor-empty-help">Are you a vendor — or know someone who should be here? <a href="{{ "contact/" | relLangURL }}">Get in touch</a> and we'll add the profile.</p>
     </div>
   </div>
 </section>
@@ -944,7 +946,7 @@
 
     countEl.textContent = filtered.length;
     grid.innerHTML = '';
-    emptyEl.style.display = filtered.length === 0 ? 'flex' : 'none';
+    emptyEl.style.display = filtered.length === 0 ? 'block' : 'none';
 
     filtered.forEach(function(v) {
       var card = document.createElement('a');

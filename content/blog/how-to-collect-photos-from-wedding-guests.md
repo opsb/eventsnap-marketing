@@ -61,7 +61,7 @@ There has to be a better way.
 
 The answer isn't a bigger group chat or more follow-up messages. It's changing the entire process — making it so easy to share photos that your guests do it in the moment, without being asked.
 
-That's exactly what QR-code-based wedding photo sharing does, and it's why couples are increasingly making tools like [EventSnap](https://eventsnap.it) a core part of their wedding planning. Here's how it actually works.
+That's exactly what QR-code-based wedding photo sharing does, and it's why couples are increasingly making tools like [Posy](https://eventsnap.it) a core part of their wedding planning. Here's how it actually works.
 
 ## How QR Code Photo Collection Works
 
@@ -86,7 +86,7 @@ As the day unfolds, photos and videos appear in your private gallery in real tim
 <tr><td>Group chat / WhatsApp</td><td>High — chasing, saving, sorting</td><td>Compressed</td><td>Partial</td></tr>
 <tr><td>Email requests</td><td>Very high</td><td>Full (if sent)</td><td>Very partial</td></tr>
 <tr><td>Wedding hashtag</td><td>Medium — must monitor</td><td>Varies</td><td>Partial</td></tr>
-<tr><td>QR code gallery (EventSnap)</td><td>Almost zero</td><td>Full resolution</td><td>Comprehensive</td></tr>
+<tr><td>QR code gallery (Posy)</td><td>Almost zero</td><td>Full resolution</td><td>Comprehensive</td></tr>
 </table>
 
 The difference isn't just convenience — it's completeness. When collecting photos from wedding guests is as simple as scanning a code, guests actually do it. You get the dance floor chaos, the tearful reactions during the speeches, the late-night selfies, the moments your photographer never could have caught.
@@ -119,7 +119,7 @@ Not every solution is created equal. Here's what actually matters when you're ch
 
 **Easy bulk download.** At the end, you want everything in one go — a single-click download of all your photos and videos in full resolution, no picking them off one by one.
 
-[EventSnap](https://eventsnap.it) covers all of this. Guests scan, upload instantly with no account, and everything lands in your private gallery. When you're ready, you download the lot in full resolution with a single click — and the gallery stays accessible for 12 months, so there's no rush.
+[Posy](https://eventsnap.it) covers all of this. Guests scan, upload instantly with no account, and everything lands in your private gallery. When you're ready, you download the lot in full resolution with a single click — and the gallery stays accessible for 12 months, so there's no rush.
 
 ## A Note on Your Professional Photographer
 
@@ -135,7 +135,7 @@ Set up a QR code gallery before the wedding. Display it prominently at the venue
 
 ---
 
-**[Create your free wedding gallery on EventSnap →](https://eventsnap.it/pricing/)**
+**[Create your free wedding gallery on Posy →](https://eventsnap.it/pricing/)**
 
 No app for your guests. No chasing. No missing memories. Just every moment from every person who was there to celebrate with you.
 

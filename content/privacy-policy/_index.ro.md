@@ -1,11 +1,11 @@
 ---
 title: "Politica de Confidențialitate"
-description: "Citește politica de confidențialitate EventSnap pentru a înțelege cum colectăm, folosim și protejăm datele tale personale și fotografiile de nuntă. Conform GDPR."
+description: "Citește politica de confidențialitate Posy pentru a înțelege cum colectăm, folosim și protejăm datele tale personale și fotografiile de nuntă. Conform GDPR."
 ---
 
 ## 1. Introducere
 
-Bine ați venit la EventSnap! Ne angajăm să protejăm și să respectăm confidențialitatea dumneavoastră. Această Politică de Confidențialitate explică modul în care colectăm, utilizăm, divulgăm și protejăm informațiile dumneavoastră personale atunci când vizitați site-ul nostru [www.eventsnap.it] sau utilizați serviciile noastre. Denumirea legală a companiei este SC Eurocont SRL, cu sediul în Str. Aleea Tarnavei nr.1 bl.22 ap.61, Satu Mare, 440207, Satu Mare, România.
+Bine ați venit la Posy! Ne angajăm să protejăm și să respectăm confidențialitatea dumneavoastră. Această Politică de Confidențialitate explică modul în care colectăm, utilizăm, divulgăm și protejăm informațiile dumneavoastră personale atunci când vizitați site-ul nostru [www.eventsnap.it] sau utilizați serviciile noastre. Denumirea legală a companiei este SC Eurocont SRL, cu sediul în Str. Aleea Tarnavei nr.1 bl.22 ap.61, Satu Mare, 440207, Satu Mare, România.
 
 ## 2. Informațiile pe care le colectăm
 
@@ -65,6 +65,6 @@ Este posibil să actualizăm această Politică de Confidențialitate din când 
 
 Dacă aveți întrebări sau nelămuriri cu privire la această Politică de Confidențialitate sau la modul în care gestionăm informațiile dumneavoastră personale, vă rugăm să ne contactați la:
 
-**EventSnap SC Eurocont SRL**
+**Posy SC Eurocont SRL**
 Str. Aleea Tarnavei nr.1 bl.22 ap.61, Satu Mare, 440207, Satu Mare, România
 Email: info@eventsnap.it

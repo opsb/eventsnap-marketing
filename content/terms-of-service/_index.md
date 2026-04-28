@@ -1,19 +1,19 @@
 ---
 title: "Terms of Service"
-description: "Read EventSnap's Terms of Service to understand the rules and conditions for using our wedding photo sharing platform."
+description: "Read Posy's Terms of Service to understand the rules and conditions for using our wedding photo sharing platform."
 ---
 
 **Effective Date:** 12 April 2026
 
 ## 1. Introduction
 
-Welcome to EventSnap, operated by SC Eurocont SRL ("we", "us", "our"), located at Str. Aleea Tarnavei nr.1 bl.22 ap.61, Satu Mare, 440207, Satu Mare, Romania. These Terms of Service ("Terms") govern your access to and use of the EventSnap website at [www.eventsnap.it](https://www.eventsnap.it) and all related services (collectively, the "Service").
+Welcome to Posy, operated by SC Eurocont SRL ("we", "us", "our"), located at Str. Aleea Tarnavei nr.1 bl.22 ap.61, Satu Mare, 440207, Satu Mare, Romania. These Terms of Service ("Terms") govern your access to and use of the Posy website at [www.eventsnap.it](https://www.eventsnap.it) and all related services (collectively, the "Service").
 
 By accessing or using the Service, you agree to be bound by these Terms. If you do not agree, please do not use the Service.
 
 ## 2. Eligibility
 
-You must be at least 16 years of age to use the Service. By using EventSnap, you represent and warrant that you meet this requirement.
+You must be at least 16 years of age to use the Service. By using Posy, you represent and warrant that you meet this requirement.
 
 ## 3. Account Registration
 
@@ -27,7 +27,7 @@ You agree to notify us immediately at contact@eventsnap.it if you suspect any un
 
 ## 4. Description of Service
 
-EventSnap provides a platform that allows event organisers to create shared photo albums for weddings and other events. Guests can upload photos to these albums, and organisers can manage, view, and download the collected photos.
+Posy provides a platform that allows event organisers to create shared photo albums for weddings and other events. Guests can upload photos to these albums, and organisers can manage, view, and download the collected photos.
 
 ## 5. User Content
 
@@ -93,6 +93,6 @@ We may update these Terms from time to time. Any changes will be posted on this 
 
 If you have any questions about these Terms, please contact us at:
 
-**EventSnap SC Eurocont SRL**
+**Posy SC Eurocont SRL**
 Str. Aleea Tarnavei nr.1 bl.22 ap.61, Satu Mare, 440207, Satu Mare, Romania
 Email: contact@eventsnap.it

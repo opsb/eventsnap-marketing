@@ -368,4 +368,4 @@ And don't forget to snap some epic photos while you're at it. Whether it's match
 
 Bachelorette parties should be messy, loud, and unforgettable. Mix funny bachelorette games, printable decks, and online apps for the ultimate bridal weekend. Whether you're a small intimate group or a squad ready to wreak havoc, these 14 games cover everything from heartfelt nostalgia to outrageous chaos. Have fun!
 
-Don't forget to capture all the hilarious moments — set up an [EventSnap QR code](https://app.eventsnap.it) so every photo and video from the weekend ends up in one place, no chasing anyone for pictures afterward.
+Don't forget to capture all the hilarious moments — set up an [Posy QR code](https://app.eventsnap.it) so every photo and video from the weekend ends up in one place, no chasing anyone for pictures afterward.

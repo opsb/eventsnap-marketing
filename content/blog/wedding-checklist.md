@@ -281,7 +281,7 @@ The golden rule of DIY? Only take on what you'll actually enjoy and won't leave 
 
 Some parts of wedding planning are perfect for DIY, and others? Well, unless you moonlight as a pro photographer, master chef, or event coordinator, some things are best left to the experts—for the sake of your sanity and your wedding day. Here's where hiring a pro is non-negotiable:
 
-- **Photography & Videography** – You only get one shot (literally) at capturing these memories, so let the pros handle it. They know the angles, the lighting, and how to make you look stunning even if you ugly-cry at the altar. Plus, don't forget [EventSnap](/)—an easy way to collect all the amazing (and hilarious) moments captured by your guests!
+- **Photography & Videography** – You only get one shot (literally) at capturing these memories, so let the pros handle it. They know the angles, the lighting, and how to make you look stunning even if you ugly-cry at the altar. Plus, don't forget [Posy](/)—an easy way to collect all the amazing (and hilarious) moments captured by your guests!
 - **Catering & Cake** – Cooking for 100+ people is a whole different beast than hosting a dinner party. Trust the caterers unless you want your wedding dinner to feel like a chaotic episode of Chopped.
 - **Hair & Makeup** – A professional ensures you look flawless all day long, from the first photo to the last dance—no melting foundation or smudged eyeliner here!
 - **Entertainment** – A DJ or live band sets the mood and keeps the dance floor alive. A Spotify playlist? Risky. A pro knows how to read the room, handle last-minute song requests, and avoid awkward silence between tracks.

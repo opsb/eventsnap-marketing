@@ -1,11 +1,11 @@
 ---
 title: "Privacy Policy"
-description: "Read EventSnap's privacy policy to understand how we collect, use, and protect your personal data and wedding photos. GDPR compliant and committed to keeping your memories safe."
+description: "Read Posy's privacy policy to understand how we collect, use, and protect your personal data and wedding photos. GDPR compliant and committed to keeping your memories safe."
 ---
 
 ## 1. Introduction
 
-Welcome to EventSnap! We are committed to protecting and respecting your privacy. This Privacy Policy explains how we collect, use, disclose, and protect your personal information when you visit our website [www.eventsnap.it] or use our services. The legal company name is SC Eurocont SRL, located at Str. Aleea Tarnavei nr.1 bl.22 ap.61, Satu Mare, 440207, Satu Mare, Romania.
+Welcome to Posy! We are committed to protecting and respecting your privacy. This Privacy Policy explains how we collect, use, disclose, and protect your personal information when you visit our website [www.eventsnap.it] or use our services. The legal company name is SC Eurocont SRL, located at Str. Aleea Tarnavei nr.1 bl.22 ap.61, Satu Mare, 440207, Satu Mare, Romania.
 
 ## 2. Information We Collect
 
@@ -65,6 +65,6 @@ We may update this Privacy Policy from time to time. Any changes will be posted 
 
 If you have any questions or concerns about this Privacy Policy or the way we handle your personal information, please contact us at:
 
-**EventSnap SC Eurocont SRL**
+**Posy SC Eurocont SRL**
 Str. Aleea Tarnavei nr.1 bl.22 ap.61, Satu Mare, 440207, Satu Mare, Romania
 Email: info@eventsnap.it

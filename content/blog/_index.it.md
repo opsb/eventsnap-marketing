@@ -1,4 +1,4 @@
 ---
 title: "Blog"
-description: "Consigli per il matrimonio, ispirazioni e aggiornamenti su EventSnap"
+description: "Consigli per il matrimonio, ispirazioni e aggiornamenti su Posy"
 ---

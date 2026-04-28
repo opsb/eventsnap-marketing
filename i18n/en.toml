@@ -242,69 +242,69 @@ other = "Still have questions?"
 
 # ─── Affiliate ───────────────────────────────────────────
 [aff_hero_title]
-other = "Posy Affiliate Program for Weddings"
+other = "20% on every couple you refer."
 [aff_hero_desc]
-other = "Earn 20% on every couple you refer by joining the Posy affiliate program. Help couples capture every moment from their wedding."
+other = "Already recommending Posy to the couples you work with? Get paid for it."
 [aff_hero_cta]
 other = "Become an affiliate"
 [aff_how_title]
-other = "How it Works"
+other = "Three steps to your first commission."
 [aff_step1_title]
-other = "Register for Free"
+other = "Register, free"
 [aff_step1_desc]
-other = "Sign up for the Posy Affiliate Program; it only takes a minute."
+other = "Sign up for the Posy Affiliate Program. It takes about a minute."
 [aff_step1_link]
-other = "Sign up here."
+other = "Sign up here →"
 [aff_step2_title]
-other = "Share Your Affiliate Link"
+other = "Share your link"
 [aff_step2_desc]
-other = "Grab your unique affiliate link and start promoting Posy to your audience and clients."
+other = "Grab your unique affiliate link and drop it where your audience and clients already are."
 [aff_step3_title]
-other = "Earn 20% Commission"
+other = "Earn 20%"
 [aff_step3_desc]
-other = "Get paid for every sale you refer. Track your earnings in real time!"
+other = "Get paid 20% on every sale you refer. Track your earnings live from your dashboard."
 [aff_audience_title]
-other = "An Affiliate Program for Wedding Professionals"
+other = "Wedding professionals already in the room."
 [aff_audience1]
-other = "Wedding planners & coordinators"
+other = "Wedding planners and coordinators"
 [aff_audience2]
-other = "Wedding photographers & videographers"
+other = "Photographers and videographers"
 [aff_audience3]
-other = "Bridal shop owners & stylists"
+other = "Bridal shop owners and stylists"
 [aff_audience4]
-other = "Wedding bloggers, influencers & content creators"
+other = "Wedding bloggers, influencers, and content creators"
 [aff_audience5]
 other = "Vendors offering wedding services or products"
 [aff_audience6]
-other = "Publishers & wedding-focused media"
+other = "Publishers and wedding-focused media"
 [aff_benefits_title]
-other = "Why Join the Posy Affiliate Program"
+other = "What you get with Posy."
 [aff_b1_title]
-other = "20% Commission"
+other = "20% commission"
 [aff_b1_desc]
-other = "Get rewarded with 20% of every purchase, one of the most generous payouts in the wedding industry!"
+other = "Twenty per cent of every purchase you refer — one of the most generous payouts in the wedding category."
 [aff_b2_title]
-other = "Dedicated Affiliate Manager"
+other = "A real human"
 [aff_b2_desc]
-other = "We're here to help you succeed. Have questions or need promo ideas? Our affiliate manager has your back."
+other = "Our affiliate manager answers within a day. Promo ideas, copy help, troubleshooting — they've got you."
 [aff_b3_title]
-other = "Global Payouts"
+other = "Paid via PayPal"
 [aff_b3_desc]
-other = "Once you reach the $50 payout threshold, getting paid is easy. Choose from ACH, eCheck, SEPA, BACS, SWIFT, or PayPal."
+other = "Endorsely sends payouts straight to your PayPal account through their mass-payments integration. Fast, simple, no faff."
 [aff_b4_title]
-other = "Easy to Promote"
+other = "Quietly natural to recommend"
 [aff_b4_desc]
-other = "Posy easily integrates into your existing content, planning packages, or vendor recommendations."
+other = "Posy slots into your existing content, planning packages, or vendor recommendations without feeling like an ad."
 [aff_b5_title]
-other = "30-Day Cookie"
+other = "30-day cookie"
 [aff_b5_desc]
 other = "You'll get credit for any sale made within 30 days of someone clicking your link."
 [aff_b6_title]
-other = "Track Your Performance Live"
+other = "Live analytics"
 [aff_b6_desc]
-other = "Access real-time analytics, clicks, and commissions from your affiliate dashboard and see what's working."
+other = "Real-time clicks, conversions, and commissions from your affiliate dashboard. See what's working, do more of it."
 [aff_cta_title]
-other = "Earn Extra Money with Posy"
+other = "Earn alongside the work you already do."
 
 # ─── Contact ─────────────────────────────────────────────
 [contact_title]

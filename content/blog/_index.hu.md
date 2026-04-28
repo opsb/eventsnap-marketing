@@ -1,4 +1,4 @@
 ---
 title: "Blog"
-description: "Esküvői tippek, inspiráció és EventSnap újdonságok"
+description: "Esküvői tippek, inspiráció és Posy újdonságok"
 ---

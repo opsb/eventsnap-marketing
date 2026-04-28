@@ -1,11 +1,11 @@
 ---
 title: "Datenschutzerklärung"
-description: "Lies die Datenschutzerklärung von EventSnap, um zu erfahren, wie wir deine persönlichen Daten und Hochzeitsfotos erfassen, verwenden und schützen. DSGVO-konform."
+description: "Lies die Datenschutzerklärung von Posy, um zu erfahren, wie wir deine persönlichen Daten und Hochzeitsfotos erfassen, verwenden und schützen. DSGVO-konform."
 ---
 
 ## 1. Einleitung
 
-Willkommen bei EventSnap! Wir setzen uns für den Schutz und die Wahrung Ihrer Privatsphäre ein. Diese Datenschutzerklärung erläutert, wie wir Ihre personenbezogenen Daten erheben, verwenden, offenlegen und schützen, wenn Sie unsere Website [www.eventsnap.it] besuchen oder unsere Dienste nutzen. Der rechtliche Firmenname lautet SC Eurocont SRL, mit Sitz in Str. Aleea Tarnavei nr.1 bl.22 ap.61, Satu Mare, 440207, Satu Mare, Rumänien.
+Willkommen bei Posy! Wir setzen uns für den Schutz und die Wahrung Ihrer Privatsphäre ein. Diese Datenschutzerklärung erläutert, wie wir Ihre personenbezogenen Daten erheben, verwenden, offenlegen und schützen, wenn Sie unsere Website [www.eventsnap.it] besuchen oder unsere Dienste nutzen. Der rechtliche Firmenname lautet SC Eurocont SRL, mit Sitz in Str. Aleea Tarnavei nr.1 bl.22 ap.61, Satu Mare, 440207, Satu Mare, Rumänien.
 
 ## 2. Von uns erhobene Daten
 
@@ -65,6 +65,6 @@ Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren. Änderun
 
 Wenn Sie Fragen oder Bedenken zu dieser Datenschutzerklärung oder zum Umgang mit Ihren personenbezogenen Daten haben, kontaktieren Sie uns bitte unter:
 
-**EventSnap SC Eurocont SRL**
+**Posy SC Eurocont SRL**
 Str. Aleea Tarnavei nr.1 bl.22 ap.61, Satu Mare, 440207, Satu Mare, Rumänien
 E-Mail: info@eventsnap.it

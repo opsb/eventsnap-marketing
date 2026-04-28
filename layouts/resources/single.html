@@ -85,7 +85,7 @@
             </div>
 
             <div class="text-center" style="margin-top:2rem">
-              <a href="{{ "pricing/" | relLangURL }}" class="btn btn-accent">Capture Every Moment with EventSnap</a>
+              <a href="{{ "pricing/" | relLangURL }}" class="btn btn-accent">Capture Every Moment with Posy</a>
             </div>
           </div>
 
@@ -443,9 +443,9 @@
 
   function getCelebKey(m, d) { return (m+1)+'-'+d; }
 
-  function card(icon, title, status, detail) {
+  function card(title, status, detail) {
     var cls=status==='green'?'dc-card-green':status==='yellow'?'dc-card-yellow':status==='red'?'dc-card-red':'dc-card-neutral';
-    return '<div class="dc-card '+cls+'"><div class="dc-card-icon">'+icon+'</div><div class="dc-card-body"><h4 class="dc-card-title"><span class="dc-card-status"></span>'+title+'</h4><p class="dc-card-detail">'+detail+'</p></div></div>';
+    return '<div class="dc-card '+cls+'"><div class="dc-card-body"><h4 class="dc-card-title"><span class="dc-card-status"></span>'+title+'</h4><p class="dc-card-detail">'+detail+'</p></div></div>';
   }
 
   // ── State ──
@@ -575,26 +575,26 @@
     var wxStatus = 'neutral';
     if (wx.match(/very hot|monsoon|hurricane|snow|cold and dark/i)) wxStatus = 'yellow';
     else if (wx.match(/beautiful|pleasant|gorgeous|lovely|great|best/i)) wxStatus = 'green';
-    cards += card('\u{2600}\uFE0F','Weather Outlook',wxStatus,wx);
+    cards += card('Weather Outlook',wxStatus,wx);
     if (wxStatus==='yellow') { warnings++; warningNames.push('Weather'); } else if (wxStatus==='green') goods++;
 
     // 2. Public holiday
     var hol = getHoliday(date, cc);
     if (hol) {
-      cards += card('\u{1F6A8}','Public Holiday: '+hol,'red','Your date falls on a public holiday. Venues may be closed or charge premium rates. Municipality offices are often closed for civil ceremonies.');
+      cards += card('Public Holiday: '+hol,'red','Your date falls on a public holiday. Venues may be closed or charge premium rates. Municipality offices are often closed for civil ceremonies.');
       issues++; issueNames.push('Public Holiday ('+hol+')');
     } else {
-      cards += card('\u2705','No Public Holiday','green','Your date does not fall on a national public holiday.');
+      cards += card('No Public Holiday','green','Your date does not fall on a national public holiday.');
       goods++;
     }
 
     // 3. School holidays
     var schHols = getSchoolHol(date, cc);
     if (schHols.length) {
-      cards += card('\u{1F392}','School Holiday: '+schHols.join(', '),'yellow','Venues and travel will be busier and pricier. On the plus side, guests with children can attend more easily.');
+      cards += card('School Holiday: '+schHols.join(', '),'yellow','Venues and travel will be busier and pricier. On the plus side, guests with children can attend more easily.');
       warnings++; warningNames.push('School Holiday');
     } else {
-      cards += card('\u{1F4DA}','No School Holiday','green','Outside school holiday periods. Venues and travel at normal rates.');
+      cards += card('No School Holiday','green','Outside school holiday periods. Venues and travel at normal rates.');
       goods++;
     }
 
@@ -604,11 +604,11 @@
     if (ps.peak.indexOf(m) >= 0) { psStatus='yellow'; psDetail='Peak wedding season ('+ps.label+'). Venues book up early and pricing is at its highest.'; warnings++; warningNames.push('Peak Season'); }
     else if (ps.off.indexOf(m) >= 0) { psStatus='green'; psDetail='Off-season for weddings. Better deals and more availability, but check the weather.'; goods++; }
     else { psStatus='green'; psDetail='Shoulder season \u2014 good weather and reasonable pricing.'; goods++; }
-    cards += card('\u{1F4C8}','Wedding Season',psStatus,psDetail);
+    cards += card('Wedding Season',psStatus,psDetail);
 
     // 5. Friday the 13th
     if (isFriday13(date)) {
-      cards += card('\u{1F3F4}','Friday the 13th','red','Considered unlucky in Western culture. Some guests may be superstitious \u2014 but venues may offer discounts!');
+      cards += card('Friday the 13th','red','Considered unlucky in Western culture. Some guests may be superstitious \u2014 but venues may offer discounts!');
       issues++; issueNames.push('Friday the 13th');
     }
 
@@ -616,13 +616,13 @@
     if (isLeapYear(y)) {
       var lpDetail = 'Leap year \u2014 considered extra lucky for weddings in some traditions (Irish, Scottish).';
       if (m===2 && d===29) lpDetail = 'February 29 \u2014 a rare and unique anniversary date! Only every 4 years.';
-      cards += card('\u{1F4AB}','Leap Year','green',lpDetail);
+      cards += card('Leap Year','green',lpDetail);
       goods++;
     }
 
     // 7. Shabbat
     if (isShabbat(date)) {
-      cards += card('\u2721\uFE0F','Shabbat (Jewish Sabbath)','yellow','Observant Jewish guests cannot attend from Friday sundown to Saturday sundown. Consider an evening ceremony after sunset, or choose Sunday.');
+      cards += card('Shabbat (Jewish Sabbath)','yellow','Observant Jewish guests cannot attend from Friday sundown to Saturday sundown. Consider an evening ceremony after sunset, or choose Sunday.');
       warnings++; warningNames.push('Shabbat');
     }
 
@@ -648,7 +648,7 @@
           if (c.n.match(/ramadan/i)) det = 'During Ramadan. Muslim guests will be fasting during daylight. Consider an evening reception.';
           else det = 'Overlaps with '+c.n+'. Muslim guests may have family commitments.';
         }
-        cards += card(c.t==='jewish'?'\u2721\uFE0F':c.t==='chinese'?'\u{1F9E7}':c.t==='hindu'?'\u{1F6D5}':'\u262A\uFE0F', typeLabels[c.t]+': '+c.n, st, det);
+        cards += card(typeLabels[c.t]+': '+c.n, st, det);
         if (st==='red') { issues++; issueNames.push(c.n); } else if (st==='yellow') { warnings++; warningNames.push(c.n); } else goods++;
       });
     }
@@ -656,7 +656,7 @@
     // 9. Numerology
     var num = numerology(date);
     var numStatus = (num.number===2||num.number===6) ? 'green' : 'neutral';
-    cards += card('\u{1F522}','Numerology: '+num.number, numStatus, '<strong>'+num.meaning+'</strong><br><span style="font-size:.85rem;color:#999">Calculated by adding all date digits until one remains. Numbers 2 (partnership) and 6 (love) are ideal for weddings. Master numbers 11 and 22 are kept unreduced.</span>');
+    cards += card('Numerology: '+num.number, numStatus, '<strong>'+num.meaning+'</strong><br><span style="font-size:.85rem;color:#999">Calculated by adding all date digits until one remains. Numbers 2 (partnership) and 6 (love) are ideal for weddings. Master numbers 11 and 22 are kept unreduced.</span>');
     if (numStatus==='green') goods++;
 
     // 10. Planning timeline
@@ -667,7 +667,7 @@
       if (diff<90) { planDetail = diff+' days away ('+months+' months). Very tight \u2014 venue and vendor availability will be limited.'; }
       else if (diff<180) { planDetail = diff+' days away ('+months+' months). Reasonable timeline, start booking key vendors now.'; }
       else { planDetail = diff+' days away ('+months+' months). Great planning runway to secure the best vendors.'; }
-      cards += card('\u{23F3}','Planning Timeline',planStatus,planDetail);
+      cards += card('Planning Timeline',planStatus,planDetail);
       if (planStatus==='red') { issues++; issueNames.push('Short Planning Timeline'); } else if (planStatus==='yellow') { warnings++; warningNames.push('Planning Timeline'); } else goods++;
     }
 

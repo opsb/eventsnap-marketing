@@ -1,126 +1,133 @@
 {{ define "main" }}
-<article class="page-single">
 
-<!-- Hero -->
-<section class="section affiliate-hero">
-  <div class="container text-center">
-    <h1 class="section-title reveal">{{ i18n "aff_hero_title" }}</h1>
-    <p class="section-subtitle reveal"><strong>{{ i18n "aff_hero_desc" }}</strong></p>
-    <a href="https://eventsnapit-d582.endorsely.com/" class="btn btn-outline reveal" target="_blank" rel="noopener">{{ i18n "aff_hero_cta" }}</a>
+<!-- ══════════════ COVER ══════════════ -->
+<section class="ed-aff-cover">
+  <div class="ed-aff-cover-inner reveal">
+    <span class="ed-eyebrow">Posy &middot; Affiliates</span>
+    <h1 class="ed-aff-cover-headline">{{ i18n "aff_hero_title" }}</h1>
+    <p class="ed-aff-cover-sub">{{ i18n "aff_hero_desc" }}</p>
+    <a href="https://eventsnapit-d582.endorsely.com/" class="btn btn-outline ed-aff-cover-cta" target="_blank" rel="noopener">{{ i18n "aff_hero_cta" }}</a>
   </div>
 </section>
 
-<!-- How it Works -->
-<section class="section bg-pink">
-  <div class="container">
-    <h2 class="section-title reveal">{{ i18n "aff_how_title" }}</h2>
-    <div class="steps-grid">
-      <div class="step-card reveal">
-        <div class="step-number">1</div>
-        <div class="step-icon">
-          <img src="{{ "images/illustration-register.webp" | relURL }}" alt="Envelope with heart-shaped clock" width="141" height="121">
+<!-- ══════════════ HOW IT WORKS — NUMBERED STEPS ══════════════ -->
+<section class="ed-section ed-bg-cream ed-section--top-tight">
+  <div class="ed-container">
+    <header class="ed-section-head reveal">
+      <span class="ed-eyebrow">How it works</span>
+      <h2 class="ed-section-title ed-section-title--sm">{{ i18n "aff_how_title" }}</h2>
+    </header>
+
+    <div class="ed-aff-steps">
+      <article class="ed-aff-step reveal">
+        <span class="ed-aff-step-num">01</span>
+        <div class="ed-aff-step-body">
+          <h3>{{ i18n "aff_step1_title" }}</h3>
+          <p>{{ i18n "aff_step1_desc" }} <a href="https://eventsnapit-d582.endorsely.com" target="_blank" rel="noopener" class="ed-aff-step-link">{{ i18n "aff_step1_link" }}</a></p>
         </div>
-        <h3>{{ i18n "aff_step1_title" }}</h3>
-        <p>{{ i18n "aff_step1_desc" }} <a href="https://eventsnapit-d582.endorsely.com" target="_blank" rel="noopener">{{ i18n "aff_step1_link" }}</a></p>
-      </div>
-      <div class="step-card reveal">
-        <div class="step-number">2</div>
-        <div class="step-icon">
-          <img src="{{ "images/illustration-share.webp" | relURL }}" alt="Photo prints with hibiscus flower" width="113" height="130">
+      </article>
+
+      <hr class="ed-divider ed-divider--soft">
+
+      <article class="ed-aff-step reveal">
+        <span class="ed-aff-step-num">02</span>
+        <div class="ed-aff-step-body">
+          <h3>{{ i18n "aff_step2_title" }}</h3>
+          <p>{{ i18n "aff_step2_desc" }}</p>
         </div>
-        <h3>{{ i18n "aff_step2_title" }}</h3>
-        <p>{{ i18n "aff_step2_desc" }}</p>
-      </div>
-      <div class="step-card reveal">
-        <div class="step-number">3</div>
-        <div class="step-icon">
-          <img src="{{ "images/illustration-earn.webp" | relURL }}" alt="Hand holding a bouquet of flowers with sparkles" width="160" height="202">
+      </article>
+
+      <hr class="ed-divider ed-divider--soft">
+
+      <article class="ed-aff-step reveal">
+        <span class="ed-aff-step-num">03</span>
+        <div class="ed-aff-step-body">
+          <h3>{{ i18n "aff_step3_title" }}</h3>
+          <p>{{ i18n "aff_step3_desc" }}</p>
         </div>
-        <h3>{{ i18n "aff_step3_title" }}</h3>
-        <p>{{ i18n "aff_step3_desc" }}</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ WHO IT'S FOR ══════════════ -->
+<section class="ed-section ed-bg-blush">
+  <div class="ed-container">
+    <header class="ed-section-head reveal">
+      <span class="ed-eyebrow">Made for</span>
+      <h2 class="ed-section-title ed-section-title--sm">{{ i18n "aff_audience_title" }}</h2>
+    </header>
+
+    <div class="ed-aff-audience-grid">
+      <ul class="ed-aff-audience-list reveal">
+        <li>{{ i18n "aff_audience1" }}</li>
+        <li>{{ i18n "aff_audience2" }}</li>
+        <li>{{ i18n "aff_audience3" }}</li>
+        <li>{{ i18n "aff_audience4" }}</li>
+        <li>{{ i18n "aff_audience5" }}</li>
+        <li>{{ i18n "aff_audience6" }}</li>
+      </ul>
+      <div class="ed-aff-audience-photos reveal">
+        <img src="{{ "images/affiliate-photo-1.webp" | relURL }}" alt="" loading="lazy" class="ed-aff-photo ed-aff-photo--1">
+        <img src="{{ "images/affiliate-photo-2.webp" | relURL }}" alt="" loading="lazy" class="ed-aff-photo ed-aff-photo--2">
+        <img src="{{ "images/affiliate-photo-3.webp" | relURL }}" alt="" loading="lazy" class="ed-aff-photo ed-aff-photo--3">
       </div>
     </div>
   </div>
 </section>
 
-<!-- Target Audience -->
-<section class="section bg-white">
-  <div class="container">
-    <h2 class="section-title reveal">{{ i18n "aff_audience_title" }}</h2>
-    <div class="audience-photos reveal">
-      <img src="{{ "images/affiliate-photo-1.webp" | relURL }}" alt="Women reviewing wedding photos at a table" class="audience-photo">
-      <img src="{{ "images/affiliate-photo-2.webp" | relURL }}" alt="Photographer taking pictures of bride and groom dancing outdoors" class="audience-photo">
-      <img src="{{ "images/affiliate-photo-3.webp" | relURL }}" alt="Person on a bed using a laptop with coffee" class="audience-photo">
-    </div>
-    <div class="audience-grid reveal">
-      <div class="audience-item">{{ i18n "aff_audience1" }}</div>
-      <div class="audience-item">{{ i18n "aff_audience2" }}</div>
-      <div class="audience-item">{{ i18n "aff_audience3" }}</div>
-      <div class="audience-item">{{ i18n "aff_audience4" }}</div>
-      <div class="audience-item">{{ i18n "aff_audience5" }}</div>
-      <div class="audience-item">{{ i18n "aff_audience6" }}</div>
-    </div>
-  </div>
-</section>
+<!-- ══════════════ BENEFITS ══════════════ -->
+<section class="ed-section ed-bg-cream">
+  <div class="ed-container">
+    <header class="ed-section-head reveal">
+      <span class="ed-eyebrow">Why join</span>
+      <h2 class="ed-section-title ed-section-title--sm">{{ i18n "aff_benefits_title" }}</h2>
+    </header>
 
-<!-- Benefits -->
-<section class="section bg-pink">
-  <div class="container">
-    <h2 class="section-title reveal">{{ i18n "aff_benefits_title" }}</h2>
-    <div class="benefits-grid">
-      <div class="benefit-card reveal">
-        <div class="benefit-icon">
-          <img src="{{ "images/benefit-commission.webp" | relURL }}" alt="Hand holding flowers with sparkles">
-        </div>
+    <div class="ed-aff-benefits">
+      <article class="ed-aff-benefit reveal">
         <h3>{{ i18n "aff_b1_title" }}</h3>
         <p>{{ i18n "aff_b1_desc" }}</p>
-      </div>
-      <div class="benefit-card reveal">
-        <div class="benefit-icon">
-          <img src="{{ "images/benefit-manager.webp" | relURL }}" alt="Hand placing on a red star">
-        </div>
+      </article>
+      <article class="ed-aff-benefit reveal">
         <h3>{{ i18n "aff_b2_title" }}</h3>
         <p>{{ i18n "aff_b2_desc" }}</p>
-      </div>
-      <div class="benefit-card reveal">
-        <div class="benefit-icon">
-          <img src="{{ "images/benefit-payouts.webp" | relURL }}" alt="Martini glass with ribbon">
-        </div>
+      </article>
+      <article class="ed-aff-benefit reveal">
         <h3>{{ i18n "aff_b3_title" }}</h3>
         <p>{{ i18n "aff_b3_desc" }}</p>
-      </div>
-      <div class="benefit-card reveal">
-        <div class="benefit-icon">
-          <img src="{{ "images/benefit-promote.webp" | relURL }}" alt="Illustration of a gift box">
-        </div>
+      </article>
+      <article class="ed-aff-benefit reveal">
         <h3>{{ i18n "aff_b4_title" }}</h3>
         <p>{{ i18n "aff_b4_desc" }}</p>
-      </div>
-      <div class="benefit-card reveal">
-        <div class="benefit-icon">
-          <img src="{{ "images/benefit-cookie.webp" | relURL }}" alt="Clock with decorative elements">
-        </div>
+      </article>
+      <article class="ed-aff-benefit reveal">
         <h3>{{ i18n "aff_b5_title" }}</h3>
         <p>{{ i18n "aff_b5_desc" }}</p>
-      </div>
-      <div class="benefit-card reveal">
-        <div class="benefit-icon">
-          <img src="{{ "images/benefit-track.webp" | relURL }}" alt="Photo prints with flower">
-        </div>
+      </article>
+      <article class="ed-aff-benefit reveal">
         <h3>{{ i18n "aff_b6_title" }}</h3>
         <p>{{ i18n "aff_b6_desc" }}</p>
-      </div>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- Final CTA -->
+<!-- ══════════════ FINAL CTA — PRIORITY BANNER ══════════════ -->
 <section class="section cta-section">
   <div class="container text-center">
-    <h2 class="section-title reveal">{{ i18n "aff_cta_title" }}</h2>
+    <span class="cta-eyebrow reveal">Ready to refer</span>
+    <h2 class="section-title reveal">
+      <span class="cta-title-line">{{ i18n "aff_cta_title" }}</span>
+      <span class="cta-title-accent">20% on every couple.</span>
+    </h2>
+    <p class="cta-statement reveal">Sign up takes a minute. Your link is ready straight after.</p>
+    <div class="cta-text reveal">
+      <p>Track clicks, sales, and commissions live.</p>
+      <p>Endorsely pays out via PayPal once you cross the threshold.</p>
+    </div>
     <a href="https://eventsnapit-d582.endorsely.com/" class="btn btn-filled reveal" target="_blank" rel="noopener">{{ i18n "aff_hero_cta" }}</a>
   </div>
 </section>
 
-</article>
 {{ end }}

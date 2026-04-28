@@ -1,11 +1,11 @@
 ---
 title: "Informativa sulla Privacy"
-description: "Leggi l'informativa sulla privacy di EventSnap per capire come raccogliamo, utilizziamo e proteggiamo i tuoi dati personali e le foto del matrimonio. Conforme al GDPR."
+description: "Leggi l'informativa sulla privacy di Posy per capire come raccogliamo, utilizziamo e proteggiamo i tuoi dati personali e le foto del matrimonio. Conforme al GDPR."
 ---
 
 ## 1. Introduzione
 
-Benvenuti su EventSnap! Ci impegniamo a proteggere e rispettare la vostra privacy. Questa Informativa sulla Privacy spiega come raccogliamo, utilizziamo, divulghiamo e proteggiamo le vostre informazioni personali quando visitate il nostro sito web [www.eventsnap.it] o utilizzate i nostri servizi. La ragione sociale dell'azienda è SC Eurocont SRL, con sede in Str. Aleea Tarnavei nr.1 bl.22 ap.61, Satu Mare, 440207, Satu Mare, Romania.
+Benvenuti su Posy! Ci impegniamo a proteggere e rispettare la vostra privacy. Questa Informativa sulla Privacy spiega come raccogliamo, utilizziamo, divulghiamo e proteggiamo le vostre informazioni personali quando visitate il nostro sito web [www.eventsnap.it] o utilizzate i nostri servizi. La ragione sociale dell'azienda è SC Eurocont SRL, con sede in Str. Aleea Tarnavei nr.1 bl.22 ap.61, Satu Mare, 440207, Satu Mare, Romania.
 
 ## 2. Informazioni che Raccogliamo
 
@@ -65,6 +65,6 @@ Potremmo aggiornare questa Informativa sulla Privacy di tanto in tanto. Eventual
 
 Per qualsiasi domanda o dubbio riguardante questa Informativa sulla Privacy o il modo in cui gestiamo le vostre informazioni personali, contattateci all'indirizzo:
 
-**EventSnap SC Eurocont SRL**
+**Posy SC Eurocont SRL**
 Str. Aleea Tarnavei nr.1 bl.22 ap.61, Satu Mare, 440207, Satu Mare, Romania
 Email: info@eventsnap.it

@@ -1,11 +1,11 @@
 ---
 title: "Adatvédelmi irányelvek"
-description: "Olvasd el az EventSnap adatvédelmi irányelveit, hogy megértsd, hogyan gyűjtjük, használjuk és védjük személyes adataidat és esküvői fotóidat. GDPR-kompatibilis."
+description: "Olvasd el az Posy adatvédelmi irányelveit, hogy megértsd, hogyan gyűjtjük, használjuk és védjük személyes adataidat és esküvői fotóidat. GDPR-kompatibilis."
 ---
 
 ## 1. Bevezetés
 
-Üdvözöljük az EventSnap-nél! Elkötelezettek vagyunk az Ön magánéletének védelme és tiszteletben tartása mellett. Ez az Adatvédelmi Irányelv ismerteti, hogyan gyűjtjük, használjuk, adjuk ki és védjük személyes adatait, amikor meglátogatja weboldalunkat [www.eventsnap.it], vagy igénybe veszi szolgáltatásainkat. A jogi társaság neve SC Eurocont SRL, székhelye: Str. Aleea Tarnavei nr.1 bl.22 ap.61, Satu Mare, 440207, Satu Mare, Románia.
+Üdvözöljük az Posy-nél! Elkötelezettek vagyunk az Ön magánéletének védelme és tiszteletben tartása mellett. Ez az Adatvédelmi Irányelv ismerteti, hogyan gyűjtjük, használjuk, adjuk ki és védjük személyes adatait, amikor meglátogatja weboldalunkat [www.eventsnap.it], vagy igénybe veszi szolgáltatásainkat. A jogi társaság neve SC Eurocont SRL, székhelye: Str. Aleea Tarnavei nr.1 bl.22 ap.61, Satu Mare, 440207, Satu Mare, Románia.
 
 ## 2. Az általunk gyűjtött adatok
 
@@ -65,6 +65,6 @@ Időről időre frissíthetjük ezt az Adatvédelmi Irányelvet. Minden változ�
 
 Ha bármilyen kérdése vagy aggálya van ezzel az Adatvédelmi Irányelvel vagy személyes adatainak kezelésével kapcsolatban, kérjük, lépjen kapcsolatba velünk:
 
-**EventSnap SC Eurocont SRL**
+**Posy SC Eurocont SRL**
 Str. Aleea Tarnavei nr.1 bl.22 ap.61, Satu Mare, 440207, Satu Mare, Romania
 Email: info@eventsnap.it
