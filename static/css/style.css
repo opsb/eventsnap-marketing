@@ -8,6 +8,8 @@
   --color-white: #FFFCF7;            /* Cream — default bg, never pure white */
   --color-cream: #FFFCF7;
   --color-blush: #FFF0F3;             /* Blush — soft pink section bg */
+  --color-peach: #FBEDDF;             /* Peach — warm cream section bg */
+  --color-honey-soft: #FBF3D8;        /* Honey Soft — pale yellow section bg */
   --color-dark: #1A1A2E;              /* Midnight — primary text */
   --color-accent: #E8446D;            /* Petal — primary brand, CTAs */
   --color-accent-hover: #C8385C;      /* Petal pressed/hover */
@@ -1723,6 +1725,125 @@ ul { list-style: none; }
     grid-template-columns: 1fr !important;
     gap: 8px;
   }
+}
+
+/* Blog post callouts / cards — reusable colored blocks for editorial articles */
+.post-callout {
+  background: var(--color-blush);
+  border-radius: 16px;
+  padding: 1.75rem 2rem;
+  margin: 2rem 0;
+}
+
+.post-callout > :first-child { margin-top: 0; }
+.post-callout > :last-child { margin-bottom: 0; }
+
+.post-callout h3 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin: 0 0 0.9rem 0;
+}
+
+.prose .post-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.prose .post-card-grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+
+.prose .post-card {
+  background: var(--color-blush);
+  border-radius: 16px;
+  padding: 1.5rem 1.5rem 1.4rem;
+  margin: 0;
+}
+
+.prose .post-card.cream { background: var(--color-cream); border: 1px solid var(--color-border, #e9e3da); }
+.prose .post-card.peach { background: var(--color-peach); }
+.prose .post-card.honey { background: var(--color-honey-soft); }
+
+.prose .post-card h4 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: clamp(1.2rem, 1.8vw, 1.4rem);
+  line-height: 1.2;
+  margin: 0 0 0.7rem 0;
+  color: var(--color-dark);
+  letter-spacing: -0.005em;
+}
+
+.prose .post-card p {
+  margin: 0;
+  font-size: 0.96rem;
+  line-height: 1.55;
+  color: var(--color-dark);
+}
+
+.post-cta {
+  background: var(--color-blush);
+  border-radius: 20px;
+  padding: 2.25rem 2rem;
+  margin: 2.5rem 0;
+  text-align: center;
+}
+
+.post-cta > :first-child { margin-top: 0; }
+.post-cta > :last-child { margin-bottom: 0; }
+
+.post-cta .post-cta-title {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: clamp(1.4rem, 2.5vw, 1.75rem);
+  line-height: 1.2;
+  color: var(--color-dark);
+  margin: 0 0 0.75rem 0;
+}
+
+.post-cta .post-cta-button {
+  display: inline-block;
+  background: var(--color-accent);
+  color: var(--color-cream);
+  padding: 0.85rem 1.75rem;
+  border-radius: 999px;
+  font-family: var(--font-body);
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  transition: opacity var(--transition);
+}
+
+.post-cta .post-cta-button:hover { opacity: 0.88; }
+
+.post-cta.dark {
+  background: var(--color-dark);
+  color: var(--color-cream);
+}
+
+.post-cta.dark .post-cta-eyebrow {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--color-petal-soft);
+  margin: 0 0 1rem 0;
+}
+
+.post-cta.dark .post-cta-title { color: var(--color-cream); }
+
+.post-cta.dark p { color: rgba(255, 252, 247, 0.75); }
+
+@media (max-width: 720px) {
+  .prose .post-card-grid,
+  .prose .post-card-grid.cols-2 { grid-template-columns: 1fr; }
+  .post-callout, .post-cta { padding: 1.5rem 1.25rem; }
 }
 
 .hotel-card {
